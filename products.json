@@ -13,7 +13,7 @@
     "sales": 280,
     "ratings": 4,
     "updatedAt": 1633632433934,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "MykPs9Z",
@@ -29,7 +29,7 @@
     "sales": 111,
     "ratings": 4,
     "updatedAt": 1633632289406,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "HCeaRgW",
@@ -45,7 +45,7 @@
     "sales": 180,
     "ratings": 2,
     "updatedAt": 1633632177319,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "yL5tmc6",
@@ -61,7 +61,7 @@
     "sales": 280,
     "ratings": 4,
     "updatedAt": 1633632062147,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "pjVbDa2",
@@ -77,7 +77,7 @@
     "sales": 180,
     "ratings": 1,
     "updatedAt": 1633631920993,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "tN3uvWT",
@@ -93,7 +93,7 @@
     "sales": 140,
     "ratings": 4,
     "updatedAt": 1633631798829,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "W-3CBU7",
@@ -109,7 +109,7 @@
     "sales": 180,
     "ratings": 3,
     "updatedAt": 1633631562450,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "LQ1N3df",
@@ -125,7 +125,7 @@
     "sales": 160,
     "ratings": 4,
     "updatedAt": 1633631430561,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "8viSHe3",
@@ -141,7 +141,7 @@
     "sales": 99,
     "ratings": 4,
     "updatedAt": 1633631292708,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "NEZpQeN",
@@ -157,7 +157,7 @@
     "sales": 109,
     "ratings": 3,
     "updatedAt": 1633631177468,
-    "category_id": "toys-kids-babies"
+    "categoryId": "toys-kids-babies"
   },
   {
     "_id": "6orvF7g",
@@ -173,7 +173,7 @@
     "sales": 544,
     "ratings": 4,
     "updatedAt": 1633545613583,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "Wx4XccR",
@@ -189,7 +189,7 @@
     "sales": 670,
     "ratings": 4,
     "updatedAt": 1633545272468,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "NYnZpW3",
@@ -205,7 +205,7 @@
     "sales": 500,
     "ratings": 4,
     "updatedAt": 1633544774346,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "085gxQp",
@@ -221,7 +221,7 @@
     "sales": 101,
     "ratings": 4,
     "updatedAt": 1633544305425,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "vihS9IX",
@@ -237,7 +237,7 @@
     "sales": 45,
     "ratings": 4,
     "updatedAt": 1633543844510,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "UVy0M_E",
@@ -253,7 +253,7 @@
     "sales": 56,
     "ratings": 5,
     "updatedAt": 1633543402416,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "kk3TqTh",
@@ -269,7 +269,7 @@
     "sales": 106,
     "ratings": 3,
     "updatedAt": 1633543111724,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "YFmXyGZ",
@@ -285,7 +285,7 @@
     "sales": 100,
     "ratings": 4,
     "updatedAt": 1633542589566,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "y3MDo7C",
@@ -301,7 +301,7 @@
     "sales": 37,
     "ratings": 5,
     "updatedAt": 1633542308466,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "mRWrR0O",
@@ -317,7 +317,7 @@
     "sales": 43,
     "ratings": 3,
     "updatedAt": 1633542035783,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "KHVTc8V",
@@ -333,7 +333,7 @@
     "sales": 12,
     "ratings": 4,
     "updatedAt": 1633541828687,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "HOUQkrx",
@@ -349,7 +349,7 @@
     "sales": 30,
     "ratings": 4,
     "updatedAt": 1633541651200,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "qs82V0V",
@@ -365,7 +365,7 @@
     "sales": 400,
     "ratings": 5,
     "updatedAt": 1633541271308,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "qDXBv5e",
@@ -381,7 +381,7 @@
     "sales": 270,
     "ratings": 4,
     "updatedAt": 1633540933659,
-    "category_id": "beauty-health-hari"
+    "categoryId": "beauty-health-hari"
   },
   {
     "_id": "5UxmwPP",
@@ -397,7 +397,7 @@
     "sales": 230,
     "ratings": 4,
     "updatedAt": 1633073801568,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "hF5Xnis",
@@ -413,7 +413,7 @@
     "sales": 170,
     "ratings": 4,
     "updatedAt": 1633073707759,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "WGf7lXZ",
@@ -429,7 +429,7 @@
     "sales": 101,
     "ratings": 3,
     "updatedAt": 1633073578122,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "nzi4H04",
@@ -445,7 +445,7 @@
     "sales": 60,
     "ratings": 1,
     "updatedAt": 1633073453172,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "ZA5nlSs",
@@ -461,7 +461,7 @@
     "sales": 67,
     "ratings": 3,
     "updatedAt": 1633073346813,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "2AAqxNZ",
@@ -477,7 +477,7 @@
     "sales": 140,
     "ratings": 4,
     "updatedAt": 1633073234592,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "Vu838DC",
@@ -493,7 +493,7 @@
     "sales": 288,
     "ratings": 4,
     "updatedAt": 1633073130187,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "ZtjVCNv",
@@ -509,7 +509,7 @@
     "sales": 160,
     "ratings": 4,
     "updatedAt": 1633073018196,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "t6fnlQ_",
@@ -525,7 +525,7 @@
     "sales": 160,
     "ratings": 4,
     "updatedAt": 1632902584592,
-    "category_id": "jewelry-watches"
+    "categoryId": "jewelry-watches"
   },
   {
     "_id": "kyTH3RC",
@@ -541,7 +541,7 @@
     "sales": 111,
     "ratings": 4,
     "updatedAt": 1632902408758,
-    "category_id": "jewelry-watches"
+    "categoryId": "jewelry-watches"
   },
   {
     "_id": "xslBizc",
@@ -557,7 +557,7 @@
     "sales": 120,
     "ratings": 4,
     "updatedAt": 1632902255027,
-    "category_id": "jewelry-watches"
+    "categoryId": "jewelry-watches"
   },
   {
     "_id": "bhE6a8i",
@@ -573,7 +573,7 @@
     "sales": 77,
     "ratings": 3,
     "updatedAt": 1632902107196,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "ekoGdCA",
@@ -589,7 +589,7 @@
     "sales": 109,
     "ratings": 4,
     "updatedAt": 1632901995074,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "eIM6oW_",
@@ -605,7 +605,7 @@
     "sales": 82,
     "ratings": 4,
     "updatedAt": 1632868262419,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "KT5RHOl",
@@ -621,7 +621,7 @@
     "sales": 56,
     "ratings": 2,
     "updatedAt": 1632867983756,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "JZ7z9xP",
@@ -637,7 +637,7 @@
     "sales": 112,
     "ratings": 4,
     "updatedAt": 1632867726548,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "ucc0XSo",
@@ -653,7 +653,7 @@
     "sales": 78,
     "ratings": 4,
     "updatedAt": 1632867649074,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "4eZxVvx",
@@ -669,7 +669,7 @@
     "sales": 101,
     "ratings": 4,
     "updatedAt": 1632867507531,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "VbnD64P",
@@ -685,7 +685,7 @@
     "sales": 100,
     "ratings": 2,
     "updatedAt": 1632867300612,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "u62WLhm",
@@ -701,7 +701,7 @@
     "sales": 150,
     "ratings": 4,
     "updatedAt": 1632867169294,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "bm1CyQU",
@@ -717,7 +717,7 @@
     "sales": 145,
     "ratings": 4,
     "updatedAt": 1632867103460,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "WgnZJgH",
@@ -733,7 +733,7 @@
     "sales": 99,
     "ratings": 3,
     "updatedAt": 1632866909013,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "w7BKJ6K",
@@ -749,7 +749,7 @@
     "sales": 100,
     "ratings": 2,
     "updatedAt": 1632866689363,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "TogkZJY",
@@ -765,7 +765,7 @@
     "sales": 102,
     "ratings": 3,
     "updatedAt": 1632864809579,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "bm9UKj9",
@@ -781,7 +781,7 @@
     "sales": 180,
     "ratings": 4,
     "updatedAt": 1632864355980,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "FlmI5Jf",
@@ -797,7 +797,7 @@
     "sales": 111,
     "ratings": 3,
     "updatedAt": 1632864047142,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "NHPwwo9",
@@ -813,7 +813,7 @@
     "sales": 89,
     "ratings": 4,
     "updatedAt": 1632863901464,
-    "category_id": "bags-shoes"
+    "categoryId": "bags-shoes"
   },
   {
     "_id": "I5zxxkQ",
@@ -829,7 +829,7 @@
     "sales": 508,
     "ratings": 4,
     "updatedAt": 1632844603086,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "kZk0fZk",
@@ -845,7 +845,7 @@
     "sales": 34,
     "ratings": 3,
     "updatedAt": 1632844256838,
-    "category_id": "phones-telecommunications"
+    "categoryId": "phones-telecommunications"
   },
   {
     "_id": "ynqcBrY",
@@ -861,7 +861,7 @@
     "sales": 12,
     "ratings": 5,
     "updatedAt": 1632844162210,
-    "category_id": "phones-telecommunications"
+    "categoryId": "phones-telecommunications"
   },
   {
     "_id": "FzHB3x0",
@@ -877,7 +877,7 @@
     "sales": 490,
     "ratings": 4,
     "updatedAt": 1632843926939,
-    "category_id": "consumer-electronics"
+    "categoryId": "consumer-electronics"
   },
   {
     "_id": "Eu-0Aqu",
@@ -893,7 +893,7 @@
     "sales": 49,
     "ratings": 2,
     "updatedAt": 1632843859762,
-    "category_id": "consumer-electronics"
+    "categoryId": "consumer-electronics"
   },
   {
     "_id": "Er3WTb_",
@@ -909,7 +909,7 @@
     "sales": 300,
     "ratings": 4,
     "updatedAt": 1632843784344,
-    "category_id": "consumer-electronics"
+    "categoryId": "consumer-electronics"
   },
   {
     "_id": "7iR4703",
@@ -925,7 +925,7 @@
     "sales": 509,
     "ratings": 3,
     "updatedAt": 1632843454571,
-    "category_id": "consumer-electronics"
+    "categoryId": "consumer-electronics"
   },
   {
     "_id": "ywJXhlV",
@@ -941,7 +941,7 @@
     "sales": 1002,
     "ratings": 4,
     "updatedAt": 1632843416906,
-    "category_id": "consumer-electronics"
+    "categoryId": "consumer-electronics"
   },
   {
     "_id": "2_iCKBo",
@@ -957,7 +957,7 @@
     "sales": 1002,
     "ratings": 4,
     "updatedAt": 1632843374837,
-    "category_id": "consumer-electronics"
+    "categoryId": "consumer-electronics"
   },
   {
     "_id": "yDghTIP",
@@ -973,7 +973,7 @@
     "sales": 4002,
     "ratings": 1,
     "updatedAt": 1632843244896,
-    "category_id": "men-s-fashion"
+    "categoryId": "men-s-fashion"
   },
   {
     "_id": "Sl5vBYX",
@@ -989,7 +989,7 @@
     "sales": 1902,
     "ratings": 3,
     "updatedAt": 1632843087614,
-    "category_id": "home-improvement-tools"
+    "categoryId": "home-improvement-tools"
   },
   {
     "_id": "yTopmbg",
@@ -1005,7 +1005,7 @@
     "sales": 1009,
     "ratings": 3,
     "updatedAt": 1632842878031,
-    "category_id": "computer-office-security"
+    "categoryId": "computer-office-security"
   },
   {
     "_id": "igEGphJ",
@@ -1021,7 +1021,7 @@
     "sales": 716,
     "ratings": 2,
     "updatedAt": 1632842766196,
-    "category_id": "consumer-electronics"
+    "categoryId": "consumer-electronics"
   },
   {
     "_id": "B8m4AUm",
@@ -1037,7 +1037,7 @@
     "sales": 679,
     "ratings": 4,
     "updatedAt": 1632842653171,
-    "category_id": "consumer-electronics"
+    "categoryId": "consumer-electronics"
   },
   {
     "_id": "dI7RAcC",
@@ -1053,7 +1053,7 @@
     "sales": 180,
     "ratings": 4,
     "updatedAt": 1632842334624,
-    "category_id": "women-s-fashion"
+    "categoryId": "women-s-fashion"
   },
   {
     "_id": "pZBfKVf",
@@ -1069,7 +1069,7 @@
     "sales": 50,
     "ratings": 2,
     "updatedAt": 1632842205615,
-    "category_id": "computer-office-security"
+    "categoryId": "computer-office-security"
   },
   {
     "_id": "EsBoWqI",
@@ -1085,7 +1085,7 @@
     "sales": 100,
     "ratings": 4,
     "updatedAt": 1632842096464,
-    "category_id": "computer-office-security"
+    "categoryId": "computer-office-security"
   },
   {
     "_id": "Jut1W9J",
@@ -1101,7 +1101,7 @@
     "sales": 23,
     "ratings": 4,
     "updatedAt": 1632842011067,
-    "category_id": "computer-office-security"
+    "categoryId": "computer-office-security"
   },
   {
     "_id": "vLHwniO",
@@ -1117,7 +1117,7 @@
     "sales": 11,
     "ratings": 4,
     "updatedAt": 1632841920885,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "XlIjWIF",
@@ -1133,7 +1133,7 @@
     "sales": 49,
     "ratings": 4,
     "updatedAt": 1632841696999,
-    "category_id": "computer-office-security"
+    "categoryId": "computer-office-security"
   },
   {
     "_id": "8k6bIAO",
@@ -1149,7 +1149,7 @@
     "sales": 90,
     "ratings": 4,
     "updatedAt": 1632841415866,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "Ya_1yLc",
@@ -1165,7 +1165,7 @@
     "sales": 30,
     "ratings": 3,
     "updatedAt": 1632841248475,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "ax2j4QQ",
@@ -1181,7 +1181,7 @@
     "sales": 139,
     "ratings": 4,
     "updatedAt": 1632829386669,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "Q2oEEtp",
@@ -1197,7 +1197,7 @@
     "sales": 107,
     "ratings": 3,
     "updatedAt": 1632829284863,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "Be0LKAY",
@@ -1213,7 +1213,7 @@
     "sales": 170,
     "ratings": 4,
     "updatedAt": 1632829130244,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "DvqyBXf",
@@ -1229,7 +1229,7 @@
     "sales": 70,
     "ratings": 2,
     "updatedAt": 1632829035313,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "6rhkNnC",
@@ -1245,7 +1245,7 @@
     "sales": 140,
     "ratings": 4,
     "updatedAt": 1632828977208,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "BuVlvWl",
@@ -1261,7 +1261,7 @@
     "sales": 108,
     "ratings": 3,
     "updatedAt": 1632828915081,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "Zyf2ar3",
@@ -1277,7 +1277,7 @@
     "sales": 190,
     "ratings": 4,
     "updatedAt": 1632827869909,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "rIiTB_C",
@@ -1293,7 +1293,7 @@
     "sales": 193,
     "ratings": 4,
     "updatedAt": 1632827815231,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "rTbvW3R",
@@ -1309,7 +1309,7 @@
     "sales": 30,
     "ratings": 3,
     "updatedAt": 1632827181403,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "-8kuzQp",
@@ -1325,7 +1325,7 @@
     "sales": 172,
     "ratings": 5,
     "updatedAt": 1632826946873,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "RxDk-NX",
@@ -1341,7 +1341,7 @@
     "sales": 172,
     "ratings": 5,
     "updatedAt": 1632826946588,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "ll0v1bc",
@@ -1357,7 +1357,7 @@
     "sales": 172,
     "ratings": 5,
     "updatedAt": 1632826937784,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "cfDZFWE",
@@ -1373,7 +1373,7 @@
     "sales": 111,
     "ratings": 4,
     "updatedAt": 1632826743017,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "BMqYCep",
@@ -1389,7 +1389,7 @@
     "sales": 40,
     "ratings": 1,
     "updatedAt": 1632823773368,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "oSr2oYg",
@@ -1405,7 +1405,7 @@
     "sales": 108,
     "ratings": 4,
     "updatedAt": 1632823705746,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "emPBanq",
@@ -1421,7 +1421,7 @@
     "sales": 35,
     "ratings": 4,
     "updatedAt": 1632823606666,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "lEGkyZ7",
@@ -1437,7 +1437,7 @@
     "sales": 200,
     "ratings": 4,
     "updatedAt": 1632823503172,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "jhb42_T",
@@ -1453,7 +1453,7 @@
     "sales": 35,
     "ratings": 2,
     "updatedAt": 1632823388136,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "sF2aj_N",
@@ -1469,7 +1469,7 @@
     "sales": 180,
     "ratings": 4,
     "updatedAt": 1632823280906,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "Vefu1r9",
@@ -1485,7 +1485,7 @@
     "sales": 56,
     "ratings": 2,
     "updatedAt": 1632823124510,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "P3woxeR",
@@ -1501,7 +1501,7 @@
     "sales": 99,
     "ratings": 3,
     "updatedAt": 1632823044947,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "gulZK3s",
@@ -1517,7 +1517,7 @@
     "sales": 29,
     "ratings": 4,
     "updatedAt": 1632822909011,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "LcYuC-x",
@@ -1533,7 +1533,7 @@
     "sales": 21,
     "ratings": 2,
     "updatedAt": 1632822858020,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "dollWTp",
@@ -1549,7 +1549,7 @@
     "sales": 109,
     "ratings": 4,
     "updatedAt": 1632822773959,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "0cMjSaL",
@@ -1565,7 +1565,7 @@
     "sales": 57,
     "ratings": 4,
     "updatedAt": 1632822674851,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "w2rLPFg",
@@ -1581,7 +1581,7 @@
     "sales": 111,
     "ratings": 3,
     "updatedAt": 1632822505421,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   },
   {
     "_id": "zGF2htp",
@@ -1597,6 +1597,6 @@
     "sales": 240,
     "ratings": 4,
     "updatedAt": 1632822322113,
-    "category_id": "home-pet-appliances"
+    "categoryId": "home-pet-appliances"
   }
 ]
