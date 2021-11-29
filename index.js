@@ -17,10 +17,6 @@ mongoose.connect(process.env.MONGODB_URI, {}, () =>
   console.log("Connected to MongoDB Database")
 );
 
-app.get("/", (req, res) => {
-  res.send("Hello from eCommerce server");
-});
-
 app.use("/api/auth", AuthRoute);
 app.use("/api/landing", LandingRoute);
 
@@ -29,6 +25,10 @@ if (process.env.NODE_ENV === "production") {
 
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.send("Hello from eCommerce server");
   });
 }
 
