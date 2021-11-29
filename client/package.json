@@ -15,9 +15,7 @@
     "react-router-dom": "^6.0.2",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
-    "zustand": "^3.6.5"
-  },
-  "devDependencies": {
+    "zustand": "^3.6.5",
     "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.3",
