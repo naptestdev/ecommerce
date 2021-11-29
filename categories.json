@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "home-pet-appliances",
+    "name": "Home, Pet & Appliances",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/yn48qtoulwdxeqmylxy7.png"
+  },
+  {
+    "_id": "women-s-fashion",
+    "name": "Women's Fashion",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097187/category/aduqqyqztmlkywphmulp.png"
+  },
+  {
+    "_id": "men-s-fashion",
+    "name": "Men's Fashion",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/git2ld2iussd5iaxecag.png"
+  },
+  {
+    "_id": "phones-telecommunications",
+    "name": "Phones & Telecommunications",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/nq8ve8zd1swxtnwr5e3c.png"
+  },
+  {
+    "_id": "computer-office-security",
+    "name": "Computer, Office & Security",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/ehdeedjjtuydifxibyqy.png"
+  },
+  {
+    "_id": "consumer-electronics",
+    "name": "Consumer Electronics",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/g9j73x85ncfil1gcc7aw.png"
+  },
+  {
+    "_id": "jewelry-watches",
+    "name": "Jewelry & Watches",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097187/category/zvev93arhsycp4llgbqp.png"
+  },
+  {
+    "_id": "bags-shoes",
+    "name": "Bags & Shoes",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/huadywsgtkvo18wcwsgl.png"
+  },
+  {
+    "_id": "toys-kids-babies",
+    "name": "Toys, Kids & Babies",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097187/category/s3rhvlayqasf3t8ptxjz.png"
+  },
+  {
+    "_id": "outdoor-fun-sports",
+    "name": "Outdoor Fun & Sports",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097187/category/vzaqcvftsymu6agwfvhp.png"
+  },
+  {
+    "_id": "beauty-health-hari",
+    "name": "Beauty, Health & Hair",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/fgnh7f8dbqol4zj8zz2f.png"
+  },
+  {
+    "_id": "home-improvement-tools",
+    "name": "Home Improvement & Tools",
+    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/gkvqca58y2fxmz0msblt.png"
+  }
+]
