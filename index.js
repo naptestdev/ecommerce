@@ -21,10 +21,10 @@ app.use("/api/auth", AuthRoute);
 app.use("/api/landing", LandingRoute);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static("client/dist"));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+    res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
   });
 } else {
   app.get("/", (req, res) => {
