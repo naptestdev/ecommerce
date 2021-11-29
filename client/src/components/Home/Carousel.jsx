@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { getCarousel } from "../../services/homePageAPI";
+import { getCarousel } from "../../services/api/homepage";
 import { useQuery } from "react-query";
 
 function PrevArrow({ onClick }) {
@@ -24,11 +24,11 @@ function NextArrow({ onClick }) {
 }
 
 export default function Carousel() {
-  const { isLoading, data } = useQuery("home-carousel", getCarousel);
+  const { isLoading, isError, data } = useQuery("home-carousel", getCarousel);
 
   return (
     <div className="w-screen px-[4vw] my-4 relative">
-      {isLoading ? (
+      {isLoading || isError ? (
         <div className="w-full h-[30vw] max-h-[260px] bg-gray-300 animate-pulse"></div>
       ) : (
         <Slider

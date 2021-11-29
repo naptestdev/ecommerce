@@ -7,6 +7,7 @@ require("dotenv/config");
 
 const AuthRoute = require("./routes/AuthRoute");
 const LandingRoute = require("./routes/LandingRoute");
+const ProductRoute = require("./routes/ProductRoute");
 
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
@@ -19,6 +20,7 @@ mongoose.connect(process.env.MONGODB_URI, {}, () =>
 
 app.use("/api/auth", AuthRoute);
 app.use("/api/landing", LandingRoute);
+app.use("/api/product", ProductRoute);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/dist"));

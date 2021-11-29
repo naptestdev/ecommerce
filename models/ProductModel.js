@@ -12,6 +12,7 @@ const ProductSchema = new mongoose.Schema({
   sales: Number,
   ratings: Number,
   updatedAt: String,
+  categoryId: String,
 });
 
 module.exports = mongoose.model("products", ProductSchema);

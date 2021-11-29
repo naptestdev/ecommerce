@@ -36,13 +36,13 @@ export default function App() {
   }, []);
 
   return (
-    <div className="flex flex-col items-stretch">
+    <>
       <Navbar />
 
       <Routes>
         <Route index element={<Home />} />
         <Route path="product/:id" element={<Product />} />
       </Routes>
-    </div>
+    </>
   );
 }

@@ -1,12 +1,13 @@
-import { getCategories } from "../../services/homePageAPI";
+import { getCategories } from "../../services/api/homepage";
 import { resizeImage } from "../../services/image";
 import { useQuery } from "react-query";
 
 export default function Categories() {
-  const { isLoading, data: categories } = useQuery(
-    "home-categories",
-    getCategories
-  );
+  const {
+    isLoading,
+    isError,
+    data: categories,
+  } = useQuery("home-categories", getCategories);
 
   return (
     <div className="mx-[4vw]">
@@ -17,7 +18,7 @@ export default function Categories() {
           gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
         }}
       >
-        {isLoading ? (
+        {isLoading || isError ? (
           <>
             {[...new Array(12)].map((_, index) => (
               <div
