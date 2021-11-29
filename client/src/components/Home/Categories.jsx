@@ -1,21 +1,12 @@
-import { useEffect, useState } from "react";
-
-import axios from "../../services/axios";
+import { getCategories } from "../../services/homePageAPI";
 import { resizeImage } from "../../services/image";
+import { useQuery } from "react-query";
 
 export default function Categories() {
-  const [categories, setCategories] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("/landing/categories")
-      .then((res) => {
-        setCategories(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  const { isLoading, data: categories } = useQuery(
+    "home-categories",
+    getCategories
+  );
 
   return (
     <div className="mx-[4vw]">
@@ -26,7 +17,7 @@ export default function Categories() {
           gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
         }}
       >
-        {!categories ? (
+        {isLoading ? (
           <>
             {[...new Array(12)].map((_, index) => (
               <div

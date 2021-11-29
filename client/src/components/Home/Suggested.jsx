@@ -1,21 +1,14 @@
-import { useEffect, useState } from "react";
-
 import { Link } from "react-router-dom";
 import ProductCard from "../ProductCard";
-import axios from "../../services/axios";
+import { getSuggested } from "../../services/homePageAPI";
+import { useQuery } from "react-query";
 
 export default function Suggested() {
-  const [suggested, setSuggested] = useState(null);
-  useEffect(() => {
-    axios
-      .get("landing/suggested")
-      .then((res) => {
-        setSuggested(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  const { isLoading, data: suggested } = useQuery(
+    "home-suggested",
+    getSuggested
+  );
+
   return (
     <div className="mx-[4vw]">
       <h1 className="text-2xl my-3">Suggested for you</h1>
@@ -26,7 +19,7 @@ export default function Suggested() {
           gridAutoRows: "1fr",
         }}
       >
-        {!suggested ? (
+        {isLoading ? (
           <>
             {[...new Array(30)].map((_, index) => (
               <div
@@ -41,9 +34,8 @@ export default function Suggested() {
         ) : (
           <>
             {suggested.map((item) => (
-              <Link to={`product/${item._id}`}>
+              <Link key={item._id} to={`product/${item._id}`}>
                 <ProductCard
-                  key={item._id}
                   image={item.image[0]}
                   name={item.name}
                   price={item.price}

@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
-
 import Slider from "react-slick";
-import axios from "../../services/axios";
+import { getCarousel } from "../../services/homePageAPI";
+import { useQuery } from "react-query";
 
 function PrevArrow({ onClick }) {
   return (
@@ -25,17 +24,13 @@ function NextArrow({ onClick }) {
 }
 
 export default function Carousel() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    axios.get("/landing/slide").then((res) => {
-      setData(res.data);
-    });
-  }, []);
+  const { isLoading, data } = useQuery("home-carousel", getCarousel);
 
   return (
     <div className="w-screen px-[4vw] my-4 relative">
-      {data ? (
+      {isLoading ? (
+        <div className="w-full h-[30vw] max-h-[260px] bg-gray-300 animate-pulse"></div>
+      ) : (
         <Slider
           infinite
           speed={500}
@@ -55,8 +50,6 @@ export default function Carousel() {
             />
           ))}
         </Slider>
-      ) : (
-        <div className="w-full h-[30vw] max-h-[260px] bg-gray-300 animate-pulse"></div>
       )}
     </div>
   );
