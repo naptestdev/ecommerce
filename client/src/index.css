@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+}
+
+body {
+  @apply m-0 overflow-x-hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.underline-anchor {
+  @apply text-primary hover:text-secondary hover:underline cursor-pointer transition;
+}
+
+.input-outline {
+  @apply outline-none border border-gray-300 focus:border-black transition px-3 py-2;
+}
+
+.input-error {
+  @apply text-red-500 text-sm mx-1;
+  min-height: 20px;
+}
