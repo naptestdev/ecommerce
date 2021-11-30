@@ -11,7 +11,7 @@ export default function ProductCard({ product }) {
           style={{ paddingBottom: "100%" }}
         >
           <img
-            className="absolute top-0 left-0 w-full h-full"
+            className="absolute top-0 left-0 w-full h-full object-contain"
             src={resizeImage(product.image[0], 300, 300)}
             alt=""
           />
