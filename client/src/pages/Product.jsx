@@ -89,7 +89,7 @@ export default function Product() {
               ${product.price}
             </p>
             <h1 className="text-5xl my-3 text-primary">
-              ${product.price - product.discount}
+              ${Math.round((product.price - product.discount) * 10) / 10}
             </h1>
           </div>
 

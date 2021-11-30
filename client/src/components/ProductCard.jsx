@@ -4,7 +4,7 @@ import { resizeImage } from "../services/image";
 
 export default function ProductCard({ product }) {
   return (
-    <Link to={`product/${product._id}`}>
+    <Link to={`/product/${product._id}`}>
       <div className="relative shadow border border-transparent hover:translate-y-[-2px] hover:border-primary transition duration-300 cursor-pointer">
         <div
           className="w-full h-0 relative overflow-hidden"

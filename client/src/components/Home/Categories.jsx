@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { getCategories } from "../../services/api/homepage";
 import { resizeImage } from "../../services/image";
 import { useQuery } from "react-query";
@@ -33,7 +34,8 @@ export default function Categories() {
         ) : (
           <>
             {categories.map((item) => (
-              <div
+              <Link
+                to={{ pathname: "/search", search: `?category=${item._id}` }}
                 key={item._id}
                 className="relative h-0"
                 style={{ paddingBottom: "100%" }}
@@ -48,7 +50,7 @@ export default function Categories() {
                     {item.name}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </>
         )}
