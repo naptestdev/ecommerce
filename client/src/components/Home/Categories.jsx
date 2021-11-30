@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { getCategories } from "../../services/api/homepage";
 import { resizeImage } from "../../services/image";
-import { useQuery } from "react-query";
 import useSWR from "swr";
 
 export default function Categories() {

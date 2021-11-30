@@ -1,6 +1,5 @@
 import Slider from "react-slick";
 import { getCarousel } from "../../services/api/homepage";
-import { useQuery } from "react-query";
 import useSWR from "swr";
 
 function PrevArrow({ onClick }) {
