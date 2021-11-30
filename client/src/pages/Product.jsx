@@ -4,18 +4,16 @@ import ReactLoading from "react-loading";
 import Slider from "react-slick";
 import StarRatings from "../components/StarRatings";
 import { getProductDetail } from "../services/api/product";
-import { useQuery } from "react-query";
+import useSWR from "swr";
 
 export default function Product() {
   const { id } = useParams();
   const location = useLocation();
-  const {
-    isLoading,
-    isError,
-    data: product,
-  } = useQuery(location.pathname, () => getProductDetail(id));
+  const { data: product, error } = useSWR(location.pathname, () =>
+    getProductDetail(id)
+  );
 
-  if (isLoading || isError)
+  if (!product || error)
     return (
       <div className="flex-grow flex justify-center items-center bg-[#F5F5F5]">
         <ReactLoading type="spin" color="#2874F0" width={40} height={40} />

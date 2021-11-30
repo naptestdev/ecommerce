@@ -2,13 +2,10 @@ import { Link } from "react-router-dom";
 import { getCategories } from "../../services/api/homepage";
 import { resizeImage } from "../../services/image";
 import { useQuery } from "react-query";
+import useSWR from "swr";
 
 export default function Categories() {
-  const {
-    isLoading,
-    isError,
-    data: categories,
-  } = useQuery("home-categories", getCategories);
+  const { data: categories, error } = useSWR("home-categories", getCategories);
 
   return (
     <div className="mx-[4vw]">
@@ -19,7 +16,7 @@ export default function Categories() {
           gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
         }}
       >
-        {isLoading || isError ? (
+        {!categories || error ? (
           <>
             {[...new Array(12)].map((_, index) => (
               <div

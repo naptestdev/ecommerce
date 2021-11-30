@@ -1,14 +1,9 @@
-import { Link } from "react-router-dom";
 import ProductCard from "../ProductCard";
 import { getSuggested } from "../../services/api/homepage";
-import { useQuery } from "react-query";
+import useSWR from "swr";
 
 export default function Suggested() {
-  const {
-    isLoading,
-    isError,
-    data: suggested,
-  } = useQuery("home-suggested", getSuggested);
+  const { data: suggested, error } = useSWR("home-suggested", getSuggested);
 
   return (
     <div className="mx-[4vw]">
@@ -20,7 +15,7 @@ export default function Suggested() {
           gridAutoRows: "1fr",
         }}
       >
-        {isLoading || isError ? (
+        {!suggested || error ? (
           <>
             {[...new Array(30)].map((_, index) => (
               <div

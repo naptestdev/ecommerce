@@ -2,8 +2,8 @@ import ProductCard from "../components/ProductCard";
 import ReactLoading from "react-loading";
 import { searchProduct } from "../services/api/product";
 import { useLocation } from "react-router-dom";
-import { useQuery } from "react-query";
 import { useQueryParams } from "../hooks/useQueryParams";
+import useSWR from "swr";
 
 export default function Search() {
   const location = useLocation();
@@ -15,14 +15,15 @@ export default function Search() {
   const maxPrice = query.get("maxPrice");
   const minRatings = query.get("minRatings");
 
-  const { data, isLoading } = useQuery(
+  const { data, error } = useSWR(
     location.pathname + location.search,
+
     () => searchProduct(q, category, minPrice, maxPrice, minRatings)
   );
 
   return (
     <>
-      {isLoading ? (
+      {!data || error ? (
         <div className="flex-grow flex justify-center items-center">
           <ReactLoading type="spin" color="#2874F0" height={30} width={30} />
         </div>
