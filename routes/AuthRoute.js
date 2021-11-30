@@ -5,11 +5,21 @@ const AuthModel = require("../models/AuthModel");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const nodemailer = require("nodemailer");
+const { google } = require("googleapis");
+
+const REDIRECT_URI = "https://developers.google.com/oauthplayground";
+const oauth2Client = new google.auth.OAuth2({
+  clientId: process.env.CLIENT_ID,
+  clientSecret: process.env.CLIENT_SECRET,
+  redirectUri: REDIRECT_URI,
+});
+
+oauth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
 router.get("/verify/:id", async (req, res) => {
   try {
     const updated = await AuthModel.findOneAndUpdate(
-      { _id: req.params._id },
+      { _id: req.params.id },
       { emailVerified: true }
     );
 
@@ -43,29 +53,33 @@ router.post("/sign-up", async (req, res) => {
       username,
       email,
       password,
-      emailVerified: true,
-      // set to false when in production
+      emailVerified: false,
     });
 
+    const accessToken = await oauth2Client.getAccessToken();
+
     const transporter = nodemailer.createTransport({
-      host: "smtp.mailgun.org",
-      port: 587,
+      service: "gmail",
       auth: {
-        user: "postmaster@sandboxc67925eb5432489498f3e5f02f80b520.mailgun.org",
-        pass: "8766920602f4bd3bd01ef192d7ee2f6e-7dcc6512-e6da5d95",
+        type: "OAuth2",
+        user: "napthedevhcj@gmail.com",
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN,
+        accessToken: accessToken,
       },
     });
 
+    const verifyUrl = `${req.protocol}://${req.get("host")}/api/auth/verify/${
+      saved.id
+    }`;
+
     const mailOptions = {
-      from: "E-Commerce Service <postmaster@sandboxc67925eb5432489498f3e5f02f80b520.mailgun.org>",
+      from: "E-Commerce Service <napthedevhcj@gmail.com>",
       to: email,
       subject: "Verify your email for E-Commerce",
-      html: `<h1>Hello ${username}, Click this link to verify your email <a href="${
-        req.protocol + "://" + req.get("host") + "/auth/verify/" + saved.id
-      }" target="_blank">Verify</a></h1>`,
-      text: `Hello ${username}, Click this link to verify your email ${
-        req.protocol + "://" + req.get("host") + "/auth/verify/" + saved.id
-      }`,
+      html: `<h1>Hello ${username}, Click this link to verify your email: <a href="${verifyUrl}">${verifyUrl}</a></h1>`,
+      text: `Hello ${username}, Click this link to verify your email: ${verifyUrl}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -135,7 +149,7 @@ router.post("/sign-in", async (req, res) => {
 router.post("/verify-token", verifyJWT, async (req, res) => {
   const existingUser = await AuthModel.findOne({ email: req.user.email });
 
-  if (existingUser._id !== req.user._id)
+  if (!existingUser || existingUser._id !== req.user._id)
     return res.status(403).send({
       message: "Invalid user info",
     });
