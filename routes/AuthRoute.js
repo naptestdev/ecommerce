@@ -149,7 +149,7 @@ router.post("/sign-in", async (req, res) => {
 router.post("/verify-token", verifyJWT, async (req, res) => {
   const existingUser = await AuthModel.findOne({ email: req.user.email });
 
-  if (!existingUser || existingUser._id !== req.user._id)
+  if (existingUser?._id?.toString() !== req.user?._id)
     return res.status(403).send({
       message: "Invalid user info",
     });

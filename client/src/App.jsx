@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Product from "./pages/Product";
+import Search from "./pages/Search";
 import axios from "./services/axios";
 import { useEffect } from "react";
 import { useStore } from "./store";
@@ -42,6 +43,7 @@ export default function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="product/:id" element={<Product />} />
+        <Route path="search" element={<Search />} />
       </Routes>
     </>
   );

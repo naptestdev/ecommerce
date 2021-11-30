@@ -35,14 +35,7 @@ export default function Suggested() {
         ) : (
           <>
             {suggested.map((item) => (
-              <Link key={item._id} to={`product/${item._id}`}>
-                <ProductCard
-                  image={item.image[0]}
-                  name={item.name}
-                  price={item.price}
-                  ratings={item.ratings}
-                />
-              </Link>
+              <ProductCard key={item._id} product={item} />
             ))}
           </>
         )}

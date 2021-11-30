@@ -1,11 +1,6 @@
 const mongoose = require("mongoose");
-const { nanoid } = require("nanoid");
 
 const AuthSchema = new mongoose.Schema({
-  _id: {
-    type: String,
-    default: () => nanoid(8),
-  },
   email: {
     type: String,
     required: true,
@@ -24,4 +19,4 @@ const AuthSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("auths", AuthSchema);
+module.exports = mongoose.model("users", AuthSchema);

@@ -1,5 +1,6 @@
+import { Link, useNavigate } from "react-router-dom";
+
 import AuthModal from "./Auth/AuthModal";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useStore } from "../store";
 
@@ -8,6 +9,18 @@ export default function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
 
   const currentUser = useStore((state) => state.currentUser);
+
+  const navigate = useNavigate();
+
+  const [searchInputValue, setSearchInputValue] = useState("");
+  const handleSearchFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (searchInputValue.trim()) {
+      setSearchInputValue("");
+      navigate(`/search?q=${encodeURIComponent(searchInputValue.trim())}`);
+    }
+  };
 
   return (
     <>
@@ -19,16 +32,24 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="flex-1 flex justify-center">
-          <div className="w-full max-w-xl h-10 relative">
+          <form
+            onSubmit={handleSearchFormSubmit}
+            className="w-full max-w-xl h-10 relative"
+          >
             <input
+              value={searchInputValue}
+              onChange={(e) => setSearchInputValue(e.target.value)}
               className="outline-none w-full h-full pl-4 pr-9 text-black focus:shadow-md transition"
               type="text"
               placeholder="Search for products..."
             />
-            <span className="absolute top-1/2 -translate-y-1/2 right-2 cursor-pointer">
+            <button
+              type="submit"
+              className="outline-none border-none bg-transparent absolute top-1/2 -translate-y-1/2 right-2 cursor-pointer"
+            >
               <i className="fas fa-search text-black text-lg"></i>
-            </span>
-          </div>
+            </button>
+          </form>
         </div>
         <div className="flex-1 flex justify-end">
           <div className="flex items-center gap-2">
