@@ -1,1602 +1,1518 @@
 [
   {
-    "_id": "biULJBo",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633632432/ecommerceAPI/2021-10-07T18-47-11.090Z1119749616-299167806.jpg.jpg"
     ],
     "description": "1/3/5/10x Blue Bubble Toilet Cleaner Autoile Automatic Flushing Toilet Cleaner Deodorant Block Toilet Spirit Household",
     "name": "Toilet Cleaner",
-    "color": "Blue",
-    "price": 27,
+    "color": [
+      "Blue"
+    ],
+    "price": 27.8,
     "stock": 400,
-    "sales": 280,
     "ratings": 4,
-    "updatedAt": 1633632433934,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 6
   },
   {
-    "_id": "MykPs9Z",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633632288/ecommerceAPI/2021-10-07T18-44-47.464Z-865873800715196296.jpg.jpg"
     ],
     "description": "LANDZO Quincy Magic Q Drawing Robot for Kid Science Toys Student Learning Draw Intelligence Automatic USB Rechargeable Robot Toy",
     "name": "Drawing robot",
-    "color": "Green",
-    "price": 29,
+    "color": [
+      "Green"
+    ],
+    "price": 29.6,
     "stock": 289,
-    "sales": 111,
     "ratings": 4,
-    "updatedAt": 1633632289406,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 6
   },
   {
-    "_id": "HCeaRgW",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633632175/ecommerceAPI/2021-10-07T18-42-54.797Z1319449041-1107565679.jpg.jpg"
     ],
     "description": "3D Slide Puzzle Alphabet Early Educational Developing Toy for Children Jigsaw Digital Number 1-16 Animal Cartoon Game Kids Toys",
     "name": "Children puzzle",
-    "color": "Red, green, yellow",
-    "price": 11,
+    "color": [
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "price": 11.2,
     "stock": 50,
-    "sales": 180,
     "ratings": 2,
-    "updatedAt": 1633632177319,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 3
   },
   {
-    "_id": "yL5tmc6",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633632060/ecommerceAPI/2021-10-07T18-40-59.478Z-3822986301584677314.jpg.jpg"
     ],
     "description": "Cute Luminous Mochi Squishy Cat Antistress Toy Slow Rising Squeeze Healing Fun Kids Kawaii Toy Stress Reliever Decor Gift",
     "name": "Luminous animal toys",
-    "color": "Blue",
-    "price": 10,
+    "color": [
+      "Blue"
+    ],
+    "price": 10.5,
     "stock": 300,
-    "sales": 280,
     "ratings": 4,
-    "updatedAt": 1633632062147,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 3
   },
   {
-    "_id": "pjVbDa2",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631919/ecommerceAPI/2021-10-07T18-38-38.158Z-1822296315-1110323350.jpg.jpg"
     ],
     "description": "CADA City RC APP Model Bricks Cars Remote control Cars Red Track Sports Car Building Blocks Speed Champion Racing  Toys Gift",
     "name": "Remote controlled cars",
-    "color": "Red, blue",
-    "price": 38,
+    "color": [
+      "Red",
+      "Blue"
+    ],
+    "price": 38.6,
     "stock": 450,
-    "sales": 180,
     "ratings": 1,
-    "updatedAt": 1633631920993,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 8
   },
   {
-    "_id": "tN3uvWT",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631797/ecommerceAPI/2021-10-07T18-36-36.734Z-4099223011372372106.jpg.jpg"
     ],
     "description": "New Large-Size Fingertip Toys Push Bubble Popet Pendant Bag Popp It Adults Decompression Poppit Toys Children Anti-Stress",
     "name": "Bubble poppet",
-    "color": "Red, green, yellow",
-    "price": 20,
+    "color": [
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "price": 20.8,
     "stock": 440,
-    "sales": 140,
     "ratings": 4,
-    "updatedAt": 1633631798829,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 5
   },
   {
-    "_id": "W-3CBU7",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631560/ecommerceAPI/2021-10-07T18-32-40.036Z-1539119907-1990052069.jpg.jpg"
     ],
     "description": "City Remote Control Engineering Vehicle RC Excavator Construction Model Toy Kids Gift Truck Bulldozer Digger Engineering Vehicle",
     "name": "Children Bulldozer toy",
-    "color": "Red, blue",
-    "price": 30,
+    "color": [
+      "Red",
+      "Blue"
+    ],
+    "price": 30.6,
     "stock": 440,
-    "sales": 180,
     "ratings": 3,
-    "updatedAt": 1633631562450,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 7
   },
   {
-    "_id": "LQ1N3df",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631429/ecommerceAPI/2021-10-07T18-30-28.474Z1640152380-1984236753.jpg.jpg"
     ],
     "description": "5pcs Kids Toys Interactive Baby Dolls Toy Mini Doll For Girls And Boys Reborn Doll Toy Gift For Children Cute Key Small Pendant",
     "name": "Baby Dolls",
-    "color": "Red, yellow",
-    "price": 49,
+    "color": [
+      "Red",
+      "Yellow"
+    ],
+    "price": 49.5,
     "stock": 200,
-    "sales": 160,
     "ratings": 4,
-    "updatedAt": 1633631430561,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 10
   },
   {
-    "_id": "8viSHe3",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631291/ecommerceAPI/2021-10-07T18-28-10.721Z646268621687549714.jpg.jpg"
     ],
     "description": "4WD RC Car Updated Version 2.4G Radio Control RC Car Toys remote control car Trucks Off-Road Trucks boys Toys for Children",
     "name": "Children truck",
-    "color": "Blue",
-    "price": 40,
+    "color": [
+      "Blue"
+    ],
+    "price": 40.4,
     "stock": 45,
-    "sales": 99,
     "ratings": 4,
-    "updatedAt": 1633631292708,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 9
   },
   {
-    "_id": "NEZpQeN",
-    "category": "Toys, Kids & Babies",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631175/ecommerceAPI/2021-10-07T18-26-15.692Z-2479360041202386404.jpg.jpg"
     ],
     "description": "Electric RC Flying Ball Luminous Kid's Flight Balls Infrared Induction Aircraft Remote Control Toys Flash LED Light Plane Toys",
     "name": "Electric flying chopper",
-    "color": "Red, green",
-    "price": 50,
+    "color": [
+      "Red",
+      "Green"
+    ],
+    "price": 50.3,
     "stock": 200,
-    "sales": 109,
     "ratings": 3,
-    "updatedAt": 1633631177468,
-    "categoryId": "toys-kids-babies"
+    "category": "toys-kids-babies",
+    "discount": 11
   },
   {
-    "_id": "6orvF7g",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633545612/ecommerceAPI/2021-10-06T18-40-12.124ZNail-Dust-Vacuum-Cleaner-Nail-Manicure-Nail-Dust-Collector-Extractor-Fan-for-Manicure-Nail-Vacuum-Cleaner.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "80W powerful vacuum\n2. Quiet design\n3. Simple buttons\n4. Two free vacuum bags\n5. Replaceable vacuum cleaner bag\nSize: 25.8*24*10cm\nMaterial: ABS+leather\nVoltage: 110/240V",
     "name": "Nail Dust Vacuum Cleaner",
-    "color": "purple",
-    "price": 59,
+    "color": [
+      "Purple"
+    ],
+    "price": 59.8,
     "stock": 90,
-    "sales": 544,
     "ratings": 4,
-    "updatedAt": 1633545613583,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 12
   },
   {
-    "_id": "Wx4XccR",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633545271/ecommerceAPI/2021-10-06T18-34-31.726ZMR-GREEN-Nail-Clippers-Stainless-Steel-Anti-Splash-Fingernail-Cutter-Manicure-Tools-Bionics-Design-Nail-Trimmer.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "MR.GREEN the professional beauty tools manufacturer Origin from Germany.\nMR.GREEN means high quality & reliable and the Industry leading position.\n\nMR-1111 series Anti-splash nail clipper:\n1. This is a nail clipper with anti-splash function, which can effectively prevent nail shavings splash, facilitate cleaning and storage, and prevent eye injury.\n2. Bionic design combined with excellent ergonomic design, feel good, delicate and beautiful appearance, just like a beautiful artwork.\n3. High grade stainless steel with zinc alloy nickel plating process,excellent anti-rust ability,it has outstanding texture and hand feel, let you have outstanding manicure experience.",
     "name": "Mr Green Nail Clippers Stainless Steel",
-    "color": "stainless steel",
-    "price": 48,
+    "color": [
+      "Stainless steel"
+    ],
+    "price": 48.7,
     "stock": 100,
-    "sales": 670,
     "ratings": 4,
-    "updatedAt": 1633545272468,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 10
   },
   {
-    "_id": "NYnZpW3",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633544773/ecommerceAPI/2021-10-06T18-26-13.107ZAmbition-Ninja-Wireless-Tattoo-Pen-Machine-Powerful-Coreless-DC-Motor-Fast-Charging-2400-mAh-Lithium-Battery.jpg_Q90.jpg_%20%282%29.webp.webp"
     ],
     "description": "MOTOR ：Ambition coreless DC motor \n\nmore importantly, the motor still maintains vitality and the power will not be weak\n\nCompared with the soldier's ambition , this machine is an advanced version of the soldier.ninja is perfect for fine lines,smooth black grey，realistic color，traditional style 3rl work and more，it's your  all-in-one machine if you are an artist that does such work.it has  powerful motor precisely paired with 4.0 stroke.\n\nThis allows artists to work over 6 hours without worrying about empty power packs or power black outs.\n34mm grip makes you more comfortable at work.\n\n-Of course, it can be used with all major cartridge brands as well as Ambition's cartridge system.\n\n\n️Power-pack key features:\n️-display in which you can view all your parameteres such as voltage, Remaining battery reminder.",
     "name": "Ambition Ninja Wireless Tattoo Pen Machine",
-    "color": "Black",
-    "price": 45,
+    "color": [
+      "Black"
+    ],
+    "price": 45.9,
     "stock": 421,
-    "sales": 500,
     "ratings": 4,
-    "updatedAt": 1633544774346,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 10
   },
   {
-    "_id": "085gxQp",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633544304/ecommerceAPI/2021-10-06T18-18-23.643ZPearlescent-silkworm-eyeshadow-pen-lasting-waterproof-and-not-blooming-Shiny-pearlescent-gel-pen-16-color-eye.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Pen Material:Plastic\nColor: 15 color to choose\nType:Eye Shadow & Liner Combination\nFunction:Waterproof / Water-Resistant,Natural,Other,Long-Lasting\n\nFeature:\nFeature 1:Waterproof / Waterproof, Multi-Functional Shaping Eye Shadow Pen, Natural Contour\nFeature 2:Fast / Fast Drying, Natural, Long Lasting, Easy To Wear\nFeature 3:Beauty Makeup Tool\nFeature 4:maquiagem profissional completa\nWeight:20g\nUse The Crowd:All Skin Types Can Be Used",
     "name": "Pearlescent silkworm eyeshadow pen",
-    "color": "red, blue,pink",
-    "price": 18,
+    "color": [
+      "Red",
+      "Blue,pink"
+    ],
+    "price": 18.8,
     "stock": 40,
-    "sales": 101,
     "ratings": 4,
-    "updatedAt": 1633544305425,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 4
   },
   {
-    "_id": "vihS9IX",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633543843/ecommerceAPI/2021-10-06T18-10-43.329Z12PCS-Magic-Hair-Curlers-25-30-45-50-65CM-DIY-Portable-Hairstyle-Rollers-Sticks-Durable-Beauty.jpg_Q90.jpg_.webp.webp"
     ],
     "description": "Size: 25/30/45/50/65cm\nPackage: 12pcs/pack\n\nSuitable hairstyle: long hair, short hair can be used\n\nProduct Features: Used for DIY curly hair\n\n simple operation, curly hair does not hurt hair",
     "name": "Magic Hair Curlers",
-    "color": "pink, blue",
-    "price": 98,
+    "color": [
+      "Pink",
+      "Blue"
+    ],
+    "price": 98.9,
     "stock": 32,
-    "sales": 45,
     "ratings": 4,
-    "updatedAt": 1633543844510,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 20
   },
   {
-    "_id": "UVy0M_E",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633543401/ecommerceAPI/2021-10-06T18-03-20.979ZKolinsky-Acrylic-Nail-Brush-Good-Quality-Nail-Art-Mink-Brush-Wood-Handle-Gel-Builder-Manicure-Brush.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Enables you to freely create your own favorite design on your nails, and suitable for exquisite nail work.\nPerfect for both professional use or personal use and suitable for intermediate and senior grade.\nDelicate and soft, creating beautiful nail effect.",
     "name": "Kolinsky Acrylic Nail Brush",
-    "color": "silver",
-    "price": 18,
+    "color": [
+      "Silver"
+    ],
+    "price": 18.9,
     "stock": 100,
-    "sales": 56,
     "ratings": 5,
-    "updatedAt": 1633543402416,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 4
   },
   {
-    "_id": "kk3TqTh",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633543110/ecommerceAPI/2021-10-06T17-58-30.591ZMakeup-Setting-Spray-Moisturizing-Long-Lasting-Foundation-Fixer-make-Up-SprayMatte-Finishing-Setting-Spray-Skin-Cosmetic.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Description:\n\n100% new packaging\n\nApplicable skin: Universal\n\nNet content: 100ml\n\nShelf life: 3 years\n\n\nEfficacy:\n\n1. Give your makeup lasting endurance\n\n2. Long-lasting matte while absorbing surface gloss. Reduce the appearance of pores\n\n3. Provide long-lasting sebum control performance and keep skin matte\n\n4. Delivering moisture to the skin and renewing it over time",
     "name": "Makeup Setting Spray",
-    "color": "White",
-    "price": 71,
+    "color": [
+      "White"
+    ],
+    "price": 71.6,
     "stock": 47,
-    "sales": 106,
     "ratings": 3,
-    "updatedAt": 1633543111724,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 15
   },
   {
-    "_id": "YFmXyGZ",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633542588/ecommerceAPI/2021-10-06T17-49-48.833Z1PC-Professional-Women-Ultimate-Black-Liquid-Eyeliner-Long-lasting-Waterproof-Quick-dry-Eye-Liner-Pencil-Pen.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "1PC Professional Women Ultimate Black Liquid Eyeliner Long-lasting Waterproof Quick-dry Eye Liner Pencil Pen Makeup Beauty Tools\n\n100% Brand new and high quality\n\nGreat for professional use or home use\n\nIt makes you look more attractive\n\nColor: Black\n\nWeight: 7 g\n\nLength: 12.7 cm\n\nPackage: 1 x Eyeliner",
     "name": "Black Liquid Eyeliner",
-    "color": "black",
-    "price": 12,
+    "color": [
+      "Black"
+    ],
+    "price": 12.5,
     "stock": 15,
-    "sales": 100,
     "ratings": 4,
-    "updatedAt": 1633542589566,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 3
   },
   {
-    "_id": "y3MDo7C",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633542307/ecommerceAPI/2021-10-06T17-45-07.386ZAdjustable-Posture-Corrector-Back-Support-Shoulder-Back-Brace-Posture-Correctionr-Spine-Corrector-Health-Postural-Fixer-Tape.jpg_Q90.jpg_.webp.webp"
     ],
     "description": "Design,Breathable,Comfortable:\nThe postural correction belt is made of very soft composite fabric and nylon tape, and breathable holes are adopted in back and shoulder straps. Heat dissipation and permeability have been upgraded to improve the comfort of wearing\nMagic Paste Of High Quality,Free Asjustment\n \nThe angles needed to correce are different, the design of correction belt can adopt adjustable nylon belt with magic paste of high quality so that it can be adjusted freely through the shoulder band\n \nSitting Position Improvement\nApplicable to men, women and youth(teenagers).Unhealthy posture can lead to long-term back pain, muscle pain, myopia, and other medical problems.Wearing a back corrector can develop muscle memory for a period of time, and you can keep your back straight even if you don't wear a posture correction device\n \nFunctions:\nMuscle pain relief: The coronal and lumber section of the frontal plane maintains the gravity balance of the body, reduces the burden on the muscles, corrects and relieves pain, and bad postures would cause sore necks and shoulders, and even headaches The role of protection: Wearing is comfortable and breathable, can be applicable to all including men and women, young and old, it can play a good role in correcting the back.Applicable to those workers with pain in back and shoulder due to the long time standing, sitting or keeping of the same posture Easy to adjust and wear: Universal size, easy to wear, without any help, you can take off and wear a pose corrector by yourself",
     "name": "Adjustable Posture Corrector Back Support",
-    "color": "black",
-    "price": 67,
+    "color": [
+      "Black"
+    ],
+    "price": 67.4,
     "stock": 16,
-    "sales": 37,
     "ratings": 5,
-    "updatedAt": 1633542308466,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 14
   },
   {
-    "_id": "mRWrR0O",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633542034/ecommerceAPI/2021-10-06T17-40-34.108Z60W-Dust-Collector-Extractor-Dental-Vacuum-Cleaner-Dental-Lab-Equipment-Dust-Suction-Machine-for-Polishing.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Voltage: AC100-240V,50/60Hz\nPower: 60w\nAirflow: 52.45CFM (1.2m³/min)\n\nFeatures:\n◆  3-way dust collector.360° flexible rotation square tray&Catheter\n◆  The square tray dust collector can easily clean the table dust.Make the table clean and tidy.\n◆  Three LED spotlight are built in the front end of the catheter.In addition to collecting dust,it can also be used as lighting.\n◆  Reduce the 96.41 of PM 2.5.Reduce dust and protect the health of user.\n◆  The filter is replaceable and the maintenance is very convenience.\n◆  The service life of the motor is about 10,000hrs.\n\nAbout the filter plate:\n◆  If the suction is weakened,clean or replace the new filter plate.(It is suggested that every THREE MONTHS be replaced or according to the frequency of use).\n◆  If there is too much dust in the filter board,the reverse flow will occur when the filter is used.\n\nUse of attention:\n◆  Do not insert your finger into the fan.\n◆  Be careful not to let the water enter into the machine.\n◆  The filter board can not be washed with water.\n◆  Keep out of reach of children.",
     "name": "Dust Collector Extractor Dental Vacuum Cleaner",
-    "color": "White",
-    "price": 56,
+    "color": [
+      "White"
+    ],
+    "price": 56.2,
     "stock": 34,
-    "sales": 43,
     "ratings": 3,
-    "updatedAt": 1633542035783,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 12
   },
   {
-    "_id": "KHVTc8V",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633541827/ecommerceAPI/2021-10-06T17-37-07.304ZNew-4pcs-set-ophthalmic-microsurgical-instruments-12-5cm-scissors-Needle-holders-tweezers-stainless-steel-surgical-tool.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "1 pcs 12.5CM Needle Holder ( bend head )\n1 pss 12.5CM Micro scissors ( bend head )\n1 pcs 10.5CM Microsurgical round handle Tweezers ( with toothed )\n1 pcs 10.5CM Microsurgical round handle Tweezers ( without toothed )",
     "name": "ophthalmic microsurgical instruments",
-    "color": "Grey",
-    "price": 45,
+    "color": [
+      "Grey"
+    ],
+    "price": 45.8,
     "stock": 34,
-    "sales": 12,
     "ratings": 4,
-    "updatedAt": 1633541828687,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 10
   },
   {
-    "_id": "HOUQkrx",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633541648/ecommerceAPI/2021-10-06T17-34-07.082ZLeg-Massager-Pair-Wireless-With-Smart-Air-Compression-Controlled-Heating-Calf-Massage-Electric-Relief-Muscle-Pain.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Exercise without fatigue, while fitness-while massage\n\nSurrounding all-inclusive massage method, flexible to use\nMassage while exercising, bid farewell to muscle soreness after exercise\nDouble pressure\nQuickly eliminate muscle soreness\nLongitudinal pressure\nLateral pressure",
     "name": "Leg Massager Pair Wireless With Smart Air Compression",
-    "color": "grey",
-    "price": 10,
+    "color": [
+      "Grey"
+    ],
+    "price": 10.8,
     "stock": 20,
-    "sales": 30,
     "ratings": 4,
-    "updatedAt": 1633541651200,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 3
   },
   {
-    "_id": "qs82V0V",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633541270/ecommerceAPI/2021-10-06T17-27-50.357Z2pcs-set-Face-Spa-Massager-Neck-Roller-Gua-Sha-Scraper-Board-Face-Lift-Up-Wrinkle-Remover.jpg_Q90.jpg_.webp.webp"
     ],
     "description": "--100% brand new and high quality.\n--Face roller are made of 100% natural resin.\nAnti-aging, anti-wrinkles line, better skin and health without any chemicals or irritants.\n--The big roller is ideal for neck, chin, cheeks, and forehead while the smaller is perfect for around the eyes, nose, and lips. The roller promotes blood circulation, which can reduce puffiness and wrinkling.\n--Gua Sha Scraper Board . It is a very good jade gua sha scraping tool, great for using on your body and much helpful to relief pressure, always with a relaxative and graceful mood\n--Ultra smooth surface will never hurt your skin  .\n--Helps to relieve facial tension and discourage fine lines and wrinkles.\n--Keep your skin elasticity, promote circulation and integrate natural energy.\n--Natural resin Massager stays cool in feel even in hot condition which gives you a smooth and comfortable feeling.",
     "name": "Face Spa Massager",
-    "color": "pink",
-    "price": 20,
+    "color": [
+      "Pink"
+    ],
+    "price": 20.9,
     "stock": 200,
-    "sales": 400,
     "ratings": 5,
-    "updatedAt": 1633541271308,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 5
   },
   {
-    "_id": "qDXBv5e",
-    "category": "Beauty, Health & Hair",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633540932/ecommerceAPI/2021-10-06T17-22-12.219Z200PCS-Box-Double-Head-Cotton-Swab-Bamboo-Sticks-Cotton-Swab-Disposable-Buds-Cotton-For-Beauty-Makeup.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "200PCS/Box Double Head Cotton Swab Bamboo Sticks Cotton Swab Disposable Buds Cotton For Beauty Makeup Nose Ears Cleaning",
     "name": "cotton buds",
-    "color": "white, green, yellow",
-    "price": 10,
+    "color": [
+      "White",
+      "Green",
+      "Yellow"
+    ],
+    "price": 10.5,
     "stock": 500,
-    "sales": 270,
     "ratings": 4,
-    "updatedAt": 1633540933659,
-    "categoryId": "beauty-health-hari"
+    "category": "beauty-health-hari",
+    "discount": 3
   },
   {
-    "_id": "5UxmwPP",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073800/ecommerceAPI/2021-10-01T07-36-39.770Z104899207455292182.jpg.jpg"
     ],
     "description": "3M Showerhead  Showerset with Spiral Hose ,Bathroom Accesorrry , Home Bathroom Shower pump ,Best Quality Improment New , Silver",
     "name": "3M shower head",
-    "color": "Silver",
-    "price": 56,
+    "color": [
+      "Silver"
+    ],
+    "price": 56.4,
     "stock": 110,
-    "sales": 230,
     "ratings": 4,
-    "updatedAt": 1633073801568,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 12
   },
   {
-    "_id": "hF5Xnis",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073706/ecommerceAPI/2021-10-01T07-35-05.851Z598127047-80627650.jpg.jpg"
     ],
     "description": "Silicone Toilet  Brush Wc Gap Brush with Holder Flat Head Soft Bristles Cleaning Brushes With Quick Drying Bracket Bathroom Tool",
     "name": "Toilet brush",
-    "color": "Blue",
-    "price": 30,
+    "color": [
+      "Blue"
+    ],
+    "price": 30.8,
     "stock": 199,
-    "sales": 170,
     "ratings": 4,
-    "updatedAt": 1633073707759,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 7
   },
   {
-    "_id": "WGf7lXZ",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073576/ecommerceAPI/2021-10-01T07-32-56.084Z-974344728-1565728950.jpg.jpg"
     ],
     "description": "Toilet Paper Holder Stand Wall Mounted Waterproof Paper Towel Dispenser Holder Tissue Box Toilet Roll Holder For Toilet Paper",
     "name": "Toilet paper wall stand",
-    "color": "Pink",
-    "price": 40,
+    "color": [
+      "Pink"
+    ],
+    "price": 40.8,
     "stock": 89,
-    "sales": 101,
     "ratings": 3,
-    "updatedAt": 1633073578122,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 9
   },
   {
-    "_id": "nzi4H04",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073451/ecommerceAPI/2021-10-01T07-30-50.325Z1442122831-545268973.jpg.jpg"
     ],
     "description": "Hot Sale 300 Holes Shower Head High Pressure Rainfall Water Saving Flow With Chrome ABS Spray Water Saving Bathroom Accessories",
     "name": "300 Holes Shower Head",
-    "color": "Silver",
-    "price": 20,
+    "color": [
+      "Silver"
+    ],
+    "price": 20.1,
     "stock": 190,
-    "sales": 60,
     "ratings": 1,
-    "updatedAt": 1633073453172,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 5
   },
   {
-    "_id": "ZA5nlSs",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073344/ecommerceAPI/2021-10-01T07-29-04.327Z14528006954459872.jpg.jpg"
     ],
     "description": "DJM4 diaphragm coupling single and double diaphragm couplings expansion Sleeve rigid flange Lamination set shaft coupler",
     "name": "DJM4 diaphragm",
-    "color": "Black",
-    "price": 40,
+    "color": [
+      "Black"
+    ],
+    "price": 40.4,
     "stock": 111,
-    "sales": 67,
     "ratings": 3,
-    "updatedAt": 1633073346813,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 9
   },
   {
-    "_id": "2AAqxNZ",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073233/ecommerceAPI/2021-10-01T07-27-12.633Z3344939-1199534093.jpg.jpg"
     ],
     "description": "2 Modes Water Faucet Aerator 360 Degree Adjustable Saving Tap Water Bubbler Kitchen Connector Shower Head Filter Nozzle Spray",
     "name": "2 heads kitchen tap",
-    "color": "Silver",
-    "price": 30,
+    "color": [
+      "Silver"
+    ],
+    "price": 30.6,
     "stock": 300,
-    "sales": 140,
     "ratings": 4,
-    "updatedAt": 1633073234592,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 7
   },
   {
-    "_id": "Vu838DC",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073128/ecommerceAPI/2021-10-01T07-25-27.089Z-629422507-2075250138.jpg.jpg"
     ],
     "description": "Newly Solar Garden Light Simulation Flame Light Outdoor Household Waterproof Led Lawn Light Villa Decorative Street Lamp, indoors lamp",
     "name": "Solar lights",
-    "color": "Black",
-    "price": 50,
+    "color": [
+      "Black"
+    ],
+    "price": 50.2,
     "stock": 66,
-    "sales": 288,
     "ratings": 4,
-    "updatedAt": 1633073130187,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 11
   },
   {
-    "_id": "ZtjVCNv",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073016/ecommerceAPI/2021-10-01T07-23-36.482Z-19643279291373580283.jpg.jpg"
     ],
     "description": "2w 6v Solar Panel Power Battery Toy Charger Diy Small House Solar Power Panels Cell Generation Solar Panel Generator Solar S2F5",
     "name": "Solar panel",
-    "color": "Black",
-    "price": 100,
+    "color": [
+      "Black"
+    ],
+    "price": 100.4,
     "stock": 88,
-    "sales": 160,
     "ratings": 4,
-    "updatedAt": 1633073018196,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 21
   },
   {
-    "_id": "t6fnlQ_",
-    "category": "Jewelry & Watches",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632902583/ecommerceAPI/2021-09-29T08-03-02.300Z1204129671-539157486.jpg.jpg"
     ],
     "description": "2021AILANG famous brand watch montre automatique luxe chronograph Square Large Dial Watch Hollow Waterproof mens fashion watches",
     "name": "AILANG brown leather watch",
-    "color": "Brown",
-    "price": 150,
+    "color": [
+      "Brown"
+    ],
+    "price": 150.3,
     "stock": 20,
-    "sales": 160,
     "ratings": 4,
-    "updatedAt": 1632902584592,
-    "categoryId": "jewelry-watches"
+    "category": "jewelry-watches",
+    "discount": 31
   },
   {
-    "_id": "kyTH3RC",
-    "category": "Jewelry & Watches",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632902407/ecommerceAPI/2021-09-29T08-00-05.818Z706609370-1086893271.jpg.jpg"
     ],
     "description": "AILANG Original design watch men's double flywheel automatic mechanical watch fashion casual business men's clock Original",
     "name": "AILANG watch",
-    "color": "Brown",
-    "price": 102,
+    "color": [
+      "Brown"
+    ],
+    "price": 102.6,
     "stock": 45,
-    "sales": 111,
     "ratings": 4,
-    "updatedAt": 1632902408758,
-    "categoryId": "jewelry-watches"
+    "category": "jewelry-watches",
+    "discount": 21
   },
   {
-    "_id": "xslBizc",
-    "category": "Jewelry & Watches",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632902253/ecommerceAPI/2021-09-29T07-57-32.627Z-44675090-501989289.jpg.jpg"
     ],
     "description": "CADISEN Japan Quartz Movement Watch High Quality Women Watch Stainless Steel Mesh Rose Gold Waterproof Ladies Watch Dropshipping",
     "name": "CADISEN watch",
-    "color": "Milk",
-    "price": 55,
+    "color": [
+      "Milk"
+    ],
+    "price": 55.5,
     "stock": 55,
-    "sales": 120,
     "ratings": 4,
-    "updatedAt": 1632902255027,
-    "categoryId": "jewelry-watches"
+    "category": "jewelry-watches",
+    "discount": 12
   },
   {
-    "_id": "bhE6a8i",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632902105/ecommerceAPI/2021-09-29T07-55-04.732Z-1407878196-1636370930.jpg.jpg"
     ],
     "description": "Sexy Open Toe Basic Shoes Summer Fashion New Cross Strap Ladies High Heel Pumps Womens Square Toe Party Wedding Shoes Sandals",
     "name": "Sexy Open sandals",
-    "color": "Black",
-    "price": 45,
+    "color": [
+      "Black"
+    ],
+    "price": 45.2,
     "stock": 30,
-    "sales": 77,
     "ratings": 3,
-    "updatedAt": 1632902107196,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 10
   },
   {
-    "_id": "ekoGdCA",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632901992/ecommerceAPI/2021-09-29T07-53-12.576Zpexels-aliesha-low-3482571.jpg.jpg"
     ],
     "description": "Sexy Open Toe Basic Shoes Summer Fashion New Cross Strap Ladies High Heel Pumps Women's Square Toe Party Wedding Shoes Sandals",
     "name": "Open sandals women",
-    "color": "Milk",
-    "price": 65,
+    "color": [
+      "Milk"
+    ],
+    "price": 65.5,
     "stock": 44,
-    "sales": 109,
     "ratings": 4,
-    "updatedAt": 1632901995074,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 14
   },
   {
-    "_id": "eIM6oW_",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632868260/ecommerceAPI/2021-09-28T22-30-47.713Zpexels-studio-pilot-photography-4248715.jpg.jpg"
     ],
     "description": "2021 Spring New Luxury Brand French Style 4 6 8cm Leather High Heeled Shoes Women Dress Pumps V Dustbag 35-43\nWhite open shoe",
     "name": "White shoe with holes",
-    "color": "White",
-    "price": 40,
+    "color": [
+      "White"
+    ],
+    "price": 40.1,
     "stock": 77,
-    "sales": 82,
     "ratings": 4,
-    "updatedAt": 1632868262419,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 9
   },
   {
-    "_id": "KT5RHOl",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867981/ecommerceAPI/2021-09-28T22-26-12.171Zpexels-bella-zhong-3602449.jpg.jpg"
     ],
     "description": "2021 Spring New Luxury Brand French Style 4 6 8cm Leather High Heeled Shoes Women Dress Pumps V Dustbag 35-43",
     "name": "White pearl shoe",
-    "color": "White",
-    "price": 40,
+    "color": [
+      "White"
+    ],
+    "price": 40.1,
     "stock": 67,
-    "sales": 56,
     "ratings": 2,
-    "updatedAt": 1632867983756,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 9
   },
   {
-    "_id": "JZ7z9xP",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867724/ecommerceAPI/2021-09-28T22-21-58.017Zpexels-bella-zhong-3782786.jpg.jpg"
     ],
     "description": "2021 New Luxury Desinger Women Thin Heels Pointed High Heel sandals Pumps V Stiletto Wedding Dress Shoes Zapatos De Mujer",
     "name": "Green sandals",
-    "color": "Green",
-    "price": 67,
+    "color": [
+      "Green"
+    ],
+    "price": 67.5,
     "stock": 33,
-    "sales": 112,
     "ratings": 4,
-    "updatedAt": 1632867726548,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 14
   },
   {
-    "_id": "ucc0XSo",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867646/ecommerceAPI/2021-09-28T22-20-40.523Zpexels-bella-zhong-3782789.jpg.jpg"
     ],
     "description": "2021 New Luxury Desinger Women Thin Heels Pointed High Heel sandals Pumps V Stiletto Wedding Dress Shoes Zapatos De Mujer",
     "name": "Red high heels sandals",
-    "color": "Red",
-    "price": 99,
+    "color": [
+      "Red"
+    ],
+    "price": 99.6,
     "stock": 30,
-    "sales": 78,
     "ratings": 4,
-    "updatedAt": 1632867649074,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 20
   },
   {
-    "_id": "4eZxVvx",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867503/ecommerceAPI/2021-09-28T22-18-19.796Zpexels-bella-zhong-3076787.jpg.jpg"
     ],
     "description": "2021 New Luxury Desinger Women Thin Heels Pointed High Heel Shoes Pumps V Stiletto Wedding Dress Shoes Zapatos De Mujer",
     "name": "Dark red high heels",
-    "color": "Red",
-    "price": 90,
+    "color": [
+      "Red"
+    ],
+    "price": 90.6,
     "stock": 39,
-    "sales": 101,
     "ratings": 4,
-    "updatedAt": 1632867507531,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 19
   },
   {
-    "_id": "VbnD64P",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867298/ecommerceAPI/2021-09-28T22-14-50.126Zpexels-rann-vijay-7742547.jpg.jpg"
     ],
     "description": "Luxury Designer Handbags Purses Women Fashion Shoulder Bags High Quality Leather Crossbody Messenger Bags for Female Sac A Main",
     "name": "Brown leather bag",
-    "color": "Brown",
-    "price": 45,
+    "color": [
+      "Brown"
+    ],
+    "price": 45.9,
     "stock": 60,
-    "sales": 100,
     "ratings": 2,
-    "updatedAt": 1632867300612,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 10
   },
   {
-    "_id": "u62WLhm",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867166/ecommerceAPI/2021-09-28T22-12-34.776Zpexels-artem-beliaikin-2304765.jpg.jpg"
     ],
     "description": "Stitching women's summer shoulder bag chain PU leather ladies messenger bag female small square bag clutch bags 2020 handbags",
     "name": "Stitching small bag",
-    "color": "Black",
-    "price": 70,
+    "color": [
+      "Black"
+    ],
+    "price": 70.3,
     "stock": 69,
-    "sales": 150,
     "ratings": 4,
-    "updatedAt": 1632867169294,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 15
   },
   {
-    "_id": "bm1CyQU",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867100/ecommerceAPI/2021-09-28T22-11-31.106Zpexels-artem-beliaikin-2304764.jpg.jpg"
     ],
     "description": "Stitching women's summer shoulder bag chain PU leather ladies messenger bag female small square bag clutch bags 2020 handbags",
     "name": "Women's small bag",
-    "color": "Red",
-    "price": 66,
+    "color": [
+      "Red"
+    ],
+    "price": 66.9,
     "stock": 30,
-    "sales": 145,
     "ratings": 4,
-    "updatedAt": 1632867103460,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 14
   },
   {
-    "_id": "WgnZJgH",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632866906/ecommerceAPI/2021-09-28T22-08-18.753Zpexels-dom-j-45981.jpg.jpg"
     ],
     "description": "Shoulder Bag For Women 2021 New Luxury Designer Crossbody Messenger Pu Leather Fashion Mahjong Chain Sling Ladies Plaid Handbags",
     "name": "Grey shoulder bag",
-    "color": "Grey",
-    "price": 66,
+    "color": [
+      "Grey"
+    ],
+    "price": 66.7,
     "stock": 45,
-    "sales": 99,
     "ratings": 3,
-    "updatedAt": 1632866909013,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 14
   },
   {
-    "_id": "w7BKJ6K",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632866684/ecommerceAPI/2021-09-28T22-04-28.725Zpexels-artem-beliaikin-2534961.jpg.jpg"
     ],
     "description": "Women Fashionable Shoulder Bags New Female Wide Strap Messenger Bag Ladies Handbag Casual Chain Crossbody Bag For Girls 2021",
     "name": "Brown hand bag",
-    "color": "Brown",
-    "price": 55,
+    "color": [
+      "Brown"
+    ],
+    "price": 55.5,
     "stock": 12,
-    "sales": 100,
     "ratings": 2,
-    "updatedAt": 1632866689363,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 12
   },
   {
-    "_id": "TogkZJY",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632864806/ecommerceAPI/2021-09-28T21-33-10.096Zpexels-artem-beliaikin-1022383.jpg.jpg"
     ],
     "description": "Crossbody Bags For Women 2021 Cartoon Strawberry Print Pearl Female Bag PU Leather Elegant Sweet Girl Small Handbag Women",
     "name": "Red cross bag",
-    "color": "Red",
-    "price": 46,
+    "color": [
+      "Red"
+    ],
+    "price": 46.1,
     "stock": 40,
-    "sales": 102,
     "ratings": 3,
-    "updatedAt": 1632864809579,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 10
   },
   {
-    "_id": "bm9UKj9",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632864353/ecommerceAPI/2021-09-28T21-25-44.100Zpexels-godisable-jacob-3689163.jpg.jpg"
     ],
     "description": "Women Fashionable Shoulder Bags New Female Messenger Bag Handbag Chain Wild Printing Wild Crossbody Bag\nFloral design",
     "name": "Floral clutch bag",
-    "color": "White",
-    "price": 90,
+    "color": [
+      "White"
+    ],
+    "price": 90.3,
     "stock": 90,
-    "sales": 180,
     "ratings": 4,
-    "updatedAt": 1632864355980,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 19
   },
   {
-    "_id": "FlmI5Jf",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632864045/ecommerceAPI/2021-09-28T21-20-42.608Zpexels-flat-hito-904350.jpg.jpg"
     ],
     "description": "Women Fashionable Shoulder Bags New Female Messenger Bag Handbag Chain Wild Printing Wild Crossbody Bag",
     "name": "White handbag",
-    "color": "White",
-    "price": 50,
+    "color": [
+      "White"
+    ],
+    "price": 50.7,
     "stock": 30,
-    "sales": 111,
     "ratings": 3,
-    "updatedAt": 1632864047142,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 11
   },
   {
-    "_id": "NHPwwo9",
-    "category": "Bags & Shoes",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632863899/ecommerceAPI/2021-09-28T21-18-17.319Zpexels-godisable-jacob-934673.jpg.jpg"
     ],
     "description": "Women's Backpack Canvas Candy Color School Backpack Bag Preppy Style Girls Knapsack Rucksacks Handbags with Plush Pendant",
     "name": "Yellow school bag",
-    "color": "Yellow",
-    "price": 70,
+    "color": [
+      "Yellow"
+    ],
+    "price": 70.8,
     "stock": 45,
-    "sales": 89,
     "ratings": 4,
-    "updatedAt": 1632863901464,
-    "categoryId": "bags-shoes"
+    "category": "bags-shoes",
+    "discount": 15
   },
   {
-    "_id": "I5zxxkQ",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632844601/ecommerceAPI/2021-09-28T15-56-39.362Znathan-oakley-OngbrOmqtzc-unsplash.jpg.jpg"
     ],
     "description": "Bedside Dresser Table Nordic Table Coffee Modern Storage Bedroom Home Furniture Also Mounted Tea Coffee Service Desk Decoration",
     "name": "brown wooden stand",
-    "color": "brown",
-    "price": 290,
+    "color": [
+      "Brown"
+    ],
+    "price": 290.4,
     "stock": 400,
-    "sales": 508,
     "ratings": 4,
-    "updatedAt": 1632844603086,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 59
   },
   {
-    "_id": "kZk0fZk",
-    "category": "Phones & Telecommunications",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632844255/ecommerceAPI/2021-09-28T15-50-54.073Zrishabh-malhotra-83ypHTv6J2M-unsplash.jpg.jpg"
     ],
     "description": "Global Version Xiaomi Redmi Note 10 Pro 6GB 64GB / 128GB 108MP Camera Mobile Phone Snapdragon 732G Octa Core NFC 120Hz AMOLED",
     "name": "xiaomi phone",
-    "color": "black",
-    "price": 200,
+    "color": [
+      "Black"
+    ],
+    "price": 200.1,
     "stock": 10,
-    "sales": 34,
     "ratings": 3,
-    "updatedAt": 1632844256838,
-    "categoryId": "phones-telecommunications"
+    "category": "phones-telecommunications",
+    "discount": 41
   },
   {
-    "_id": "ynqcBrY",
-    "category": "Phones & Telecommunications",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632844158/ecommerceAPI/2021-09-28T15-49-04.746Zthom-bradley-1NZcjdo2hKQ-unsplash.jpg.jpg"
     ],
     "description": "Original Apple iPhone XR xr 2942mAh RAM 3GB ROM 64GB/128GB /256G Unlocked Mobile Phone 4G LTE 6.1\" Hexa-core 12MP&7MP 2018",
     "name": "iphone xr",
-    "color": "black",
-    "price": 400,
+    "color": [
+      "Black"
+    ],
+    "price": 400.6,
     "stock": 10,
-    "sales": 12,
     "ratings": 5,
-    "updatedAt": 1632844162210,
-    "categoryId": "phones-telecommunications"
+    "category": "phones-telecommunications",
+    "discount": 81
   },
   {
-    "_id": "FzHB3x0",
-    "category": "Consumer Electronics",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843925/ecommerceAPI/2021-09-28T15-45-22.809Zsebastian-banasiewcz-oXXc-s5nNy8-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headset Bluetooth Headphones ANC bluetooth 5.0 HIFI sound with 57mm loudspeaker face recognition for phone",
     "name": "sebastian banasi wireless headphones",
-    "color": "black",
-    "price": 220,
+    "color": [
+      "Black"
+    ],
+    "price": 220.6,
     "stock": 200,
-    "sales": 490,
     "ratings": 4,
-    "updatedAt": 1632843926939,
-    "categoryId": "consumer-electronics"
+    "category": "consumer-electronics",
+    "discount": 45
   },
   {
-    "_id": "Eu-0Aqu",
-    "category": "Consumer Electronics",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843857/ecommerceAPI/2021-09-28T15-44-14.818Ztomasz-gawlowski-YDZPdqv3FcA-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headset Bluetooth Headphones ANC bluetooth 5.0 HIFI sound with 57mm loudspeaker face recognition for phone",
     "name": "tomasx headphones",
-    "color": "black",
-    "price": 200,
+    "color": [
+      "Black"
+    ],
+    "price": 200.1,
     "stock": 300,
-    "sales": 49,
     "ratings": 2,
-    "updatedAt": 1632843859762,
-    "categoryId": "consumer-electronics"
+    "category": "consumer-electronics",
+    "discount": 41
   },
   {
-    "_id": "Er3WTb_",
-    "category": "Consumer Electronics",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843779/ecommerceAPI/2021-09-28T15-42-56.684Zkiran-ck-LSNJ-pltdu8-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headset Bluetooth Headphones ANC bluetooth 5.0 HIFI sound with 57mm loudspeaker face recognition for phone, also has a port for cord if need be",
     "name": "drummer ring",
-    "color": "grey",
-    "price": 300,
+    "color": [
+      "Grey"
+    ],
+    "price": 300.9,
     "stock": 107,
-    "sales": 300,
     "ratings": 4,
-    "updatedAt": 1632843784344,
-    "categoryId": "consumer-electronics"
+    "category": "consumer-electronics",
+    "discount": 61
   },
   {
-    "_id": "7iR4703",
-    "category": "Consumer Electronics",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843451/ecommerceAPI/2021-09-28T15-37-30.882Zkiran-ck-cDrIiiptFqE-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headphones Sport Bluetooth 5.0 Earphone Handsfree Headset Ear Buds Head Phone Earbuds For iPhone Xiaomi, infinix",
     "name": "Basek D02",
-    "color": "black",
-    "price": 300,
+    "color": [
+      "Black"
+    ],
+    "price": 300.8,
     "stock": 400,
-    "sales": 509,
     "ratings": 3,
-    "updatedAt": 1632843454571,
-    "categoryId": "consumer-electronics"
+    "category": "consumer-electronics",
+    "discount": 61
   },
   {
-    "_id": "ywJXhlV",
-    "category": "Consumer Electronics",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843385/ecommerceAPI/2021-09-28T15-35-49.983Zjason-leung-xR4JHzr69Og-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headphones Sport Bluetooth 5.0 Earphone Handsfree Headset Ear Buds Head Phone Earbuds For iPhone Xiaomi",
     "name": "dark headphone",
-    "color": "black",
-    "price": 390,
+    "color": [
+      "Black"
+    ],
+    "price": 390.5,
     "stock": 200,
-    "sales": 1002,
     "ratings": 4,
-    "updatedAt": 1632843416906,
-    "categoryId": "consumer-electronics"
+    "category": "consumer-electronics",
+    "discount": 79
   },
   {
-    "_id": "2_iCKBo",
-    "category": "Consumer Electronics",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843369/ecommerceAPI/2021-09-28T15-35-49.927Zjason-leung-xR4JHzr69Og-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headphones Sport Bluetooth 5.0 Earphone Handsfree Headset Ear Buds Head Phone Earbuds For iPhone Xiaomi",
     "name": "dark headphone",
-    "color": "black",
-    "price": 390,
+    "color": [
+      "Black"
+    ],
+    "price": 390.7,
     "stock": 200,
-    "sales": 1002,
     "ratings": 4,
-    "updatedAt": 1632843374837,
-    "categoryId": "consumer-electronics"
+    "category": "consumer-electronics",
+    "discount": 79
   },
   {
-    "_id": "yDghTIP",
-    "category": "Men's Fashion",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843239/ecommerceAPI/2021-09-28T15-33-55.493Zgiorgio-trovato-K62u25Jk6vo-unsplash.jpg.jpg"
     ],
     "description": "Polarized Sunglasses 2020 New UV Protection Driver's Mirror Influx Driving Glasses",
     "name": "black sunglasses",
-    "color": "black",
-    "price": 60,
+    "color": [
+      "Black"
+    ],
+    "price": 60.4,
     "stock": 300,
-    "sales": 4002,
     "ratings": 1,
-    "updatedAt": 1632843244896,
-    "categoryId": "men-s-fashion"
+    "category": "men-s-fashion",
+    "discount": 13
   },
   {
-    "_id": "Sl5vBYX",
-    "category": "Home Improvement & Tools",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843084/ecommerceAPI/2021-09-28T15-31-21.486Zgalina-n-miziNqvJx5M-unsplash.jpg.jpg"
     ],
     "description": "Modern Flower Vase Ceramic Ornaments Living Room Model Flower Pot Flower Basket Glass Jardiniere Arrangements Home Decoration",
     "name": "blue flower vase",
-    "color": "blue",
-    "price": 30,
+    "color": [
+      "Blue"
+    ],
+    "price": 30.9,
     "stock": 490,
-    "sales": 1902,
     "ratings": 3,
-    "updatedAt": 1632843087614,
-    "categoryId": "home-improvement-tools"
+    "category": "home-improvement-tools",
+    "discount": 7
   },
   {
-    "_id": "yTopmbg",
-    "category": "Computer, Office & Security",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842875/ecommerceAPI/2021-09-28T15-27-50.475Zeditors-keys-CtDrd7mWW6M-unsplash.jpg.jpg"
     ],
     "description": "Russia/Spain/USA/France/Italy/Germany Layout 2.4 GHz Ultra Thin Portable Wireless Keyboard Mouse, Full Size 2400 DPI Mouse,Black",
     "name": "multi language keyboard",
-    "color": "black",
-    "price": 200,
+    "color": [
+      "Black"
+    ],
+    "price": 200.9,
     "stock": 300,
-    "sales": 1009,
     "ratings": 3,
-    "updatedAt": 1632842878031,
-    "categoryId": "computer-office-security"
+    "category": "computer-office-security",
+    "discount": 41
   },
   {
-    "_id": "igEGphJ",
-    "category": "Consumer Electronics",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842763/ecommerceAPI/2021-09-28T15-25-58.409Zc-d-x-PDX_a_82obo-unsplash.jpg.jpg"
     ],
     "description": "Active Noise Cancelling Headphones Bluetooth Headphones Wireless Headset Over Ear 30 Hours Playtime with Mic",
     "name": "black headphones",
-    "color": "black",
-    "price": 380,
+    "color": [
+      "Black"
+    ],
+    "price": 380.1,
     "stock": 490,
-    "sales": 716,
     "ratings": 2,
-    "updatedAt": 1632842766196,
-    "categoryId": "consumer-electronics"
+    "category": "consumer-electronics",
+    "discount": 77
   },
   {
-    "_id": "B8m4AUm",
-    "category": "Consumer Electronics",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842652/ecommerceAPI/2021-09-28T15-24-11.812ZAnker-Soundcore-Life-Q20-Hybrid-Active-Noise-Cancelling-Headphones-Wireless-Over-Ear-Bluetooth-Headphones.jpg_Q90.jpg_.webp.webp"
     ],
     "description": "Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Headphones, Wireless Over Ear Bluetooth Headphones",
     "name": "Anker Soundcore",
-    "color": "black",
-    "price": 400,
+    "color": [
+      "Black"
+    ],
+    "price": 400.5,
     "stock": 300,
-    "sales": 679,
     "ratings": 4,
-    "updatedAt": 1632842653171,
-    "categoryId": "consumer-electronics"
+    "category": "consumer-electronics",
+    "discount": 81
   },
   {
-    "_id": "dI7RAcC",
-    "category": "Women's Fashion",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842332/ecommerceAPI/2021-09-28T15-18-50.412Zbrooke-cagle-z1B9f48F5dc-unsplash.jpg.jpg"
     ],
     "description": "LEGIBLE Autumn Winter Sweater Women Casual Woman Sweater Pullovers Striped Jumper Warm Teen girl Sweaters",
     "name": "tomato soup sweater",
-    "color": "red, black, green",
-    "price": 170,
+    "color": [
+      "Red",
+      "Black",
+      "Green"
+    ],
+    "price": 170.8,
     "stock": 40,
-    "sales": 180,
     "ratings": 4,
-    "updatedAt": 1632842334624,
-    "categoryId": "women-s-fashion"
+    "category": "women-s-fashion",
+    "discount": 35
   },
   {
-    "_id": "pZBfKVf",
-    "category": "Computer, Office & Security",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842203/ecommerceAPI/2021-09-28T15-16-38.861Zkari-shea-1SAnrIxw5OY-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n8 GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\ngrey colored\n3 Year Warranty",
     "name": "8gb grey laptop",
-    "color": "grey",
-    "price": 200,
+    "color": [
+      "Grey"
+    ],
+    "price": 200.5,
     "stock": 10,
-    "sales": 50,
     "ratings": 2,
-    "updatedAt": 1632842205615,
-    "categoryId": "computer-office-security"
+    "category": "computer-office-security",
+    "discount": 41
   },
   {
-    "_id": "EsBoWqI",
-    "category": "Computer, Office & Security",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842094/ecommerceAPI/2021-09-28T15-14-49.802Zernest-ojeh-v-kSEAV7jQE-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n16GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\nWindows 10 OS\n3 Year Warranty",
     "name": "black laptop 16gb",
-    "color": "black",
-    "price": 450,
+    "color": [
+      "Black"
+    ],
+    "price": 450.5,
     "stock": 11,
-    "sales": 100,
     "ratings": 4,
-    "updatedAt": 1632842096464,
-    "categoryId": "computer-office-security"
+    "category": "computer-office-security",
+    "discount": 91
   },
   {
-    "_id": "Jut1W9J",
-    "category": "Computer, Office & Security",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842007/ecommerceAPI/2021-09-28T15-12-56.537Zangelina-yan-r1fNqfIP8ZM-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n8 GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\nWindows 10 OS\n3 Year Warranty",
     "name": "white laptop 8gb",
-    "color": "white",
-    "price": 340,
+    "color": [
+      "White"
+    ],
+    "price": 340.2,
     "stock": 10,
-    "sales": 23,
     "ratings": 4,
-    "updatedAt": 1632842011067,
-    "categoryId": "computer-office-security"
+    "category": "computer-office-security",
+    "discount": 69
   },
   {
-    "_id": "vLHwniO",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632841917/ecommerceAPI/2021-09-28T15-11-42.717Zangelina-yan-r1fNqfIP8ZM-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n8 GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\nWindows 10 OS\n3 Year Warranty",
     "name": "white laptop 8gb",
-    "color": "white",
-    "price": 300,
+    "color": [
+      "White"
+    ],
+    "price": 300.4,
     "stock": 20,
-    "sales": 11,
     "ratings": 4,
-    "updatedAt": 1632841920885,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 61
   },
   {
-    "_id": "XlIjWIF",
-    "category": "Computer, Office & Security",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632841693/ecommerceAPI/2021-09-28T15-07-39.447Zalejandro-escamilla-ABDTiLqDhJA-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n8 GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\nWindows 10 OS\n3 Year Warranty",
     "name": "8gb laptop",
-    "color": "grey",
-    "price": 550,
+    "color": [
+      "Grey"
+    ],
+    "price": 550.9,
     "stock": 40,
-    "sales": 49,
     "ratings": 4,
-    "updatedAt": 1632841696999,
-    "categoryId": "computer-office-security"
+    "category": "computer-office-security",
+    "discount": 111
   },
   {
-    "_id": "8k6bIAO",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632841414/ecommerceAPI/2021-09-28T15-03-33.574Zdryer_600.png.png"
     ],
     "description": "Energy Saving for Money.\nSuper Quick Wash for Time Saving\nIntelligent LED Display \nSnowflake Drum for Clothes Protecting \nSmart Spin Balance control.\nDrum Self Clean",
     "name": "washing machine",
-    "color": "white",
-    "price": 140,
+    "color": [
+      "White"
+    ],
+    "price": 140.1,
     "stock": 80,
-    "sales": 90,
     "ratings": 4,
-    "updatedAt": 1632841415866,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 29
   },
   {
-    "_id": "Ya_1yLc",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632841247/ecommerceAPI/2021-09-28T15-00-47.050Zcoffeemachine_600.png.png"
     ],
     "description": "This is a really handy coffee maker. Easy to use.",
     "name": "Coffee maker",
-    "color": "black",
-    "price": 70,
+    "color": [
+      "Black"
+    ],
+    "price": 70.5,
     "stock": 12,
-    "sales": 30,
     "ratings": 3,
-    "updatedAt": 1632841248475,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 15
   },
   {
-    "_id": "ax2j4QQ",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632829386/ecommerceAPI/2021-09-28T11-43-05.534ZSofa-Bed-Transparent-PNG.png.png"
     ],
     "description": "A brilliant take on urban chic styling, the Enderlin sofa in vibrant grey makes high design highly affordable. Distinctive elements include quilted channel stitching for clean-lined allure and a velvety soft fabric you'll love living with. Sculptural track arms up the wow factor. If you’re looking for big style on more modest scale, you’re sure to appreciate this sofa’s space-conscious 82\" wide profile.",
     "name": "grey couch",
-    "color": "grey",
-    "price": 290,
+    "color": [
+      "Grey"
+    ],
+    "price": 290.3,
     "stock": 69,
-    "sales": 139,
     "ratings": 4,
-    "updatedAt": 1632829386669,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 59
   },
   {
-    "_id": "Q2oEEtp",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632829283/ecommerceAPI/2021-09-28T11-41-22.041ZSofa-Bed.png.png"
     ],
     "description": "This settee is a great addition for any home.\nFeaturing comfort and style, The contemporary two seater Sofa is perfect for a home office or living room.\nThe slightly curved back helps provide extra comfort and gives the settee a softer look.",
     "name": "light brown sette",
-    "color": "brown",
-    "price": 120,
+    "color": [
+      "Brown"
+    ],
+    "price": 120.3,
     "stock": 200,
-    "sales": 107,
     "ratings": 3,
-    "updatedAt": 1632829284863,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 25
   },
   {
-    "_id": "Be0LKAY",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632829129/ecommerceAPI/2021-09-28T11-38-46.692ZYellow-Sofa-PNG-Image.png.png"
     ],
     "description": "Feed your mid-century modern nostalgia with a contemporary twist in the Zardoni sofa. Colored in an attractive yellow, it’s upholstered in a timeless texture. Classic tufted back and tapered peg legs are a nice revival. Linear profile with two toss pillows adds plenty of fresh style, perfect for small spaces.",
     "name": "Zardoni sofa",
-    "color": "yellow",
-    "price": 300,
+    "color": [
+      "Yellow"
+    ],
+    "price": 300.4,
     "stock": 100,
-    "sales": 170,
     "ratings": 4,
-    "updatedAt": 1632829130244,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 61
   },
   {
-    "_id": "DvqyBXf",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632829034/ecommerceAPI/2021-09-28T11-37-14.103ZYellow-Sofa-PNG-Photos.png.png"
     ],
     "description": "Classic, clean comfort, all in one package. Featuring ergonomic pocket coil seating with extra padded cushions and a sinuous spring foundation. Whether you're curling up to read a novel, sinking into it for some nap time or lounging for a movie marathon, this sofa will serve its purpose",
     "name": "bright yellow sofa",
-    "color": "yellow",
-    "price": 120,
+    "color": [
+      "Yellow"
+    ],
+    "price": 120.4,
     "stock": 58,
-    "sales": 70,
     "ratings": 2,
-    "updatedAt": 1632829035313,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 25
   },
   {
-    "_id": "6rhkNnC",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632828975/ecommerceAPI/2021-09-28T11-36-14.431ZYellow-Sofa-Transparent-PNG.png.png"
     ],
     "description": "Classic, clean comfort, all in one package. This Regency-style sofa is upholstered in yellow linen, featuring ergonomic pocket coil seating with extra padded cushions and a sinuous spring foundation. Whether you're curling up to read a novel, sinking into it for some nap time or lounging for a movie marathon, this sofa will serve its purpose",
     "name": "yellow couch",
-    "color": "yellow",
-    "price": 290,
+    "color": [
+      "Yellow"
+    ],
+    "price": 290.3,
     "stock": 101,
-    "sales": 140,
     "ratings": 4,
-    "updatedAt": 1632828977208,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 59
   },
   {
-    "_id": "BuVlvWl",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632828913/ecommerceAPI/2021-09-28T11-35-13.184ZFuton-PNG-File.png.png"
     ],
     "description": "This settee is a great addition for any home.\nFeaturing comfort and style, The contemporary two seater Sofa is perfect for a home office or living room.\nThe slightly curved back helps provide extra comfort and gives the settee a softer look.",
     "name": "black sette",
-    "color": "black",
-    "price": 90,
+    "color": [
+      "Black"
+    ],
+    "price": 90.5,
     "stock": 60,
-    "sales": 108,
     "ratings": 3,
-    "updatedAt": 1632828915081,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 19
   },
   {
-    "_id": "Zyf2ar3",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632827868/ecommerceAPI/2021-09-28T11-17-48.216ZVelvet-Sofa-PNG-Photos.png.png"
     ],
     "description": "Classic, clean comfort, all in one package. This Regency-style sofa is upholstered in gray linen, featuring ergonomic pocket coil seating with extra padded cushions and a sinuous spring foundation. Whether you're curling up to read a novel, sinking into it for some nap time or lounging for a movie marathon, this sofa will serve its purpose. Pair it with the matching loveseat (sold separately).",
     "name": "blue couch",
-    "color": "blue",
-    "price": 280,
+    "color": [
+      "Blue"
+    ],
+    "price": 280.6,
     "stock": 200,
-    "sales": 190,
     "ratings": 4,
-    "updatedAt": 1632827869909,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 57
   },
   {
-    "_id": "rIiTB_C",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632827814/ecommerceAPI/2021-09-28T11-16-54.068ZSofa-PNG-File.png.png"
     ],
     "description": "Mixing mid-century inspiration with modern attitude, the Lyman green sofa is as retro chic as it is fashion forward. Loaded with multi-tonal interest, the granite upholstery is the essence of earthy elegance. Design elements include 2-over-2 cushion styling, t-cushions wrapping around slim track arms and tapered accent legs that are right on point.",
     "name": "green couch",
-    "color": "green",
-    "price": 280,
+    "color": [
+      "Green"
+    ],
+    "price": 280.5,
     "stock": 56,
-    "sales": 193,
     "ratings": 4,
-    "updatedAt": 1632827815231,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 57
   },
   {
-    "_id": "rTbvW3R",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632827180/ecommerceAPI/2021-09-28T11-06-05.360ZSofa-Bed-Transparent-Background.png.png"
     ],
     "description": "Mixing mid-century inspiration with modern attitude, the Lyman sofa is as retro chic as it is fashion forward. Loaded with multi-tonal interest, the granite gray upholstery is the essence of earthy elegance. Design elements include 2-over-2 cushion styling, t-cushions wrapping around slim track arms and tapered accent legs that are right on point.",
     "name": "blue sofa",
-    "color": "blue",
-    "price": 192,
+    "color": [
+      "Blue"
+    ],
+    "price": 192.7,
     "stock": 46,
-    "sales": 30,
     "ratings": 3,
-    "updatedAt": 1632827181403,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 39
   },
   {
-    "_id": "-8kuzQp",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632826944/ecommerceAPI/2021-09-28T11-01-40.891ZSofa-Bed-Transparent.png.png"
     ],
     "description": "Bring home an effortlessly chic sense of style with the red Sciolo sofa in cobalt blue. Its decidedly contemporary profile sports a 2-over-2 cushion design for a crisp and clean aesthetic. Four feather-filled toss pillows are an added indulgence.",
     "name": "red Sciolo sofa",
-    "color": "red",
-    "price": 240,
+    "color": [
+      "Red"
+    ],
+    "price": 240.4,
     "stock": 67,
-    "sales": 172,
     "ratings": 5,
-    "updatedAt": 1632826946873,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 49
   },
   {
-    "_id": "RxDk-NX",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632826944/ecommerceAPI/2021-09-28T11-02-15.497ZSofa-Bed-Transparent.png.png"
     ],
     "description": "Bring home an effortlessly chic sense of style with the red Sciolo sofa. Its decidedly contemporary profile sports a 2-over-2 cushion design for a crisp and clean aesthetic. Four feather-filled toss pillows are an added indulgence.",
     "name": "red Sciolo sofa",
-    "color": "red",
-    "price": 240,
+    "color": [
+      "Red"
+    ],
+    "price": 240.2,
     "stock": 67,
-    "sales": 172,
     "ratings": 5,
-    "updatedAt": 1632826946588,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 49
   },
   {
-    "_id": "ll0v1bc",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632826935/ecommerceAPI/2021-09-28T11-01-47.360ZSofa-Bed-Transparent.png.png"
     ],
     "description": "Bring home an effortlessly chic sense of style with the red Sciolo sofa. Its decidedly contemporary profile sports a 2-over-2 cushion design for a crisp and clean aesthetic. Four feather-filled toss pillows are an added indulgence.",
     "name": "red Sciolo sofa",
-    "color": "red",
-    "price": 240,
+    "color": [
+      "Red"
+    ],
+    "price": 240.5,
     "stock": 67,
-    "sales": 172,
     "ratings": 5,
-    "updatedAt": 1632826937784,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 49
   },
   {
-    "_id": "cfDZFWE",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632826737/ecommerceAPI/2021-09-28T10-58-29.482ZSleeper-Sofa-Transparent-Images-PNG.png.png"
     ],
     "description": "For a fresh spot in your space, turn to the Arroyo sofa. This invigorating piece breathes warmth into your home with its striking caramel faux leather upholstery, modern bolster pillows and tapered legs. Wind down at the end of a long day when you sink into this canyon of comfort.",
     "name": "Arroyo sofa",
-    "color": "brown",
-    "price": 130,
+    "color": [
+      "Brown"
+    ],
+    "price": 130.7,
     "stock": 40,
-    "sales": 111,
     "ratings": 4,
-    "updatedAt": 1632826743017,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 27
   },
   {
-    "_id": "BMqYCep",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823772/ecommerceAPI/2021-09-28T10-09-31.710ZSleeper-Sofa-Transparent-Background.png.png"
     ],
     "description": "The Maimz sofa is mid-century revival done to perfection. Linear and minimalistic, the beautifully edited profile has all the retro elements you love, like sheltering arms, bolster pillows and tapered splayed legs. So casually cool, the caramel faux leather upholstery brings the look right into the present.",
     "name": "maimz couch",
-    "color": "grey",
-    "price": 100,
+    "color": [
+      "Grey"
+    ],
+    "price": 100.8,
     "stock": 89,
-    "sales": 40,
     "ratings": 1,
-    "updatedAt": 1632823773368,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 21
   },
   {
-    "_id": "oSr2oYg",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823704/ecommerceAPI/2021-09-28T10-08-22.768ZSleeper-Sofa-PNG-Image.png.png"
     ],
     "description": "The Dorsten sofa chaise has the corner on ultra-contemporary style made for easy, everyday living. Upholstered in a plush slate chenille, it takes neutral sophistication to another level. And talk about accommodating. Thanks to a versatile chaise with movable ottoman and reversible seat cushions, you can enjoy the chaise on either side to suit your space.",
     "name": "Dorsten sofa",
-    "color": "blue",
-    "price": 400,
+    "color": [
+      "Blue"
+    ],
+    "price": 400.4,
     "stock": 29,
-    "sales": 108,
     "ratings": 4,
-    "updatedAt": 1632823705746,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 81
   },
   {
-    "_id": "emPBanq",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823605/ecommerceAPI/2021-09-28T10-06-45.006ZSleeper-Sofa-PNG-Transparent-Image.png.png"
     ],
     "description": "Melding the contemporary style you love with the cozy feel you crave, the Kennewick sofa turns easy living into an art form. The sofa’s ultra-linear frame is enriched with generous bolster arm pillows and an indulgent velvet upholstery that’s the stuff dreams are made of. Slim track arms, sleek tapered feet and distinctive accent stitching are among the finer details that set this sofa apart.",
     "name": "Melding couch",
-    "color": "green",
-    "price": 333,
+    "color": [
+      "Green"
+    ],
+    "price": 333.5,
     "stock": 22,
-    "sales": 35,
     "ratings": 4,
-    "updatedAt": 1632823606666,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 67
   },
   {
-    "_id": "lEGkyZ7",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823502/ecommerceAPI/2021-09-28T10-05-01.300ZSleeper-Sofa-PNG-HD.png.png"
     ],
     "description": "The Nemoli sofa sets the scene for a modern space full of casual flair. Its textured chenille with solid microfiber upholstery provides a luxuriously soft feel that’s inviting. Gently flared arms and plush seat cushions welcome comfort and relaxation. The on-trend slate-colored upholstery offers a perfect background for the four decorative pillows to pop with beauty.",
     "name": "Nemolina couch",
-    "color": "brown",
-    "price": 330,
+    "color": [
+      "Brown"
+    ],
+    "price": 330.3,
     "stock": 39,
-    "sales": 200,
     "ratings": 4,
-    "updatedAt": 1632823503172,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 67
   },
   {
-    "_id": "jhb42_T",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823386/ecommerceAPI/2021-09-28T10-03-05.614ZSleeper-Sofa-Background-PNG.png.png"
     ],
     "description": "Bring home an effortlessly chic sense of style with the Sciolo sofa in brown. Its decidedly contemporary profile sports a 2-over-2 cushion design for a crisp and clean aesthetic. Four feather-filled toss pillows are an added indulgence.",
     "name": "Sciolo couch",
-    "color": "brown",
-    "price": 239,
+    "color": [
+      "Brown"
+    ],
+    "price": 239.4,
     "stock": 77,
-    "sales": 35,
     "ratings": 2,
-    "updatedAt": 1632823388136,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 48
   },
   {
-    "_id": "sF2aj_N",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823279/ecommerceAPI/2021-09-28T10-01-17.308ZSettee-PNG-Image.png.png"
     ],
     "description": "A brilliant take on urban chic styling, the Enderlin sofa in vibrant blue makes high design highly affordable. Distinctive elements include quilted channel stitching for clean-lined allure and a velvety soft fabric you'll love living with. Sculptural track arms up the wow factor. If you’re looking for big style on more modest scale, you’re sure to appreciate this sofa’s space-conscious 82\" wide profile.",
     "name": "Enderlin Sofa",
-    "color": "blue",
-    "price": 300,
+    "color": [
+      "Blue"
+    ],
+    "price": 300.2,
     "stock": 20,
-    "sales": 180,
     "ratings": 4,
-    "updatedAt": 1632823280906,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 61
   },
   {
-    "_id": "Vefu1r9",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823123/ecommerceAPI/2021-09-28T09-58-43.213ZSettee-PNG-Clipart.png.png"
     ],
     "description": "This Sofa is the perfect combination of functionality, simplicity and elegance.\nMade from the finest American Fabrics\nThe oversized cushions and the deep seater give extra comfort to your back while sitting.\nWhether in your home or office, this sofa adds beauty and class to your environment.\nIt consist of 2 throw pillows which gives you a smooth experience when you are sitting and laying.\nDimension Length 60 inches\", Breath 32 inches\", Height 36 inches.\n Available in different color shape and sizes",
     "name": "dark brown sofa",
-    "color": "brown",
-    "price": 100,
+    "color": [
+      "Brown"
+    ],
+    "price": 100.7,
     "stock": 11,
-    "sales": 56,
     "ratings": 2,
-    "updatedAt": 1632823124510,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 21
   },
   {
-    "_id": "P3woxeR",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823042/ecommerceAPI/2021-09-28T09-57-19.921ZPrinted-Sofa-PNG-Image.png.png"
     ],
     "description": "This Sofa is the perfect combination of functionality and elegance.\nMade from the finest American Fabrics\nThe oversized cushions and the deep seater give extra comfort to your back while sitting.\nWhether in your home or office, this sofa adds beauty and class to your environment.\nIt consist of  3 throw pillows which gives you a smooth experience when you are sitting and laying.\nDimension Length 60 inches\", Breath 32 inches\", Height 36 inches.\n Available in different color shape and sizes",
     "name": "patterned couch",
-    "color": "red, blue, green",
-    "price": 120,
+    "color": [
+      "Red",
+      "Blue",
+      "Green"
+    ],
+    "price": 120.5,
     "stock": 10,
-    "sales": 99,
     "ratings": 3,
-    "updatedAt": 1632823044947,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 25
   },
   {
-    "_id": "gulZK3s",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822908/ecommerceAPI/2021-09-28T09-55-07.597ZRecliner-PNG-Transparent.png.png"
     ],
     "description": "【SUPERIOR COMFORT】Covered by the breathable wearproof cotton & linen fabric, no pilling, and padded with the soft recycled cotton, excellent resilience, this floor chair is comfortable and safe. The pillow are providing comfortable rest for you.\n【ERGONOMIC DESIGN】This fully adjustable sofa chair can be adjusted at 6 different angles, which is the most comfortable angle for your body spine line. It also can be laid flat on the ground as a single bed or folded into a small piece to store it in your closet, it's easy to storage.",
     "name": "light brown recliner",
-    "color": "brown",
-    "price": 90,
+    "color": [
+      "Brown"
+    ],
+    "price": 90.8,
     "stock": 10,
-    "sales": 29,
     "ratings": 4,
-    "updatedAt": 1632822909011,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 19
   },
   {
-    "_id": "LcYuC-x",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822857/ecommerceAPI/2021-09-28T09-54-16.049ZRecliner.png.png"
     ],
     "description": "【SUPERIOR COMFORT】Covered by the breathable wearproof cotton & linen fabric, no pilling, and padded with the soft recycled cotton, excellent resilience, this floor chair is comfortable and safe. The pillow are providing comfortable rest for you.\n【ERGONOMIC DESIGN】This fully adjustable sofa chair can be adjusted at 6 different angles, which is the most comfortable angle for your body spine line. It also can be laid flat on the ground as a single bed or folded into a small piece to store it in your closet, it's easy to storage.",
     "name": "brown recliner",
-    "color": "brown",
-    "price": 190,
+    "color": [
+      "Brown"
+    ],
+    "price": 190.4,
     "stock": 30,
-    "sales": 21,
     "ratings": 2,
-    "updatedAt": 1632822858020,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 39
   },
   {
-    "_id": "dollWTp",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822773/ecommerceAPI/2021-09-28T09-52-52.957ZFuton-PNG-Transparent.png.png"
     ],
     "description": "【SUPERIOR COMFORT】Covered by the breathable wearproof cotton & linen fabric, no pilling, and padded with the soft recycled cotton, excellent resilience, this floor chair is comfortable and safe. The pillow are providing comfortable rest for you.\n【ERGONOMIC DESIGN】This fully adjustable sofa chair can be adjusted at 6 different angles, which is the most comfortable angle for your body spine line. It also can be laid flat on the ground as a single bed or folded into a small piece to store it in your closet, it's easy to storage.\n【EASY TO STORAGE & CARRYING】It can be folded into a small piece to store in your closet easily when you don't need it. Also, you can easily carry it around wherever you want, and set it up on any surfaces that is dry & clean.",
     "name": "blue couch",
-    "color": "blue",
-    "price": 261,
+    "color": [
+      "Blue"
+    ],
+    "price": 261.1,
     "stock": 23,
-    "sales": 109,
     "ratings": 4,
-    "updatedAt": 1632822773959,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 53
   },
   {
-    "_id": "0cMjSaL",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822674/ecommerceAPI/2021-09-28T09-51-12.637ZFuton-PNG-HD.png.png"
     ],
     "description": "100% Easy to Care for Polyester\nFrom Chair to Chaise and Lounge; there 4 different and comfortable positions to choose from\nConverting is a breeze; additional legs are hidden inside, simply unzip and fold out for lounging\nIdeal for apartments and small spaces but functional for any room\nExtra soft with high density foam and easy to care for 100% polyester fabric upholstery",
     "name": "yellow futon",
-    "color": "yellow",
-    "price": 120,
+    "color": [
+      "Yellow"
+    ],
+    "price": 120.5,
     "stock": 11,
-    "sales": 57,
     "ratings": 4,
-    "updatedAt": 1632822674851,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 25
   },
   {
-    "_id": "w2rLPFg",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822504/ecommerceAPI/2021-09-28T09-48-23.859ZSleeper-Sofa-Background-PNG.png.png"
     ],
     "description": "This Fabric Fabric Sofa  is the perfect combination of class, functionality and elegance American Fabrics, Mart)\nThe oversized cushions and the deep seater give extra comfort to your back while sitting.\nWhether in your home or office, this seater give you class.\nIt consist of 3 seater, 2 seater and a single seater\nIt comes throw pillows which gives you a smooth experience when you are sitting.",
     "name": "sleeper sofa",
-    "color": "brown",
-    "price": 249,
+    "color": [
+      "Brown"
+    ],
+    "price": 249.8,
     "stock": 34,
-    "sales": 111,
     "ratings": 3,
-    "updatedAt": 1632822505421,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 50
   },
   {
-    "_id": "zGF2htp",
-    "category": "Home, Pet & Appliances",
     "image": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822321/ecommerceAPI/2021-09-28T09-45-20.377ZFive-Seater-Sofa.png.png"
     ],
     "description": "This Sofa is the perfect combination of functionality and elegance.\nMade from the finest American Fabrics\nThe oversized cushions and the deep seater give extra comfort to your back while sitting.\nWhether in your home or office, this sofa adds beauty and class to your environment.\nIt consist of  3 throw pillows which gives you a smooth experience when you are sitting and laying.\nDimension Length 60 inches\", Breath 32 inches\", Height 36 inches.\n Available in different color shape and sizes",
     "name": "light blue sofa",
-    "color": "blue",
-    "price": 320,
+    "color": [
+      "Blue"
+    ],
+    "price": 320.7,
     "stock": 23,
-    "sales": 240,
     "ratings": 4,
-    "updatedAt": 1632822322113,
-    "categoryId": "home-pet-appliances"
+    "category": "home-pet-appliances",
+    "discount": 65
   }
 ]
