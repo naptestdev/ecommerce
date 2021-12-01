@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { Route, Routes } from "react-router-dom";
 
+import Category from "./pages/Category";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Product from "./pages/Product";
@@ -44,7 +46,10 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="product/:id" element={<Product />} />
         <Route path="search" element={<Search />} />
+        <Route path="category/:id" element={<Category />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }

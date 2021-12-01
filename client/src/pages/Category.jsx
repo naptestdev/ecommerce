@@ -1,24 +1,16 @@
 import ProductCard from "../components/ProductCard";
 import ReactLoading from "react-loading";
-import { searchProduct } from "../services/api/product";
-import { useLocation } from "react-router-dom";
-import { useQueryParams } from "../hooks/useQueryParams";
+import { getCategory } from "../services/api/product";
+import { useParams } from "react-router-dom";
 import useSWR from "swr";
 
-export default function Search() {
-  const location = useLocation();
-  const query = useQueryParams();
-
-  const q = query.get("q");
-  const category = query.get("category");
-  const minPrice = query.get("minPrice");
-  const maxPrice = query.get("maxPrice");
-  const minRatings = query.get("minRatings");
+export default function Category() {
+  const { id } = useParams();
 
   const { data, error } = useSWR(
-    location.pathname + location.search,
+    location.pathname,
 
-    () => searchProduct(q, category, minPrice, maxPrice, minRatings)
+    () => getCategory(id)
   );
 
   return (
@@ -29,7 +21,7 @@ export default function Search() {
         </div>
       ) : (
         <div className="px-[4vw] flex-grow">
-          <h1 className="text-3xl my-4">Search result for "{q}"</h1>
+          <h1 className="text-3xl my-4">Category {id}</h1>
 
           {data.length === 0 ? (
             <p>No result found</p>
