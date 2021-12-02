@@ -20,7 +20,7 @@ export default function Category() {
           <ReactLoading type="spin" color="#2874F0" height={30} width={30} />
         </div>
       ) : (
-        <div className="px-[4vw] flex-grow">
+        <div className="px-[4vw] min-h-screen">
           <h1 className="text-3xl my-4">Category {id}</h1>
 
           {data.length === 0 ? (

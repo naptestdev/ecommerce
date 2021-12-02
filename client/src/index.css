@@ -27,3 +27,28 @@ body {
   @apply text-red-500 text-sm mx-1;
   min-height: 20px;
 }
+
+.cart-table {
+  @apply w-full;
+}
+
+.cart-table * {
+  @apply whitespace-nowrap;
+}
+
+.cart-table tr {
+  @apply border-b border-[#d3d3d3] text-left;
+}
+
+.cart-table tbody tr:last-child {
+  @apply border-none;
+}
+
+.cart-table th {
+  @apply uppercase;
+}
+
+.cart-table th,
+.cart-table td {
+  @apply py-5;
+}

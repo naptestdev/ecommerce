@@ -4,7 +4,7 @@ import Suggested from "../components/Home/Suggested";
 
 export default function Home() {
   return (
-    <div className="flex-grow">
+    <div className="min-h-screen mb-16">
       <Carousel />
       <Categories />
       <Suggested />

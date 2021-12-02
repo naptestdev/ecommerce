@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { Route, Routes } from "react-router-dom";
 
+import Cart from "./pages/Cart";
 import Category from "./pages/Category";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -10,11 +11,13 @@ import Navbar from "./components/Navbar";
 import Product from "./pages/Product";
 import Search from "./pages/Search";
 import axios from "./services/axios";
+import { getCart } from "./services/api/cart";
 import { useEffect } from "react";
 import { useStore } from "./store";
 
 export default function App() {
   const setCurrentUser = useStore((state) => state.setCurrentUser);
+  const setCart = useStore((state) => state.setCart);
 
   useEffect(() => {
     if (localStorage.getItem("token")) {
@@ -36,6 +39,11 @@ export default function App() {
     } else {
       setCurrentUser(null);
     }
+
+    (async () => {
+      const response = await getCart();
+      setCart(response);
+    })();
   }, []);
 
   return (
@@ -47,6 +55,7 @@ export default function App() {
         <Route path="product/:id" element={<Product />} />
         <Route path="search" element={<Search />} />
         <Route path="category/:id" element={<Category />} />
+        <Route path="cart" element={<Cart />} />
       </Routes>
 
       <Footer />

@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import StarRatings from "../components/StarRatings";
 import { getProductDetail } from "../services/api/product";
 import useSWR from "swr";
+import { useState } from "react";
+import { useStore } from "../store";
 
 export default function Product() {
   const { id } = useParams();
@@ -12,16 +14,18 @@ export default function Product() {
   const { data: product, error } = useSWR(location.pathname, () =>
     getProductDetail(id)
   );
+  const addCartItem = useStore((state) => state.addCartItem);
+  const [quantity, setQuantity] = useState(1);
 
   if (!product || error)
     return (
-      <div className="flex-grow flex justify-center items-center bg-[#F5F5F5]">
+      <div className="min-h-screen flex justify-center items-center bg-[#F5F5F5]">
         <ReactLoading type="spin" color="#2874F0" width={40} height={40} />
       </div>
     );
 
   return (
-    <div className="bg-gray-100 flex-grow flex flex-col items-stretch px-[6vw]">
+    <div className="bg-gray-100 min-h-screen flex flex-col items-stretch px-[6vw]">
       <div className="flex gap-2 items-center text-sm my-4 flex-wrap">
         <Link
           className="hover:text-primary transition whitespace-nowrap"
@@ -92,34 +96,25 @@ export default function Product() {
           </div>
 
           <div className="flex items-center">
-            <p className="w-24">Colors</p>
-
-            <div className="flex items-stretch gap-2">
-              {product.color.map((color) => (
-                <button
-                  key={color}
-                  className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8"
-                >
-                  {color}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex items-center">
             <div className="w-24">Quantity</div>
             <div className="flex items-stretch">
-              <button className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8">
+              <button
+                onClick={() => quantity > 1 && setQuantity(quantity - 1)}
+                className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8"
+              >
                 -
               </button>
 
               <input
                 className="h-8 w-10 outline-none text-center border border-gray-300"
                 type="text"
-                value={1}
+                value={quantity}
                 readOnly
               />
-              <button className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8">
+              <button
+                onClick={() => setQuantity(quantity + 1)}
+                className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8"
+              >
                 +
               </button>
             </div>
@@ -130,7 +125,10 @@ export default function Product() {
           </p>
 
           <div className="flex gap-3">
-            <button className="px-4 py-3 bg-[#e2edff] text-primary flex items-center gap-2 hover:bg-[#d5e5ff] transition">
+            <button
+              onClick={() => addCartItem(product._id)}
+              className="px-4 py-3 bg-[#e2edff] text-primary flex items-center gap-2 hover:bg-[#d5e5ff] transition"
+            >
               <i className="fas fa-cart-plus"></i>
               <span>Add to cart</span>
             </button>

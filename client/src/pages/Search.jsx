@@ -24,11 +24,11 @@ export default function Search() {
   return (
     <>
       {!data || error ? (
-        <div className="flex-grow flex justify-center items-center">
+        <div className="min-h-screen flex justify-center items-center">
           <ReactLoading type="spin" color="#2874F0" height={30} width={30} />
         </div>
       ) : (
-        <div className="px-[4vw] flex-grow">
+        <div className="px-[4vw] min-h-screen">
           <h1 className="text-3xl my-4">Search result for "{q}"</h1>
 
           {data.length === 0 ? (
