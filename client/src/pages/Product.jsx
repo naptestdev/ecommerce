@@ -126,7 +126,7 @@ export default function Product() {
 
           <div className="flex gap-3">
             <button
-              onClick={() => addCartItem(product._id)}
+              onClick={() => addCartItem(product._id, quantity)}
               className="px-4 py-3 bg-[#e2edff] text-primary flex items-center gap-2 hover:bg-[#d5e5ff] transition"
             >
               <i className="fas fa-cart-plus"></i>

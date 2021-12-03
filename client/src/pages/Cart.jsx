@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ReactLoading from "react-loading";
+import { requestPaymentSession } from "../services/api/payment";
 import { resizeImage } from "../services/image";
 import { useStore } from "../store";
 
@@ -120,10 +121,33 @@ export default function Cart() {
               </table>
             </div>
           </div>
-          <div className="w-72 bg-white flex-shrink-0">
-            <h1>Checkout</h1>
-            <p>Total cost: $10</p>
-            <button>Checkout</button>
+          <div className="w-72 bg-white flex-shrink-0 p-4">
+            <h1 className="text-center text-3xl mt-3">Final price</h1>
+            <h1 className="text-center text-4xl text-primary my-3">
+              $
+              {Math.round(
+                cart.reduce((result, item) => {
+                  result +=
+                    Math.round(
+                      (item.product.price - item.product.discount) *
+                        10 *
+                        item.quantity
+                    ) / 10;
+                  return result;
+                }, 0) * 10
+              ) / 10}
+            </h1>
+            <div className="flex justify-center">
+              <button
+                onClick={() => {
+                  setIsCartLoading(true);
+                  requestPaymentSession();
+                }}
+                className="py-2 px-5 bg-black hover:opacity-80 transition duration-300 text-white"
+              >
+                Checkout using Stripe
+              </button>
+            </div>
           </div>
         </div>
       )}
