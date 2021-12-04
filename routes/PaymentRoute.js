@@ -28,7 +28,9 @@ router.post("/create-session", verifyJWT, async (req, res) => {
           product_data: {
             name: item.product.name,
           },
-          unit_amount: item.product.price * 100,
+          unit_amount: Math.round(
+            (item.product.price - item.product.discount) * 100
+          ),
         },
         quantity: item.quantity,
       })),
