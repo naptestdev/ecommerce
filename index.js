@@ -10,6 +10,7 @@ const LandingRoute = require("./routes/LandingRoute");
 const ProductRoute = require("./routes/ProductRoute");
 const CartRoute = require("./routes/CartRoute");
 const PaymentRoute = require("./routes/PaymentRoute");
+const ReviewsRoute = require("./routes/ReviewsRoute");
 
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
@@ -25,6 +26,7 @@ app.use("/api/landing", LandingRoute);
 app.use("/api/product", ProductRoute);
 app.use("/api/cart", CartRoute);
 app.use("/api/payment", PaymentRoute);
+app.use("/api/reviews", ReviewsRoute);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/dist"));

@@ -1,7 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Cart from "./pages/Cart";
 import Category from "./pages/Category";
@@ -18,6 +18,8 @@ import { useStore } from "./store";
 export default function App() {
   const setCurrentUser = useStore((state) => state.setCurrentUser);
   const setCart = useStore((state) => state.setCart);
+
+  const location = useLocation();
 
   useEffect(() => {
     if (localStorage.getItem("token")) {
@@ -45,6 +47,11 @@ export default function App() {
       setCart(response);
     })();
   }, []);
+
+  useEffect(() => {
+    console.log("Scrolling");
+    window.scrollTo(0, 0);
+  }, [location.pathname, location.search]);
 
   return (
     <>

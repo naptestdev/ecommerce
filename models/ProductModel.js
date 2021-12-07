@@ -12,6 +12,7 @@ const ProductSchema = new mongoose.Schema({
   price: Number,
   stock: Number,
   ratings: Number,
+  ratingsCount: Number,
   discount: Number,
 });
 
