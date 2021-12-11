@@ -6,6 +6,7 @@ export default function StarChoosing({ value, onChange, max = 5 }) {
     <div className="inline" onMouseLeave={() => setHover(0)}>
       {[...new Array(max)].map((_, index) => (
         <span
+          key={index}
           onClick={() => onChange(index + 1)}
           onMouseEnter={() => setHover(index + 1)}
           style={{ cursor: "pointer" }}

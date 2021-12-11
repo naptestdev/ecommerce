@@ -2,6 +2,7 @@ import { Link, useLocation, useParams } from "react-router-dom";
 
 import ReactLoading from "react-loading";
 import ReviewsModal from "../components/Product/ReviewsModal";
+import ReviewsSection from "../components/Product/ReviewsSection";
 import Slider from "react-slick";
 import StarRatings from "../components/StarRatings";
 import { getProductDetail } from "../services/api/product";
@@ -19,8 +20,6 @@ export default function Product() {
   const currentUser = useStore((state) => state.currentUser);
 
   const [quantity, setQuantity] = useState(1);
-
-  const [reviewModelOpened, setReviewModelOpened] = useState(false);
 
   if (!product || error)
     return (
@@ -174,7 +173,10 @@ export default function Product() {
                 All reviews & ratings
               </button>
               {[...new Array(5)].map((_, index) => (
-                <button className="py-1 px-3 bg-white border border-gray-300 cursor-pointer hover:border-gray-500 transition">
+                <button
+                  key={index}
+                  className="py-1 px-3 bg-white border border-gray-300 cursor-pointer hover:border-gray-500 transition"
+                >
                   {index + 1}
                   {index === 0 ? " star" : " stars"}
                 </button>
@@ -184,28 +186,9 @@ export default function Product() {
               </button>
             </div>
           </div>
-          <div
-            onClick={() => setReviewModelOpened(true)}
-            className="mt-5 flex items-center gap-3 cursor-pointer"
-          >
-            <img
-              className="w-8 h-8 rounded-full"
-              src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
-              alt=""
-            />
-
-            <p className="w-full max-w-lg border-dashed border-b border-gray-600">
-              Write your review
-            </p>
-          </div>
+          <ReviewsSection productId={product._id} />
         </div>
       </div>
-
-      <ReviewsModal
-        product={product}
-        isOpened={reviewModelOpened}
-        setIsOpened={setReviewModelOpened}
-      />
     </>
   );
 }

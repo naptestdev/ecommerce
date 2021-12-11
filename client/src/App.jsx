@@ -49,7 +49,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    console.log("Scrolling");
     window.scrollTo(0, 0);
   }, [location.pathname, location.search]);
 
