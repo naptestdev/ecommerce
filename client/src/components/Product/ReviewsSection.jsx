@@ -5,7 +5,7 @@ import useSWR from "swr";
 import { useState } from "react";
 import { useStore } from "../../store";
 
-export default function ReviewsSection({ productId }) {
+export default function ReviewsSection({ productId, refetchProduct }) {
   const { data, error, mutate } = useSWR(`reviews-${productId}`, () =>
     getReviews(productId)
   );
@@ -57,9 +57,17 @@ export default function ReviewsSection({ productId }) {
         productId={productId}
         isOpened={reviewModelOpened}
         setIsOpened={setReviewModelOpened}
-        refetch={mutate}
-        defaultInputValue={data.find((item) => item?.user?._id)?.comment || ""}
-        defaultStarCount={data.find((item) => item?.user?._id)?.ratings || 0}
+        refetch={() => {
+          mutate();
+          refetchProduct();
+        }}
+        defaultInputValue={
+          data.find((item) => item?.user?._id === currentUser._id)?.comment ||
+          ""
+        }
+        defaultStarCount={
+          data.find((item) => item?.user?._id === currentUser._id)?.ratings || 0
+        }
       />
     </>
   );

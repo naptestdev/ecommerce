@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const ProductModel = require("../models/ProductModel");
 
 const ReviewsSchema = new mongoose.Schema({
   user: {
@@ -17,6 +18,10 @@ const ReviewsSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+});
+
+ReviewsSchema.pre("save", async function (next) {
+  next();
 });
 
 module.exports = mongoose.model("reviews", ReviewsSchema);

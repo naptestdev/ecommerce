@@ -1,7 +1,6 @@
 import { Link, useLocation, useParams } from "react-router-dom";
 
 import ReactLoading from "react-loading";
-import ReviewsModal from "../components/Product/ReviewsModal";
 import ReviewsSection from "../components/Product/ReviewsSection";
 import Slider from "react-slick";
 import StarRatings from "../components/StarRatings";
@@ -13,11 +12,12 @@ import { useStore } from "../store";
 export default function Product() {
   const { id } = useParams();
   const location = useLocation();
-  const { data: product, error } = useSWR(location.pathname, () =>
-    getProductDetail(id)
-  );
+  const {
+    data: product,
+    error,
+    mutate,
+  } = useSWR(location.pathname, () => getProductDetail(id));
   const addCartItem = useStore((state) => state.addCartItem);
-  const currentUser = useStore((state) => state.currentUser);
 
   const [quantity, setQuantity] = useState(1);
 
@@ -156,7 +156,7 @@ export default function Product() {
           <p>{product.description}</p>
         </div>
 
-        <div className="bg-white mt-8 px-4 pt-5">
+        <div className="bg-white mt-8 px-4 py-5">
           <h1 className="text-3xl mb-6">Reviews & Ratings</h1>
 
           <div className="bg-[#f4f8fe] flex px-10 py-6 border border-[#dfeafd] gap-8">
@@ -186,7 +186,7 @@ export default function Product() {
               </button>
             </div>
           </div>
-          <ReviewsSection productId={product._id} />
+          <ReviewsSection productId={product._id} refetchProduct={mutate} />
         </div>
       </div>
     </>
