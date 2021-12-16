@@ -3,18 +3,27 @@ import StarChoosing from "../StarChoosing";
 import { createReview } from "../../services/api/reviews";
 import { useState } from "react";
 
-export default function ReviewsModal({ productId, isOpened, setIsOpened }) {
-  const [starCount, setStarCount] = useState(0);
-  const [inputValue, setInputValue] = useState("");
+export default function ReviewsModal({
+  productId,
+  isOpened,
+  setIsOpened,
+  refetch,
+  defaultStarCount = 0,
+  defaultInputValue = "",
+}) {
+  const [starCount, setStarCount] = useState(defaultStarCount);
+  const [inputValue, setInputValue] = useState(defaultInputValue);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = () => {
     if (starCount && inputValue.trim()) {
       setIsLoading(true);
 
-      createReview(productId, starCount, inputValue).then(() =>
-        setIsOpened(false)
-      );
+      createReview(productId, starCount, inputValue).then(() => {
+        setIsOpened(false);
+        refetch();
+        setIsLoading(false);
+      });
     }
   };
 

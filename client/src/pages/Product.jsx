@@ -156,7 +156,7 @@ export default function Product() {
           <p>{product.description}</p>
         </div>
 
-        <div className="bg-white mt-8 px-4 py-5">
+        <div className="bg-white mt-8 px-4 pt-5">
           <h1 className="text-3xl mb-6">Reviews & Ratings</h1>
 
           <div className="bg-[#f4f8fe] flex px-10 py-6 border border-[#dfeafd] gap-8">

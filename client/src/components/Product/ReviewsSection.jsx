@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useStore } from "../../store";
 
 export default function ReviewsSection({ productId }) {
-  const { data, error } = useSWR(`reviews-${productId}`, () =>
+  const { data, error, mutate } = useSWR(`reviews-${productId}`, () =>
     getReviews(productId)
   );
 
@@ -22,30 +22,33 @@ export default function ReviewsSection({ productId }) {
         className="mt-5 flex items-center gap-3 cursor-pointer"
       >
         <img
-          className="w-8 h-8 rounded-full"
+          className="w-10 h-10 rounded-full"
           src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
           alt=""
         />
 
         <p className="w-full max-w-lg border-dashed border-b border-gray-600">
-          Write your review
+          {data.some((item) => item?.user?._id === currentUser._id)
+            ? "Edit"
+            : "Write"}{" "}
+          your review
         </p>
       </div>
       <div>
         {data.map((item) => (
-          <div key={item.user._id} className="flex gap-3 my-3 py-3 border-t">
+          <div key={item.user?._id} className="flex gap-3 my-3 py-3 border-t">
             <img
               className="w-10 h-10 rounded-full"
-              src={`https://avatars.dicebear.com/api/initials/${item.user.username}.svg`}
+              src={`https://avatars.dicebear.com/api/initials/${item.user?.username}.svg`}
               alt=""
             />
 
             <div>
-              <p className="font-semibold">{item.user.username}</p>
+              <p className="font-semibold">{item.user?.username}</p>
 
               <StarRatings value={item.ratings} max={5} />
 
-              {item.comment && <p className="mt-3">{item.comment}</p>}
+              {item.comment && <p className="mt-1">{item.comment}</p>}
             </div>
           </div>
         ))}
@@ -54,6 +57,9 @@ export default function ReviewsSection({ productId }) {
         productId={productId}
         isOpened={reviewModelOpened}
         setIsOpened={setReviewModelOpened}
+        refetch={mutate}
+        defaultInputValue={data.find((item) => item?.user?._id)?.comment || ""}
+        defaultStarCount={data.find((item) => item?.user?._id)?.ratings || 0}
       />
     </>
   );
