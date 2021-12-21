@@ -24,7 +24,7 @@ export default function ReviewsSection({ product, refetchProduct }) {
 
   return (
     <>
-      <div className="bg-white mt-8 px-4 py-5">
+      <div className="bg-white mt-8 p-4 pb-2">
         <h1 className="text-3xl mb-6">Reviews & Ratings</h1>
 
         <div className="bg-[#f4f8fe] flex px-10 py-6 border border-[#dfeafd] gap-8">

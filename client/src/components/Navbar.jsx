@@ -9,6 +9,7 @@ export default function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
 
   const currentUser = useStore((state) => state.currentUser);
+  const setCurrentUser = useStore((state) => state.setCurrentUser);
 
   const navigate = useNavigate();
 
@@ -20,6 +21,11 @@ export default function Navbar() {
       setSearchInputValue("");
       navigate(`/search?q=${encodeURIComponent(searchInputValue.trim())}`);
     }
+  };
+
+  const handleSignOut = () => {
+    localStorage.removeItem("token");
+    setCurrentUser(null);
   };
 
   return (
@@ -78,13 +84,36 @@ export default function Navbar() {
               <></>
             ) : (
               <>
-                <div className="flex items-center gap-1 cursor-pointer">
-                  <img
-                    className="w-7 h-7 rounded-full"
-                    src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
-                    alt=""
-                  />
-                  <p>{currentUser.username}</p>
+                <div className="relative group" tabIndex={0}>
+                  <div className="flex items-center gap-1 cursor-pointer">
+                    <img
+                      className="w-7 h-7 rounded-full"
+                      src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
+                      alt=""
+                    />
+                    <p>{currentUser.username}</p>
+                  </div>
+
+                  <div
+                    style={{ transformOrigin: "top right" }}
+                    className="absolute top-[150%] bg-white text-black right-0 py-2 rounded overflow-hidden opacity-0 invisible scale-0 group-focus-within:opacity-100 group-focus-within:scale-100 group-focus-within:visible transition-all"
+                    style={{ width: "max-content" }}
+                  >
+                    <Link
+                      to="/profile"
+                      className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
+                    >
+                      <i className="fas fa-user"></i>
+                      <span className="whitespace-nowrap">Profile</span>
+                    </Link>
+                    <div
+                      onClick={handleSignOut}
+                      className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
+                    >
+                      <i className="fas fa-sign-out-alt"></i>
+                      <span className="whitespace-nowrap">Sign Out</span>
+                    </div>
+                  </div>
                 </div>
                 <Link to="cart">
                   <i className="fas fa-shopping-cart text-lg"></i>

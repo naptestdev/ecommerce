@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Product from "./pages/Product";
+import Profile from "./pages/Profile";
 import Search from "./pages/Search";
 import axios from "./services/axios";
 import { getCart } from "./services/api/cart";
@@ -62,6 +63,7 @@ export default function App() {
         <Route path="search" element={<Search />} />
         <Route path="category/:id" element={<Category />} />
         <Route path="cart" element={<Cart />} />
+        <Route path="profile" element={<Profile />} />
       </Routes>
 
       <Footer />
