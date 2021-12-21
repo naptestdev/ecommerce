@@ -151,43 +151,7 @@ export default function Product() {
           </div>
         </div>
 
-        <div className="bg-white mt-8 px-4 py-5">
-          <h1 className="text-3xl mb-6">Product description</h1>
-          <p>{product.description}</p>
-        </div>
-
-        <div className="bg-white mt-8 px-4 py-5">
-          <h1 className="text-3xl mb-6">Reviews & Ratings</h1>
-
-          <div className="bg-[#f4f8fe] flex px-10 py-6 border border-[#dfeafd] gap-8">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-2xl">
-                <span className="text-4xl">{product.ratings}</span> on 5
-              </h1>
-              <div className="text-2xl">
-                <StarRatings value={product.ratings} max={5} />
-              </div>
-            </div>
-            <div className="flex items-center justify-start flex-wrap gap-2">
-              <button className="py-1 px-3 bg-white border border-gray-300 cursor-pointer hover:border-gray-500 transition">
-                All reviews & ratings
-              </button>
-              {[...new Array(5)].map((_, index) => (
-                <button
-                  key={index}
-                  className="py-1 px-3 bg-white border border-gray-300 cursor-pointer hover:border-gray-500 transition"
-                >
-                  {index + 1}
-                  {index === 0 ? " star" : " stars"}
-                </button>
-              ))}
-              <button className="py-1 px-3 bg-white border border-gray-300 cursor-pointer hover:border-gray-500 transition">
-                Has review comment
-              </button>
-            </div>
-          </div>
-          <ReviewsSection productId={product._id} refetchProduct={mutate} />
-        </div>
+        <ReviewsSection product={product} refetchProduct={mutate} />
       </div>
     </>
   );

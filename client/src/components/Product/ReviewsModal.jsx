@@ -4,7 +4,7 @@ import { createReview } from "../../services/api/reviews";
 import { useState } from "react";
 
 export default function ReviewsModal({
-  productId,
+  product,
   isOpened,
   setIsOpened,
   refetch,
@@ -16,10 +16,10 @@ export default function ReviewsModal({
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = () => {
-    if (starCount && inputValue.trim()) {
+    if (starCount) {
       setIsLoading(true);
 
-      createReview(productId, starCount, inputValue).then(() => {
+      createReview(product._id, starCount, inputValue).then(() => {
         setIsOpened(false);
         refetch();
         setIsLoading(false);
