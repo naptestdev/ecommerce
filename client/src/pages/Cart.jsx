@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ReactLoading from "react-loading";
+import Spin from "react-cssfx-loading/lib/Spin";
 import { requestPaymentSession } from "../services/api/payment";
 import { resizeImage } from "../services/image";
 import { useStore } from "../store";
@@ -18,7 +18,7 @@ export default function Cart() {
     <>
       {isCartLoading && (
         <div className="fixed h-screen w-screen top-0 left-0 bg-[#00000033] flex justify-center items-center">
-          <ReactLoading type="spin" color="#2874F0" width={40} height={40} />
+          <Spin color="#2874F0" width="40px" height="40px" />
         </div>
       )}
       {cart.length === 0 ? (
@@ -39,7 +39,7 @@ export default function Cart() {
           </div>
         </div>
       ) : (
-        <div className="min-h-screen px-[10vw] bg-[#F5F5F5] flex items-start pt-8 gap-8">
+        <div className="min-h-screen px-[10vw] bg-bg flex items-start pt-8 gap-8">
           <div className="bg-white flex-grow p-4">
             <div>
               <table className="cart-table">

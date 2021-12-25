@@ -1,12 +1,15 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import AuthModal from "./Auth/AuthModal";
+import ClickAwayListener from "react-click-away-listener";
 import { useState } from "react";
 import { useStore } from "../store";
 
 export default function Navbar() {
   const [view, setView] = useState("signIn");
   const [isOpened, setIsOpened] = useState(false);
+
+  const [dropdownActive, setDropdownActive] = useState(false);
 
   const currentUser = useStore((state) => state.currentUser);
   const setCurrentUser = useStore((state) => state.setCurrentUser);
@@ -30,7 +33,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="sticky top-0 bg-primary text-gray-200 flex items-center gap-4 h-16 px-[4vw] z-40">
+      <div className="bg-primary text-gray-200 flex items-center gap-4 h-16 px-[4vw] z-40">
         <div className="flex-1 flex justify-start">
           <Link to="/" className="flex items-end gap-2">
             <i className="fas fa-shopping-bag text-3xl"></i>
@@ -84,37 +87,48 @@ export default function Navbar() {
               <></>
             ) : (
               <>
-                <div className="relative group" tabIndex={0}>
-                  <div className="flex items-center gap-1 cursor-pointer">
-                    <img
-                      className="w-7 h-7 rounded-full"
-                      src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
-                      alt=""
-                    />
-                    <p>{currentUser.username}</p>
-                  </div>
-
+                <ClickAwayListener onClickAway={() => setDropdownActive(false)}>
                   <div
-                    style={{ transformOrigin: "top right" }}
-                    className="absolute top-[150%] bg-white text-black right-0 py-2 rounded overflow-hidden opacity-0 invisible scale-0 group-focus-within:opacity-100 group-focus-within:scale-100 group-focus-within:visible transition-all"
-                    style={{ width: "max-content" }}
+                    onClick={() => setDropdownActive(!dropdownActive)}
+                    className="relative"
                   >
-                    <Link
-                      to="/profile"
-                      className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
-                    >
-                      <i className="fas fa-user"></i>
-                      <span className="whitespace-nowrap">Profile</span>
-                    </Link>
+                    <div className="flex items-center gap-1 cursor-pointer">
+                      <img
+                        className="w-7 h-7 rounded-full"
+                        src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
+                        alt=""
+                      />
+                      <p>{currentUser.username}</p>
+                    </div>
+
                     <div
-                      onClick={handleSignOut}
-                      className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
+                      style={{
+                        transformOrigin: "top right",
+                        width: "max-content",
+                      }}
+                      className={`absolute top-[150%] bg-white text-black right-0 py-2 rounded overflow-hidden transition-all ${
+                        dropdownActive
+                          ? "opacity-100 scale-100 visible"
+                          : "opacity-0 invisible scale-0"
+                      }`}
                     >
-                      <i className="fas fa-sign-out-alt"></i>
-                      <span className="whitespace-nowrap">Sign Out</span>
+                      <Link
+                        to="/profile"
+                        className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
+                      >
+                        <i className="fas fa-user"></i>
+                        <span className="whitespace-nowrap">Profile</span>
+                      </Link>
+                      <div
+                        onClick={handleSignOut}
+                        className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
+                      >
+                        <i className="fas fa-sign-out-alt"></i>
+                        <span className="whitespace-nowrap">Sign Out</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </ClickAwayListener>
                 <Link to="cart">
                   <i className="fas fa-shopping-cart text-lg"></i>
                 </Link>

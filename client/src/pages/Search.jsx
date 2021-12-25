@@ -1,5 +1,5 @@
 import ProductCard from "../components/ProductCard";
-import ReactLoading from "react-loading";
+import Spin from "react-cssfx-loading/lib/Spin";
 import { searchProduct } from "../services/api/product";
 import { useLocation } from "react-router-dom";
 import { useQueryParams } from "../hooks/useQueryParams";
@@ -25,7 +25,7 @@ export default function Search() {
     <>
       {!data || error ? (
         <div className="min-h-screen flex justify-center items-center">
-          <ReactLoading type="spin" color="#2874F0" height={30} width={30} />
+          <Spin color="#2874F0" height="30px" width="30px" />
         </div>
       ) : (
         <div className="px-[4vw] min-h-screen">

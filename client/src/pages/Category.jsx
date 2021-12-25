@@ -1,5 +1,5 @@
 import ProductCard from "../components/ProductCard";
-import ReactLoading from "react-loading";
+import Spin from "react-cssfx-loading/lib/Spin";
 import { getCategory } from "../services/api/product";
 import { useParams } from "react-router-dom";
 import useSWR from "swr";
@@ -17,7 +17,7 @@ export default function Category() {
     <>
       {!data || error ? (
         <div className="flex-grow flex justify-center items-center">
-          <ReactLoading type="spin" color="#2874F0" height={30} width={30} />
+          <Spin color="#2874F0" height="30px" width="30px" />
         </div>
       ) : (
         <div className="px-[4vw] min-h-screen">

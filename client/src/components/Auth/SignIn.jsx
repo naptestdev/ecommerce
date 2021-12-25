@@ -1,4 +1,4 @@
-import ReactLoading from "react-loading";
+import Spin from "react-cssfx-loading/lib/Spin";
 import axios from "../../services/axios";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
@@ -93,7 +93,7 @@ export default function SignIn({ setView, setIsOpened }) {
       </div>
       <button className="w-full h-12 flex justify-center items-center bg-primary text-white hover:bg-secondary transition">
         {loading ? (
-          <ReactLoading type="spin" color="#FFFFFF" height={30} width={30} />
+          <Spin color="#FFFFFF" height="30px" width="30px" />
         ) : (
           "Sign In"
         )}

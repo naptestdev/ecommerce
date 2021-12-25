@@ -1,8 +1,8 @@
 import { Link, useLocation, useParams } from "react-router-dom";
 
-import ReactLoading from "react-loading";
 import ReviewsSection from "../components/Product/ReviewsSection";
 import Slider from "react-slick";
+import Spin from "react-cssfx-loading/lib/Spin";
 import StarRatings from "../components/StarRatings";
 import { getProductDetail } from "../services/api/product";
 import useSWR from "swr";
@@ -23,8 +23,8 @@ export default function Product() {
 
   if (!product || error)
     return (
-      <div className="min-h-screen flex justify-center items-center bg-[#F5F5F5]">
-        <ReactLoading type="spin" color="#2874F0" width={40} height={40} />
+      <div className="min-h-screen flex justify-center items-center bg-bg">
+        <Spin color="#2874F0" width="40px" height="40px" />
       </div>
     );
 

@@ -1,4 +1,4 @@
-import ReactLoading from "react-loading";
+import Spin from "react-cssfx-loading/lib/Spin";
 import StarChoosing from "../StarChoosing";
 import { createReview } from "../../services/api/reviews";
 import { useState } from "react";
@@ -58,12 +58,7 @@ export default function ReviewsModal({
             className="outline-none w-44 flex justify-center py-2 bg-black text-white transition hover:bg-gray-700"
           >
             {isLoading ? (
-              <ReactLoading
-                type="spin"
-                color="#FFFFFF"
-                height={25}
-                width={25}
-              />
+              <Spin color="#FFFFFF" height="25px" width="25px" />
             ) : (
               <>Submit your review</>
             )}
