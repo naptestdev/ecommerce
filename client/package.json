@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@originjs/vite-plugin-commonjs": "^1.0.1",
     "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.4.0",
     "axios": "^0.24.0",
@@ -21,8 +22,5 @@
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.4",
     "zustand": "^3.6.5"
-  },
-  "devDependencies": {
-    "@originjs/vite-plugin-commonjs": "^1.0.1"
   }
 }
