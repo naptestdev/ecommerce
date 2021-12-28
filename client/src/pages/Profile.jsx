@@ -23,10 +23,8 @@ export default function Profile() {
           <h1 className="text-4xl mb-3">My profile</h1>
 
           <Info />
-
-          <Password />
-
           <Address />
+          <Password />
         </div>
         <div className="px-16 py-4 flex flex-grow flex-col items-center justify-start gap-6 flex-shrink-0">
           <img

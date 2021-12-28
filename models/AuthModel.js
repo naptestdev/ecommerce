@@ -17,6 +17,10 @@ const AuthSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
+  address: {
+    type: Object,
+    required: false,
+  },
 });
 
 module.exports = mongoose.model("users", AuthSchema);

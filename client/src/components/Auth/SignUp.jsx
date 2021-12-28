@@ -17,6 +17,8 @@ export default function SignUp({ setView }) {
   const handleFormSubmit = (data) => {
     const { email, password, username } = data;
 
+    if (loading) return;
+
     setLoading(true);
 
     axios

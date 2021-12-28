@@ -1,8 +1,24 @@
+import axios from "../services/axios";
 import create from "zustand";
 import { getProductDetail } from "../services/api/product";
 import { updateCart } from "../services/api/cart";
 
 export const useStore = create((set, get) => ({
+  verifyUser: () => {
+    axios
+      .post("auth/verify-token")
+      .then((res) => {
+        if (res.status === 200) {
+          set({ currentUser: res.data.user });
+          localStorage.setItem("token", res.data.token);
+        } else {
+          set({ currentUser: null });
+        }
+      })
+      .catch(() => {
+        set({ currentUser: null });
+      });
+  },
   currentUser: undefined,
   setCurrentUser: (payload) => set({ currentUser: payload }),
   cart: [],

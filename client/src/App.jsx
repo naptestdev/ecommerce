@@ -1,7 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Cart from "./pages/Cart";
 import Category from "./pages/Category";
@@ -11,34 +11,18 @@ import Navbar from "./components/Navbar";
 import Product from "./pages/Product";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
-import axios from "./services/axios";
 import { getCart } from "./services/api/cart";
 import { useEffect } from "react";
 import { useStore } from "./store";
 
 export default function App() {
   const setCurrentUser = useStore((state) => state.setCurrentUser);
+  const verifyUser = useStore((state) => state.verifyUser);
   const setCart = useStore((state) => state.setCart);
-
-  const location = useLocation();
 
   useEffect(() => {
     if (localStorage.getItem("token")) {
-      axios
-        .post("auth/verify-token")
-        .then((res) => {
-          if (res.status === 200) {
-            setCurrentUser(res.data.user);
-            localStorage.setItem("token", res.data.token);
-          } else {
-            setCurrentUser(null);
-          }
-        })
-        .catch((err) => {
-          setCurrentUser(null);
-
-          console.log(err.response?.data);
-        });
+      verifyUser();
     } else {
       setCurrentUser(null);
     }

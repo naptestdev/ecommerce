@@ -52,3 +52,7 @@ body {
 .cart-table td {
   @apply py-5;
 }
+
+.btn {
+  @apply outline-none border-none py-2 px-3 bg-primary hover:bg-secondary transition text-white my-3 rounded disabled:opacity-70 disabled:cursor-default disabled:hover:bg-primary;
+}

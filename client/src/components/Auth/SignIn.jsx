@@ -17,6 +17,8 @@ export default function SignIn({ setView, setIsOpened }) {
   } = useForm();
 
   const handleFormSubmit = (data) => {
+    if (loading) return;
+
     const { email, password } = data;
 
     setLoading(true);

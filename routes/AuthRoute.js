@@ -147,27 +147,109 @@ router.post("/sign-in", async (req, res) => {
 });
 
 router.post("/verify-token", verifyJWT, async (req, res) => {
-  const existingUser = await AuthModel.findOne({ email: req.user.email });
+  try {
+    const existingUser = await AuthModel.findOne({ email: req.user.email });
 
-  if (existingUser?._id?.toString() !== req.user?._id)
-    return res.status(403).send({
-      message: "Invalid user info",
+    if (existingUser?._id?.toString() !== req.user?._id)
+      return res.status(403).send({
+        message: "Invalid user info",
+      });
+
+    const user = {
+      _id: existingUser._id,
+      username: existingUser.username,
+      email: existingUser.email,
+      address: existingUser.address,
+    };
+
+    const accessToken = jwt.sign(user, process.env.JWT_SECRET_TOKEN, {
+      expiresIn: "7d",
     });
 
-  const user = {
-    _id: existingUser._id,
-    username: existingUser.username,
-    email: existingUser.email,
-  };
+    res.send({
+      user,
+      token: accessToken,
+    });
+  } catch (error) {
+    console.log(error);
+    if (!res.headerSent) res.sendStatus(500);
+  }
+});
 
-  const accessToken = jwt.sign(user, process.env.JWT_SECRET_TOKEN, {
-    expiresIn: "7d",
-  });
+router.post("/update-username", verifyJWT, async (req, res) => {
+  try {
+    const existingUser = await AuthModel.findOne({ _id: req.user._id });
 
-  res.send({
-    user,
-    token: accessToken,
-  });
+    if (!existingUser || !req.body.username)
+      return res.status(403).send({
+        message: "Invalid request",
+      });
+
+    await AuthModel.updateOne(
+      { _id: req.user._id },
+      { username: req.body.username }
+    );
+
+    res.send({
+      message: "Username updated successfully",
+    });
+  } catch (error) {
+    console.log(error);
+    if (!res.headerSent) res.sendStatus(500);
+  }
+});
+
+router.post("/update-address", verifyJWT, async (req, res) => {
+  try {
+    const { fullName, phoneNumber, city, district, exactAddress } = req.body;
+
+    if (!fullName || !phoneNumber || !city || !district || !exactAddress)
+      return res.status(403).send({ message: "Missing info" });
+
+    await AuthModel.findOneAndUpdate(
+      { _id: req.user._id },
+      { address: { fullName, phoneNumber, city, district, exactAddress } }
+    );
+    res.send({ message: "Address updated successfully!" });
+  } catch (error) {
+    console.log(error);
+    if (!res.headerSent) res.sendStatus(500);
+  }
+});
+
+router.post("/change-password", verifyJWT, async (req, res) => {
+  try {
+    const existingUser = await AuthModel.findOne({ _id: req.user._id });
+
+    const { oldPassword, newPassword } = req.body;
+
+    let passwordCompare = await bcrypt.compare(
+      oldPassword,
+      existingUser.password
+    );
+
+    if (!passwordCompare)
+      return res.status(403).send({ message: "Old password is incorrect" });
+
+    const salt = await bcrypt.genSalt(10);
+    const hashed = await bcrypt.hash(newPassword, salt);
+
+    const updated = await AuthModel.findOneAndUpdate(
+      {
+        _id: req.user._id,
+      },
+      {
+        password: hashed,
+      }
+    );
+
+    res.send({
+      message: "Password changed successfully!",
+    });
+  } catch (error) {
+    console.log(error);
+    if (!res.headerSent) res.sendStatus(500);
+  }
 });
 
 module.exports = router;
