@@ -23,7 +23,6 @@
     "mongoose": "^6.0.13",
     "nanoid": "^3.1.30",
     "nodemailer": "^6.7.2",
-    "react-click-away-listener": "^2.0.5",
     "stripe": "^8.191.0"
   },
   "devDependencies": {
