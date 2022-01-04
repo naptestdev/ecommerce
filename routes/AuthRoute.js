@@ -234,7 +234,7 @@ router.post("/change-password", verifyJWT, async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashed = await bcrypt.hash(newPassword, salt);
 
-    const updated = await AuthModel.findOneAndUpdate(
+    await AuthModel.findOneAndUpdate(
       {
         _id: req.user._id,
       },

@@ -12,7 +12,8 @@ const CartRoute = require("./routes/CartRoute");
 const PaymentRoute = require("./routes/PaymentRoute");
 const ReviewsRoute = require("./routes/ReviewsRoute");
 
-app.use(cors({ origin: true, credentials: true }));
+if (process.env.NODE_ENV !== "production")
+  app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
 
 app.enable("trust proxy");
