@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#F1F5F8];
+}
+
+.input-outline {
+  @apply outline-none border border-gray-300 focus:border-black transition px-3 py-2;
+}
+
+.input-error {
+  @apply text-red-500 text-sm mx-1;
+  min-height: 20px;
+}
