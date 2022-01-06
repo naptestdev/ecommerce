@@ -7,4 +7,4 @@ const SlideSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("slides", SlideSchema);
+module.exports = mongoose.model("banners", SlideSchema);

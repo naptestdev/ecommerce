@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-const SlideModel = require("../models/SlideModel");
+const BannersModel = require("../models/BannersModel");
 const CategoryModel = require("../models/CategoryModel");
 const ProductModel = require("../models/ProductModel");
 
 router.get("/slide", async (req, res) => {
   try {
-    const data = await SlideModel.find({});
+    const data = await BannersModel.find({});
 
     res.send(data);
   } catch (error) {
