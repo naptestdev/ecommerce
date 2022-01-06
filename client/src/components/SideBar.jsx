@@ -46,6 +46,7 @@ export default function SideBar() {
       <div className="flex flex-col items-stretch mt-6">
         {items.map((item) => (
           <Link
+            key={item.link}
             to={item.link}
             className={`flex items-center gap-2 p-2 hover:brightness-[80%] transition ${
               location.pathname === item.link ? "text-primary" : ""

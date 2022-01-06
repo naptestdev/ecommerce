@@ -36,6 +36,7 @@ router.post("/sign-in", async (req, res) => {
       _id: existingUser._id,
       username: existingUser.username,
       email: existingUser.email,
+      isAdmin: true,
     };
 
     const accessToken = jwt.sign(user, process.env.JWT_SECRET_TOKEN, {
@@ -62,6 +63,7 @@ router.post("/verify-token", verifyJWT, async (req, res) => {
       _id: existingUser._id,
       username: existingUser.username,
       email: existingUser.email,
+      isAdmin: true,
     };
 
     const accessToken = jwt.sign(user, process.env.JWT_SECRET_TOKEN, {

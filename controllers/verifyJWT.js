@@ -14,6 +14,8 @@ const verifyJWT = (req, res, next) => {
         message: "The access token is invalid",
       });
     else {
+      if (!user.isAdmin)
+        return res.status(400).send({ message: "User is not an admin" });
       req.user = user;
       next();
     }

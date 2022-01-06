@@ -6,6 +6,8 @@ const path = require("path");
 require("dotenv/config");
 
 const AuthRoute = require("./routes/AuthRoute");
+const HomeRoute = require("./routes/HomeRoute");
+const BannersRoute = require("./routes/BannersRoute");
 
 if (process.env.NODE_ENV !== "production")
   app.use(cors({ origin: true, credentials: true }));
@@ -18,6 +20,8 @@ mongoose.connect(process.env.MONGODB_URI, {}, () =>
 );
 
 app.use("/api/auth", AuthRoute);
+app.use("/api/home", HomeRoute);
+app.use("/api/banners", BannersRoute);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/dist"));

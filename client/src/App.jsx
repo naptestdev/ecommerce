@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
+import Banners from "./pages/Banners";
 import Home from "./pages/Home";
 import PrivateRoute from "./components/PrivateRoute";
 import SignIn from "./pages/SignIn";
@@ -44,6 +45,7 @@ export default function App() {
         }
       />
       <Route path="sign-in" element={<SignIn />} />
+      <Route path="banners" element={<Banners />} />
     </Routes>
   );
 }
