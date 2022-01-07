@@ -43,9 +43,9 @@ export default function Carousel() {
         >
           {data.map((item) => (
             <img
-              key={item.url}
+              key={item}
               className="w-full h-[30vw] max-h-[260px] object-cover"
-              src={item.url}
+              src={item}
               alt=""
             />
           ))}

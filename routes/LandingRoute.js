@@ -7,7 +7,7 @@ const ProductModel = require("../models/ProductModel");
 
 router.get("/slide", async (req, res) => {
   try {
-    const data = await BannersModel.find({});
+    const data = (await BannersModel.find({}))[0].images;
 
     res.send(data);
   } catch (error) {
