@@ -1,17 +1,12 @@
 [
   {
-    "url": "https://res.cloudinary.com/shopproj/image/upload/v1638097476/slide/yzsogoalc6v6szzv6lyh.jpg"
-  },
-  {
-    "url": "https://res.cloudinary.com/shopproj/image/upload/v1638097119/slide/vmt9cm0xlnema90wdct0.jpg"
-  },
-  {
-    "url": "https://res.cloudinary.com/shopproj/image/upload/v1638097118/slide/cp72qidggl4igl8krkes.jpg"
-  },
-  {
-    "url": "https://res.cloudinary.com/shopproj/image/upload/v1638097118/slide/mbbd3c9fhayzmxzvbs8h.jpg"
-  },
-  {
-    "url": "https://res.cloudinary.com/shopproj/image/upload/v1638097118/slide/rs3tvqcuzzctlltp5rfg.jpg"
+    "_id": "images",
+    "images": [
+      "https://res.cloudinary.com/shopproj/image/upload/v1638097476/slide/yzsogoalc6v6szzv6lyh.jpg",
+      "https://res.cloudinary.com/shopproj/image/upload/v1638097119/slide/vmt9cm0xlnema90wdct0.jpg",
+      "https://res.cloudinary.com/shopproj/image/upload/v1638097118/slide/cp72qidggl4igl8krkes.jpg",
+      "https://res.cloudinary.com/shopproj/image/upload/v1638097118/slide/mbbd3c9fhayzmxzvbs8h.jpg",
+      "https://res.cloudinary.com/shopproj/image/upload/v1638097118/slide/rs3tvqcuzzctlltp5rfg.jpg"
+    ]
   }
 ]
