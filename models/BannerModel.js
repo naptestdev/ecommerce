@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
 
 const SlideSchema = new mongoose.Schema({
-  url: {
-    type: String,
-    required: true,
-  },
+  images: [String],
 });
 
 module.exports = mongoose.model("banners", SlideSchema);

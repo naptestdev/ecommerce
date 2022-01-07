@@ -6,11 +6,7 @@ import useSWR from "swr";
 export default function Banners() {
   const { data } = useSWR("banners", () => getBanners());
 
-  if (!data) return <div>Loading</div>;
-
   return (
-    <Layout>
-      <BannersDND data={data} />
-    </Layout>
+    <Layout>{!data ? <div>Loading</div> : <BannersDND data={data} />}</Layout>
   );
 }
