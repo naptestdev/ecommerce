@@ -22,10 +22,6 @@ const AuthSchema = new mongoose.Schema(
       type: Object,
       required: false,
     },
-    isAdmin: {
-      type: Boolean,
-      required: false,
-    },
   },
   { timestamps: true }
 );

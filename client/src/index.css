@@ -14,3 +14,16 @@ body {
   @apply text-red-500 text-sm mx-1;
   min-height: 20px;
 }
+
+.users-table {
+  @apply border-collapse w-full bg-white;
+}
+
+.users-table td,
+.users-table th {
+  @apply border border-[#ddd] text-left p-2;
+}
+
+.users-table tr {
+  @apply hover:bg-[#efefef] transition;
+}

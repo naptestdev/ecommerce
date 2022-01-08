@@ -26,11 +26,6 @@ const items = [
     icon: "fas fa-image",
     link: "/banners",
   },
-  {
-    name: "Print statistic",
-    icon: "fas fa-print",
-    link: "/print",
-  },
 ];
 
 export default function SideBar() {

@@ -4,6 +4,7 @@ import Banners from "./pages/Banners";
 import Home from "./pages/Home";
 import PrivateRoute from "./components/PrivateRoute";
 import SignIn from "./pages/SignIn";
+import Users from "./pages/Users";
 import axios from "./services/axios";
 import { useEffect } from "react";
 import { useStore } from "./store";
@@ -45,7 +46,22 @@ export default function App() {
         }
       />
       <Route path="sign-in" element={<SignIn />} />
-      <Route path="banners" element={<Banners />} />
+      <Route
+        path="banners"
+        element={
+          <PrivateRoute>
+            <Banners />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="users"
+        element={
+          <PrivateRoute>
+            <Users />
+          </PrivateRoute>
+        }
+      />
     </Routes>
   );
 }

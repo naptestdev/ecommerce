@@ -26,13 +26,13 @@ export default function SignIn() {
   const handleFormSubmit = (data) => {
     if (loading) return;
 
-    const { email, password } = data;
+    const { username, password } = data;
 
     setLoading(true);
 
     axios
       .post("auth/sign-in", {
-        email,
+        username,
         password,
       })
       .then((res) => {
@@ -50,8 +50,8 @@ export default function SignIn() {
 
         console.log(errorMessage);
 
-        if (errorMessage.errorSection === "email") {
-          setError("email", { message: errorMessage.message });
+        if (errorMessage.errorSection === "username") {
+          setError("username", { message: errorMessage.message });
         } else if (errorMessage.errorSection === "password") {
           setError("password", { message: errorMessage.message });
         }
@@ -72,21 +72,18 @@ export default function SignIn() {
         <div>
           <input
             className="input-outline w-full"
-            type="email"
-            placeholder="Email"
-            {...register("email", {
-              pattern: {
-                value:
-                  /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/gm,
-                message: "Please enter a valid email",
-              },
+            type="text"
+            placeholder="Username"
+            {...register("username", {
               required: {
                 value: true,
-                message: "Email is required",
+                message: "Username is required",
               },
             })}
           />
-          <p className="input-error">{errors.email && errors.email.message}</p>
+          <p className="input-error">
+            {errors.username && errors.username.message}
+          </p>
         </div>
         <div>
           <input

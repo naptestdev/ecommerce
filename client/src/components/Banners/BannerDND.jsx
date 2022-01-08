@@ -1,5 +1,5 @@
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import { Spin } from "react-cssfx-loading";
 import { resizeImage } from "../../services/image";

@@ -1,42 +1,30 @@
 const express = require("express");
 const router = express.Router();
 const { verifyJWT } = require("../controllers/verifyJWT");
-const AuthModel = require("../models/AuthModel");
+const AdminModel = require("../models/AdminModel");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
 
 router.post("/sign-in", async (req, res) => {
   try {
-    const existingUser = await AuthModel.findOne({ email: req.body.email });
+    const existingUser = await AdminModel.findOne({
+      username: req.body.username,
+    });
 
     if (!existingUser)
       return res.status(404).send({
-        errorSection: "email",
-        message: "The email provided isn't connected to any account",
+        errorSection: "username",
+        message: "The username provided isn't connected to any account",
       });
 
-    let passwordCompare = await bcrypt.compare(
-      req.body.password,
-      existingUser.password
-    );
-
-    if (!passwordCompare)
+    if (req.body.password !== existingUser.password)
       return res.status(400).send({
         errorSection: "password",
         message: "Password is incorrect",
       });
 
-    if (!existingUser.isAdmin)
-      return res.status(400).send({
-        errorSection: "email",
-        message: "This user is not an admin",
-      });
-
     const user = {
       _id: existingUser._id,
       username: existingUser.username,
-      email: existingUser.email,
-      isAdmin: true,
     };
 
     const accessToken = jwt.sign(user, process.env.JWT_SECRET_TOKEN, {
@@ -52,7 +40,9 @@ router.post("/sign-in", async (req, res) => {
 
 router.post("/verify-token", verifyJWT, async (req, res) => {
   try {
-    const existingUser = await AuthModel.findOne({ email: req.user.email });
+    const existingUser = await AdminModel.findOne({
+      username: req.user.username,
+    });
 
     if (existingUser?._id?.toString() !== req.user?._id)
       return res.status(403).send({
@@ -62,8 +52,6 @@ router.post("/verify-token", verifyJWT, async (req, res) => {
     const user = {
       _id: existingUser._id,
       username: existingUser.username,
-      email: existingUser.email,
-      isAdmin: true,
     };
 
     const accessToken = jwt.sign(user, process.env.JWT_SECRET_TOKEN, {
