@@ -1,6 +1,6 @@
 [
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633632432/ecommerceAPI/2021-10-07T18-47-11.090Z1119749616-299167806.jpg.jpg"
     ],
     "description": "1/3/5/10x Blue Bubble Toilet Cleaner Autoile Automatic Flushing Toilet Cleaner Deodorant Block Toilet Spirit Household",
@@ -10,10 +10,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 6
+    "discount": 6,
+    "createdAt": {
+      "$date": "2022-01-08T14:50:48.307Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T14:50:48.307Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633632288/ecommerceAPI/2021-10-07T18-44-47.464Z-865873800715196296.jpg.jpg"
     ],
     "description": "LANDZO Quincy Magic Q Drawing Robot for Kid Science Toys Student Learning Draw Intelligence Automatic USB Rechargeable Robot Toy",
@@ -23,10 +29,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 6
+    "discount": 6,
+    "createdAt": {
+      "$date": "2022-01-08T10:17:52.003Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T10:17:52.003Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633632175/ecommerceAPI/2021-10-07T18-42-54.797Z1319449041-1107565679.jpg.jpg"
     ],
     "description": "3D Slide Puzzle Alphabet Early Educational Developing Toy for Children Jigsaw Digital Number 1-16 Animal Cartoon Game Kids Toys",
@@ -36,10 +48,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 3
+    "discount": 3,
+    "createdAt": {
+      "$date": "2022-01-10T20:27:37.834Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T20:27:37.834Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633632060/ecommerceAPI/2021-10-07T18-40-59.478Z-3822986301584677314.jpg.jpg"
     ],
     "description": "Cute Luminous Mochi Squishy Cat Antistress Toy Slow Rising Squeeze Healing Fun Kids Kawaii Toy Stress Reliever Decor Gift",
@@ -49,10 +67,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 3
+    "discount": 3,
+    "createdAt": {
+      "$date": "2022-01-07T00:27:57.795Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T00:27:57.795Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631919/ecommerceAPI/2021-10-07T18-38-38.158Z-1822296315-1110323350.jpg.jpg"
     ],
     "description": "CADA City RC APP Model Bricks Cars Remote control Cars Red Track Sports Car Building Blocks Speed Champion Racing  Toys Gift",
@@ -62,10 +86,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 8
+    "discount": 8,
+    "createdAt": {
+      "$date": "2022-01-09T18:47:32.183Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T18:47:32.183Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631797/ecommerceAPI/2021-10-07T18-36-36.734Z-4099223011372372106.jpg.jpg"
     ],
     "description": "New Large-Size Fingertip Toys Push Bubble Popet Pendant Bag Popp It Adults Decompression Poppit Toys Children Anti-Stress",
@@ -75,10 +105,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 5
+    "discount": 5,
+    "createdAt": {
+      "$date": "2022-01-06T14:21:22.513Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T14:21:22.513Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631560/ecommerceAPI/2021-10-07T18-32-40.036Z-1539119907-1990052069.jpg.jpg"
     ],
     "description": "City Remote Control Engineering Vehicle RC Excavator Construction Model Toy Kids Gift Truck Bulldozer Digger Engineering Vehicle",
@@ -88,10 +124,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 7
+    "discount": 7,
+    "createdAt": {
+      "$date": "2022-01-06T09:49:12.545Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T09:49:12.545Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631429/ecommerceAPI/2021-10-07T18-30-28.474Z1640152380-1984236753.jpg.jpg"
     ],
     "description": "5pcs Kids Toys Interactive Baby Dolls Toy Mini Doll For Girls And Boys Reborn Doll Toy Gift For Children Cute Key Small Pendant",
@@ -101,10 +143,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 10
+    "discount": 10,
+    "createdAt": {
+      "$date": "2022-01-10T01:43:48.729Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T01:43:48.729Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631291/ecommerceAPI/2021-10-07T18-28-10.721Z646268621687549714.jpg.jpg"
     ],
     "description": "4WD RC Car Updated Version 2.4G Radio Control RC Car Toys remote control car Trucks Off-Road Trucks boys Toys for Children",
@@ -114,10 +162,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 9
+    "discount": 9,
+    "createdAt": {
+      "$date": "2022-01-06T18:51:38.866Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T18:51:38.866Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633631175/ecommerceAPI/2021-10-07T18-26-15.692Z-2479360041202386404.jpg.jpg"
     ],
     "description": "Electric RC Flying Ball Luminous Kid's Flight Balls Infrared Induction Aircraft Remote Control Toys Flash LED Light Plane Toys",
@@ -127,10 +181,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "toys-kids-babies",
-    "discount": 11
+    "discount": 11,
+    "createdAt": {
+      "$date": "2022-01-07T10:53:16.617Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T10:53:16.617Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633545612/ecommerceAPI/2021-10-06T18-40-12.124ZNail-Dust-Vacuum-Cleaner-Nail-Manicure-Nail-Dust-Collector-Extractor-Fan-for-Manicure-Nail-Vacuum-Cleaner.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "80W powerful vacuum\n2. Quiet design\n3. Simple buttons\n4. Two free vacuum bags\n5. Replaceable vacuum cleaner bag\nSize: 25.8*24*10cm\nMaterial: ABS+leather\nVoltage: 110/240V",
@@ -140,10 +200,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 12
+    "discount": 12,
+    "createdAt": {
+      "$date": "2022-01-08T19:13:45.559Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T19:13:45.559Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633545271/ecommerceAPI/2021-10-06T18-34-31.726ZMR-GREEN-Nail-Clippers-Stainless-Steel-Anti-Splash-Fingernail-Cutter-Manicure-Tools-Bionics-Design-Nail-Trimmer.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "MR.GREEN the professional beauty tools manufacturer Origin from Germany.\nMR.GREEN means high quality & reliable and the Industry leading position.\n\nMR-1111 series Anti-splash nail clipper:\n1. This is a nail clipper with anti-splash function, which can effectively prevent nail shavings splash, facilitate cleaning and storage, and prevent eye injury.\n2. Bionic design combined with excellent ergonomic design, feel good, delicate and beautiful appearance, just like a beautiful artwork.\n3. High grade stainless steel with zinc alloy nickel plating process,excellent anti-rust ability,it has outstanding texture and hand feel, let you have outstanding manicure experience.",
@@ -153,10 +219,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 10
+    "discount": 10,
+    "createdAt": {
+      "$date": "2022-01-10T01:34:06.303Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T01:34:06.303Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633544773/ecommerceAPI/2021-10-06T18-26-13.107ZAmbition-Ninja-Wireless-Tattoo-Pen-Machine-Powerful-Coreless-DC-Motor-Fast-Charging-2400-mAh-Lithium-Battery.jpg_Q90.jpg_%20%282%29.webp.webp"
     ],
     "description": "MOTOR ：Ambition coreless DC motor \n\nmore importantly, the motor still maintains vitality and the power will not be weak\n\nCompared with the soldier's ambition , this machine is an advanced version of the soldier.ninja is perfect for fine lines,smooth black grey，realistic color，traditional style 3rl work and more，it's your  all-in-one machine if you are an artist that does such work.it has  powerful motor precisely paired with 4.0 stroke.\n\nThis allows artists to work over 6 hours without worrying about empty power packs or power black outs.\n34mm grip makes you more comfortable at work.\n\n-Of course, it can be used with all major cartridge brands as well as Ambition's cartridge system.\n\n\n️Power-pack key features:\n️-display in which you can view all your parameteres such as voltage, Remaining battery reminder.",
@@ -166,10 +238,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 10
+    "discount": 10,
+    "createdAt": {
+      "$date": "2022-01-08T17:23:17.185Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T17:23:17.185Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633544304/ecommerceAPI/2021-10-06T18-18-23.643ZPearlescent-silkworm-eyeshadow-pen-lasting-waterproof-and-not-blooming-Shiny-pearlescent-gel-pen-16-color-eye.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Pen Material:Plastic\nColor: 15 color to choose\nType:Eye Shadow & Liner Combination\nFunction:Waterproof / Water-Resistant,Natural,Other,Long-Lasting\n\nFeature:\nFeature 1:Waterproof / Waterproof, Multi-Functional Shaping Eye Shadow Pen, Natural Contour\nFeature 2:Fast / Fast Drying, Natural, Long Lasting, Easy To Wear\nFeature 3:Beauty Makeup Tool\nFeature 4:maquiagem profissional completa\nWeight:20g\nUse The Crowd:All Skin Types Can Be Used",
@@ -179,10 +257,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 4
+    "discount": 4,
+    "createdAt": {
+      "$date": "2022-01-10T04:51:37.087Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T04:51:37.087Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633543843/ecommerceAPI/2021-10-06T18-10-43.329Z12PCS-Magic-Hair-Curlers-25-30-45-50-65CM-DIY-Portable-Hairstyle-Rollers-Sticks-Durable-Beauty.jpg_Q90.jpg_.webp.webp"
     ],
     "description": "Size: 25/30/45/50/65cm\nPackage: 12pcs/pack\n\nSuitable hairstyle: long hair, short hair can be used\n\nProduct Features: Used for DIY curly hair\n\n simple operation, curly hair does not hurt hair",
@@ -192,10 +276,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 20
+    "discount": 20,
+    "createdAt": {
+      "$date": "2022-01-08T18:48:14.170Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T18:48:14.170Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633543401/ecommerceAPI/2021-10-06T18-03-20.979ZKolinsky-Acrylic-Nail-Brush-Good-Quality-Nail-Art-Mink-Brush-Wood-Handle-Gel-Builder-Manicure-Brush.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Enables you to freely create your own favorite design on your nails, and suitable for exquisite nail work.\nPerfect for both professional use or personal use and suitable for intermediate and senior grade.\nDelicate and soft, creating beautiful nail effect.",
@@ -205,10 +295,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 4
+    "discount": 4,
+    "createdAt": {
+      "$date": "2022-01-09T22:54:51.136Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T22:54:51.136Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633543110/ecommerceAPI/2021-10-06T17-58-30.591ZMakeup-Setting-Spray-Moisturizing-Long-Lasting-Foundation-Fixer-make-Up-SprayMatte-Finishing-Setting-Spray-Skin-Cosmetic.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Description:\n\n100% new packaging\n\nApplicable skin: Universal\n\nNet content: 100ml\n\nShelf life: 3 years\n\n\nEfficacy:\n\n1. Give your makeup lasting endurance\n\n2. Long-lasting matte while absorbing surface gloss. Reduce the appearance of pores\n\n3. Provide long-lasting sebum control performance and keep skin matte\n\n4. Delivering moisture to the skin and renewing it over time",
@@ -218,10 +314,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 15
+    "discount": 15,
+    "createdAt": {
+      "$date": "2022-01-08T06:56:41.195Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T06:56:41.195Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633542588/ecommerceAPI/2021-10-06T17-49-48.833Z1PC-Professional-Women-Ultimate-Black-Liquid-Eyeliner-Long-lasting-Waterproof-Quick-dry-Eye-Liner-Pencil-Pen.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "1PC Professional Women Ultimate Black Liquid Eyeliner Long-lasting Waterproof Quick-dry Eye Liner Pencil Pen Makeup Beauty Tools\n\n100% Brand new and high quality\n\nGreat for professional use or home use\n\nIt makes you look more attractive\n\nColor: Black\n\nWeight: 7 g\n\nLength: 12.7 cm\n\nPackage: 1 x Eyeliner",
@@ -231,10 +333,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 3
+    "discount": 3,
+    "createdAt": {
+      "$date": "2022-01-08T07:39:53.765Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T07:39:53.765Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633542307/ecommerceAPI/2021-10-06T17-45-07.386ZAdjustable-Posture-Corrector-Back-Support-Shoulder-Back-Brace-Posture-Correctionr-Spine-Corrector-Health-Postural-Fixer-Tape.jpg_Q90.jpg_.webp.webp"
     ],
     "description": "Design,Breathable,Comfortable:\nThe postural correction belt is made of very soft composite fabric and nylon tape, and breathable holes are adopted in back and shoulder straps. Heat dissipation and permeability have been upgraded to improve the comfort of wearing\nMagic Paste Of High Quality,Free Asjustment\n \nThe angles needed to correce are different, the design of correction belt can adopt adjustable nylon belt with magic paste of high quality so that it can be adjusted freely through the shoulder band\n \nSitting Position Improvement\nApplicable to men, women and youth(teenagers).Unhealthy posture can lead to long-term back pain, muscle pain, myopia, and other medical problems.Wearing a back corrector can develop muscle memory for a period of time, and you can keep your back straight even if you don't wear a posture correction device\n \nFunctions:\nMuscle pain relief: The coronal and lumber section of the frontal plane maintains the gravity balance of the body, reduces the burden on the muscles, corrects and relieves pain, and bad postures would cause sore necks and shoulders, and even headaches The role of protection: Wearing is comfortable and breathable, can be applicable to all including men and women, young and old, it can play a good role in correcting the back.Applicable to those workers with pain in back and shoulder due to the long time standing, sitting or keeping of the same posture Easy to adjust and wear: Universal size, easy to wear, without any help, you can take off and wear a pose corrector by yourself",
@@ -244,10 +352,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 14
+    "discount": 14,
+    "createdAt": {
+      "$date": "2022-01-05T22:12:25.979Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T22:12:25.979Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633542034/ecommerceAPI/2021-10-06T17-40-34.108Z60W-Dust-Collector-Extractor-Dental-Vacuum-Cleaner-Dental-Lab-Equipment-Dust-Suction-Machine-for-Polishing.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Voltage: AC100-240V,50/60Hz\nPower: 60w\nAirflow: 52.45CFM (1.2m³/min)\n\nFeatures:\n◆  3-way dust collector.360° flexible rotation square tray&Catheter\n◆  The square tray dust collector can easily clean the table dust.Make the table clean and tidy.\n◆  Three LED spotlight are built in the front end of the catheter.In addition to collecting dust,it can also be used as lighting.\n◆  Reduce the 96.41 of PM 2.5.Reduce dust and protect the health of user.\n◆  The filter is replaceable and the maintenance is very convenience.\n◆  The service life of the motor is about 10,000hrs.\n\nAbout the filter plate:\n◆  If the suction is weakened,clean or replace the new filter plate.(It is suggested that every THREE MONTHS be replaced or according to the frequency of use).\n◆  If there is too much dust in the filter board,the reverse flow will occur when the filter is used.\n\nUse of attention:\n◆  Do not insert your finger into the fan.\n◆  Be careful not to let the water enter into the machine.\n◆  The filter board can not be washed with water.\n◆  Keep out of reach of children.",
@@ -257,10 +371,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 12
+    "discount": 12,
+    "createdAt": {
+      "$date": "2022-01-06T06:14:14.252Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T06:14:14.252Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633541827/ecommerceAPI/2021-10-06T17-37-07.304ZNew-4pcs-set-ophthalmic-microsurgical-instruments-12-5cm-scissors-Needle-holders-tweezers-stainless-steel-surgical-tool.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "1 pcs 12.5CM Needle Holder ( bend head )\n1 pss 12.5CM Micro scissors ( bend head )\n1 pcs 10.5CM Microsurgical round handle Tweezers ( with toothed )\n1 pcs 10.5CM Microsurgical round handle Tweezers ( without toothed )",
@@ -270,10 +390,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 10
+    "discount": 10,
+    "createdAt": {
+      "$date": "2022-01-07T17:15:31.542Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T17:15:31.542Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633541648/ecommerceAPI/2021-10-06T17-34-07.082ZLeg-Massager-Pair-Wireless-With-Smart-Air-Compression-Controlled-Heating-Calf-Massage-Electric-Relief-Muscle-Pain.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "Exercise without fatigue, while fitness-while massage\n\nSurrounding all-inclusive massage method, flexible to use\nMassage while exercising, bid farewell to muscle soreness after exercise\nDouble pressure\nQuickly eliminate muscle soreness\nLongitudinal pressure\nLateral pressure",
@@ -283,10 +409,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 3
+    "discount": 3,
+    "createdAt": {
+      "$date": "2022-01-06T07:45:00.856Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T07:45:00.856Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633541270/ecommerceAPI/2021-10-06T17-27-50.357Z2pcs-set-Face-Spa-Massager-Neck-Roller-Gua-Sha-Scraper-Board-Face-Lift-Up-Wrinkle-Remover.jpg_Q90.jpg_.webp.webp"
     ],
     "description": "--100% brand new and high quality.\n--Face roller are made of 100% natural resin.\nAnti-aging, anti-wrinkles line, better skin and health without any chemicals or irritants.\n--The big roller is ideal for neck, chin, cheeks, and forehead while the smaller is perfect for around the eyes, nose, and lips. The roller promotes blood circulation, which can reduce puffiness and wrinkling.\n--Gua Sha Scraper Board . It is a very good jade gua sha scraping tool, great for using on your body and much helpful to relief pressure, always with a relaxative and graceful mood\n--Ultra smooth surface will never hurt your skin  .\n--Helps to relieve facial tension and discourage fine lines and wrinkles.\n--Keep your skin elasticity, promote circulation and integrate natural energy.\n--Natural resin Massager stays cool in feel even in hot condition which gives you a smooth and comfortable feeling.",
@@ -296,10 +428,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 5
+    "discount": 5,
+    "createdAt": {
+      "$date": "2022-01-10T14:48:54.504Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T14:48:54.504Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633540932/ecommerceAPI/2021-10-06T17-22-12.219Z200PCS-Box-Double-Head-Cotton-Swab-Bamboo-Sticks-Cotton-Swab-Disposable-Buds-Cotton-For-Beauty-Makeup.jpg_Q90.jpg_%20%281%29.webp.webp"
     ],
     "description": "200PCS/Box Double Head Cotton Swab Bamboo Sticks Cotton Swab Disposable Buds Cotton For Beauty Makeup Nose Ears Cleaning",
@@ -309,10 +447,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "beauty-health-hari",
-    "discount": 3
+    "discount": 3,
+    "createdAt": {
+      "$date": "2022-01-07T00:53:17.513Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T00:53:17.513Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073800/ecommerceAPI/2021-10-01T07-36-39.770Z104899207455292182.jpg.jpg"
     ],
     "description": "3M Showerhead  Showerset with Spiral Hose ,Bathroom Accesorrry , Home Bathroom Shower pump ,Best Quality Improment New , Silver",
@@ -322,10 +466,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 12
+    "discount": 12,
+    "createdAt": {
+      "$date": "2022-01-06T11:16:11.845Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T11:16:11.845Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073706/ecommerceAPI/2021-10-01T07-35-05.851Z598127047-80627650.jpg.jpg"
     ],
     "description": "Silicone Toilet  Brush Wc Gap Brush with Holder Flat Head Soft Bristles Cleaning Brushes With Quick Drying Bracket Bathroom Tool",
@@ -335,10 +485,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 7
+    "discount": 7,
+    "createdAt": {
+      "$date": "2022-01-09T19:45:34.804Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T19:45:34.804Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073576/ecommerceAPI/2021-10-01T07-32-56.084Z-974344728-1565728950.jpg.jpg"
     ],
     "description": "Toilet Paper Holder Stand Wall Mounted Waterproof Paper Towel Dispenser Holder Tissue Box Toilet Roll Holder For Toilet Paper",
@@ -348,10 +504,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 9
+    "discount": 9,
+    "createdAt": {
+      "$date": "2022-01-05T19:42:25.551Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T19:42:25.551Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073451/ecommerceAPI/2021-10-01T07-30-50.325Z1442122831-545268973.jpg.jpg"
     ],
     "description": "Hot Sale 300 Holes Shower Head High Pressure Rainfall Water Saving Flow With Chrome ABS Spray Water Saving Bathroom Accessories",
@@ -361,10 +523,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 5
+    "discount": 5,
+    "createdAt": {
+      "$date": "2022-01-10T13:19:55.281Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T13:19:55.281Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073344/ecommerceAPI/2021-10-01T07-29-04.327Z14528006954459872.jpg.jpg"
     ],
     "description": "DJM4 diaphragm coupling single and double diaphragm couplings expansion Sleeve rigid flange Lamination set shaft coupler",
@@ -374,10 +542,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 9
+    "discount": 9,
+    "createdAt": {
+      "$date": "2022-01-10T05:52:03.051Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T05:52:03.051Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073233/ecommerceAPI/2021-10-01T07-27-12.633Z3344939-1199534093.jpg.jpg"
     ],
     "description": "2 Modes Water Faucet Aerator 360 Degree Adjustable Saving Tap Water Bubbler Kitchen Connector Shower Head Filter Nozzle Spray",
@@ -387,10 +561,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 7
+    "discount": 7,
+    "createdAt": {
+      "$date": "2022-01-10T07:02:46.164Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T07:02:46.164Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073128/ecommerceAPI/2021-10-01T07-25-27.089Z-629422507-2075250138.jpg.jpg"
     ],
     "description": "Newly Solar Garden Light Simulation Flame Light Outdoor Household Waterproof Led Lawn Light Villa Decorative Street Lamp, indoors lamp",
@@ -400,10 +580,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 11
+    "discount": 11,
+    "createdAt": {
+      "$date": "2022-01-06T09:51:33.863Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T09:51:33.863Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1633073016/ecommerceAPI/2021-10-01T07-23-36.482Z-19643279291373580283.jpg.jpg"
     ],
     "description": "2w 6v Solar Panel Power Battery Toy Charger Diy Small House Solar Power Panels Cell Generation Solar Panel Generator Solar S2F5",
@@ -413,10 +599,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 21
+    "discount": 21,
+    "createdAt": {
+      "$date": "2022-01-09T19:38:09.330Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T19:38:09.330Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632902583/ecommerceAPI/2021-09-29T08-03-02.300Z1204129671-539157486.jpg.jpg"
     ],
     "description": "2021AILANG famous brand watch montre automatique luxe chronograph Square Large Dial Watch Hollow Waterproof mens fashion watches",
@@ -426,10 +618,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "jewelry-watches",
-    "discount": 31
+    "discount": 31,
+    "createdAt": {
+      "$date": "2022-01-07T17:13:35.427Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T17:13:35.427Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632902407/ecommerceAPI/2021-09-29T08-00-05.818Z706609370-1086893271.jpg.jpg"
     ],
     "description": "AILANG Original design watch men's double flywheel automatic mechanical watch fashion casual business men's clock Original",
@@ -439,10 +637,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "jewelry-watches",
-    "discount": 21
+    "discount": 21,
+    "createdAt": {
+      "$date": "2022-01-08T19:52:43.613Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T19:52:43.613Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632902253/ecommerceAPI/2021-09-29T07-57-32.627Z-44675090-501989289.jpg.jpg"
     ],
     "description": "CADISEN Japan Quartz Movement Watch High Quality Women Watch Stainless Steel Mesh Rose Gold Waterproof Ladies Watch Dropshipping",
@@ -452,10 +656,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "jewelry-watches",
-    "discount": 12
+    "discount": 12,
+    "createdAt": {
+      "$date": "2022-01-09T07:21:40.105Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T07:21:40.105Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632902105/ecommerceAPI/2021-09-29T07-55-04.732Z-1407878196-1636370930.jpg.jpg"
     ],
     "description": "Sexy Open Toe Basic Shoes Summer Fashion New Cross Strap Ladies High Heel Pumps Womens Square Toe Party Wedding Shoes Sandals",
@@ -465,10 +675,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 10
+    "discount": 10,
+    "createdAt": {
+      "$date": "2022-01-08T17:20:49.198Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T17:20:49.198Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632901992/ecommerceAPI/2021-09-29T07-53-12.576Zpexels-aliesha-low-3482571.jpg.jpg"
     ],
     "description": "Sexy Open Toe Basic Shoes Summer Fashion New Cross Strap Ladies High Heel Pumps Women's Square Toe Party Wedding Shoes Sandals",
@@ -478,10 +694,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 14
+    "discount": 14,
+    "createdAt": {
+      "$date": "2022-01-07T01:36:10.779Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T01:36:10.779Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632868260/ecommerceAPI/2021-09-28T22-30-47.713Zpexels-studio-pilot-photography-4248715.jpg.jpg"
     ],
     "description": "2021 Spring New Luxury Brand French Style 4 6 8cm Leather High Heeled Shoes Women Dress Pumps V Dustbag 35-43\nWhite open shoe",
@@ -491,10 +713,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 9
+    "discount": 9,
+    "createdAt": {
+      "$date": "2022-01-09T09:27:48.961Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T09:27:48.961Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867981/ecommerceAPI/2021-09-28T22-26-12.171Zpexels-bella-zhong-3602449.jpg.jpg"
     ],
     "description": "2021 Spring New Luxury Brand French Style 4 6 8cm Leather High Heeled Shoes Women Dress Pumps V Dustbag 35-43",
@@ -504,10 +732,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 9
+    "discount": 9,
+    "createdAt": {
+      "$date": "2022-01-08T10:56:00.133Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T10:56:00.133Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867724/ecommerceAPI/2021-09-28T22-21-58.017Zpexels-bella-zhong-3782786.jpg.jpg"
     ],
     "description": "2021 New Luxury Desinger Women Thin Heels Pointed High Heel sandals Pumps V Stiletto Wedding Dress Shoes Zapatos De Mujer",
@@ -517,10 +751,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 14
+    "discount": 14,
+    "createdAt": {
+      "$date": "2022-01-06T23:03:48.228Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T23:03:48.228Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867646/ecommerceAPI/2021-09-28T22-20-40.523Zpexels-bella-zhong-3782789.jpg.jpg"
     ],
     "description": "2021 New Luxury Desinger Women Thin Heels Pointed High Heel sandals Pumps V Stiletto Wedding Dress Shoes Zapatos De Mujer",
@@ -530,10 +770,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 20
+    "discount": 20,
+    "createdAt": {
+      "$date": "2022-01-11T05:13:27.480Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-11T05:13:27.480Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867503/ecommerceAPI/2021-09-28T22-18-19.796Zpexels-bella-zhong-3076787.jpg.jpg"
     ],
     "description": "2021 New Luxury Desinger Women Thin Heels Pointed High Heel Shoes Pumps V Stiletto Wedding Dress Shoes Zapatos De Mujer",
@@ -543,10 +789,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 19
+    "discount": 19,
+    "createdAt": {
+      "$date": "2022-01-05T23:45:25.337Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T23:45:25.337Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867298/ecommerceAPI/2021-09-28T22-14-50.126Zpexels-rann-vijay-7742547.jpg.jpg"
     ],
     "description": "Luxury Designer Handbags Purses Women Fashion Shoulder Bags High Quality Leather Crossbody Messenger Bags for Female Sac A Main",
@@ -556,10 +808,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 10
+    "discount": 10,
+    "createdAt": {
+      "$date": "2022-01-08T19:11:34.958Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T19:11:34.958Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867166/ecommerceAPI/2021-09-28T22-12-34.776Zpexels-artem-beliaikin-2304765.jpg.jpg"
     ],
     "description": "Stitching women's summer shoulder bag chain PU leather ladies messenger bag female small square bag clutch bags 2020 handbags",
@@ -569,10 +827,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 15
+    "discount": 15,
+    "createdAt": {
+      "$date": "2022-01-09T13:17:10.354Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T13:17:10.354Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632867100/ecommerceAPI/2021-09-28T22-11-31.106Zpexels-artem-beliaikin-2304764.jpg.jpg"
     ],
     "description": "Stitching women's summer shoulder bag chain PU leather ladies messenger bag female small square bag clutch bags 2020 handbags",
@@ -582,10 +846,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 14
+    "discount": 14,
+    "createdAt": {
+      "$date": "2022-01-11T04:11:44.006Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-11T04:11:44.006Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632866906/ecommerceAPI/2021-09-28T22-08-18.753Zpexels-dom-j-45981.jpg.jpg"
     ],
     "description": "Shoulder Bag For Women 2021 New Luxury Designer Crossbody Messenger Pu Leather Fashion Mahjong Chain Sling Ladies Plaid Handbags",
@@ -595,10 +865,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 14
+    "discount": 14,
+    "createdAt": {
+      "$date": "2022-01-05T23:14:22.370Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T23:14:22.370Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632866684/ecommerceAPI/2021-09-28T22-04-28.725Zpexels-artem-beliaikin-2534961.jpg.jpg"
     ],
     "description": "Women Fashionable Shoulder Bags New Female Wide Strap Messenger Bag Ladies Handbag Casual Chain Crossbody Bag For Girls 2021",
@@ -608,10 +884,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 12
+    "discount": 12,
+    "createdAt": {
+      "$date": "2022-01-10T13:28:52.542Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T13:28:52.542Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632864806/ecommerceAPI/2021-09-28T21-33-10.096Zpexels-artem-beliaikin-1022383.jpg.jpg"
     ],
     "description": "Crossbody Bags For Women 2021 Cartoon Strawberry Print Pearl Female Bag PU Leather Elegant Sweet Girl Small Handbag Women",
@@ -621,10 +903,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 10
+    "discount": 10,
+    "createdAt": {
+      "$date": "2022-01-10T19:00:54.377Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T19:00:54.377Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632864353/ecommerceAPI/2021-09-28T21-25-44.100Zpexels-godisable-jacob-3689163.jpg.jpg"
     ],
     "description": "Women Fashionable Shoulder Bags New Female Messenger Bag Handbag Chain Wild Printing Wild Crossbody Bag\nFloral design",
@@ -634,10 +922,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 19
+    "discount": 19,
+    "createdAt": {
+      "$date": "2022-01-08T17:13:33.292Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T17:13:33.292Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632864045/ecommerceAPI/2021-09-28T21-20-42.608Zpexels-flat-hito-904350.jpg.jpg"
     ],
     "description": "Women Fashionable Shoulder Bags New Female Messenger Bag Handbag Chain Wild Printing Wild Crossbody Bag",
@@ -647,10 +941,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 11
+    "discount": 11,
+    "createdAt": {
+      "$date": "2022-01-08T18:34:44.977Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T18:34:44.977Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632863899/ecommerceAPI/2021-09-28T21-18-17.319Zpexels-godisable-jacob-934673.jpg.jpg"
     ],
     "description": "Women's Backpack Canvas Candy Color School Backpack Bag Preppy Style Girls Knapsack Rucksacks Handbags with Plush Pendant",
@@ -660,10 +960,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "bags-shoes",
-    "discount": 15
+    "discount": 15,
+    "createdAt": {
+      "$date": "2022-01-06T10:02:19.570Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T10:02:19.570Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632844601/ecommerceAPI/2021-09-28T15-56-39.362Znathan-oakley-OngbrOmqtzc-unsplash.jpg.jpg"
     ],
     "description": "Bedside Dresser Table Nordic Table Coffee Modern Storage Bedroom Home Furniture Also Mounted Tea Coffee Service Desk Decoration",
@@ -673,10 +979,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 59
+    "discount": 59,
+    "createdAt": {
+      "$date": "2022-01-09T10:37:09.511Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T10:37:09.511Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632844255/ecommerceAPI/2021-09-28T15-50-54.073Zrishabh-malhotra-83ypHTv6J2M-unsplash.jpg.jpg"
     ],
     "description": "Global Version Xiaomi Redmi Note 10 Pro 6GB 64GB / 128GB 108MP Camera Mobile Phone Snapdragon 732G Octa Core NFC 120Hz AMOLED",
@@ -686,10 +998,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "phones-telecommunications",
-    "discount": 41
+    "discount": 41,
+    "createdAt": {
+      "$date": "2022-01-10T03:28:33.661Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T03:28:33.661Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632844158/ecommerceAPI/2021-09-28T15-49-04.746Zthom-bradley-1NZcjdo2hKQ-unsplash.jpg.jpg"
     ],
     "description": "Original Apple iPhone XR xr 2942mAh RAM 3GB ROM 64GB/128GB /256G Unlocked Mobile Phone 4G LTE 6.1\" Hexa-core 12MP&7MP 2018",
@@ -699,10 +1017,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "phones-telecommunications",
-    "discount": 81
+    "discount": 81,
+    "createdAt": {
+      "$date": "2022-01-06T09:08:37.043Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T09:08:37.043Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843925/ecommerceAPI/2021-09-28T15-45-22.809Zsebastian-banasiewcz-oXXc-s5nNy8-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headset Bluetooth Headphones ANC bluetooth 5.0 HIFI sound with 57mm loudspeaker face recognition for phone",
@@ -712,10 +1036,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "consumer-electronics",
-    "discount": 45
+    "discount": 45,
+    "createdAt": {
+      "$date": "2022-01-11T01:22:18.238Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-11T01:22:18.238Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843857/ecommerceAPI/2021-09-28T15-44-14.818Ztomasz-gawlowski-YDZPdqv3FcA-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headset Bluetooth Headphones ANC bluetooth 5.0 HIFI sound with 57mm loudspeaker face recognition for phone",
@@ -725,10 +1055,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "consumer-electronics",
-    "discount": 41
+    "discount": 41,
+    "createdAt": {
+      "$date": "2022-01-10T13:27:44.939Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T13:27:44.939Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843779/ecommerceAPI/2021-09-28T15-42-56.684Zkiran-ck-LSNJ-pltdu8-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headset Bluetooth Headphones ANC bluetooth 5.0 HIFI sound with 57mm loudspeaker face recognition for phone, also has a port for cord if need be",
@@ -738,10 +1074,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "consumer-electronics",
-    "discount": 61
+    "discount": 61,
+    "createdAt": {
+      "$date": "2022-01-08T19:00:11.607Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T19:00:11.607Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843451/ecommerceAPI/2021-09-28T15-37-30.882Zkiran-ck-cDrIiiptFqE-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headphones Sport Bluetooth 5.0 Earphone Handsfree Headset Ear Buds Head Phone Earbuds For iPhone Xiaomi, infinix",
@@ -751,10 +1093,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "consumer-electronics",
-    "discount": 61
+    "discount": 61,
+    "createdAt": {
+      "$date": "2022-01-06T06:23:01.420Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T06:23:01.420Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843385/ecommerceAPI/2021-09-28T15-35-49.983Zjason-leung-xR4JHzr69Og-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headphones Sport Bluetooth 5.0 Earphone Handsfree Headset Ear Buds Head Phone Earbuds For iPhone Xiaomi",
@@ -764,10 +1112,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "consumer-electronics",
-    "discount": 79
+    "discount": 79,
+    "createdAt": {
+      "$date": "2022-01-07T17:14:22.024Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T17:14:22.024Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843369/ecommerceAPI/2021-09-28T15-35-49.927Zjason-leung-xR4JHzr69Og-unsplash.jpg.jpg"
     ],
     "description": "Wireless Headphones Sport Bluetooth 5.0 Earphone Handsfree Headset Ear Buds Head Phone Earbuds For iPhone Xiaomi",
@@ -777,10 +1131,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "consumer-electronics",
-    "discount": 79
+    "discount": 79,
+    "createdAt": {
+      "$date": "2022-01-06T22:15:59.899Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T22:15:59.899Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843239/ecommerceAPI/2021-09-28T15-33-55.493Zgiorgio-trovato-K62u25Jk6vo-unsplash.jpg.jpg"
     ],
     "description": "Polarized Sunglasses 2020 New UV Protection Driver's Mirror Influx Driving Glasses",
@@ -790,10 +1150,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "men-s-fashion",
-    "discount": 13
+    "discount": 13,
+    "createdAt": {
+      "$date": "2022-01-05T17:30:45.668Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T17:30:45.668Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632843084/ecommerceAPI/2021-09-28T15-31-21.486Zgalina-n-miziNqvJx5M-unsplash.jpg.jpg"
     ],
     "description": "Modern Flower Vase Ceramic Ornaments Living Room Model Flower Pot Flower Basket Glass Jardiniere Arrangements Home Decoration",
@@ -803,10 +1169,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-improvement-tools",
-    "discount": 7
+    "discount": 7,
+    "createdAt": {
+      "$date": "2022-01-06T17:48:02.795Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T17:48:02.795Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842875/ecommerceAPI/2021-09-28T15-27-50.475Zeditors-keys-CtDrd7mWW6M-unsplash.jpg.jpg"
     ],
     "description": "Russia/Spain/USA/France/Italy/Germany Layout 2.4 GHz Ultra Thin Portable Wireless Keyboard Mouse, Full Size 2400 DPI Mouse,Black",
@@ -816,10 +1188,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "computer-office-security",
-    "discount": 41
+    "discount": 41,
+    "createdAt": {
+      "$date": "2022-01-08T16:54:28.718Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T16:54:28.718Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842763/ecommerceAPI/2021-09-28T15-25-58.409Zc-d-x-PDX_a_82obo-unsplash.jpg.jpg"
     ],
     "description": "Active Noise Cancelling Headphones Bluetooth Headphones Wireless Headset Over Ear 30 Hours Playtime with Mic",
@@ -829,10 +1207,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "consumer-electronics",
-    "discount": 77
+    "discount": 77,
+    "createdAt": {
+      "$date": "2022-01-08T11:23:58.272Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T11:23:58.272Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842652/ecommerceAPI/2021-09-28T15-24-11.812ZAnker-Soundcore-Life-Q20-Hybrid-Active-Noise-Cancelling-Headphones-Wireless-Over-Ear-Bluetooth-Headphones.jpg_Q90.jpg_.webp.webp"
     ],
     "description": "Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Headphones, Wireless Over Ear Bluetooth Headphones",
@@ -842,10 +1226,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "consumer-electronics",
-    "discount": 81
+    "discount": 81,
+    "createdAt": {
+      "$date": "2022-01-07T22:19:17.355Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T22:19:17.355Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842332/ecommerceAPI/2021-09-28T15-18-50.412Zbrooke-cagle-z1B9f48F5dc-unsplash.jpg.jpg"
     ],
     "description": "LEGIBLE Autumn Winter Sweater Women Casual Woman Sweater Pullovers Striped Jumper Warm Teen girl Sweaters",
@@ -855,10 +1245,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "women-s-fashion",
-    "discount": 35
+    "discount": 35,
+    "createdAt": {
+      "$date": "2022-01-05T17:16:17.774Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T17:16:17.774Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842203/ecommerceAPI/2021-09-28T15-16-38.861Zkari-shea-1SAnrIxw5OY-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n8 GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\ngrey colored\n3 Year Warranty",
@@ -868,10 +1264,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "computer-office-security",
-    "discount": 41
+    "discount": 41,
+    "createdAt": {
+      "$date": "2022-01-08T01:30:59.623Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T01:30:59.623Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842094/ecommerceAPI/2021-09-28T15-14-49.802Zernest-ojeh-v-kSEAV7jQE-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n16GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\nWindows 10 OS\n3 Year Warranty",
@@ -881,10 +1283,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "computer-office-security",
-    "discount": 91
+    "discount": 91,
+    "createdAt": {
+      "$date": "2022-01-08T00:36:04.606Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T00:36:04.606Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632842007/ecommerceAPI/2021-09-28T15-12-56.537Zangelina-yan-r1fNqfIP8ZM-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n8 GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\nWindows 10 OS\n3 Year Warranty",
@@ -894,10 +1302,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "computer-office-security",
-    "discount": 69
+    "discount": 69,
+    "createdAt": {
+      "$date": "2022-01-06T18:55:38.762Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T18:55:38.762Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632841917/ecommerceAPI/2021-09-28T15-11-42.717Zangelina-yan-r1fNqfIP8ZM-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n8 GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\nWindows 10 OS\n3 Year Warranty",
@@ -907,10 +1321,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 61
+    "discount": 61,
+    "createdAt": {
+      "$date": "2022-01-07T07:05:58.211Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T07:05:58.211Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632841693/ecommerceAPI/2021-09-28T15-07-39.447Zalejandro-escamilla-ABDTiLqDhJA-unsplash.jpg.jpg"
     ],
     "description": "Intel Core i7 8th Gen\nQuad Core, 1.8 GHz Clock Speed\n8 GB RAM\n512 GB Hard Disk\nIntel UHD Graphics 620\n13.3 inches, 1920 x 1080 pixels\nWindows 10 OS\n3 Year Warranty",
@@ -920,10 +1340,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "computer-office-security",
-    "discount": 111
+    "discount": 111,
+    "createdAt": {
+      "$date": "2022-01-09T07:44:20.729Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T07:44:20.729Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632841414/ecommerceAPI/2021-09-28T15-03-33.574Zdryer_600.png.png"
     ],
     "description": "Energy Saving for Money.\nSuper Quick Wash for Time Saving\nIntelligent LED Display \nSnowflake Drum for Clothes Protecting \nSmart Spin Balance control.\nDrum Self Clean",
@@ -933,10 +1359,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 29
+    "discount": 29,
+    "createdAt": {
+      "$date": "2022-01-10T18:28:36.541Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T18:28:36.541Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632841247/ecommerceAPI/2021-09-28T15-00-47.050Zcoffeemachine_600.png.png"
     ],
     "description": "This is a really handy coffee maker. Easy to use.",
@@ -946,10 +1378,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 15
+    "discount": 15,
+    "createdAt": {
+      "$date": "2022-01-06T14:27:11.634Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T14:27:11.634Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632829386/ecommerceAPI/2021-09-28T11-43-05.534ZSofa-Bed-Transparent-PNG.png.png"
     ],
     "description": "A brilliant take on urban chic styling, the Enderlin sofa in vibrant grey makes high design highly affordable. Distinctive elements include quilted channel stitching for clean-lined allure and a velvety soft fabric you'll love living with. Sculptural track arms up the wow factor. If you’re looking for big style on more modest scale, you’re sure to appreciate this sofa’s space-conscious 82\" wide profile.",
@@ -959,10 +1397,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 59
+    "discount": 59,
+    "createdAt": {
+      "$date": "2022-01-07T21:32:10.509Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T21:32:10.509Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632829283/ecommerceAPI/2021-09-28T11-41-22.041ZSofa-Bed.png.png"
     ],
     "description": "This settee is a great addition for any home.\nFeaturing comfort and style, The contemporary two seater Sofa is perfect for a home office or living room.\nThe slightly curved back helps provide extra comfort and gives the settee a softer look.",
@@ -972,10 +1416,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 25
+    "discount": 25,
+    "createdAt": {
+      "$date": "2022-01-06T01:19:09.648Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T01:19:09.648Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632829129/ecommerceAPI/2021-09-28T11-38-46.692ZYellow-Sofa-PNG-Image.png.png"
     ],
     "description": "Feed your mid-century modern nostalgia with a contemporary twist in the Zardoni sofa. Colored in an attractive yellow, it’s upholstered in a timeless texture. Classic tufted back and tapered peg legs are a nice revival. Linear profile with two toss pillows adds plenty of fresh style, perfect for small spaces.",
@@ -985,10 +1435,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 61
+    "discount": 61,
+    "createdAt": {
+      "$date": "2022-01-08T20:09:52.379Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T20:09:52.379Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632829034/ecommerceAPI/2021-09-28T11-37-14.103ZYellow-Sofa-PNG-Photos.png.png"
     ],
     "description": "Classic, clean comfort, all in one package. Featuring ergonomic pocket coil seating with extra padded cushions and a sinuous spring foundation. Whether you're curling up to read a novel, sinking into it for some nap time or lounging for a movie marathon, this sofa will serve its purpose",
@@ -998,10 +1454,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 25
+    "discount": 25,
+    "createdAt": {
+      "$date": "2022-01-10T06:46:52.853Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T06:46:52.853Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632828975/ecommerceAPI/2021-09-28T11-36-14.431ZYellow-Sofa-Transparent-PNG.png.png"
     ],
     "description": "Classic, clean comfort, all in one package. This Regency-style sofa is upholstered in yellow linen, featuring ergonomic pocket coil seating with extra padded cushions and a sinuous spring foundation. Whether you're curling up to read a novel, sinking into it for some nap time or lounging for a movie marathon, this sofa will serve its purpose",
@@ -1011,10 +1473,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 59
+    "discount": 59,
+    "createdAt": {
+      "$date": "2022-01-11T02:46:31.924Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-11T02:46:31.924Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632828913/ecommerceAPI/2021-09-28T11-35-13.184ZFuton-PNG-File.png.png"
     ],
     "description": "This settee is a great addition for any home.\nFeaturing comfort and style, The contemporary two seater Sofa is perfect for a home office or living room.\nThe slightly curved back helps provide extra comfort and gives the settee a softer look.",
@@ -1024,10 +1492,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 19
+    "discount": 19,
+    "createdAt": {
+      "$date": "2022-01-06T21:41:46.919Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T21:41:46.919Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632827868/ecommerceAPI/2021-09-28T11-17-48.216ZVelvet-Sofa-PNG-Photos.png.png"
     ],
     "description": "Classic, clean comfort, all in one package. This Regency-style sofa is upholstered in gray linen, featuring ergonomic pocket coil seating with extra padded cushions and a sinuous spring foundation. Whether you're curling up to read a novel, sinking into it for some nap time or lounging for a movie marathon, this sofa will serve its purpose. Pair it with the matching loveseat (sold separately).",
@@ -1037,10 +1511,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 57
+    "discount": 57,
+    "createdAt": {
+      "$date": "2022-01-10T07:28:49.321Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T07:28:49.321Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632827814/ecommerceAPI/2021-09-28T11-16-54.068ZSofa-PNG-File.png.png"
     ],
     "description": "Mixing mid-century inspiration with modern attitude, the Lyman green sofa is as retro chic as it is fashion forward. Loaded with multi-tonal interest, the granite upholstery is the essence of earthy elegance. Design elements include 2-over-2 cushion styling, t-cushions wrapping around slim track arms and tapered accent legs that are right on point.",
@@ -1050,10 +1530,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 57
+    "discount": 57,
+    "createdAt": {
+      "$date": "2022-01-05T21:49:50.438Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T21:49:50.438Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632827180/ecommerceAPI/2021-09-28T11-06-05.360ZSofa-Bed-Transparent-Background.png.png"
     ],
     "description": "Mixing mid-century inspiration with modern attitude, the Lyman sofa is as retro chic as it is fashion forward. Loaded with multi-tonal interest, the granite gray upholstery is the essence of earthy elegance. Design elements include 2-over-2 cushion styling, t-cushions wrapping around slim track arms and tapered accent legs that are right on point.",
@@ -1063,10 +1549,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 39
+    "discount": 39,
+    "createdAt": {
+      "$date": "2022-01-11T12:27:54.296Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-11T12:27:54.296Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632826944/ecommerceAPI/2021-09-28T11-01-40.891ZSofa-Bed-Transparent.png.png"
     ],
     "description": "Bring home an effortlessly chic sense of style with the red Sciolo sofa in cobalt blue. Its decidedly contemporary profile sports a 2-over-2 cushion design for a crisp and clean aesthetic. Four feather-filled toss pillows are an added indulgence.",
@@ -1076,10 +1568,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 49
+    "discount": 49,
+    "createdAt": {
+      "$date": "2022-01-09T03:03:59.097Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T03:03:59.097Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632826944/ecommerceAPI/2021-09-28T11-02-15.497ZSofa-Bed-Transparent.png.png"
     ],
     "description": "Bring home an effortlessly chic sense of style with the red Sciolo sofa. Its decidedly contemporary profile sports a 2-over-2 cushion design for a crisp and clean aesthetic. Four feather-filled toss pillows are an added indulgence.",
@@ -1089,10 +1587,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 49
+    "discount": 49,
+    "createdAt": {
+      "$date": "2022-01-11T12:22:58.481Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-11T12:22:58.481Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632826935/ecommerceAPI/2021-09-28T11-01-47.360ZSofa-Bed-Transparent.png.png"
     ],
     "description": "Bring home an effortlessly chic sense of style with the red Sciolo sofa. Its decidedly contemporary profile sports a 2-over-2 cushion design for a crisp and clean aesthetic. Four feather-filled toss pillows are an added indulgence.",
@@ -1102,10 +1606,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 49
+    "discount": 49,
+    "createdAt": {
+      "$date": "2022-01-06T00:28:05.426Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T00:28:05.426Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632826737/ecommerceAPI/2021-09-28T10-58-29.482ZSleeper-Sofa-Transparent-Images-PNG.png.png"
     ],
     "description": "For a fresh spot in your space, turn to the Arroyo sofa. This invigorating piece breathes warmth into your home with its striking caramel faux leather upholstery, modern bolster pillows and tapered legs. Wind down at the end of a long day when you sink into this canyon of comfort.",
@@ -1115,10 +1625,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 27
+    "discount": 27,
+    "createdAt": {
+      "$date": "2022-01-07T07:31:48.190Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T07:31:48.190Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823772/ecommerceAPI/2021-09-28T10-09-31.710ZSleeper-Sofa-Transparent-Background.png.png"
     ],
     "description": "The Maimz sofa is mid-century revival done to perfection. Linear and minimalistic, the beautifully edited profile has all the retro elements you love, like sheltering arms, bolster pillows and tapered splayed legs. So casually cool, the caramel faux leather upholstery brings the look right into the present.",
@@ -1128,10 +1644,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 21
+    "discount": 21,
+    "createdAt": {
+      "$date": "2022-01-08T16:31:08.405Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T16:31:08.405Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823704/ecommerceAPI/2021-09-28T10-08-22.768ZSleeper-Sofa-PNG-Image.png.png"
     ],
     "description": "The Dorsten sofa chaise has the corner on ultra-contemporary style made for easy, everyday living. Upholstered in a plush slate chenille, it takes neutral sophistication to another level. And talk about accommodating. Thanks to a versatile chaise with movable ottoman and reversible seat cushions, you can enjoy the chaise on either side to suit your space.",
@@ -1141,10 +1663,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 81
+    "discount": 81,
+    "createdAt": {
+      "$date": "2022-01-05T21:42:33.308Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T21:42:33.308Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823605/ecommerceAPI/2021-09-28T10-06-45.006ZSleeper-Sofa-PNG-Transparent-Image.png.png"
     ],
     "description": "Melding the contemporary style you love with the cozy feel you crave, the Kennewick sofa turns easy living into an art form. The sofa’s ultra-linear frame is enriched with generous bolster arm pillows and an indulgent velvet upholstery that’s the stuff dreams are made of. Slim track arms, sleek tapered feet and distinctive accent stitching are among the finer details that set this sofa apart.",
@@ -1154,10 +1682,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 67
+    "discount": 67,
+    "createdAt": {
+      "$date": "2022-01-09T10:50:50.520Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-09T10:50:50.520Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823502/ecommerceAPI/2021-09-28T10-05-01.300ZSleeper-Sofa-PNG-HD.png.png"
     ],
     "description": "The Nemoli sofa sets the scene for a modern space full of casual flair. Its textured chenille with solid microfiber upholstery provides a luxuriously soft feel that’s inviting. Gently flared arms and plush seat cushions welcome comfort and relaxation. The on-trend slate-colored upholstery offers a perfect background for the four decorative pillows to pop with beauty.",
@@ -1167,10 +1701,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 67
+    "discount": 67,
+    "createdAt": {
+      "$date": "2022-01-05T20:20:03.505Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-05T20:20:03.505Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823386/ecommerceAPI/2021-09-28T10-03-05.614ZSleeper-Sofa-Background-PNG.png.png"
     ],
     "description": "Bring home an effortlessly chic sense of style with the Sciolo sofa in brown. Its decidedly contemporary profile sports a 2-over-2 cushion design for a crisp and clean aesthetic. Four feather-filled toss pillows are an added indulgence.",
@@ -1180,10 +1720,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 48
+    "discount": 48,
+    "createdAt": {
+      "$date": "2022-01-07T09:51:25.416Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-07T09:51:25.416Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823279/ecommerceAPI/2021-09-28T10-01-17.308ZSettee-PNG-Image.png.png"
     ],
     "description": "A brilliant take on urban chic styling, the Enderlin sofa in vibrant blue makes high design highly affordable. Distinctive elements include quilted channel stitching for clean-lined allure and a velvety soft fabric you'll love living with. Sculptural track arms up the wow factor. If you’re looking for big style on more modest scale, you’re sure to appreciate this sofa’s space-conscious 82\" wide profile.",
@@ -1193,10 +1739,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 61
+    "discount": 61,
+    "createdAt": {
+      "$date": "2022-01-06T01:14:07.120Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T01:14:07.120Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823123/ecommerceAPI/2021-09-28T09-58-43.213ZSettee-PNG-Clipart.png.png"
     ],
     "description": "This Sofa is the perfect combination of functionality, simplicity and elegance.\nMade from the finest American Fabrics\nThe oversized cushions and the deep seater give extra comfort to your back while sitting.\nWhether in your home or office, this sofa adds beauty and class to your environment.\nIt consist of 2 throw pillows which gives you a smooth experience when you are sitting and laying.\nDimension Length 60 inches\", Breath 32 inches\", Height 36 inches.\n Available in different color shape and sizes",
@@ -1206,10 +1758,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 21
+    "discount": 21,
+    "createdAt": {
+      "$date": "2022-01-06T12:04:47.037Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T12:04:47.037Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632823042/ecommerceAPI/2021-09-28T09-57-19.921ZPrinted-Sofa-PNG-Image.png.png"
     ],
     "description": "This Sofa is the perfect combination of functionality and elegance.\nMade from the finest American Fabrics\nThe oversized cushions and the deep seater give extra comfort to your back while sitting.\nWhether in your home or office, this sofa adds beauty and class to your environment.\nIt consist of  3 throw pillows which gives you a smooth experience when you are sitting and laying.\nDimension Length 60 inches\", Breath 32 inches\", Height 36 inches.\n Available in different color shape and sizes",
@@ -1219,10 +1777,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 25
+    "discount": 25,
+    "createdAt": {
+      "$date": "2022-01-08T19:11:04.001Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T19:11:04.001Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822908/ecommerceAPI/2021-09-28T09-55-07.597ZRecliner-PNG-Transparent.png.png"
     ],
     "description": "【SUPERIOR COMFORT】Covered by the breathable wearproof cotton & linen fabric, no pilling, and padded with the soft recycled cotton, excellent resilience, this floor chair is comfortable and safe. The pillow are providing comfortable rest for you.\n【ERGONOMIC DESIGN】This fully adjustable sofa chair can be adjusted at 6 different angles, which is the most comfortable angle for your body spine line. It also can be laid flat on the ground as a single bed or folded into a small piece to store it in your closet, it's easy to storage.",
@@ -1232,10 +1796,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 19
+    "discount": 19,
+    "createdAt": {
+      "$date": "2022-01-10T18:36:02.633Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T18:36:02.633Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822857/ecommerceAPI/2021-09-28T09-54-16.049ZRecliner.png.png"
     ],
     "description": "【SUPERIOR COMFORT】Covered by the breathable wearproof cotton & linen fabric, no pilling, and padded with the soft recycled cotton, excellent resilience, this floor chair is comfortable and safe. The pillow are providing comfortable rest for you.\n【ERGONOMIC DESIGN】This fully adjustable sofa chair can be adjusted at 6 different angles, which is the most comfortable angle for your body spine line. It also can be laid flat on the ground as a single bed or folded into a small piece to store it in your closet, it's easy to storage.",
@@ -1245,10 +1815,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 39
+    "discount": 39,
+    "createdAt": {
+      "$date": "2022-01-08T17:14:04.402Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T17:14:04.402Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822773/ecommerceAPI/2021-09-28T09-52-52.957ZFuton-PNG-Transparent.png.png"
     ],
     "description": "【SUPERIOR COMFORT】Covered by the breathable wearproof cotton & linen fabric, no pilling, and padded with the soft recycled cotton, excellent resilience, this floor chair is comfortable and safe. The pillow are providing comfortable rest for you.\n【ERGONOMIC DESIGN】This fully adjustable sofa chair can be adjusted at 6 different angles, which is the most comfortable angle for your body spine line. It also can be laid flat on the ground as a single bed or folded into a small piece to store it in your closet, it's easy to storage.\n【EASY TO STORAGE & CARRYING】It can be folded into a small piece to store in your closet easily when you don't need it. Also, you can easily carry it around wherever you want, and set it up on any surfaces that is dry & clean.",
@@ -1258,10 +1834,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 53
+    "discount": 53,
+    "createdAt": {
+      "$date": "2022-01-06T23:49:14.176Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-06T23:49:14.176Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822674/ecommerceAPI/2021-09-28T09-51-12.637ZFuton-PNG-HD.png.png"
     ],
     "description": "100% Easy to Care for Polyester\nFrom Chair to Chaise and Lounge; there 4 different and comfortable positions to choose from\nConverting is a breeze; additional legs are hidden inside, simply unzip and fold out for lounging\nIdeal for apartments and small spaces but functional for any room\nExtra soft with high density foam and easy to care for 100% polyester fabric upholstery",
@@ -1271,10 +1853,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 25
+    "discount": 25,
+    "createdAt": {
+      "$date": "2022-01-10T16:48:15.871Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T16:48:15.871Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822504/ecommerceAPI/2021-09-28T09-48-23.859ZSleeper-Sofa-Background-PNG.png.png"
     ],
     "description": "This Fabric Fabric Sofa  is the perfect combination of class, functionality and elegance American Fabrics, Mart)\nThe oversized cushions and the deep seater give extra comfort to your back while sitting.\nWhether in your home or office, this seater give you class.\nIt consist of 3 seater, 2 seater and a single seater\nIt comes throw pillows which gives you a smooth experience when you are sitting.",
@@ -1284,10 +1872,16 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 50
+    "discount": 50,
+    "createdAt": {
+      "$date": "2022-01-08T17:36:42.162Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-08T17:36:42.162Z"
+    }
   },
   {
-    "image": [
+    "images": [
       "https://res.cloudinary.com/elouisramsey/image/upload/v1632822321/ecommerceAPI/2021-09-28T09-45-20.377ZFive-Seater-Sofa.png.png"
     ],
     "description": "This Sofa is the perfect combination of functionality and elegance.\nMade from the finest American Fabrics\nThe oversized cushions and the deep seater give extra comfort to your back while sitting.\nWhether in your home or office, this sofa adds beauty and class to your environment.\nIt consist of  3 throw pillows which gives you a smooth experience when you are sitting and laying.\nDimension Length 60 inches\", Breath 32 inches\", Height 36 inches.\n Available in different color shape and sizes",
@@ -1297,6 +1891,12 @@
     "ratings": 0,
     "ratingsCount": 0,
     "category": "home-pet-appliances",
-    "discount": 65
+    "discount": 65,
+    "createdAt": {
+      "$date": "2022-01-10T03:03:24.326Z"
+    },
+    "updatedAt": {
+      "$date": "2022-01-10T03:03:24.326Z"
+    }
   }
 ]
