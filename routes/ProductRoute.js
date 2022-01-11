@@ -37,7 +37,7 @@ router.get("/search", async (req, res) => {
     res.send(response);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -55,7 +55,7 @@ router.get("/:id", async (req, res) => {
     res.send(existingProduct);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

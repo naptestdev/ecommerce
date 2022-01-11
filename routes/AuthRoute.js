@@ -172,7 +172,7 @@ router.post("/verify-token", verifyJWT, async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -195,7 +195,7 @@ router.post("/update-username", verifyJWT, async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -213,7 +213,7 @@ router.post("/update-address", verifyJWT, async (req, res) => {
     res.send({ message: "Address updated successfully!" });
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -248,7 +248,7 @@ router.post("/change-password", verifyJWT, async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

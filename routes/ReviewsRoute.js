@@ -61,7 +61,7 @@ router.post("/:product/create-review", verifyJWT, async (req, res) => {
     }
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -76,7 +76,7 @@ router.get("/:product", async (req, res) => {
     res.send(existingReviews);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

@@ -15,7 +15,7 @@ router.get("/", verifyJWT, async (req, res) => {
     res.send(existingCart.products);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -44,7 +44,7 @@ router.post("/update", verifyJWT, async (req, res) => {
     }
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

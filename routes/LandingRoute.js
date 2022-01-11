@@ -12,7 +12,7 @@ router.get("/slide", async (req, res) => {
     res.send(data);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -23,7 +23,7 @@ router.get("/categories", async (req, res) => {
     res.send(data);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -34,7 +34,7 @@ router.get("/suggested", async (req, res) => {
     res.send(data);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

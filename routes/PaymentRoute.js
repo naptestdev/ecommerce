@@ -41,7 +41,7 @@ router.post("/create-session", verifyJWT, async (req, res) => {
     res.send(session.url);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -56,7 +56,7 @@ router.get("/success", (req, res) => {
     }
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
