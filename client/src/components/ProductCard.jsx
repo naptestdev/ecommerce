@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
         >
           <img
             className="absolute top-0 left-0 w-full h-full object-contain"
-            src={resizeImage(product.image[0], 300, 300)}
+            src={resizeImage(product.images[0], 300, 300)}
             alt=""
           />
         </div>

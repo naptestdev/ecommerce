@@ -58,7 +58,7 @@ export default function Cart() {
                         <div className="flex gap-4">
                           <img
                             className="w-[120px] h-[120px] object-contain"
-                            src={resizeImage(item.product.image[0], 120, 120)}
+                            src={resizeImage(item.product.images[0], 120, 120)}
                             alt=""
                           />
                           <div>

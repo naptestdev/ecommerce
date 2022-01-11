@@ -61,7 +61,7 @@ export default function Product() {
               slidesToShow={1}
               slidesToScroll={1}
             >
-              {product.image.map((image) => (
+              {product.images.map((image) => (
                 <img key={image} src={image} alt="" />
               ))}
             </Slider>
