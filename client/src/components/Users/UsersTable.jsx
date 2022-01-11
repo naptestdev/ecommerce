@@ -12,7 +12,7 @@ export default function UsersTable({ data, refetch }) {
     <div className="flex justify-center mx-[4vw]">
       <div className="w-full">
         <h1 className="text-2xl my-5">All Users</h1>
-        <table className="users-table">
+        <table className="table">
           <tr>
             <th>User ID</th>
             <th>Username</th>

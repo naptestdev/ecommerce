@@ -64,7 +64,7 @@ router.post("/verify-token", verifyJWT, async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

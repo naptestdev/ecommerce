@@ -1,8 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 
 import Banners from "./pages/Banners";
+import EditProduct from "./pages/EditProduct";
 import Home from "./pages/Home";
+import NewProduct from "./pages/NewProduct";
 import PrivateRoute from "./components/PrivateRoute";
+import Products from "./pages/Products";
+import ProductsList from "./components/Products/ProductsList";
 import SignIn from "./pages/SignIn";
 import Users from "./pages/Users";
 import axios from "./services/axios";
@@ -62,6 +66,34 @@ export default function App() {
           </PrivateRoute>
         }
       />
+      <Route path="products">
+        <Route
+          index
+          element={
+            <PrivateRoute>
+              <Products component={ProductsList} />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="new"
+          element={
+            <PrivateRoute>
+              <Products component={NewProduct} />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path=":id"
+          element={
+            <PrivateRoute>
+              <Products component={EditProduct} />
+            </PrivateRoute>
+          }
+        />
+      </Route>
     </Routes>
   );
 }

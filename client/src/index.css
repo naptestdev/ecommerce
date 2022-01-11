@@ -15,15 +15,15 @@ body {
   min-height: 20px;
 }
 
-.users-table {
+.table {
   @apply border-collapse w-full bg-white;
 }
 
-.users-table td,
-.users-table th {
+.table td,
+.table th {
   @apply border border-[#ddd] text-left p-2;
 }
 
-.users-table tr {
+.table tr {
   @apply hover:bg-[#efefef] transition;
 }

@@ -27,20 +27,12 @@ export default function BannerDND({ data }) {
     clone = clone.filter((image) => image !== url);
 
     setImages(clone);
-
-    setLoading(true);
-
-    updateBanners(clone).finally(() => {
-      setLoading(false);
-    });
   };
 
   const onDragEnd = (result) => {
     if (!result.destination) return;
 
     if (result.destination.index === result.source.index) return;
-
-    setLoading(true);
 
     const reordered = reorder(
       [...images],
@@ -49,10 +41,6 @@ export default function BannerDND({ data }) {
     );
 
     setImages(reordered);
-
-    updateBanners(reordered).finally(() => {
-      setLoading(false);
-    });
   };
 
   const handleInputChange = (e) => {
@@ -61,14 +49,18 @@ export default function BannerDND({ data }) {
     if (file.type.startsWith("image")) {
       setLoading(true);
 
-      uploadImage(file).then((res) => {
-        updateBanners([...images, res.secure_url]).then(() => {
+      uploadImage(file, "banners")
+        .then((res) => {
           setImages([...images, res.secure_url]);
-
-          setLoading(false);
-        });
-      });
+        })
+        .finally(() => setLoading(false));
     }
+  };
+
+  const handleSave = () => {
+    setLoading(true);
+
+    updateBanners(images).finally(() => setLoading(false));
   };
 
   return (
@@ -83,13 +75,23 @@ export default function BannerDND({ data }) {
           <div className="flex justify-between mb-6">
             <h1 className="text-3xl">Website banners</h1>
 
-            <button
-              onClick={() => fileInputRef.current.click()}
-              className="bg-primary text-white py-2 px-3 hover:brightness-[115%] transition"
-            >
-              <i className="fas fa-upload"></i>
-              <span> Upload image</span>
-            </button>
+            <div className="flex gap-2">
+              <button
+                onClick={handleSave}
+                className="bg-primary text-white py-2 px-3 hover:brightness-[115%] transition"
+              >
+                <i className="fas fa-save"></i>
+                <span> Save</span>
+              </button>
+
+              <button
+                onClick={() => fileInputRef.current.click()}
+                className="bg-primary text-white py-2 px-3 hover:brightness-[115%] transition"
+              >
+                <i className="fas fa-upload"></i>
+                <span> Upload</span>
+              </button>
+            </div>
 
             <input
               hidden
@@ -122,6 +124,7 @@ export default function BannerDND({ data }) {
                             >
                               <div className="flex items-center gap-3">
                                 <img
+                                  className="w-[100px] h-[50px]"
                                   src={resizeImage(banner, 100, 50, "fill")}
                                   alt=""
                                 />
@@ -129,9 +132,11 @@ export default function BannerDND({ data }) {
                                 <p>{banner.split("/").slice(-1)[0]}</p>
                               </div>
 
-                              <button onClick={() => removeImage(banner)}>
-                                <i className="fas fa-times text-red-500"></i>
-                              </button>
+                              {images.length > 1 && (
+                                <button onClick={() => removeImage(banner)}>
+                                  <i className="fas fa-times text-red-500"></i>
+                                </button>
+                              )}
                             </div>
                           )}
                         </Draggable>

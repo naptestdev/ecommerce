@@ -1,19 +1,20 @@
 const express = require("express");
 const router = express.Router();
 const BannersModel = require("../models/BannerModel");
+const { verifyJWT } = require("../controllers/verifyJWT");
 
-router.get("/", async (req, res) => {
+router.get("/", verifyJWT, async (req, res) => {
   try {
     const banners = (await BannersModel.find())[0].images;
 
     res.send(banners);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/", verifyJWT, async (req, res) => {
   try {
     if (!Array.isArray(req.body) || req.body.length <= 0)
       return res.status(400).send({
@@ -30,7 +31,7 @@ router.post("/", async (req, res) => {
     res.sendStatus(200);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

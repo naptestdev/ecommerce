@@ -10,7 +10,7 @@ router.get("/recent-users", verifyJWT, async (req, res) => {
     res.send(recentUsers);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

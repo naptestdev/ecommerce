@@ -41,8 +41,6 @@ export default function SignIn() {
         setCurrentUser(res.data.user);
         localStorage.setItem("admin-token", res.data.token);
 
-        // Redirect
-
         setLoading(false);
       })
       .catch((err) => {

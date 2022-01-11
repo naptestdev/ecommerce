@@ -10,7 +10,7 @@ router.get("/all", verifyJWT, async (req, res) => {
     res.send(data);
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 
@@ -23,7 +23,7 @@ router.delete("/", verifyJWT, async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    if (!res.headerSent) res.sendStatus(500);
+    if (!res.headersSent) res.sendStatus(500);
   }
 });
 

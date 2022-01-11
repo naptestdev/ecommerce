@@ -32,7 +32,7 @@ export default function SideBar() {
   const location = useLocation();
 
   return (
-    <div className="border-r border-[#EEE] bg-[#191A1F] text-white min-h-screen w-[256px] p-5">
+    <div className="border-r border-[#EEE] bg-[#191A1F] text-white h-screen w-[256px] p-5 sticky top-0 left-0 overflow-x-hidden overflow-y-auto flex-shrink-0">
       <div className="flex items-center gap-2">
         <img className="w-8 h-8" src="/logo.png" alt="" />
         <h1 className="text-[#1D90FF] text-2xl">Admin</h1>
