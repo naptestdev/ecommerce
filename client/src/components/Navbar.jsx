@@ -106,7 +106,7 @@ export default function Navbar() {
                         transformOrigin: "top right",
                         width: "max-content",
                       }}
-                      className={`absolute top-[150%] bg-white text-black right-0 py-2 rounded overflow-hidden transition-all ${
+                      className={`absolute top-[150%] bg-white text-black shadow right-0 py-2 rounded overflow-hidden transition-all ${
                         dropdownActive
                           ? "opacity-100 scale-100 visible"
                           : "opacity-0 invisible scale-0"

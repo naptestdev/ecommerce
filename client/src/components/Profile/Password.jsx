@@ -3,12 +3,13 @@ import { changePassword } from "../../services/api/profile";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
-export default function Password() {
+export default function Password({ setAlertText, setIsAlertOpened }) {
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
+    reset,
   } = useForm();
 
   const [loading, setLoading] = useState(false);
@@ -20,11 +21,18 @@ export default function Password() {
       changePassword(data.old, data.new)
         .then((data) => {
           console.log(data);
+          setAlertText("Password changed successfully!");
+          setIsAlertOpened(true);
         })
         .catch((err) => {
           console.log(err);
+          setAlertText("Failed to change password");
+          setIsAlertOpened(true);
         })
-        .finally(() => setLoading(false));
+        .finally(() => {
+          setLoading(false);
+          reset();
+        });
     }
   };
 

@@ -82,17 +82,20 @@ router.post("/sign-up", async (req, res) => {
       text: `Hello ${username}, Click this link to verify your email: ${verifyUrl}`,
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
+    transporter.sendMail(mailOptions, async (error, info) => {
       if (error) {
         console.log(error);
-        res.send({
-          user: saved,
-          emailSent: { success: false, error },
+
+        await AuthModel.findOneAndDelete({ email });
+
+        res.status(500).send({
+          errorSection: "email",
+          message: "We can't send verification email. Please try again later",
         });
       } else {
         res.send({
           user: saved,
-          emailSent: { success: true, info },
+          emailSent: info,
         });
       }
     });

@@ -1,5 +1,6 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
+import Alert from "../components/Alert";
 import ReviewsSection from "../components/Product/ReviewsSection";
 import Slider from "react-slick";
 import Spin from "react-cssfx-loading/lib/Spin";
@@ -20,6 +21,11 @@ export default function Product() {
   const addCartItem = useStore((state) => state.addCartItem);
 
   const [quantity, setQuantity] = useState(1);
+  const [addCartLoading, setAddCartLoading] = useState(false);
+  const [alertText, setAlertText] = useState("");
+  const [isAlertOpened, setIsAlertOpened] = useState(false);
+
+  const navigate = useNavigate();
 
   if (!product || error)
     return (
@@ -137,22 +143,79 @@ export default function Product() {
 
             <div className="flex gap-3">
               <button
-                onClick={() => addCartItem(product._id, quantity)}
-                className="px-4 py-3 bg-[#e2edff] text-primary flex items-center gap-2 hover:bg-[#d5e5ff] transition"
+                disabled={addCartLoading}
+                onClick={() => {
+                  setAddCartLoading(true);
+                  addCartItem(product._id, quantity)
+                    .then(() => {
+                      setAlertText(
+                        `Added ${quantity} item${
+                          quantity > 1 ? "s" : ""
+                        } to cart`
+                      );
+                      setIsAlertOpened(true);
+                    })
+                    .catch((err) => {
+                      console.log(err);
+
+                      setAlertText("Fail to add to cart");
+                      setIsAlertOpened(true);
+                    })
+                    .finally(() => setAddCartLoading(false));
+                }}
+                className="px-4 py-3 bg-[#e2edff] text-primary flex items-center gap-2 hover:bg-[#d5e5ff] transition disabled:brightness-90 disabled:!cursor-default"
               >
-                <i className="fas fa-cart-plus"></i>
+                {addCartLoading ? (
+                  <Spin width="20px" height="20px" />
+                ) : (
+                  <i className="fas fa-cart-plus"></i>
+                )}
                 <span>Add to cart</span>
               </button>
-              <button className="px-4 py-3 bg-primary text-white flex items-center gap-2 hover:bg-secondary transition">
-                <i className="fas fa-money-check-alt"></i>
+              <button
+                onClick={() => {
+                  setAddCartLoading(true);
+                  addCartItem(product._id, quantity)
+                    .then(() => {
+                      navigate("/cart");
+                    })
+                    .catch((err) => {
+                      console.log(err);
+
+                      setAlertText("Fail to add to cart");
+                      setIsAlertOpened(true);
+                    })
+                    .finally(() => setAddCartLoading(false));
+                }}
+                disabled={addCartLoading}
+                className="px-4 py-3 bg-primary text-white flex items-center gap-2 hover:bg-secondary transition disabled:brightness-90 disabled:!cursor-default"
+              >
+                {addCartLoading ? (
+                  <Spin width="20px" height="20px" color="#ffffff" />
+                ) : (
+                  <i className="fas fa-money-check-alt"></i>
+                )}
                 <span>Buy now</span>
               </button>
             </div>
           </div>
         </div>
 
+        {product.description && (
+          <div className="bg-white mt-8 p-4">
+            <h1 className="text-3xl mb-3">Product Description</h1>
+            <p>{product.description}</p>
+          </div>
+        )}
+
         <ReviewsSection product={product} refetchProduct={mutate} />
       </div>
+
+      <Alert
+        isOpened={isAlertOpened}
+        setIsOpened={setIsAlertOpened}
+        text={alertText}
+      />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { updateUsername } from "../../services/api/profile";
 import { useState } from "react";
 import { useStore } from "../../store";
 
-export default function Info() {
+export default function Info({ setAlertText, setIsAlertOpened }) {
   const currentUser = useStore((state) => state.currentUser);
   const verifyUser = useStore((state) => state.verifyUser);
 
@@ -16,10 +16,21 @@ export default function Info() {
     if (!loading && validateInput(inputValue)) {
       setLoading(true);
 
-      updateUsername(inputValue.trim()).finally(() => {
-        setLoading(false);
-        verifyUser();
-      });
+      updateUsername(inputValue.trim())
+        .then(() => {
+          setAlertText("Username updated successfully!");
+          setIsAlertOpened(true);
+        })
+        .catch((err) => {
+          console.log(err);
+
+          setAlertText("Failed to update username");
+          setIsAlertOpened(true);
+        })
+        .finally(() => {
+          setLoading(false);
+          verifyUser();
+        });
     }
   };
 

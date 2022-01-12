@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useStore } from "../../store";
 
-export default function Address() {
+export default function Address({ setAlertText, setIsAlertOpened }) {
   const {
     register,
     handleSubmit,
@@ -27,7 +27,18 @@ export default function Address() {
     if (!loading) {
       setLoading(true);
 
-      updateAddress(data).finally(() => setLoading(false));
+      updateAddress(data)
+        .then(() => {
+          setAlertText("Address updated successfully!");
+          setIsAlertOpened(true);
+        })
+        .catch((err) => {
+          console.log(err);
+
+          setAlertText("Failed to update address");
+          setIsAlertOpened(true);
+        })
+        .finally(() => setLoading(false));
     }
   };
 
