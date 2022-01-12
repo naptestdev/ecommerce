@@ -41,6 +41,23 @@ router.get("/search", async (req, res) => {
   }
 });
 
+router.get("/similar/:id", async (req, res) => {
+  try {
+    const existingProduct = await ProductModel.findOne({
+      _id: req.params.id,
+    });
+
+    const category = existingProduct.category;
+
+    const similar = await ProductModel.find({ category }).limit(10);
+
+    res.send(similar);
+  } catch (error) {
+    console.log(error);
+    if (!res.headersSent) res.sendStatus(500);
+  }
+});
+
 router.get("/:id", async (req, res) => {
   try {
     const existingProduct = await ProductModel.findOne({

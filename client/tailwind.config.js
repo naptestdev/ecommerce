@@ -10,6 +10,9 @@ module.exports = {
         orange: "#ffa500",
         bg: "#F5F5F5",
       },
+      gridTemplateColumns: {
+        card: "repeat(auto-fill, minmax(180px, 1fr))",
+      },
     },
   },
   variants: {

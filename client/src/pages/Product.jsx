@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 import Alert from "../components/Alert";
 import ReviewsSection from "../components/Product/ReviewsSection";
+import SimilarProducts from "../components/Product/SimilarProducts";
 import Slider from "react-slick";
 import Spin from "react-cssfx-loading/lib/Spin";
 import StarRatings from "../components/StarRatings";
@@ -209,6 +210,8 @@ export default function Product() {
         )}
 
         <ReviewsSection product={product} refetchProduct={mutate} />
+
+        <SimilarProducts productId={product._id} />
       </div>
 
       <Alert

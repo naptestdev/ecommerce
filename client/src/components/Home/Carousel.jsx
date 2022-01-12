@@ -1,27 +1,8 @@
+import NextArrow from "../Slider/NextArrow";
+import PrevArrow from "../Slider/PrevArrow";
 import Slider from "react-slick";
 import { getCarousel } from "../../services/api/homepage";
 import useSWR from "swr";
-
-function PrevArrow({ onClick }) {
-  return (
-    <button
-      className="absolute border-none outline-none left-0 w-10 h-14 bg-[#0000005b] top-1/2 -translate-y-1/2 z-10"
-      onClick={onClick}
-    >
-      <i className="fas fa-chevron-left text-white text-3xl"></i>
-    </button>
-  );
-}
-function NextArrow({ onClick }) {
-  return (
-    <button
-      className="absolute border-none outline-none right-0 w-10 h-14 bg-[#0000005b] top-1/2 -translate-y-1/2 z-10"
-      onClick={onClick}
-    >
-      <i className="fas fa-chevron-right text-white text-3xl"></i>
-    </button>
-  );
-}
 
 export default function Carousel() {
   const { data, error } = useSWR("home-carousel", getCarousel);

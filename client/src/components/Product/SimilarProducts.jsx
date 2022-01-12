@@ -1,22 +1,24 @@
 import ProductCard from "../ProductCard";
-import { getSuggested } from "../../services/api/homepage";
+import { getSimilarProducts } from "../../services/api/product";
 import useSWR from "swr";
 
-export default function Suggested() {
-  const { data: suggested, error } = useSWR("home-suggested", getSuggested);
+export default function SimilarProducts({ productId }) {
+  const { data, error } = useSWR(`similar-products-${productId}`, () =>
+    getSimilarProducts(productId)
+  );
 
   return (
-    <div className="mx-[4vw]">
-      <h1 className="text-2xl my-3">Suggested for you</h1>
+    <div className="bg-white my-8 p-4">
+      <h1 className="text-3xl mb-3">Similar products</h1>
       <div
         className="grid gap-4 grid-cols-card"
         style={{
           gridAutoRows: "1fr",
         }}
       >
-        {!suggested || error ? (
+        {!data || error ? (
           <>
-            {[...new Array(30)].map((_, index) => (
+            {[...new Array(10)].map((_, index) => (
               <div
                 key={index}
                 className="relative h-0"
@@ -28,7 +30,7 @@ export default function Suggested() {
           </>
         ) : (
           <>
-            {suggested.map((item) => (
+            {data.map((item) => (
               <ProductCard key={item._id} product={item} />
             ))}
           </>

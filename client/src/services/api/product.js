@@ -24,3 +24,6 @@ export const searchProduct = async (
 
 export const getCategory = async (categoryId) =>
   (await axios.get(`/product/search?category=${categoryId}&q=`)).data;
+
+export const getSimilarProducts = async (productId) =>
+  (await axios.get(`/product/similar/${productId}`)).data;
