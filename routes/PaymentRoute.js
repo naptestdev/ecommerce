@@ -2,7 +2,9 @@ const express = require("express");
 const router = express.Router();
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const { verifyJWT } = require("../controllers/verifyJWT");
+const AuthModel = require("../models/AuthModel");
 const CartModel = require("../models/CartModel");
+const OrderModel = require("../models/OrderModel");
 
 let checkoutSessions = {};
 
@@ -45,10 +47,33 @@ router.post("/create-session", verifyJWT, async (req, res) => {
   }
 });
 
-router.get("/success", (req, res) => {
+router.get("/success", async (req, res) => {
   try {
     if (checkoutSessions[req.query.sessionId]) {
-      res.send(checkoutSessions[req.query.sessionId]);
+      const userId = checkoutSessions[req.query.sessionId];
+
+      const existingCart = await CartModel.findOne({ user: userId })
+        .populate("products.product")
+        .populate("user");
+
+      await OrderModel.create({
+        user: userId,
+        products: existingCart.products.map(({ product, quantity }) => ({
+          product,
+          quantity,
+        })),
+        amount: existingCart.products.reduce((acc, item) => {
+          return (
+            acc +
+            Math.round((item.product.price - item.product.discount) * 10) / 10
+          );
+        }, 0),
+        address: existingCart.user.address,
+      });
+
+      await CartModel.findOneAndDelete({ _id: existingCart._id });
+
+      res.sendStatus(200);
     } else {
       res.send({
         message: "Invalid Session Id",

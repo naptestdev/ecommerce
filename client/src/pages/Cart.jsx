@@ -5,14 +5,21 @@ import { resizeImage } from "../services/image";
 import { useStore } from "../store";
 
 export default function Cart() {
-  const { cart, addCartItem, isCartLoading, setIsCartLoading, removeCartItem } =
-    useStore((state) => ({
-      cart: state.cart,
-      addCartItem: state.addCartItem,
-      isCartLoading: state.isCardLoading,
-      setIsCartLoading: state.setIsCartLoading,
-      removeCartItem: state.removeCartItem,
-    }));
+  const {
+    cart,
+    addCartItem,
+    isCartLoading,
+    setIsCartLoading,
+    removeCartItem,
+    currentUser,
+  } = useStore((state) => ({
+    cart: state.cart,
+    addCartItem: state.addCartItem,
+    isCartLoading: state.isCardLoading,
+    setIsCartLoading: state.setIsCartLoading,
+    removeCartItem: state.removeCartItem,
+    currentUser: state.currentUser,
+  }));
 
   return (
     <>
@@ -25,8 +32,8 @@ export default function Cart() {
         <div className="min-h-screen flex justify-center items-center">
           <div className="flex flex-col items-center">
             <img
-              className="w-32 h-auto"
-              src="https://res.cloudinary.com/shopproj/image/upload/w_150,h_150,c_fill/j4rilqmejexwk2ngvtqi.png"
+              className="w-32 h-32 object-cover"
+              src="/empty-cart.png"
               alt=""
             />
             <h1 className="text-2xl my-4">Your cart is empty</h1>
@@ -47,7 +54,7 @@ export default function Cart() {
                   <tr>
                     <th>Product Detail</th>
                     <th>Quantity</th>
-                    <th>Total price</th>
+                    <th>Price</th>
                   </tr>
                 </thead>
 
@@ -63,7 +70,7 @@ export default function Cart() {
                           />
                           <div>
                             <p className="text-2xl">{item.product.name}</p>
-                            <p className="text-xl text-primary">
+                            <p className="text-lg text-gray-600">
                               $
                               {Math.round(
                                 (item.product.price - item.product.discount) *
@@ -107,7 +114,7 @@ export default function Cart() {
                           </button>
                         </div>
                       </td>
-                      <td className="text-2xl text-primary">
+                      <td className="text-2xl">
                         $
                         {Math.round(
                           (item.product.price - item.product.discount) *
@@ -121,29 +128,61 @@ export default function Cart() {
               </table>
             </div>
           </div>
-          <div className="w-72 bg-white flex-shrink-0 p-4">
-            <h1 className="text-center text-3xl mt-3">Final price</h1>
-            <h1 className="text-center text-4xl text-primary my-3">
-              $
-              {Math.round(
-                cart.reduce((result, item) => {
-                  result +=
-                    Math.round(
-                      (item.product.price - item.product.discount) *
-                        10 *
-                        item.quantity
-                    ) / 10;
-                  return result;
-                }, 0) * 10
-              ) / 10}
-            </h1>
+          <div className="w-80 bg-white flex-shrink-0 p-7 flex flex-col items-stretch gap-4 text-lg">
+            <div className="flex justify-between">
+              <p>Final price</p>
+              <p className="text-2xl text-primary">
+                $
+                {Math.round(
+                  cart.reduce((result, item) => {
+                    result +=
+                      Math.round(
+                        (item.product.price - item.product.discount) *
+                          10 *
+                          item.quantity
+                      ) / 10;
+                    return result;
+                  }, 0) * 10
+                ) / 10}
+              </p>
+            </div>
+
+            <div className="bg-gray-400 w-full h-[1px]"></div>
+
+            <div className="flex flex-col items-stretch">
+              <div className="flex justify-between">
+                <p>Address</p>
+
+                <Link className="text-primary" to="/profile">
+                  {currentUser.address ? "Edit" : "Add now"}
+                </Link>
+              </div>
+
+              {currentUser.address && (
+                <div className="text-gray-500">
+                  {Object.entries(currentUser.address).map(([key, value]) => (
+                    <div className="flex justify-between">
+                      <p>
+                        {key
+                          .replace(/([A-Z])/g, (match) => ` ${match}`)
+                          .replace(/^./, (match) => match.toUpperCase())
+                          .trim()}
+                      </p>
+                      <p>{value}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <div className="flex justify-center">
               <button
+                disabled={!currentUser.address}
                 onClick={() => {
                   setIsCartLoading(true);
                   requestPaymentSession();
                 }}
-                className="py-2 px-5 bg-black hover:opacity-80 transition duration-300 text-white"
+                className="py-2 px-5 bg-black hover:opacity-80 transition duration-300 text-white text-base disabled:!bg-gray-500 disabled:!opacity-100 disabled:!cursor-default"
               >
                 Checkout using Stripe
               </button>

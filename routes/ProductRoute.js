@@ -49,7 +49,10 @@ router.get("/similar/:id", async (req, res) => {
 
     const category = existingProduct.category;
 
-    const similar = await ProductModel.find({ category }).limit(10);
+    const similar = await ProductModel.find({
+      category,
+      _id: { $ne: existingProduct._id },
+    }).limit(10);
 
     res.send(similar);
   } catch (error) {

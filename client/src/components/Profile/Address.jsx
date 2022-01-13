@@ -14,6 +14,7 @@ export default function Address({ setAlertText, setIsAlertOpened }) {
   const [loading, setLoading] = useState(false);
 
   const currentUser = useStore((state) => state.currentUser);
+  const verifyUser = useStore((state) => state.verifyUser);
 
   const fields = {
     fullName: { name: "Full Name" },
@@ -31,6 +32,7 @@ export default function Address({ setAlertText, setIsAlertOpened }) {
         .then(() => {
           setAlertText("Address updated successfully!");
           setIsAlertOpened(true);
+          verifyUser();
         })
         .catch((err) => {
           console.log(err);
