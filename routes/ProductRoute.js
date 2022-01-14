@@ -13,7 +13,7 @@ router.get("/", verifyJWT, async (req, res) => {
     const skip = (page - 1) * size;
 
     const data = await ProductModel.find()
-      .sort({ createdAt: -1 })
+      .sort({ updatedAt: -1 })
       .limit(size)
       .skip(skip);
 

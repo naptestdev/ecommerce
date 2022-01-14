@@ -11,7 +11,7 @@ export const statuses = [
     color: "#5E35B1",
   },
   {
-    name: "Finished",
+    name: "Completed",
     color: "#198754",
   },
   {

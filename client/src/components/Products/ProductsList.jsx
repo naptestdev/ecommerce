@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { deleteProductById, getProducts } from "../../services/api/products";
 
-import Alert from "../Alert";
+import { resizeImage } from "../../../../../user/client/src/services/image";
 import useSWR from "swr";
 
 export default function ProductsList({ categories }) {
@@ -49,7 +49,7 @@ export default function ProductsList({ categories }) {
                     <td>
                       <img
                         className="w-8 h-8 object-cover"
-                        src={product.images[0]}
+                        src={resizeImage(product.images[0], 32, 32, "fill")}
                         alt=""
                       />
                     </td>
