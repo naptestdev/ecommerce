@@ -119,6 +119,15 @@ export default function Navbar() {
                         <i className="fas fa-user"></i>
                         <span className="whitespace-nowrap">Profile</span>
                       </Link>
+
+                      <Link
+                        to="/orders"
+                        className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
+                      >
+                        <i className="fas fa-clipboard-list"></i>
+                        <span className="whitespace-nowrap">Orders</span>
+                      </Link>
+
                       <div
                         onClick={handleSignOut}
                         className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
@@ -129,7 +138,7 @@ export default function Navbar() {
                     </div>
                   </div>
                 </ClickAwayListener>
-                <Link to="cart">
+                <Link to="/cart">
                   <i className="fas fa-shopping-cart text-lg"></i>
                 </Link>
               </>

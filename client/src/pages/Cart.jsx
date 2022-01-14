@@ -54,7 +54,7 @@ export default function Cart() {
                   <tr>
                     <th>Product Detail</th>
                     <th>Quantity</th>
-                    <th>Price</th>
+                    <th className="px-6">Price</th>
                   </tr>
                 </thead>
 
@@ -114,7 +114,7 @@ export default function Cart() {
                           </button>
                         </div>
                       </td>
-                      <td className="text-2xl">
+                      <td className="text-2xl px-6">
                         $
                         {Math.round(
                           (item.product.price - item.product.discount) *

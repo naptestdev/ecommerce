@@ -29,7 +29,7 @@ router.get("/categories", async (req, res) => {
 
 router.get("/suggested", async (req, res) => {
   try {
-    const data = await ProductModel.find({}).limit(30);
+    const data = await ProductModel.find({}).sort({ updatedAt: -1 }).limit(30);
 
     res.send(data);
   } catch (error) {

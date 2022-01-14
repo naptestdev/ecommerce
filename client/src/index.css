@@ -32,10 +32,6 @@ body {
   @apply w-full;
 }
 
-.cart-table * {
-  @apply whitespace-nowrap;
-}
-
 .cart-table tr {
   @apply border-b border-[#d3d3d3] text-left;
 }
@@ -55,4 +51,17 @@ body {
 
 .btn {
   @apply outline-none border-none py-2 px-3 bg-primary hover:bg-secondary transition text-white my-3 rounded disabled:opacity-70 disabled:cursor-default disabled:hover:bg-primary;
+}
+
+.table {
+  @apply border-collapse w-full bg-white;
+}
+
+.table td,
+.table th {
+  @apply border border-[#ddd] text-left p-2;
+}
+
+.table tr {
+  @apply hover:bg-[#efefef] transition;
 }

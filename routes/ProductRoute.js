@@ -54,7 +54,13 @@ router.get("/similar/:id", async (req, res) => {
       _id: { $ne: existingProduct._id },
     }).limit(10);
 
-    res.send(similar);
+    const others = await ProductModel.find({
+      _id: { $nin: similar.map((item) => item._id) },
+    });
+
+    const result = [...similar, ...others].slice(0, 10);
+
+    res.send(result);
   } catch (error) {
     console.log(error);
     if (!res.headersSent) res.sendStatus(500);

@@ -18,7 +18,10 @@ export default function Address({ setAlertText, setIsAlertOpened }) {
 
   const fields = {
     fullName: { name: "Full Name" },
-    phoneNumber: { name: "Phone Number", number: true },
+    phoneNumber: {
+      name: "Phone Number",
+      pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+    },
     city: { name: "City" },
     district: { name: "District" },
     exactAddress: { name: "Exact Address" },
@@ -57,7 +60,7 @@ export default function Address({ setAlertText, setIsAlertOpened }) {
             <input
               {...register(key, {
                 required: true,
-                valueAsNumber: value.number,
+                pattern: value.pattern || /.+/gm,
                 value: currentUser?.address?.[key] || "",
               })}
               className={`outline-none border px-3 py-1 focus:border-gray-500 transition w-full my-1 ${

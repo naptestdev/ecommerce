@@ -8,6 +8,8 @@ import Category from "./pages/Category";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Order from "./pages/Order";
+import Orders from "./pages/Orders";
 import Product from "./pages/Product";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
@@ -44,6 +46,8 @@ export default function App() {
         <Route path="category/:id" element={<Category />} />
         <Route path="cart" element={<Cart />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="orders" element={<Orders />} />
+        <Route path="order/:id" element={<Order />} />
       </Routes>
 
       <Footer />
