@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#F1F5F8];
+  @apply bg-[#F1F5F8] overflow-x-hidden;
 }
 
 .input-outline {
@@ -16,7 +16,7 @@ body {
 }
 
 .table {
-  @apply border-collapse w-full bg-white;
+  @apply border-collapse bg-white w-full;
 }
 
 .table td,
@@ -26,4 +26,8 @@ body {
 
 .table tr {
   @apply hover:bg-[#efefef] transition;
+}
+
+.table * {
+  @apply whitespace-nowrap;
 }

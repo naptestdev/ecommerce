@@ -71,7 +71,7 @@ export default function BannerDND({ data }) {
 
   return (
     <>
-      <div className="flex justify-center px-[15vw] relative flex-grow">
+      <div className="flex justify-center px-[5vw] md:px-[15vw] relative flex-grow">
         <div className="w-full">
           <div className="flex flex-col items-stretch my-10">
             {loading && (

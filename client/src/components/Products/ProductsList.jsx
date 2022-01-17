@@ -17,25 +17,25 @@ export default function ProductsList({ categories }) {
   if (error) return <div>Error</div>;
 
   return (
-    <>
-      <div className="flex justify-center mx-[4vw]">
-        <div className="w-full">
-          <div className="flex justify-between my-5">
-            <h1 className="text-2xl">Products List</h1>
+    <div className="mx-[4vw]">
+      <div className="flex justify-between my-5">
+        <h1 className="text-2xl">Products List</h1>
 
-            <Link
-              to="/products/new"
-              className="bg-primary text-white py-2 px-3 rounded hover:brightness-[115%] transition duration-300"
-            >
-              New Product
-            </Link>
-          </div>
+        <Link
+          to="/products/new"
+          className="bg-primary text-white py-2 px-3 rounded hover:brightness-[115%] transition duration-300"
+        >
+          New Product
+        </Link>
+      </div>
 
-          {!data ? (
-            <div>Loading</div>
-          ) : (
-            <div>
-              <table className="table">
+      {!data ? (
+        <div>Loading</div>
+      ) : (
+        <>
+          <div className="max-w-[92vw] lg:max-w-[calc(100vw-350px)] overflow-x-auto">
+            <table className="table">
+              <thead>
                 <tr>
                   <th>Image</th>
                   <th>Name</th>
@@ -44,8 +44,11 @@ export default function ProductsList({ categories }) {
                   <th>Creation Date</th>
                   <th>Actions</th>
                 </tr>
+              </thead>
+
+              <tbody>
                 {data.data.map((product) => (
-                  <tr>
+                  <tr key={product._id}>
                     <td>
                       <img
                         className="w-8 h-8 object-cover"
@@ -90,39 +93,39 @@ export default function ProductsList({ categories }) {
                     </td>
                   </tr>
                 ))}
-              </table>
+              </tbody>
+            </table>
+          </div>
 
-              <div className="flex justify-end my-5 gap-3 items-center pr-6">
-                <p>Pages</p>
+          <div className="flex justify-end my-5 gap-3 items-center pr-6">
+            <p>Pages</p>
 
-                {data.page > 1 ? (
-                  <Link to={`/products?page=${data.page - 1}`}>
-                    <i className="fas fa-chevron-left"></i>
-                  </Link>
-                ) : (
-                  <button disabled className="text-gray-500">
-                    <i className="fas fa-chevron-left"></i>
-                  </button>
-                )}
+            {data.page > 1 ? (
+              <Link to={`/products?page=${data.page - 1}`}>
+                <i className="fas fa-chevron-left"></i>
+              </Link>
+            ) : (
+              <button disabled className="text-gray-500">
+                <i className="fas fa-chevron-left"></i>
+              </button>
+            )}
 
-                <p>
-                  {data.page} / {data.totalPage}
-                </p>
+            <p>
+              {data.page} / {data.totalPage}
+            </p>
 
-                {data.page < data.totalPage ? (
-                  <Link to={`/products?page=${data.page + 1}`}>
-                    <i className="fas fa-chevron-right"></i>
-                  </Link>
-                ) : (
-                  <button disabled className="text-gray-500">
-                    <i className="fas fa-chevron-right"></i>
-                  </button>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    </>
+            {data.page < data.totalPage ? (
+              <Link to={`/products?page=${data.page + 1}`}>
+                <i className="fas fa-chevron-right"></i>
+              </Link>
+            ) : (
+              <button disabled className="text-gray-500">
+                <i className="fas fa-chevron-right"></i>
+              </button>
+            )}
+          </div>
+        </>
+      )}
+    </div>
   );
 }

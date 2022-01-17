@@ -8,6 +8,9 @@ module.exports = {
         orange: "#ffa500",
         bg: "#F5F5F5",
       },
+      gridTemplateColumns: {
+        "two-three": "2fr 3fr",
+      },
     },
   },
   plugins: [],
