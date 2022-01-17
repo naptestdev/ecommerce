@@ -27,7 +27,7 @@ export default function ReviewsSection({ product, refetchProduct }) {
       <div className="bg-white mt-8 p-4 pb-2">
         <h1 className="text-3xl mb-6">Reviews & Ratings</h1>
 
-        <div className="bg-[#f4f8fe] flex px-10 py-6 border border-[#dfeafd] gap-8">
+        <div className="bg-[#f4f8fe] flex px-10 py-6 border border-[#dfeafd] gap-8 flex-col md:flex-row">
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-2xl">
               <span className="text-4xl">{product.ratings}</span> on 5

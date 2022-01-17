@@ -58,8 +58,8 @@ export default function Product() {
           </span>
         </div>
 
-        <div className="flex items-start bg-white p-4">
-          <div className="w-[35%]">
+        <div className="flex items-start bg-white md:p-4 flex-col md:flex-row">
+          <div className="md:w-[35%] w-full">
             <Slider
               infinite
               speed={500}
@@ -73,9 +73,9 @@ export default function Product() {
               ))}
             </Slider>
           </div>
-          <div className="w-[65%] pl-6 flex flex-col items-stretch gap-3">
+          <div className="md:w-[65%] pl-6 flex flex-col items-stretch gap-3 py-4 md:py-0">
             <h1 className="text-2xl font-medium">{product.name}</h1>
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 items-center flex-wrap">
               <div className="flex items-center gap-1">
                 <p
                   className={`text-lg ${
@@ -142,7 +142,7 @@ export default function Product() {
               {product.stock} item{product.stock === 0 ? "" : "s"} left in stock
             </p>
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               <button
                 disabled={addCartLoading}
                 onClick={() => {

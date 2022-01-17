@@ -46,146 +46,152 @@ export default function Cart() {
           </div>
         </div>
       ) : (
-        <div className="min-h-screen px-[10vw] bg-bg flex items-start pt-8 gap-8">
-          <div className="bg-white flex-grow p-4">
-            <div>
-              <table className="cart-table">
-                <thead>
-                  <tr>
-                    <th>Product Detail</th>
-                    <th>Quantity</th>
-                    <th className="px-6">Price</th>
-                  </tr>
-                </thead>
+        <div className="flex justify-center bg-bg">
+          <div className="min-h-screen max-w-[1200px] mx-4 flex items-start pt-8 gap-8 flex-col md:flex-row">
+            <div className="bg-white md:flex-grow p-4">
+              <div>
+                <table className="cart-table">
+                  <thead>
+                    <tr>
+                      <th>Product Detail</th>
+                      <th>Quantity</th>
+                      <th className="px-6">Price</th>
+                    </tr>
+                  </thead>
 
-                <tbody>
-                  {cart.map((item) => (
-                    <tr key={item.product._id}>
-                      <td>
-                        <div className="flex gap-4">
-                          <img
-                            className="w-[120px] h-[120px] object-contain"
-                            src={resizeImage(item.product.images[0], 120, 120)}
-                            alt=""
-                          />
-                          <div>
-                            <p className="text-2xl">{item.product.name}</p>
-                            <p className="text-lg text-gray-600">
-                              $
-                              {Math.round(
-                                (item.product.price - item.product.discount) *
-                                  10
-                              ) / 10}
-                            </p>
+                  <tbody>
+                    {cart.map((item) => (
+                      <tr key={item.product._id}>
+                        <td>
+                          <div className="flex gap-4">
+                            <img
+                              className="w-[60px] h-[60px] md:w-[120px] md:h-[120px] object-contain"
+                              src={resizeImage(
+                                item.product.images[0],
+                                120,
+                                120
+                              )}
+                              alt=""
+                            />
+                            <div>
+                              <p className="text-2xl">{item.product.name}</p>
+                              <p className="text-lg text-gray-600">
+                                $
+                                {Math.round(
+                                  (item.product.price - item.product.discount) *
+                                    10
+                                ) / 10}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="flex items-stretch">
-                          <button
-                            onClick={() => {
-                              if (item.quantity > 1) {
-                                addCartItem(item.product._id, -1);
-                                setIsCartLoading(true);
-                              } else {
-                                removeCartItem(item.product._id);
-                                setIsCartLoading(true);
-                              }
-                            }}
-                            className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8"
-                          >
-                            -
-                          </button>
+                        </td>
+                        <td>
+                          <div className="flex items-stretch">
+                            <button
+                              onClick={() => {
+                                if (item.quantity > 1) {
+                                  addCartItem(item.product._id, -1);
+                                  setIsCartLoading(true);
+                                } else {
+                                  removeCartItem(item.product._id);
+                                  setIsCartLoading(true);
+                                }
+                              }}
+                              className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8"
+                            >
+                              -
+                            </button>
 
-                          <input
-                            className="h-8 w-10 outline-none text-center border border-gray-300"
-                            type="text"
-                            value={item.quantity}
-                            readOnly
-                          />
-                          <button
-                            onClick={() => {
-                              addCartItem(item.product._id);
-                              setIsCartLoading(true);
-                            }}
-                            className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8"
-                          >
-                            +
-                          </button>
-                        </div>
-                      </td>
-                      <td className="text-2xl px-6">
-                        $
-                        {Math.round(
+                            <input
+                              className="h-8 w-10 outline-none text-center border border-gray-300"
+                              type="text"
+                              value={item.quantity}
+                              readOnly
+                            />
+                            <button
+                              onClick={() => {
+                                addCartItem(item.product._id);
+                                setIsCartLoading(true);
+                              }}
+                              className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8"
+                            >
+                              +
+                            </button>
+                          </div>
+                        </td>
+                        <td className="text-2xl px-6">
+                          $
+                          {Math.round(
+                            (item.product.price - item.product.discount) *
+                              10 *
+                              item.quantity
+                          ) / 10}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className="w-full md:w-80 bg-white flex-shrink-0 p-7 flex flex-col items-stretch gap-4 text-lg">
+              <div className="flex justify-between">
+                <p>Final price</p>
+                <p className="text-2xl text-primary">
+                  $
+                  {Math.round(
+                    cart.reduce((result, item) => {
+                      result +=
+                        Math.round(
                           (item.product.price - item.product.discount) *
                             10 *
                             item.quantity
-                        ) / 10}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div className="w-80 bg-white flex-shrink-0 p-7 flex flex-col items-stretch gap-4 text-lg">
-            <div className="flex justify-between">
-              <p>Final price</p>
-              <p className="text-2xl text-primary">
-                $
-                {Math.round(
-                  cart.reduce((result, item) => {
-                    result +=
-                      Math.round(
-                        (item.product.price - item.product.discount) *
-                          10 *
-                          item.quantity
-                      ) / 10;
-                    return result;
-                  }, 0) * 10
-                ) / 10}
-              </p>
-            </div>
-
-            <div className="bg-gray-400 w-full h-[1px]"></div>
-
-            <div className="flex flex-col items-stretch">
-              <div className="flex justify-between">
-                <p>Address</p>
-
-                <Link className="text-primary" to="/profile">
-                  {currentUser.address ? "Edit" : "Add now"}
-                </Link>
+                        ) / 10;
+                      return result;
+                    }, 0) * 10
+                  ) / 10}
+                </p>
               </div>
 
-              {currentUser.address && (
-                <div className="text-gray-500">
-                  {Object.entries(currentUser.address).map(([key, value]) => (
-                    <div className="flex justify-between">
-                      <p>
-                        {key
-                          .replace(/([A-Z])/g, (match) => ` ${match}`)
-                          .replace(/^./, (match) => match.toUpperCase())
-                          .trim()}
-                      </p>
-                      <p>{value}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+              <div className="bg-gray-400 w-full h-[1px]"></div>
 
-            <div className="flex justify-center">
-              <button
-                disabled={!currentUser.address}
-                onClick={() => {
-                  setIsCartLoading(true);
-                  requestPaymentSession();
-                }}
-                className="py-2 px-5 bg-black hover:opacity-80 transition duration-300 text-white text-base disabled:!bg-gray-500 disabled:!opacity-100 disabled:!cursor-default"
-              >
-                Checkout using Stripe
-              </button>
+              <div className="flex flex-col items-stretch">
+                <div className="flex justify-between">
+                  <p>Address</p>
+
+                  <Link className="text-primary" to="/profile">
+                    {currentUser.address ? "Edit" : "Add now"}
+                  </Link>
+                </div>
+
+                {currentUser.address && (
+                  <div className="text-gray-500">
+                    {Object.entries(currentUser.address).map(([key, value]) => (
+                      <div className="flex justify-between">
+                        <p>
+                          {key
+                            .replace(/([A-Z])/g, (match) => ` ${match}`)
+                            .replace(/^./, (match) => match.toUpperCase())
+                            .trim()}
+                        </p>
+                        <p>{value}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div className="flex justify-center">
+                <button
+                  disabled={!currentUser.address}
+                  onClick={() => {
+                    setIsCartLoading(true);
+                    requestPaymentSession();
+                  }}
+                  className="py-2 px-5 bg-black hover:opacity-80 transition duration-300 text-white text-base disabled:!bg-gray-500 disabled:!opacity-100 disabled:!cursor-default"
+                >
+                  Checkout using Stripe
+                </button>
+              </div>
             </div>
           </div>
         </div>

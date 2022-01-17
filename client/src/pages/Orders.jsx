@@ -19,9 +19,9 @@ export default function Orders() {
     );
 
   return (
-    <div className="flex justify-center bg-gray-100 min-h-screen">
+    <div className="flex justify-center bg-gray-100 min-h-screen px-4">
       <div className="w-full max-w-[1000px]">
-        <div className="flex bg-white mt-8 mb-4 justify-around shadow">
+        <div className="flex bg-white mt-8 mb-4 justify-around shadow max-w-full flex-wrap">
           <button
             onClick={() => setSection(-1)}
             className={`px-6 py-3 flex justify-center items-center relative after:absolute after:top-[46px] after:left-0 after:w-full after:h-[2px] after:bg-transparent transition after:transition ${
@@ -42,7 +42,7 @@ export default function Orders() {
           ))}
         </div>
 
-        <div>
+        <div className="max-w-full overflow-x-auto">
           {data.length === 0 ||
           (section !== -1 &&
             data.filter((item) => item.status === section).length === 0) ? (
@@ -70,19 +70,13 @@ export default function Orders() {
                   .map((item) => (
                     <tr>
                       <td>
-                        <div className="flex gap-1 p-1">
-                          {item.products.slice(0, 3).map((product) => (
-                            <img
-                              className="w-[35px] h-[35px]"
-                              src={resizeImage(
-                                product.product.images[0],
-                                35,
-                                35
-                              )}
-                              alt=""
-                            />
-                          ))}
-                        </div>
+                        {item.products.slice(0, 3).map((product) => (
+                          <img
+                            className="w-[35px] h-[35px] object-cover inline mr-1"
+                            src={resizeImage(product.product.images[0], 35, 35)}
+                            alt=""
+                          />
+                        ))}
                       </td>
 
                       <td>${item.amount}</td>

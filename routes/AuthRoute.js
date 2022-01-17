@@ -62,7 +62,7 @@ router.post("/sign-up", async (req, res) => {
       service: "gmail",
       auth: {
         type: "OAuth2",
-        user: "napthedevhcj@gmail.com",
+        user: process.env.EMAIL,
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
         refreshToken: process.env.REFRESH_TOKEN,
@@ -75,10 +75,10 @@ router.post("/sign-up", async (req, res) => {
     }`;
 
     const mailOptions = {
-      from: "E-Commerce Service <napthedevhcj@gmail.com>",
+      from: `E-Commerce Service <${process.env.EMAIL}>`,
       to: email,
       subject: "Verify your email for E-Commerce",
-      html: `<h1>Hello ${username}, Click this link to verify your email: <a href="${verifyUrl}">${verifyUrl}</a></h1>`,
+      html: `<p>Hello ${username}, Click this link to verify your email: <a href="${verifyUrl}">${verifyUrl}</a></p>`,
       text: `Hello ${username}, Click this link to verify your email: ${verifyUrl}`,
     };
 
@@ -136,6 +136,7 @@ router.post("/sign-in", async (req, res) => {
       _id: existingUser._id,
       username: existingUser.username,
       email: existingUser.email,
+      address: existingUser.address,
     };
 
     const accessToken = jwt.sign(user, process.env.JWT_SECRET_TOKEN, {

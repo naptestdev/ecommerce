@@ -29,7 +29,7 @@ body {
 }
 
 .cart-table {
-  @apply w-full;
+  @apply w-full overflow-x-auto;
 }
 
 .cart-table tr {
@@ -55,6 +55,10 @@ body {
 
 .table {
   @apply border-collapse w-full bg-white;
+}
+
+.table * {
+  @apply whitespace-nowrap;
 }
 
 .table td,

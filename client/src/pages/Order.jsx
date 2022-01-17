@@ -21,16 +21,16 @@ export default function Order() {
     );
 
   return (
-    <div className="min-h-screen flex justify-center items-start bg-gray-100">
-      <div className="bg-white w-full max-w-[800px] p-8 my-8">
-        <div className="flex justify-between text-lg mb-8">
+    <div className="min-h-screen flex justify-center items-start bg-gray-100 px-4">
+      <div className="bg-white w-full max-w-[800px] p-4 md:p-8 my-8">
+        <div className="flex justify-between text-lg mb-8 flex-col md:flex-row">
           <p>Order: {data._id}</p>
           <p style={{ color: statuses[data.status].color }}>
             {statuses[data.status].name}
           </p>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center flex-wrap">
           {statuses.map((status, index) => (
             <Fragment key={index}>
               <div
@@ -39,11 +39,11 @@ export default function Order() {
                 }`}
               >
                 <div
-                  className={`w-12 h-12 border rounded-full flex justify-center items-center ${
+                  className={`w-6 md:w-12 h-6 md:h-12 border rounded-full flex justify-center items-center ${
                     data.status >= index ? "border-[#2AC258]" : ""
                   }`}
                 >
-                  <i className={`text-xl fas fa-${status.icon}`}></i>
+                  <i className={`text-sm md:text-xl fas fa-${status.icon}`}></i>
                 </div>
 
                 <p>{status.name}</p>
@@ -51,7 +51,7 @@ export default function Order() {
 
               {index + 1 < statuses.length && (
                 <div
-                  className={`w-12 h-1 mt-6 rounded-full ${
+                  className={`w-6 md:w-12 h-1 mt-3 md:mt-6 rounded-full ${
                     data.status > index ? "bg-[#2AC258]" : "bg-gray-600"
                   }`}
                 ></div>
@@ -105,7 +105,7 @@ export default function Order() {
           ))}
         </div>
 
-        <div className="flex justify-between mt-12">
+        <div className="flex justify-between mt-12 flex-col-reverse sm:flex-row gap-6 sm:gap-0">
           <button className="outline-none bg-[#DC3545] text-white py-2 px-3 rounded hover:brightness-[115%] transition">
             Cancel Order
           </button>
