@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { deleteProductById, getProducts } from "../../services/api/products";
 
-import { resizeImage } from "../../../../../user/client/src/services/image";
+import { resizeImage } from "../../services/image";
 import useSWR from "swr";
 
 export default function ProductsList({ categories }) {
