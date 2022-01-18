@@ -4,6 +4,8 @@ import Banners from "./pages/Banners";
 import EditProduct from "./pages/EditProduct";
 import Home from "./pages/Home";
 import NewProduct from "./pages/NewProduct";
+import Order from "./pages/Order";
+import Orders from "./pages/Orders";
 import PrivateRoute from "./components/PrivateRoute";
 import Products from "./pages/Products";
 import ProductsList from "./components/Products/ProductsList";
@@ -66,6 +68,10 @@ export default function App() {
           </PrivateRoute>
         }
       />
+      <Route path="orders">
+        <Route index element={<Orders />} />
+        <Route path=":id" element={<Order />} />
+      </Route>
       <Route path="products">
         <Route
           index
