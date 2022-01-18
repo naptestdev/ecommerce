@@ -1,9 +1,10 @@
+import { Link, useParams } from "react-router-dom";
+
 import { Fragment } from "react";
 import Spin from "react-cssfx-loading/lib/Spin";
 import { getOrderById } from "../services/api/order";
 import { resizeImage } from "../services/image";
 import { statuses } from "../shared/constant";
-import { useParams } from "react-router-dom";
 import useSWR from "swr";
 
 export default function Order() {
@@ -74,7 +75,9 @@ export default function Order() {
                 />
 
                 <div className="py-3">
-                  <p>{item.product.name}</p>
+                  <Link to={`/product/${item.product._id}`}>
+                    {item.product.name}
+                  </Link>
                   <p className="text-lg">x {item.quantity}</p>
                 </div>
               </div>

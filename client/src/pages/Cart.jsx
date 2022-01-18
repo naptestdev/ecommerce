@@ -74,7 +74,12 @@ export default function Cart() {
                               alt=""
                             />
                             <div>
-                              <p className="text-2xl">{item.product.name}</p>
+                              <Link
+                                to={`/product/${item.product._id}`}
+                                className="text-2xl"
+                              >
+                                {item.product.name}
+                              </Link>
                               <p className="text-lg text-gray-600">
                                 $
                                 {Math.round(

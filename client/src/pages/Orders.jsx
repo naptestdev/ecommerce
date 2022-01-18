@@ -68,10 +68,11 @@ export default function Orders() {
                     section === -1 ? true : item.status === section
                   )
                   .map((item) => (
-                    <tr>
+                    <tr key={item._id}>
                       <td>
                         {item.products.slice(0, 3).map((product) => (
                           <img
+                            key={product._id}
                             className="w-[35px] h-[35px] object-cover inline mr-1"
                             src={resizeImage(product.product.images[0], 35, 35)}
                             alt=""

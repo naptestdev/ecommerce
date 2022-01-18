@@ -37,7 +37,7 @@ export default function Navbar() {
   useEffect(() => {
     setIsSidebarActive(false);
     setDropdownActive(false);
-  }, [location.pathname]);
+  }, [location.pathname, location.search]);
 
   return (
     <>
