@@ -2,9 +2,11 @@ import axios from "axios";
 
 const instance = axios.create({
   baseURL: "/api",
-  headers: {
-    Authorization: localStorage.getItem("admin-token"),
-  },
+});
+
+instance.interceptors.request.use((config) => {
+  config.headers.Authorization = localStorage.getItem("admin-token");
+  return config;
 });
 
 export default instance;
