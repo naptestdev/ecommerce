@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
+const emailVerificationTemplate = require("../views/EmailVerification");
 
 const REDIRECT_URI = "https://developers.google.com/oauthplayground";
 const oauth2Client = new google.auth.OAuth2({
@@ -78,7 +79,7 @@ router.post("/sign-up", async (req, res) => {
       from: `E-Commerce Service <${process.env.EMAIL}>`,
       to: email,
       subject: "Verify your email for E-Commerce",
-      html: `<p>Hello ${username}, Click this link to verify your email: <a href="${verifyUrl}">${verifyUrl}</a></p>`,
+      html: emailVerificationTemplate(username, verifyUrl),
       text: `Hello ${username}, Click this link to verify your email: ${verifyUrl}`,
     };
 
@@ -101,7 +102,13 @@ router.post("/sign-up", async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    if (!res.headersSent) res.sendStatus(500);
+    await AuthModel.findOneAndDelete({ email: req.body.email });
+
+    if (!res.headersSent)
+      res.status(500).send({
+        errorSection: "email",
+        message: "Something went wrong",
+      });
   }
 });
 
