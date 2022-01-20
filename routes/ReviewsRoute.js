@@ -4,6 +4,21 @@ const ReviewsModel = require("../models/ReviewsModel");
 const ProductModel = require("../models/ProductModel");
 const { verifyJWT } = require("../controllers/verifyJWT");
 
+const updateRatingsStatus = async (productId) => {
+  const average = (
+    await ReviewsModel.aggregate([
+      { $group: { _id: "$product", average: { $avg: "$ratings" } } },
+    ])
+  ).find((item) => item._id.toString() === productId).average;
+
+  const ratingsCount = await ReviewsModel.count({ product: productId });
+
+  await ProductModel.findOneAndUpdate(
+    { _id: productId },
+    { ratings: average, ratingsCount }
+  );
+};
+
 router.post("/:product/create-review", verifyJWT, async (req, res) => {
   try {
     const existingReviews = await ReviewsModel.findOne({
@@ -23,17 +38,7 @@ router.post("/:product/create-review", verifyJWT, async (req, res) => {
         }
       );
 
-      const existingProduct = await ProductModel.findOne({
-        _id: req.params.product,
-      });
-
-      await existingProduct.update({
-        ratings:
-          (existingProduct.ratings * existingProduct.ratingsCount -
-            existingReviews.ratings +
-            req.body.ratings) /
-          existingProduct.ratingsCount,
-      });
+      await updateRatingsStatus(req.params.product);
 
       res.send(saved);
     } else {
@@ -44,19 +49,8 @@ router.post("/:product/create-review", verifyJWT, async (req, res) => {
         comment: req.body.comment,
       });
 
-      const existingProduct = await ProductModel.findOne({
-        _id: req.params.product,
-      });
+      await updateRatingsStatus(req.params.product);
 
-      await existingProduct.update({
-        $inc: {
-          ratingsCount: 1,
-        },
-        ratings:
-          (existingProduct.ratings * existingProduct.ratingsCount +
-            req.body.ratings) /
-          (existingProduct.ratingsCount + 1),
-      });
       res.send(created);
     }
   } catch (error) {

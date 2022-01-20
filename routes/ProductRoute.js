@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const ProductModel = require("../models/ProductModel");
+const ReviewsModel = require("../models/ReviewsModel");
 
 router.get("/search", async (req, res) => {
   try {
@@ -79,6 +80,19 @@ router.get("/:id", async (req, res) => {
       });
 
     res.send(existingProduct);
+
+    const average = (
+      await ReviewsModel.aggregate([
+        { $group: { _id: "$product", average: { $avg: "$ratings" } } },
+      ])
+    ).find((item) => item._id.toString() === req.params.id).average;
+
+    const ratingsCount = await ReviewsModel.count({ product: req.params.id });
+
+    await ProductModel.findOneAndUpdate(
+      { _id: req.params.id },
+      { ratings: average, ratingsCount }
+    );
   } catch (error) {
     console.log(error);
     if (!res.headersSent) res.sendStatus(500);
