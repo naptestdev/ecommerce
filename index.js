@@ -11,6 +11,7 @@ const BannersRoute = require("./routes/BannersRoute");
 const UsersRoute = require("./routes/UsersRoute");
 const ProductRoute = require("./routes/ProductRoute");
 const OrderRoute = require("./routes/OrderRoute");
+const ExportRoute = require("./routes/ExportRoute");
 
 if (process.env.NODE_ENV !== "production")
   app.use(cors({ origin: true, credentials: true }));
@@ -28,6 +29,7 @@ app.use("/api/banners", BannersRoute);
 app.use("/api/users", UsersRoute);
 app.use("/api/products", ProductRoute);
 app.use("/api/orders", OrderRoute);
+app.use("/api/export", ExportRoute);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/dist"));

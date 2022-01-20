@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { deleteProductById, getProducts } from "../../services/api/products";
 
+import ExportDropdown from "../ExportDropdown";
 import Spin from "react-cssfx-loading/lib/Spin";
 import { resizeImage } from "../../services/image";
 import useSWR from "swr";
@@ -28,12 +29,16 @@ export default function ProductsList({ categories }) {
       <div className="flex justify-between my-5">
         <h1 className="text-2xl">Products List</h1>
 
-        <Link
-          to="/products/new"
-          className="bg-primary text-white py-2 px-3 rounded hover:brightness-[115%] transition duration-300"
-        >
-          New Product
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link
+            to="/products/new"
+            className="bg-primary text-white py-1 px-3 rounded hover:brightness-[115%] transition duration-300"
+          >
+            New Product
+          </Link>
+
+          <ExportDropdown type="products" />
+        </div>
       </div>
 
       {!data ? (

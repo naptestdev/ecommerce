@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
+import ExportDropdown from "../components/ExportDropdown";
 import Layout from "../components/Layout";
 import Spin from "react-cssfx-loading/lib/Spin";
 import { getOrders } from "../services/api/orders";
@@ -24,7 +25,11 @@ export default function Orders() {
         </div>
       ) : (
         <div className="mx-[4vw]">
-          <h1 className="text-2xl my-5">Orders List</h1>
+          <div className="flex justify-between my-5">
+            <h1 className="text-2xl">Orders List</h1>
+
+            <ExportDropdown type="orders" />
+          </div>
 
           {!data ? (
             <div className="min-h-[80vh] flex justify-center items-center">

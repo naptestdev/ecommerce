@@ -20,4 +20,19 @@ const verifyJWT = (req, res, next) => {
   });
 };
 
+const verifyDownloadJWT = (req, res, next) => {
+  const authToken = req.query.token;
+
+  if (!authToken) return res.status(400).send("Access token is not provided");
+
+  jwt.verify(authToken, process.env.JWT_SECRET_TOKEN, (err, user) => {
+    if (err) return res.status(400).send("Access token is invalid");
+    else {
+      req.user = user;
+      next();
+    }
+  });
+};
+
 module.exports.verifyJWT = verifyJWT;
+module.exports.verifyDownloadJWT = verifyDownloadJWT;

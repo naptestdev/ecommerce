@@ -1,3 +1,4 @@
+import ExportDropdown from "../ExportDropdown";
 import { avatarAPI } from "../../shared/constant";
 import { deleteUser } from "../../services/api/users";
 
@@ -10,7 +11,11 @@ export default function UsersTable({ data, refetch }) {
 
   return (
     <div className="mx-[4vw]">
-      <h1 className="text-2xl my-5">All Users</h1>
+      <div className="flex justify-between my-5">
+        <h1 className="text-2xl">All Users</h1>
+
+        <ExportDropdown type="users" />
+      </div>
 
       <div className="max-w-[92vw] lg:max-w-[calc(100vw-350px)] overflow-x-auto">
         <table className="table overflow-x-auto">
