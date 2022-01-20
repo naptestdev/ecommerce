@@ -1,6 +1,7 @@
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { useRef, useState } from "react";
 
+import ImageView from "../ImageView";
 import { Spin } from "react-cssfx-loading";
 import { resizeImage } from "../../services/image";
 import { uploadImage } from "../../services/api/uploadImage";
@@ -8,6 +9,9 @@ import { uploadImage } from "../../services/api/uploadImage";
 export default function ProductImages({ images, setImages }) {
   const [loading, setLoading] = useState(false);
   const inputRef = useRef();
+
+  const [isImageViewOpened, setIsImageViewOpened] = useState(false);
+  const [imageViewSrc, setImageViewSrc] = useState("");
 
   const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);
@@ -96,7 +100,11 @@ export default function ProductImages({ images, setImages }) {
                     >
                       <div className="flex items-center gap-3">
                         <img
-                          className="w-[70px] h-[70px]"
+                          onClick={() => {
+                            setImageViewSrc(image);
+                            setIsImageViewOpened(true);
+                          }}
+                          className="w-[70px] h-[70px] cursor-pointer"
                           src={resizeImage(image, 70, 70, "fill")}
                           alt=""
                         />
@@ -119,6 +127,12 @@ export default function ProductImages({ images, setImages }) {
           )}
         </Droppable>
       </DragDropContext>
+
+      <ImageView
+        src={imageViewSrc}
+        isOpened={isImageViewOpened}
+        setIsOpened={setIsImageViewOpened}
+      />
     </>
   );
 }

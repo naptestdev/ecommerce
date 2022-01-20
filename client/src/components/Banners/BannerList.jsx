@@ -2,6 +2,7 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { useRef, useState } from "react";
 
 import Alert from "../Alert";
+import ImageView from "../ImageView";
 import { Spin } from "react-cssfx-loading";
 import { resizeImage } from "../../services/image";
 import { updateBanners } from "../../services/api/banners";
@@ -12,6 +13,8 @@ export default function BannerDND({ data }) {
 
   const [loading, setLoading] = useState(false);
   const [isAlertOpened, setIsAlertOpened] = useState(false);
+  const [isImageViewOpened, setIsImageViewOpened] = useState(false);
+  const [imageViewSrc, setImageViewSrc] = useState("");
 
   const fileInputRef = useRef(null);
 
@@ -131,7 +134,11 @@ export default function BannerDND({ data }) {
                               >
                                 <div className="flex items-center gap-3">
                                   <img
-                                    className="w-[100px] h-[50px]"
+                                    onClick={() => {
+                                      setImageViewSrc(banner);
+                                      setIsImageViewOpened(true);
+                                    }}
+                                    className="w-[100px] h-[50px] cursor-pointer"
                                     src={resizeImage(banner, 100, 50, "fill")}
                                     alt=""
                                   />
@@ -164,6 +171,12 @@ export default function BannerDND({ data }) {
         text="Banners updated successfully!"
         isOpened={isAlertOpened}
         setIsOpened={setIsAlertOpened}
+      />
+
+      <ImageView
+        src={imageViewSrc}
+        isOpened={isImageViewOpened}
+        setIsOpened={setIsImageViewOpened}
       />
     </>
   );
