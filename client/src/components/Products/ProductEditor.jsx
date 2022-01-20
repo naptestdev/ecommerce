@@ -3,7 +3,7 @@ import { Spin } from "react-cssfx-loading/lib";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
-export default function ProductEditorMain({ categories, data, handler }) {
+export default function ProductEditor({ categories, data = null, handler }) {
   const {
     register,
     handleSubmit,

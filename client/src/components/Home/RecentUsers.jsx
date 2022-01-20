@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Skeleton from "../Skeleton";
 import { avatarAPI } from "../../shared/constant";
 import { getRecentUsers } from "../../services/api/home";
@@ -26,10 +27,13 @@ export default function RecentUsers() {
                 <p>{user.username}</p>
               </div>
 
-              <button className="flex-shrink-0 flex items-center gap-1 text-primary">
+              <Link
+                to="/users"
+                className="flex-shrink-0 flex items-center gap-1 text-primary"
+              >
                 <span>View</span>
                 <i className="fas fa-arrow-right"></i>
-              </button>
+              </Link>
             </div>
           ))}
         </div>

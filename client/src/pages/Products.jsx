@@ -16,9 +16,7 @@ export default function Products({ component: Component }) {
           <Spin />
         </div>
       ) : (
-        <div>
-          <Component categories={data} />
-        </div>
+        <Component categories={data} />
       )}
     </Layout>
   );

@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { deleteProductById, getProducts } from "../../services/api/products";
 
+import Spin from "react-cssfx-loading/lib/Spin";
 import { resizeImage } from "../../services/image";
 import useSWR from "swr";
 
@@ -14,7 +15,13 @@ export default function ProductsList({ categories }) {
     getProducts(page)
   );
 
-  if (error) return <div>Error</div>;
+  if (error)
+    return (
+      <div className="flex-grow flex flex-col justify-center items-center gap-3">
+        <img className="w-36 h-36 object-cover" src="/error.png" alt="" />
+        <p className="text-2xl">Something went wrong</p>
+      </div>
+    );
 
   return (
     <div className="mx-[4vw]">
@@ -30,7 +37,9 @@ export default function ProductsList({ categories }) {
       </div>
 
       {!data ? (
-        <div>Loading</div>
+        <div className="min-h-[80vh] flex justify-center items-center">
+          <Spin />
+        </div>
       ) : (
         <>
           <div className="max-w-[92vw] lg:max-w-[calc(100vw-350px)] overflow-x-auto">

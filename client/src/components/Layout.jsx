@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         setIsSidebarOpened={setIsSidebarOpened}
       />
 
-      <div className="flex-grow flex flex-col items-stretch">
+      <div className="flex-grow flex flex-col items-stretch min-h-screen">
         <div className="flex justify-between items-center h-14 shadow bg-white px-6">
           <div>
             <button

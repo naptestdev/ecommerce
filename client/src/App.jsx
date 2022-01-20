@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import Banners from "./pages/Banners";
+import BarWave from "react-cssfx-loading/lib/BarWave";
 import EditProduct from "./pages/EditProduct";
 import Home from "./pages/Home";
 import NewProduct from "./pages/NewProduct";
@@ -39,7 +40,12 @@ export default function App() {
     }
   }, []);
 
-  if (typeof currentUser === "undefined") return <div>Loading</div>;
+  if (typeof currentUser === "undefined")
+    return (
+      <div className="min-h-screen flex justify-center items-center">
+        <BarWave />
+      </div>
+    );
 
   return (
     <Routes>

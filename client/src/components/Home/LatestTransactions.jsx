@@ -2,12 +2,15 @@ import { avatarAPI, statuses } from "../../shared/constant";
 
 import Skeleton from "../Skeleton";
 import { getRecentTransactions } from "../../services/api/home";
+import { useNavigate } from "react-router-dom";
 import useSWR from "swr";
 
 export default function LatestTransactions() {
   const { data } = useSWR("home-latest-transactions", () =>
     getRecentTransactions()
   );
+
+  const navigate = useNavigate();
 
   return (
     <div className="bg-white shadow p-4 md:h-[350px]">
@@ -26,7 +29,11 @@ export default function LatestTransactions() {
 
           <tbody>
             {data.map((item) => (
-              <tr key={item._id}>
+              <tr
+                onClick={() => navigate(`/orders/${item._id}`)}
+                className="cursor-pointer"
+                key={item._id}
+              >
                 <td className="p-2">
                   <div className="flex items-center gap-2">
                     <img

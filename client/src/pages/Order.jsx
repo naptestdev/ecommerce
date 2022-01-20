@@ -3,6 +3,7 @@ import { getOrderById, updateOrderStatus } from "../services/api/orders";
 
 import Alert from "../components/Alert";
 import Layout from "../components/Layout";
+import Spin from "react-cssfx-loading/lib/Spin";
 import { resizeImage } from "../services/image";
 import { statuses } from "../shared/constant";
 import useSWR from "swr";
@@ -22,85 +23,92 @@ export default function Order() {
     });
   };
 
-  if (error) return <div>Error</div>;
-
-  if (!data) return <div>Loading</div>;
-
   return (
     <>
       <Layout>
-        <div className="flex justify-center">
-          <div className="w-full max-w-[800px] bg-white p-6 my-6">
-            <div className="flex flex-col md:flex-row justify-between my-6">
-              <h1 className="text-xl">Order: {id}</h1>
+        {error ? (
+          <div className="flex-grow flex flex-col justify-center items-center gap-3">
+            <img className="w-36 h-36 object-cover" src="/error.png" alt="" />
+            <p className="text-2xl">Something went wrong</p>
+          </div>
+        ) : !data ? (
+          <div className="flex-grow flex justify-center items-center">
+            <Spin />
+          </div>
+        ) : (
+          <div className="flex justify-center">
+            <div className="w-full max-w-[800px] bg-white p-6 my-6">
+              <div className="flex flex-col md:flex-row justify-between my-6">
+                <h1 className="text-xl">Order: {id}</h1>
 
-              <select
-                value={data.status}
-                className="p-2 outline-none border border-gray-300"
-                onChange={(e) => handleChangeStatus(e.target.value)}
-              >
-                {statuses.map((status, index) => (
-                  <option value={index}>{status.name}</option>
-                ))}
-              </select>
-            </div>
-
-            <div className="border-t mt-8">
-              {data.products.map((item) => (
-                <div
-                  key={item.product._id}
-                  className="flex justify-between items-center py-2 border-b"
+                <select
+                  value={data.status}
+                  className="p-2 outline-none border border-gray-300"
+                  onChange={(e) => handleChangeStatus(e.target.value)}
                 >
-                  <div className="flex gap-4">
-                    <img
-                      className="w-[100px] h-[100px]"
-                      src={resizeImage(item.product.images[0], 100, 100)}
-                      alt=""
-                    />
+                  {statuses.map((status, index) => (
+                    <option value={index}>{status.name}</option>
+                  ))}
+                </select>
+              </div>
 
-                    <div className="py-3">
-                      <Link to={`/products/${item.product._id}`}>
-                        {item.product.name}
-                      </Link>
-                      <p className="text-lg">x {item.quantity}</p>
+              <div className="border-t mt-8">
+                {data.products.map((item) => (
+                  <div
+                    key={item.product._id}
+                    className="flex justify-between items-center py-2 border-b"
+                  >
+                    <div className="flex gap-4">
+                      <img
+                        className="w-[100px] h-[100px]"
+                        src={resizeImage(item.product.images[0], 100, 100)}
+                        alt=""
+                      />
+
+                      <div className="py-3">
+                        <Link to={`/products/${item.product._id}`}>
+                          {item.product.name}
+                        </Link>
+                        <p className="text-lg">x {item.quantity}</p>
+                      </div>
                     </div>
+
+                    <p className="text-xl">
+                      $
+                      {Math.round(
+                        (item.product.price - item.product.discount) * 10
+                      ) / 10}
+                    </p>
                   </div>
+                ))}
+              </div>
 
-                  <p className="text-xl">
-                    $
-                    {Math.round(
-                      (item.product.price - item.product.discount) * 10
-                    ) / 10}
-                  </p>
-                </div>
-              ))}
-            </div>
+              <div className="flex justify-end my-8">
+                <h1>
+                  <span className="text-2xl">Total amount: </span>
+                  <span className="text-3xl text-primary">${data.amount}</span>
+                </h1>
+              </div>
 
-            <div className="flex justify-end my-8">
-              <h1>
-                <span className="text-2xl">Total amount: </span>
-                <span className="text-3xl text-primary">${data.amount}</span>
-              </h1>
-            </div>
+              <div>
+                <h1 className="text-2xl">User's address</h1>
 
-            <div>
-              <h1 className="text-2xl">User's address</h1>
+                {Object.entries(data.address).map(([key, value]) => (
+                  <div key={key} className="flex justify-between">
+                    <p>
+                      {key
+                        .replace(/([A-Z])/g, (match) => ` ${match}`)
+                        .replace(/^./, (match) => match.toUpperCase())
+                        .trim()}
+                    </p>
 
-              {Object.entries(data.address).map(([key, value]) => (
-                <div key={key} className="flex justify-between">
-                  <p>
-                    {key
-                      .replace(/([A-Z])/g, (match) => ` ${match}`)
-                      .replace(/^./, (match) => match.toUpperCase())
-                      .trim()}
-                  </p>
-
-                  <p>{value}</p>
-                </div>
-              ))}
+                    <p>{value}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </Layout>
       <Alert
         isOpened={isAlertOpened}
