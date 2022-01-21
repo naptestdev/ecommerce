@@ -177,17 +177,4 @@ router.get("/:type/:filetype", verifyDownloadJWT, async (req, res) => {
   }
 });
 
-// router.get("/orders/:type", verifyDownloadJWT, async (req, res) => {
-//   try {
-//     const formatted = await formatOrders();
-//     const csv = jsonToCSV(formatted);
-//     res.contentType("csv");
-// res.setHeader("Content-disposition", "attachment; filename=orders.csv");
-//     res.send(csv);
-//   } catch (error) {
-//     console.log(error);
-//     if (!res.headersSent) res.sendStatus(500);
-//   }
-// });
-
 module.exports = router;
