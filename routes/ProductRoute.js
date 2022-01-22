@@ -81,11 +81,12 @@ router.get("/:id", async (req, res) => {
 
     res.send(existingProduct);
 
-    const average = (
-      await ReviewsModel.aggregate([
-        { $group: { _id: "$product", average: { $avg: "$ratings" } } },
-      ])
-    ).find((item) => item._id.toString() === req.params.id).average;
+    const average =
+      (
+        await ReviewsModel.aggregate([
+          { $group: { _id: "$product", average: { $avg: "$ratings" } } },
+        ])
+      ).find((item) => item._id.toString() === req.params.id)?.average || 0;
 
     const ratingsCount = await ReviewsModel.count({ product: req.params.id });
 

@@ -7,6 +7,7 @@ const bcrypt = require("bcrypt");
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 const emailVerificationTemplate = require("../views/EmailVerification");
+const path = require("path");
 
 const REDIRECT_URI = "https://developers.google.com/oauthplayground";
 const oauth2Client = new google.auth.OAuth2({
@@ -26,7 +27,7 @@ router.get("/verify/:id", async (req, res) => {
 
     if (!updated) return res.status(404).send("Email not found");
 
-    res.send("Your email has been verified!");
+    res.sendFile(path.resolve(__dirname, "..", "views", "EmailVerified.html"));
   } catch (error) {
     console.log(error);
     if (!res.headersSent) res.sendStatus(500);
