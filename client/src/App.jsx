@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Order from "./pages/Order";
 import Orders from "./pages/Orders";
+import PrivateRoute from "./components/PrivateRoute";
 import Product from "./pages/Product";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
@@ -44,10 +45,38 @@ export default function App() {
         <Route path="product/:id" element={<Product />} />
         <Route path="search" element={<Search />} />
         <Route path="category/:id" element={<Category />} />
-        <Route path="cart" element={<Cart />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="orders" element={<Orders />} />
-        <Route path="order/:id" element={<Order />} />
+        <Route
+          path="cart"
+          element={
+            <PrivateRoute>
+              <Cart />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="profile"
+          element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="orders"
+          element={
+            <PrivateRoute>
+              <Orders />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="order/:id"
+          element={
+            <PrivateRoute>
+              <Order />
+            </PrivateRoute>
+          }
+        />
       </Routes>
 
       <Footer />

@@ -73,23 +73,37 @@ export default function ReviewsSection({ product, refetchProduct }) {
             </button>
           </div>
         </div>
-        <div
-          onClick={() => setReviewModelOpened(true)}
-          className="mt-5 flex items-center gap-3 cursor-pointer"
-        >
-          <img
-            className="w-10 h-10 rounded-full"
-            src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
-            alt=""
-          />
+        {currentUser ? (
+          <div
+            onClick={() => setReviewModelOpened(true)}
+            className="mt-5 flex items-center gap-3 cursor-pointer"
+          >
+            <img
+              className="w-10 h-10 rounded-full"
+              src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
+              alt=""
+            />
 
-          <p className="w-full max-w-lg border-dashed border-b border-gray-600">
-            {data?.some((item) => item?.user?._id === currentUser._id)
-              ? "Edit"
-              : "Write"}{" "}
-            your review
-          </p>
-        </div>
+            <p className="w-full max-w-lg border-dashed border-b border-gray-600">
+              {data?.some((item) => item?.user?._id === currentUser._id)
+                ? "Edit"
+                : "Write"}{" "}
+              your review
+            </p>
+          </div>
+        ) : (
+          <div className="mt-5 flex items-center gap-3">
+            <img
+              className="w-10 h-10 rounded-full border"
+              src="/default-avatar.jpg"
+              alt=""
+            />
+
+            <p className="w-full max-w-lg border-dashed border-b border-gray-600">
+              You need to sign in to write a review
+            </p>
+          </div>
+        )}
         {!error && data && (
           <>
             <div>
