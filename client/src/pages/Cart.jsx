@@ -47,9 +47,9 @@ export default function Cart() {
         </div>
       ) : (
         <div className="flex justify-center bg-bg">
-          <div className="min-h-screen max-w-[1200px] mx-4 flex items-start pt-8 gap-8 flex-col md:flex-row">
-            <div className="bg-white md:flex-grow p-4">
-              <div>
+          <div className="min-h-screen lg:max-w-[1500px] mx-4 flex items-start pt-8 gap-8 flex-col lg:flex-row">
+            <div className="bg-white lg:flex-grow p-4">
+              <div className="max-w-[90vw] overflow-x-auto">
                 <table className="cart-table">
                   <thead>
                     <tr>
@@ -63,9 +63,9 @@ export default function Cart() {
                     {cart.map((item) => (
                       <tr key={item.product._id}>
                         <td>
-                          <div className="flex gap-4">
+                          <div className="flex gap-4 mr-2">
                             <img
-                              className="w-[60px] h-[60px] md:w-[120px] md:h-[120px] object-contain"
+                              className="w-[60px] h-[60px] lg:w-[120px] lg:h-[120px] object-contain"
                               src={resizeImage(
                                 item.product.images[0],
                                 120,
@@ -76,7 +76,7 @@ export default function Cart() {
                             <div>
                               <Link
                                 to={`/product/${item.product._id}`}
-                                className="text-2xl"
+                                className="text-lg lg:text-2xl max-w-[150px] lg:max-w-none overflow-hidden whitespace-nowrap text-ellipsis inline-block"
                               >
                                 {item.product.name}
                               </Link>
@@ -138,7 +138,7 @@ export default function Cart() {
                 </table>
               </div>
             </div>
-            <div className="w-full md:w-80 bg-white flex-shrink-0 p-7 flex flex-col items-stretch gap-4 text-lg">
+            <div className="w-full lg:w-80 bg-white flex-shrink-0 p-7 flex flex-col items-stretch gap-4 text-lg">
               <div className="flex justify-between">
                 <p>Final price</p>
                 <p className="text-2xl text-primary">
@@ -171,7 +171,7 @@ export default function Cart() {
                 {currentUser.address && (
                   <div className="text-gray-500">
                     {Object.entries(currentUser.address).map(([key, value]) => (
-                      <div className="flex justify-between">
+                      <div key={key} className="flex justify-between">
                         <p>
                           {key
                             .replace(/([A-Z])/g, (match) => ` ${match}`)

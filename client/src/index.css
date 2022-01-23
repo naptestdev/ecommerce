@@ -28,8 +28,12 @@ body {
   min-height: 20px;
 }
 
-.cart-table {
-  @apply w-full overflow-x-auto;
+.cart-table * {
+  @apply whitespace-nowrap;
+}
+
+.cart-table .flex {
+  @apply w-max;
 }
 
 .cart-table tr {
