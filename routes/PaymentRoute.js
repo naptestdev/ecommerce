@@ -132,7 +132,7 @@ router.get("/orders", verifyJWT, async (req, res) => {
   try {
     const existingOrders = await OrderModel.find({
       user: req.user._id,
-    });
+    }).sort({ updatedAt: "desc" });
 
     res.send(existingOrders);
   } catch (error) {
