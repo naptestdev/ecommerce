@@ -4,7 +4,7 @@ const { verifyJWT } = require("../controllers/verifyJWT");
 const CartModel = require("../models/CartModel");
 const OrderModel = require("../models/OrderModel");
 const crypto = require("crypto");
-const axios = require("axios").default;
+const dayjs = require("dayjs");
 
 let checkoutSessions = {};
 
@@ -19,76 +19,57 @@ router.post("/create-session", verifyJWT, async (req, res) => {
     if (!existingCart || existingCart.products?.length <= 0)
       return res.status(400).send({ message: "Cart is empty" });
 
-    const partnerCode = process.env.MOMO_PARTNER_CODE;
-    const accessKey = process.env.MOMO_ACCESS_KEY;
-    const SECRET_KEY = process.env.MOMO_SECRET_KEY;
-    const requestId = Math.random().toString(36).slice(-8);
-    const orderId = requestId;
-    const amount = `${Math.round(
+    const amount =
       existingCart.products.reduce((prev, item) => {
         return (
           prev +
           Math.round(item.product.price - item.product.discount) * item.quantity
         );
-      }, 0) * Number(process.env.CONVERSION_UNIT)
-    )}`;
-    const redirectUrl = `${serverBaseUrl}/api/payment/success`;
-    const ipnUrl = "https://google.com";
-    const requestType = "captureWallet";
-    const orderInfo = "Thanh toán đơn hàng eCommerce";
-    const extraData = "";
+      }, 0) * Number(process.env.CONVERSION_UNIT);
 
-    const raw = {
-      accessKey,
-      amount,
-      extraData,
-      ipnUrl,
-      orderId,
-      orderInfo,
-      partnerCode,
-      redirectUrl,
-      requestId,
-      requestType,
+    const paymentId = Date.now().toString(36).slice(-8);
+
+    const params = {
+      vnp_Version: "2.1.0",
+      vnp_Command: "pay",
+      vnp_TmnCode: process.env.VNP_TMNCODE,
+      vnp_Amount: Math.round(amount * 100),
+      vnp_CreateDate: dayjs().format("YYYYMMDDHHmmss"),
+      vnp_CurrCode: "VND",
+      vnp_IpAddr: "127.0.0.1",
+      vnp_Locale: "en",
+      vnp_OrderInfo: `Thanh toán đơn hàng eCommerce`,
+      vnp_ReturnUrl: `${serverBaseUrl}/api/payment/success`,
+      vnp_TxnRef: paymentId,
     };
 
-    const rawSignature = Object.keys(raw)
-      .sort()
-      .reduce((obj, key) => {
-        obj[key] = raw[key];
-        return obj;
-      }, {});
-
-    const signature = crypto
-      .createHmac("sha256", SECRET_KEY)
+    const hash = crypto
+      .createHmac("sha512", process.env.VNP_HASHSECRET)
       .update(
-        Object.entries(rawSignature)
-          .map(([key, value]) => `${key}=${value}`)
+        Object.entries(
+          Object.keys(params)
+            .sort()
+            .reduce((result, key) => {
+              result[encodeURIComponent(key)] = encodeURIComponent(params[key])
+                .split("%20")
+                .join("+");
+              return result;
+            }, {})
+        )
+          .map(([item, value]) => `${item}=${value}`)
           .join("&")
       )
       .digest("hex");
 
-    axios
-      .post("https://test-payment.momo.vn/v2/gateway/api/create", {
-        partnerCode,
-        requestId,
-        amount,
-        orderId,
-        orderInfo,
-        redirectUrl,
-        ipnUrl,
-        requestType,
-        extraData,
-        lang: "en",
-        signature,
-      })
-      .then((response) => {
-        checkoutSessions[requestId] = req.user._id;
+    const url = `https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?${Object.entries(
+      { ...params, vnp_SecureHash: hash }
+    )
+      .map(([item, value]) => `${item}=${encodeURIComponent(value)}`)
+      .join("&")}`;
 
-        res.send(response.data.payUrl);
-      })
-      .catch((err) => {
-        res.status(500).send({ message: "Error", error: err.response.data });
-      });
+    checkoutSessions[paymentId] = req.user._id;
+
+    res.send(url);
   } catch (error) {
     console.log(error);
     if (!res.headersSent) res.sendStatus(500);
@@ -99,15 +80,18 @@ router.get("/success", async (req, res) => {
   try {
     const serverBaseUrl = `${req.protocol}://${req.get("host")}`;
 
-    if (req.query.resultCode !== "0")
+    if (
+      req.query.vnp_ResponseCode !== "00" &&
+      req.query.vnp_ResponseCode !== "0"
+    )
       return res.redirect(
         process.env.NODE_ENV === "production"
           ? `${serverBaseUrl}/cart`
           : "http://localhost:3000/cart"
       );
 
-    if (checkoutSessions[req.query.requestId]) {
-      const userId = checkoutSessions[req.query.requestId];
+    if (checkoutSessions[req.query.vnp_TxnRef]) {
+      const userId = checkoutSessions[req.query.vnp_TxnRef];
 
       const existingCart = await CartModel.findOne({ user: userId }).populate([
         "products.product",

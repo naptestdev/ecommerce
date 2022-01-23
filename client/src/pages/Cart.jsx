@@ -194,7 +194,7 @@ export default function Cart() {
                   }}
                   className="py-2 px-5 bg-black hover:opacity-80 transition duration-300 text-white text-base disabled:!bg-gray-500 disabled:!opacity-100 disabled:!cursor-default"
                 >
-                  Checkout using Stripe
+                  Checkout using VNPay
                 </button>
               </div>
             </div>

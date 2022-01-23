@@ -14,9 +14,9 @@
   "author": "napthedev",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.25.0",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
+    "dayjs": "^1.10.7",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "googleapis": "^92.0.0",
