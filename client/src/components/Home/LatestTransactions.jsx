@@ -10,6 +10,8 @@ export default function LatestTransactions() {
     getRecentTransactions()
   );
 
+  console.log(data);
+
   const navigate = useNavigate();
 
   return (
@@ -38,11 +40,11 @@ export default function LatestTransactions() {
                   <div className="flex items-center gap-2">
                     <img
                       className="w-7 h-7 rounded-full"
-                      src={avatarAPI(item.user.username)}
+                      src={avatarAPI(item?.user?.username)}
                       alt=""
                     />
 
-                    <span>{item.user.username}</span>
+                    <span>{item?.user?.username}</span>
                   </div>
                 </td>
                 <td>{new Date(item.createdAt).toDateString()}</td>
