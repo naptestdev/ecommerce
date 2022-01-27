@@ -31,7 +31,7 @@ export default function Categories() {
           <>
             {categories.map((item) => (
               <Link
-                to={`/category/${item._id}`}
+                to={`/search?category=${item._id}`}
                 key={item._id}
                 className="relative h-0"
                 style={{ paddingBottom: "100%" }}
