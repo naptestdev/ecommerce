@@ -24,7 +24,6 @@ export default function Navbar() {
     e.preventDefault();
 
     if (searchInputValue.trim()) {
-      setSearchInputValue("");
       navigate(`/search?q=${encodeURIComponent(searchInputValue.trim())}`);
     }
   };

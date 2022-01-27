@@ -17,14 +17,14 @@ router.get("/search", async (req, res) => {
       filter.category = { $in: req.query.category.split(",") };
     if (req.query.minPrice || req.query.maxPrice) {
       let priceFilter = {};
-      if (req.query.minPrice) priceFilter.$min = req.query.minPrice;
-      if (req.query.maxPrice) priceFilter.$max = req.query.maxPrice;
+      if (req.query.minPrice) priceFilter.$gt = Number(req.query.minPrice);
+      if (req.query.maxPrice) priceFilter.$lt = Number(req.query.maxPrice);
 
       filter.price = priceFilter;
     }
     if (req.query.minRatings) {
       filter.ratings = {
-        $min: req.query.minRatings,
+        $gt: Number(req.query.minRatings),
       };
     }
 

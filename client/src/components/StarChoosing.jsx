@@ -1,13 +1,15 @@
 import { useState } from "react";
-export default function StarChoosing({ value, onChange, max = 5 }) {
+export default function StarChoosing({ value, onChange, max = 5, ...others }) {
   const [hover, setHover] = useState(0);
 
   return (
-    <div className="inline" onMouseLeave={() => setHover(0)}>
+    <div className="inline" onMouseLeave={() => setHover(0)} {...others}>
       {[...new Array(max)].map((_, index) => (
         <span
           key={index}
-          onClick={() => onChange(index + 1)}
+          onClick={() => {
+            value === index + 1 ? onChange(0) : onChange(index + 1);
+          }}
           onMouseEnter={() => setHover(index + 1)}
           style={{ cursor: "pointer" }}
           className={
