@@ -1,16 +1,19 @@
 import { Link, useParams } from "react-router-dom";
+import { cancelOrder, getOrderById } from "../services/api/order";
 
 import { Fragment } from "react";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { getOrderById } from "../services/api/order";
 import { resizeImage } from "../services/image";
 import { statuses } from "../shared/constant";
 import useSWR from "swr";
+import { useState } from "react";
 
 export default function Order() {
   const { id } = useParams();
 
-  const { data, error } = useSWR(`order-${id}`, () => getOrderById(id));
+  const { data, error, mutate } = useSWR(`order-${id}`, () => getOrderById(id));
+
+  const [isCancelling, setIsCancelling] = useState(false);
 
   if (error) return <div>Error</div>;
 
@@ -20,6 +23,21 @@ export default function Order() {
         <Spin />
       </div>
     );
+
+  const handleCancelOrder = () => {
+    setIsCancelling(true);
+
+    cancelOrder(id)
+      .then(() => {
+        mutate();
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setIsCancelling(false);
+      });
+  };
 
   return (
     <div className="min-h-screen flex justify-center items-start bg-gray-100 px-4">
@@ -109,9 +127,20 @@ export default function Order() {
         </div>
 
         <div className="flex justify-between mt-12 flex-col-reverse sm:flex-row gap-6 sm:gap-0">
-          <button className="outline-none bg-[#DC3545] text-white py-2 px-3 rounded hover:brightness-[115%] transition">
-            Cancel Order
-          </button>
+          <div>
+            <button
+              disabled={data.status !== 0 || isCancelling}
+              onClick={handleCancelOrder}
+              className={`outline-none bg-[#DC3545] text-white py-2 px-3 rounded hover:brightness-[115%] transition disabled:brightness-75 disabled:!cursor-default`}
+            >
+              Cancel Order
+            </button>
+            {data.status !== 0 && (
+              <p className="text-gray-400">
+                You cannot cancel an order which is not in pending state
+              </p>
+            )}
+          </div>
 
           <div className="flex flex-col items-end">
             <h1>

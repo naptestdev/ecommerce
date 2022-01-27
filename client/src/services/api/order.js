@@ -5,3 +5,6 @@ export const getAllOrders = async () =>
 
 export const getOrderById = async (id) =>
   (await axios.get(`payment/order/${id}`)).data;
+
+export const cancelOrder = async (id) =>
+  (await axios.get(`payment/order/${id}/cancel`)).data;

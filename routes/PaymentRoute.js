@@ -159,4 +159,38 @@ router.get("/order/:id", async (req, res) => {
   }
 });
 
+router.get("/order/:id/cancel", async (req, res) => {
+  try {
+    const existingOrder = await OrderModel.findOne({
+      _id: req.params.id,
+    });
+
+    if (!existingOrder)
+      return res.status(404).send({
+        message: "Order not found",
+      });
+
+    if (existingOrder.status !== 0)
+      return res.status(400).send({
+        message: "Order is not in pending state",
+      });
+
+    await OrderModel.findOneAndUpdate(
+      {
+        _id: req.params.id,
+      },
+      {
+        status: 3,
+      }
+    );
+
+    res.send({
+      message: "Order has been cancelled",
+    });
+  } catch (error) {
+    console.log(error);
+    if (!res.headersSent) res.sendStatus(500);
+  }
+});
+
 module.exports = router;
