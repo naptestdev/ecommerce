@@ -17,6 +17,9 @@ export default function Navbar() {
   const currentUser = useStore((state) => state.currentUser);
   const setCurrentUser = useStore((state) => state.setCurrentUser);
 
+  const cart = useStore((state) => state.cart);
+  const isCartLoading = useStore((state) => state.isCardLoading);
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -145,8 +148,13 @@ export default function Navbar() {
                     </div>
                   </div>
                 </ClickAwayListener>
-                <Link to="/cart">
+                <Link className="relative" to="/cart">
                   <i className="fas fa-shopping-cart text-lg"></i>
+                  {!isCartLoading && (
+                    <span className="absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2 bg-white border border-primary rounded-full text-primary px-[6px] text-xs">
+                      {cart.length}
+                    </span>
+                  )}
                 </Link>
               </>
             )}
@@ -263,7 +271,7 @@ export default function Navbar() {
               <div>
                 <Link to="/cart">
                   <i className="fas fa-shopping-cart text-xl"></i>
-                  <span> Cart</span>
+                  <span> Cart{!isCartLoading && ` (${cart.length})`}</span>
                 </Link>
               </div>
             </>
