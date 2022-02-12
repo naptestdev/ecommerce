@@ -11,7 +11,7 @@ export default function SimilarProducts({ productId }) {
     <div className="bg-white my-8 p-4">
       <h1 className="text-3xl mb-3">Similar products</h1>
       <div
-        className="grid gap-4 grid-cols-card"
+        className="grid gap-4 grid-cols-md md:grid-cols-lg"
         style={{
           gridAutoRows: "1fr",
         }}

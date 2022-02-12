@@ -43,7 +43,7 @@ export default function Profile() {
           <div className="px-16 py-4 flex flex-col items-center justify-start gap-6 flex-shrink-0">
             <img
               className="w-36 h-w-36 rounded-full"
-              src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
+              src={`https://avatars.dicebear.com/api/initials/${currentUser?.username}.svg`}
               alt=""
             />
           </div>

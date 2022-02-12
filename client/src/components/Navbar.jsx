@@ -105,10 +105,10 @@ export default function Navbar() {
                     <div className="flex items-center gap-1 cursor-pointer">
                       <img
                         className="w-7 h-7 rounded-full"
-                        src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
+                        src={`https://avatars.dicebear.com/api/initials/${currentUser?.username}.svg`}
                         alt=""
                       />
-                      <p>{currentUser.username}</p>
+                      <p>{currentUser?.username}</p>
                     </div>
 
                     <div
@@ -242,10 +242,10 @@ export default function Navbar() {
               <div className="flex items-center gap-1">
                 <img
                   className="w-7 h-7 rounded-full"
-                  src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
+                  src={`https://avatars.dicebear.com/api/initials/${currentUser?.username}.svg`}
                   alt=""
                 />
-                <p>{currentUser.username}</p>
+                <p>{currentUser?.username}</p>
               </div>
 
               <div>

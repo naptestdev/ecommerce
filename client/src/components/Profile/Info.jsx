@@ -7,7 +7,7 @@ export default function Info({ setAlertText, setIsAlertOpened }) {
   const currentUser = useStore((state) => state.currentUser);
   const verifyUser = useStore((state) => state.verifyUser);
 
-  const [inputValue, setInputValue] = useState(currentUser.username);
+  const [inputValue, setInputValue] = useState(currentUser?.username);
   const [loading, setLoading] = useState(false);
 
   const handleFormSubmit = (e) => {
@@ -35,7 +35,7 @@ export default function Info({ setAlertText, setIsAlertOpened }) {
   };
 
   const validateInput = (value) =>
-    value !== currentUser.username && value.trim() !== "";
+    value !== currentUser?.username && value.trim() !== "";
 
   return (
     <form onSubmit={handleFormSubmit}>
@@ -43,7 +43,7 @@ export default function Info({ setAlertText, setIsAlertOpened }) {
       <div className="flex items-center">
         <div className="w-[150px] text-gray-500 flex-shrink-0">Email</div>
         <div className="flex-grow">
-          <p>{currentUser.email}</p>
+          <p>{currentUser?.email}</p>
         </div>
       </div>
       <div className="flex items-center">

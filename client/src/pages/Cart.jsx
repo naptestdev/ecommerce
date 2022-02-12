@@ -164,30 +164,32 @@ export default function Cart() {
                   <p>Address</p>
 
                   <Link className="text-primary" to="/profile">
-                    {currentUser.address ? "Edit" : "Add now"}
+                    {currentUser?.address ? "Edit" : "Add now"}
                   </Link>
                 </div>
 
-                {currentUser.address && (
+                {currentUser?.address && (
                   <div className="text-gray-500">
-                    {Object.entries(currentUser.address).map(([key, value]) => (
-                      <div key={key} className="flex justify-between">
-                        <p>
-                          {key
-                            .replace(/([A-Z])/g, (match) => ` ${match}`)
-                            .replace(/^./, (match) => match.toUpperCase())
-                            .trim()}
-                        </p>
-                        <p>{value}</p>
-                      </div>
-                    ))}
+                    {Object.entries(currentUser?.address).map(
+                      ([key, value]) => (
+                        <div key={key} className="flex justify-between">
+                          <p>
+                            {key
+                              .replace(/([A-Z])/g, (match) => ` ${match}`)
+                              .replace(/^./, (match) => match.toUpperCase())
+                              .trim()}
+                          </p>
+                          <p>{value}</p>
+                        </div>
+                      )
+                    )}
                   </div>
                 )}
               </div>
 
               <div className="flex justify-center">
                 <button
-                  disabled={!currentUser.address}
+                  disabled={!currentUser?.address}
                   onClick={() => {
                     setIsCartLoading(true);
                     requestPaymentSession();

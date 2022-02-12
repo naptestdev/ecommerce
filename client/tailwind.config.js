@@ -9,7 +9,9 @@ module.exports = {
         bg: "#F5F5F5",
       },
       gridTemplateColumns: {
-        card: "repeat(auto-fill, minmax(180px, 1fr))",
+        sm: "repeat(auto-fill, minmax(100px, 1fr))",
+        md: "repeat(auto-fill, minmax(140px, 1fr))",
+        lg: "repeat(auto-fill, minmax(180px, 1fr))",
       },
     },
   },

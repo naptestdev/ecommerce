@@ -80,12 +80,12 @@ export default function ReviewsSection({ product, refetchProduct }) {
           >
             <img
               className="w-10 h-10 rounded-full"
-              src={`https://avatars.dicebear.com/api/initials/${currentUser.username}.svg`}
+              src={`https://avatars.dicebear.com/api/initials/${currentUser?.username}.svg`}
               alt=""
             />
 
             <p className="w-full max-w-lg border-dashed border-b border-gray-600">
-              {data?.some((item) => item?.user?._id === currentUser._id)
+              {data?.some((item) => item?.user?._id === currentUser?._id)
                 ? "Edit"
                 : "Write"}{" "}
               your review
@@ -137,11 +137,11 @@ export default function ReviewsSection({ product, refetchProduct }) {
                 refetchProduct();
               }}
               defaultInputValue={
-                data.find((item) => item?.user?._id === currentUser._id)
+                data.find((item) => item?.user?._id === currentUser?._id)
                   ?.comment || ""
               }
               defaultStarCount={
-                data.find((item) => item?.user?._id === currentUser._id)
+                data.find((item) => item?.user?._id === currentUser?._id)
                   ?.ratings || 0
               }
             />

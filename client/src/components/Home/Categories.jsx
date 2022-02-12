@@ -9,12 +9,7 @@ export default function Categories() {
   return (
     <div className="mx-[4vw]">
       <h1 className="text-2xl mb-3">Categories</h1>
-      <div
-        className="grid gap-4"
-        style={{
-          gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
-        }}
-      >
+      <div className="grid gap-4 grid-cols-sm md:grid-cols-md">
         {!categories || error ? (
           <>
             {[...new Array(11)].map((_, index) => (
@@ -42,7 +37,7 @@ export default function Categories() {
                     src={resizeImage(item.image, 100, 100)}
                     alt=""
                   />
-                  <p className="text-center text-sm min-h-[40px]">
+                  <p className="text-center text-xs md:text-sm min-h-[40px]">
                     {item.name}
                   </p>
                 </div>
