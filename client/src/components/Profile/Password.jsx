@@ -1,5 +1,5 @@
 import Spin from "react-cssfx-loading/lib/Spin";
-import { changePassword } from "../../services/api/profile";
+import { changePassword } from "../../services/profile";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 

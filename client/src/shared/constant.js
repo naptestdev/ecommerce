@@ -20,3 +20,8 @@ export const statuses = [
     icon: "times",
   },
 ];
+
+export const resizeImage = (url, width = 0, height = 0) =>
+  `https://images.weserv.nl/?url=${encodeURIComponent(url)}&w=${
+    width || ""
+  }&h=${height || ""}&fit=outside`;

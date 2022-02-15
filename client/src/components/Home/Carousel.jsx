@@ -1,7 +1,7 @@
 import NextArrow from "../Slider/NextArrow";
 import PrevArrow from "../Slider/PrevArrow";
 import Slider from "react-slick";
-import { getCarousel } from "../../services/api/homepage";
+import { getCarousel } from "../../services/homepage";
 import useSWR from "swr";
 
 export default function Carousel() {

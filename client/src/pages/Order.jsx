@@ -1,9 +1,9 @@
 import { Link, useParams } from "react-router-dom";
-import { cancelOrder, getOrderById } from "../services/api/order";
+import { cancelOrder, getOrderById } from "../services/order";
 
 import { Fragment } from "react";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { resizeImage } from "../services/image";
+import { resizeImage } from "../shared/constant";
 import { statuses } from "../shared/constant";
 import useSWR from "swr";
 import { useState } from "react";
@@ -100,11 +100,7 @@ export default function Order() {
                 </div>
               </div>
 
-              <p className="text-xl">
-                $
-                {Math.round((item.product.price - item.product.discount) * 10) /
-                  10}
-              </p>
+              <p className="text-xl">{item.product.price}₫</p>
             </div>
           ))}
         </div>

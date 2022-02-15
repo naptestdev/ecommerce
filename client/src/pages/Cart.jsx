@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { requestPaymentSession } from "../services/api/payment";
-import { resizeImage } from "../services/image";
+import { requestPaymentSession } from "../services/payment";
+import { resizeImage } from "../shared/constant";
 import { useStore } from "../store";
 
 export default function Cart() {
@@ -81,11 +81,7 @@ export default function Cart() {
                                 {item.product.name}
                               </Link>
                               <p className="text-lg text-gray-600">
-                                $
-                                {Math.round(
-                                  (item.product.price - item.product.discount) *
-                                    10
-                                ) / 10}
+                                {item.product.price}₫
                               </p>
                             </div>
                           </div>
@@ -124,14 +120,7 @@ export default function Cart() {
                             </button>
                           </div>
                         </td>
-                        <td className="text-2xl px-6">
-                          $
-                          {Math.round(
-                            (item.product.price - item.product.discount) *
-                              10 *
-                              item.quantity
-                          ) / 10}
-                        </td>
+                        <td className="text-2xl px-6">{item.product.price}₫</td>
                       </tr>
                     ))}
                   </tbody>
@@ -142,18 +131,11 @@ export default function Cart() {
               <div className="flex justify-between">
                 <p>Final price</p>
                 <p className="text-2xl text-primary">
-                  $
-                  {Math.round(
-                    cart.reduce((result, item) => {
-                      result +=
-                        Math.round(
-                          (item.product.price - item.product.discount) *
-                            10 *
-                            item.quantity
-                        ) / 10;
-                      return result;
-                    }, 0) * 10
-                  ) / 10}
+                  {cart.reduce((result, item) => {
+                    result += item.product.price;
+                    return result;
+                  }, 0)}
+                  ₫
                 </p>
               </div>
 

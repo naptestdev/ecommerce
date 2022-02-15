@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { getAllOrders } from "../services/api/order";
-import { resizeImage } from "../services/image";
+import { getAllOrders } from "../services/order";
+import { resizeImage } from "../shared/constant";
 import { statuses } from "../shared/constant";
 import useSWR from "swr";
 import { useState } from "react";

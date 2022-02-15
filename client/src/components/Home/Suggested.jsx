@@ -1,5 +1,5 @@
 import ProductCard from "../ProductCard";
-import { getSuggested } from "../../services/api/homepage";
+import { getSuggested } from "../../services/homepage";
 import useSWR from "swr";
 
 export default function Suggested() {

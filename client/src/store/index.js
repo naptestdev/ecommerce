@@ -1,7 +1,7 @@
-import axios from "../services/axios";
+import axios from "../shared/axios";
 import create from "zustand";
-import { getProductDetail } from "../services/api/product";
-import { updateCart } from "../services/api/cart";
+import { getProductDetail } from "../services/product";
+import { updateCart } from "../services/cart";
 
 export const useStore = create((set, get) => ({
   verifyUser: () => {

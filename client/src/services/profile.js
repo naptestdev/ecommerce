@@ -1,4 +1,4 @@
-import axios from "../axios";
+import axios from "../shared/axios";
 
 export const updateUsername = async (username) =>
   (await axios.post("auth/update-username", { username })).data;

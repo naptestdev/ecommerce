@@ -1,6 +1,6 @@
 import ReviewsModal from "./ReviewsModal";
 import StarRatings from "../StarRatings";
-import { getReviews } from "../../services/api/reviews";
+import { getReviews } from "../../services/reviews";
 import useSWR from "swr";
 import { useState } from "react";
 import { useStore } from "../../store";

@@ -1,5 +1,5 @@
 import ProductCard from "../ProductCard";
-import { getSimilarProducts } from "../../services/api/product";
+import { getSimilarProducts } from "../../services/product";
 import useSWR from "swr";
 
 export default function SimilarProducts({ productId }) {

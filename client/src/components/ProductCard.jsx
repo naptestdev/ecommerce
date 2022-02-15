@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import StarRatings from "./StarRatings";
-import { resizeImage } from "../services/image";
+import { resizeImage } from "../shared/constant";
 
 export default function ProductCard({ product }) {
   return (
@@ -20,9 +20,9 @@ export default function ProductCard({ product }) {
           <p className="whitespace-nowrap overflow-ellipsis overflow-hidden">
             {product.name}
           </p>
-          <div className="flex justify-between items-center mt-4">
+          <div className="flex justify-between items-center mt-4 flex-wrap">
             <p className="text-primary text-xl">
-              ${Math.round((product.price - product.discount) * 10) / 10}
+              {product.price.toLocaleString()}₫
             </p>
             <p>
               <StarRatings value={product.ratings} max={5} />

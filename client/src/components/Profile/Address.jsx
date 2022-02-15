@@ -1,5 +1,5 @@
 import Spin from "react-cssfx-loading/lib/Spin";
-import { updateAddress } from "../../services/api/profile";
+import { updateAddress } from "../../services/profile";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useStore } from "../../store";

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { getCategories } from "../../services/api/homepage";
-import { resizeImage } from "../../services/image";
+import { getCategories } from "../../services/homepage";
+import { resizeImage } from "../../shared/constant";
 import useSWR from "swr";
 
 export default function Categories() {
@@ -33,8 +33,8 @@ export default function Categories() {
               >
                 <div className="absolute w-full h-full rounded shadow hover:shadow-md transition cursor-pointer flex flex-col justify-between items-center px-2 py-4">
                   <img
-                    className="w-2/5 h-2/5 object-contain"
-                    src={resizeImage(item.image, 100, 100)}
+                    className="w-3/5 h-3/5 object-contain"
+                    src={resizeImage(item.image, 150, 150)}
                     alt=""
                   />
                   <p className="text-center text-xs md:text-sm min-h-[40px]">

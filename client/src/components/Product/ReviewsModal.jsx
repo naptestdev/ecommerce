@@ -1,6 +1,6 @@
 import Spin from "react-cssfx-loading/lib/Spin";
 import StarChoosing from "../StarChoosing";
-import { createReview } from "../../services/api/reviews";
+import { createReview } from "../../services/reviews";
 import { useState } from "react";
 
 export default function ReviewsModal({

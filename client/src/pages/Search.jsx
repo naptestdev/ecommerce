@@ -1,8 +1,8 @@
 import ProductCard from "../components/ProductCard";
 import Spin from "react-cssfx-loading/lib/Spin";
 import StarChoosing from "../components/StarChoosing";
-import { getCategories } from "../services/api/homepage";
-import { searchProduct } from "../services/api/product";
+import { getCategories } from "../services/homepage";
+import { searchProduct } from "../services/product";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useQueryParams } from "../hooks/useQueryParams";
@@ -109,7 +109,7 @@ export default function Search() {
               <div>
                 <h1 className="font-semibold">Min Price</h1>
                 <input
-                  placeholder="Discount unlisted"
+                  placeholder="Minimum Price"
                   value={minPriceValue}
                   onChange={(e) => setMinPriceValue(Number(e.target.value))}
                   className="outline-none p-2 border h-10"
@@ -120,7 +120,7 @@ export default function Search() {
               <div>
                 <h1 className="font-semibold">Max Price</h1>
                 <input
-                  placeholder="Discount unlisted"
+                  placeholder="Maximum Price"
                   value={maxPriceValue}
                   onChange={(e) => setMaxPriceValue(Number(e.target.value))}
                   className="outline-none p-2 border h-10"

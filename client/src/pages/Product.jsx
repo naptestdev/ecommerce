@@ -8,7 +8,7 @@ import SimilarProducts from "../components/Product/SimilarProducts";
 import Slider from "react-slick";
 import Spin from "react-cssfx-loading/lib/Spin";
 import StarRatings from "../components/StarRatings";
-import { getProductDetail } from "../services/api/product";
+import { getProductDetail } from "../services/product";
 import useSWR from "swr";
 import { useState } from "react";
 import { useStore } from "../store";
@@ -109,12 +109,12 @@ export default function Product() {
             </div>
 
             <div className="flex items-center gap-3">
-              <p className="text-2xl line-through text-gray-400">
-                ${product.price}
-              </p>
-              <h1 className="text-5xl my-3 text-primary">
-                ${Math.round((product.price - product.discount) * 10) / 10}
-              </h1>
+              {!!product.originalPrice && (
+                <p className="text-2xl line-through text-gray-400">
+                  {product.originalPrice}₫
+                </p>
+              )}
+              <h1 className="text-5xl my-3 text-primary">{product.price}₫</h1>
             </div>
 
             <div className="flex items-center">
@@ -209,7 +209,7 @@ export default function Product() {
         {product.description && (
           <div className="bg-white mt-8 p-4">
             <h1 className="text-3xl mb-3">Product Description</h1>
-            <p>{product.description}</p>
+            <p className="whitespace-pre-wrap">{product.description}</p>
           </div>
         )}
 

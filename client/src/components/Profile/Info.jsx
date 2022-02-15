@@ -1,5 +1,5 @@
 import Spin from "react-cssfx-loading/lib/Spin";
-import { updateUsername } from "../../services/api/profile";
+import { updateUsername } from "../../services/profile";
 import { useState } from "react";
 import { useStore } from "../../store";
 

@@ -19,13 +19,9 @@ router.post("/create-session", verifyJWT, async (req, res) => {
     if (!existingCart || existingCart.products?.length <= 0)
       return res.status(400).send({ message: "Cart is empty" });
 
-    const amount =
-      existingCart.products.reduce((prev, item) => {
-        return (
-          prev +
-          Math.round(item.product.price - item.product.discount) * item.quantity
-        );
-      }, 0) * Number(process.env.CONVERSION_UNIT);
+    const amount = existingCart.products.reduce((prev, item) => {
+      return prev + item.product.price * item.quantity;
+    }, 0);
 
     const paymentId = Date.now().toString(36).slice(-8);
 
@@ -102,10 +98,7 @@ router.get("/success", async (req, res) => {
         user: userId,
         products: existingCart.products,
         amount: existingCart.products.reduce((acc, item) => {
-          return (
-            acc +
-            Math.round((item.product.price - item.product.discount) * 10) / 10
-          );
+          return acc + item.product.price;
         }, 0),
         address: existingCart.user.address,
       });
