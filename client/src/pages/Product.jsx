@@ -1,6 +1,8 @@
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 import Alert from "../components/Alert";
+import NextArrow from "../components/Slider/NextArrow";
+import PrevArrow from "../components/Slider/PrevArrow";
 import ReviewsSection from "../components/Product/ReviewsSection";
 import SimilarProducts from "../components/Product/SimilarProducts";
 import Slider from "react-slick";
@@ -67,6 +69,8 @@ export default function Product() {
               autoplaySpeed={4000}
               slidesToShow={1}
               slidesToScroll={1}
+              prevArrow={<PrevArrow />}
+              nextArrow={<NextArrow />}
             >
               {product.images.map((image) => (
                 <img key={image} src={image} alt="" />
