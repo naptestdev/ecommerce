@@ -57,7 +57,7 @@ export default function SignIn({ setView, setIsOpened }) {
       onSubmit={handleSubmit(handleFormSubmit)}
       className="flex flex-col justify-start items-stretch gap-1 px-5 py-10 w-full h-full"
     >
-      <h1 className="text-center text-2xl mb-4">Sign In</h1>
+      <h1 className="text-center text-2xl mb-4">Đăng nhập</h1>
       <div>
         <input
           className="input-outline w-full"
@@ -67,11 +67,11 @@ export default function SignIn({ setView, setIsOpened }) {
             pattern: {
               value:
                 /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/gm,
-              message: "Please enter a valid email",
+              message: "Hãy nhập email đúng",
             },
             required: {
               value: true,
-              message: "Email is required",
+              message: "Hãy nhập email của bạn",
             },
           })}
         />
@@ -85,7 +85,7 @@ export default function SignIn({ setView, setIsOpened }) {
           {...register("password", {
             required: {
               value: true,
-              message: "Your password is required",
+              message: "Hãy nhập mật khẩu của bạn",
             },
           })}
         />
@@ -97,12 +97,12 @@ export default function SignIn({ setView, setIsOpened }) {
         {loading ? (
           <Spin color="#FFFFFF" height="30px" width="30px" />
         ) : (
-          "Sign In"
+          "Đăng nhập"
         )}
       </button>
 
       <span className="underline-anchor mt-3" onClick={() => setView("signUp")}>
-        Haven't got an account? Sign Up
+        Chưa có tài khoản? Đăng ký
       </span>
     </form>
   );

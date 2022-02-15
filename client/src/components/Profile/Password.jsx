@@ -21,12 +21,12 @@ export default function Password({ setAlertText, setIsAlertOpened }) {
       changePassword(data.old, data.new)
         .then((data) => {
           console.log(data);
-          setAlertText("Password changed successfully!");
+          setAlertText("Mật khẩu đã được đổi");
           setIsAlertOpened(true);
         })
         .catch((err) => {
           console.log(err);
-          setAlertText("Failed to change password");
+          setAlertText("Đã có lỗi xảy ra");
           setIsAlertOpened(true);
         })
         .finally(() => {
@@ -38,12 +38,10 @@ export default function Password({ setAlertText, setIsAlertOpened }) {
 
   return (
     <form onSubmit={handleSubmit(handleFormSubmit)}>
-      <h2 className="text-2xl mt-3">Password</h2>
+      <h2 className="text-2xl mt-3">Mật khẩu</h2>
 
       <div className="flex items-center">
-        <div className="w-[150px] text-gray-500 flex-shrink-0">
-          Old password
-        </div>
+        <div className="w-[150px] text-gray-500 flex-shrink-0">Mật khẩu cũ</div>
         <div className="flex-grow">
           <input
             className={`outline-none border px-3 py-1 focus:border-gray-500 transition w-full my-1 ${
@@ -56,7 +54,7 @@ export default function Password({ setAlertText, setIsAlertOpened }) {
       </div>
       <div className="flex items-center">
         <div className="w-[150px] text-gray-500 flex-shrink-0">
-          New password
+          Mật khẩu mới
         </div>
         <div className="flex-grow">
           <input
@@ -73,7 +71,7 @@ export default function Password({ setAlertText, setIsAlertOpened }) {
         </div>
       </div>
       <div className="flex items-center">
-        <div className="w-[150px] text-gray-500 flex-shrink-0">Confirm</div>
+        <div className="w-[150px] text-gray-500 flex-shrink-0">Xác nhận</div>
         <div className="flex-grow">
           <input
             className={`outline-none border px-3 py-1 focus:border-gray-500 transition w-full my-1 ${
@@ -96,7 +94,7 @@ export default function Password({ setAlertText, setIsAlertOpened }) {
           {loading ? (
             <Spin color="#ffffff" width="25px" height="25px" />
           ) : (
-            <>Change password</>
+            <>Đổi mật khẩu</>
           )}
         </button>
       </div>

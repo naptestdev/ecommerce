@@ -9,7 +9,7 @@ export default function SimilarProducts({ productId }) {
 
   return (
     <div className="bg-white my-8 p-4">
-      <h1 className="text-3xl mb-3">Similar products</h1>
+      <h1 className="text-3xl mb-3">Sản phẩm tương tự</h1>
       <div
         className="grid gap-4 grid-cols-md md:grid-cols-lg"
         style={{

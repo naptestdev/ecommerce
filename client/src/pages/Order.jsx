@@ -1,9 +1,9 @@
 import { Link, useParams } from "react-router-dom";
+import { addresses, resizeImage } from "../shared/constant";
 import { cancelOrder, getOrderById } from "../services/order";
 
 import { Fragment } from "react";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { resizeImage } from "../shared/constant";
 import { statuses } from "../shared/constant";
 import useSWR from "swr";
 import { useState } from "react";
@@ -43,7 +43,7 @@ export default function Order() {
     <div className="min-h-screen flex justify-center items-start bg-gray-100 px-4">
       <div className="bg-white w-full max-w-[800px] p-4 md:p-8 my-8">
         <div className="flex justify-between text-lg mb-8 flex-col md:flex-row">
-          <p>Order: {data._id}</p>
+          <p>Mã đơn hàng: {data._id}</p>
           <p style={{ color: statuses[data.status].color }}>
             {statuses[data.status].name}
           </p>
@@ -106,16 +106,11 @@ export default function Order() {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-2xl">Your address</h1>
+          <h1 className="text-2xl">Địa chỉ của bạn</h1>
 
           {Object.entries(data.address).map(([key, value]) => (
             <div key={key} className="flex justify-between">
-              <p>
-                {key
-                  .replace(/([A-Z])/g, (match) => ` ${match}`)
-                  .replace(/^./, (match) => match.toUpperCase())
-                  .trim()}
-              </p>
+              <p>{addresses[key]}</p>
 
               <p>{value}</p>
             </div>
@@ -129,19 +124,19 @@ export default function Order() {
               onClick={handleCancelOrder}
               className={`outline-none bg-[#DC3545] text-white py-2 px-3 rounded hover:brightness-[115%] transition disabled:brightness-75 disabled:!cursor-default`}
             >
-              Cancel Order
+              Huỷ đơn hàng
             </button>
             {data.status !== 0 && (
               <p className="text-gray-400">
-                You cannot cancel an order which is not in pending state
+                Chỉ đơn hàng ở trạng thái đang chờ có thể được huỷ
               </p>
             )}
           </div>
 
           <div className="flex flex-col items-end">
             <h1>
-              <span className="text-2xl">Total amount: </span>
-              <span className="text-3xl text-primary">${data.amount}</span>
+              <span className="text-2xl">Tổng số tiền: </span>
+              <span className="text-3xl text-primary">{data.amount}₫</span>
             </h1>
           </div>
         </div>

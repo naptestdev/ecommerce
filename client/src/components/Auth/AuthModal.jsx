@@ -19,8 +19,8 @@ export default function AuthModal({ isOpened, setIsOpened, view, setView }) {
             <div>
               <p className="text-xl">
                 {view === "signIn"
-                  ? "Sign in to your account to buy our products"
-                  : "Looks like you are new to our website"}
+                  ? "Đăng nhập vào tài khoản của bạn để bắt đầu mua hàng"
+                  : "Hãy đăng ký tài khoản của bạn"}
               </p>
             </div>
             <img

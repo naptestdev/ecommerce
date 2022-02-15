@@ -45,7 +45,7 @@ export default function Product() {
             className="hover:text-primary transition whitespace-nowrap"
             to="/"
           >
-            Home
+            Trang chủ
           </Link>
           <i className="fa fa-chevron-right text-xs"></i>
           <Link
@@ -97,28 +97,30 @@ export default function Product() {
 
               <div className="flex items-center gap-1">
                 <p className="text-lg">{product.ratingsCount}</p>
-                <p className="text-gray-500">Ratings</p>
+                <p className="text-gray-500">Đánh giá</p>
               </div>
 
               <div className="h-6 w-[2px] bg-gray-300"></div>
 
               <div className="flex items-center gap-1">
-                <p className="text-lg">20</p>
-                <p className="text-gray-500">Sold</p>
+                <p className="text-lg">0</p>
+                <p className="text-gray-500">Đã bán</p>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
               {!!product.originalPrice && (
                 <p className="text-2xl line-through text-gray-400">
-                  {product.originalPrice}₫
+                  {product.originalPrice?.toLocaleString()}₫
                 </p>
               )}
-              <h1 className="text-5xl my-3 text-primary">{product.price}₫</h1>
+              <h1 className="text-5xl my-3 text-primary">
+                {product.price?.toLocaleString()}₫
+              </h1>
             </div>
 
             <div className="flex items-center">
-              <div className="w-24">Quantity</div>
+              <div className="w-24">Số lượng</div>
               <div className="flex items-stretch">
                 <button
                   onClick={() => quantity > 1 && setQuantity(quantity - 1)}
@@ -143,7 +145,7 @@ export default function Product() {
             </div>
 
             <p className="text-gray-500">
-              {product.stock} item{product.stock === 0 ? "" : "s"} left in stock
+              Còn {product.stock} sản phẩm trong kho.
             </p>
 
             <div className="flex gap-3 flex-wrap">
@@ -153,17 +155,13 @@ export default function Product() {
                   setAddCartLoading(true);
                   addCartItem(product._id, quantity)
                     .then(() => {
-                      setAlertText(
-                        `Added ${quantity} item${
-                          quantity > 1 ? "s" : ""
-                        } to cart`
-                      );
+                      setAlertText(`Đã thêm ${quantity} sản phẩm vào giỏ hàng`);
                       setIsAlertOpened(true);
                     })
                     .catch((err) => {
                       console.log(err);
 
-                      setAlertText("Fail to add to cart");
+                      setAlertText("Có lỗi khi thêm vào giỏ hàng");
                       setIsAlertOpened(true);
                     })
                     .finally(() => setAddCartLoading(false));
@@ -175,7 +173,7 @@ export default function Product() {
                 ) : (
                   <i className="fas fa-cart-plus"></i>
                 )}
-                <span>Add to cart</span>
+                <span>Thêm vào giỏ hàng</span>
               </button>
               <button
                 onClick={() => {
@@ -187,7 +185,7 @@ export default function Product() {
                     .catch((err) => {
                       console.log(err);
 
-                      setAlertText("Fail to add to cart");
+                      setAlertText("Có lỗi khi thêm vào giỏ hàng");
                       setIsAlertOpened(true);
                     })
                     .finally(() => setAddCartLoading(false));
@@ -200,7 +198,7 @@ export default function Product() {
                 ) : (
                   <i className="fas fa-money-check-alt"></i>
                 )}
-                <span>Buy now</span>
+                <span>Mua ngay</span>
               </button>
             </div>
           </div>
@@ -208,7 +206,7 @@ export default function Product() {
 
         {product.description && (
           <div className="bg-white mt-8 p-4">
-            <h1 className="text-3xl mb-3">Product Description</h1>
+            <h1 className="text-3xl mb-3">Thông tin sản phẩm</h1>
             <p className="whitespace-pre-wrap">{product.description}</p>
           </div>
         )}

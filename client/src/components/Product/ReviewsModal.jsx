@@ -38,7 +38,7 @@ export default function ReviewsModal({
         onClick={(e) => e.stopPropagation()}
         className="bg-white p-5 w-full max-w-md flex flex-col items-stretch gap-3"
       >
-        <h1 className="text-xl">Write a review</h1>
+        <h1 className="text-xl">Viết nhận xét & đánh giá</h1>
 
         <div className="text-2xl">
           <StarChoosing value={starCount} onChange={setStarCount} />
@@ -46,7 +46,7 @@ export default function ReviewsModal({
 
         <textarea
           className="resize-none border outline-none border-gray-400 focus:border-gray-600 transition p-3 h-40"
-          placeholder="Your comment..."
+          placeholder="Nhận xét của bạn..."
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         ></textarea>
@@ -60,7 +60,7 @@ export default function ReviewsModal({
             {isLoading ? (
               <Spin color="#FFFFFF" height="25px" width="25px" />
             ) : (
-              <>Submit your review</>
+              <>Gửi</>
             )}
           </button>
         </div>

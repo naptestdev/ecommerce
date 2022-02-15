@@ -25,12 +25,12 @@ export default function ReviewsSection({ product, refetchProduct }) {
   return (
     <>
       <div className="bg-white mt-8 p-4 pb-2">
-        <h1 className="text-3xl mb-6">Reviews & Ratings</h1>
+        <h1 className="text-3xl mb-6">Nhận xét & đánh giá</h1>
 
         <div className="bg-[#f4f8fe] flex px-10 py-6 border border-[#dfeafd] gap-8 flex-col md:flex-row">
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-2xl">
-              <span className="text-4xl">{product.ratings}</span> on 5
+              <span className="text-4xl">{product.ratings}</span> trên 5
             </h1>
             <div className="text-2xl">
               <StarRatings value={product.ratings} max={5} />
@@ -45,7 +45,7 @@ export default function ReviewsSection({ product, refetchProduct }) {
                   : ""
               }`}
             >
-              All reviews & ratings
+              Tất cả
             </button>
             {[...new Array(5)].map((_, index) => (
               <button
@@ -57,8 +57,7 @@ export default function ReviewsSection({ product, refetchProduct }) {
                     : ""
                 }`}
               >
-                {index + 1}
-                {index === 0 ? " star" : " stars"}
+                {index + 1} sao
               </button>
             ))}
             <button
@@ -69,7 +68,7 @@ export default function ReviewsSection({ product, refetchProduct }) {
                   : ""
               }`}
             >
-              Has review comment
+              Có nhận xét
             </button>
           </div>
         </div>
@@ -86,9 +85,9 @@ export default function ReviewsSection({ product, refetchProduct }) {
 
             <p className="w-full max-w-lg border-dashed border-b border-gray-600">
               {data?.some((item) => item?.user?._id === currentUser?._id)
-                ? "Edit"
-                : "Write"}{" "}
-              your review
+                ? "Chỉnh sửa"
+                : "Viết"}
+              {" đánh giá của bạn"}
             </p>
           </div>
         ) : (
@@ -100,7 +99,7 @@ export default function ReviewsSection({ product, refetchProduct }) {
             />
 
             <p className="w-full max-w-lg border-dashed border-b border-gray-600">
-              You need to sign in to write a review
+              Hãy đăng nhập để viết đánh giá
             </p>
           </div>
         )}

@@ -8,7 +8,7 @@ export default function Categories() {
 
   return (
     <div className="mx-[4vw]">
-      <h1 className="text-2xl mb-3">Categories</h1>
+      <h1 className="text-2xl mb-3">Danh mục</h1>
       <div className="grid gap-4 grid-cols-sm md:grid-cols-md">
         {!categories || error ? (
           <>

@@ -19,7 +19,7 @@ export default function PrivateRoute({ children }) {
           src="/sign-in.svg"
           alt=""
         />
-        <h1 className="text-2xl">You need to sign in</h1>
+        <h1 className="text-2xl">Bạn cần phải đăng nhập</h1>
       </div>
     );
 

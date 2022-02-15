@@ -30,7 +30,7 @@ export default function SignUp({ setView, setAlertText, setIsAlertOpened }) {
       .then((res) => {
         console.log(res.data);
         setIsAlertOpened(true);
-        setAlertText("Account created successfully! Please verify your email");
+        setAlertText("Tài khoản đã được tạo. Hãy xác nhận email của bạn!");
         setView("signIn");
         setLoading(false);
       })
@@ -55,7 +55,7 @@ export default function SignUp({ setView, setAlertText, setIsAlertOpened }) {
         onSubmit={handleSubmit(handleFormSubmit)}
         className="flex flex-col justify-start items-stretch gap-1 px-5 py-10 w-full h-full"
       >
-        <h1 className="text-center text-2xl mb-4">Sign Up</h1>
+        <h1 className="text-center text-2xl mb-4">Đăng ký</h1>
         <div>
           <input
             className="input-outline w-full"
@@ -65,11 +65,11 @@ export default function SignUp({ setView, setAlertText, setIsAlertOpened }) {
               pattern: {
                 value:
                   /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/gm,
-                message: "Please enter a valid email",
+                message: "Hãy nhập một email đúng",
               },
               required: {
                 value: true,
-                message: "Email is required",
+                message: "Hãy nhập email của bạn",
               },
             })}
           />
@@ -80,7 +80,9 @@ export default function SignUp({ setView, setAlertText, setIsAlertOpened }) {
             className="input-outline w-full"
             type="text"
             placeholder="Username"
-            {...register("username", { required: "Username is required" })}
+            {...register("username", {
+              required: "Hãy nhập tên đăng nhập của bạn",
+            })}
           />
           <p className="input-error">
             {errors.username && errors.username.message}
@@ -94,15 +96,15 @@ export default function SignUp({ setView, setAlertText, setIsAlertOpened }) {
             {...register("password", {
               required: {
                 value: true,
-                message: "Your password is required",
+                message: "Hãy nhập mật khẩu",
               },
               minLength: {
                 value: 6,
-                message: "Password must be more than 6 characters",
+                message: "Mật khẩu phải có ít nhất 6 kí tự",
               },
               maxLength: {
                 value: 18,
-                message: "Password mustn't be more than 18 characters",
+                message: "Mật khẩu phải có không quá 18 kí tự",
               },
             })}
           />
@@ -117,7 +119,7 @@ export default function SignUp({ setView, setAlertText, setIsAlertOpened }) {
             placeholder="Confirm password"
             {...register("confirmPassword", {
               validate: (value) =>
-                value === watch("password") || "Password must match",
+                value === watch("password") || "Xác nhận mật khẩu phải đúng",
             })}
           />
           <p className="input-error">
@@ -128,7 +130,7 @@ export default function SignUp({ setView, setAlertText, setIsAlertOpened }) {
           {loading ? (
             <Spin color="#FFFFFF" height="30px" width="30px" />
           ) : (
-            "Sign Up"
+            "Đăng ký"
           )}
         </button>
 
@@ -136,7 +138,7 @@ export default function SignUp({ setView, setAlertText, setIsAlertOpened }) {
           className="underline-anchor mt-3"
           onClick={() => setView("signIn")}
         >
-          Already have an account? Sign In
+          Đã có tài khoản? Đăng nhập
         </span>
       </form>
     </>

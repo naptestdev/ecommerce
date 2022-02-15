@@ -17,14 +17,14 @@ export default function Address({ setAlertText, setIsAlertOpened }) {
   const verifyUser = useStore((state) => state.verifyUser);
 
   const fields = {
-    fullName: { name: "Full Name" },
+    fullName: { name: "Tên đầy đủ" },
     phoneNumber: {
-      name: "Phone Number",
+      name: "Số điện thoại",
       pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
     },
-    city: { name: "City" },
-    district: { name: "District" },
-    exactAddress: { name: "Exact Address" },
+    city: { name: "Thành phố" },
+    district: { name: "Quận" },
+    exactAddress: { name: "Địa chỉ chính xác" },
   };
 
   const handleFormSubmit = (data) => {
@@ -33,14 +33,14 @@ export default function Address({ setAlertText, setIsAlertOpened }) {
 
       updateAddress(data)
         .then(() => {
-          setAlertText("Address updated successfully!");
+          setAlertText("Đã cập nhật địa chỉ");
           setIsAlertOpened(true);
           verifyUser();
         })
         .catch((err) => {
           console.log(err);
 
-          setAlertText("Failed to update address");
+          setAlertText("Đã có lỗi xảy ra");
           setIsAlertOpened(true);
         })
         .finally(() => setLoading(false));
@@ -49,7 +49,7 @@ export default function Address({ setAlertText, setIsAlertOpened }) {
 
   return (
     <form onSubmit={handleSubmit(handleFormSubmit)}>
-      <h2 className="text-2xl mt-3">Address</h2>
+      <h2 className="text-2xl mt-3">Địa chỉ</h2>
 
       {Object.entries(fields).map(([key, value]) => (
         <div className="flex items-center" key={key}>
@@ -80,7 +80,7 @@ export default function Address({ setAlertText, setIsAlertOpened }) {
           {loading ? (
             <Spin color="#ffffff" width="25px" height="25px" />
           ) : (
-            <>Update address</>
+            <>Cập nhật địa chỉ</>
           )}
         </button>
       </div>

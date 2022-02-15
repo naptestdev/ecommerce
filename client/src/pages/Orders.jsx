@@ -28,7 +28,7 @@ export default function Orders() {
               section === -1 ? "text-primary after:!bg-primary" : ""
             }`}
           >
-            All
+            Tất cả
           </button>
           {statuses.map((status, index) => (
             <button
@@ -48,17 +48,17 @@ export default function Orders() {
             data.filter((item) => item.status === section).length === 0) ? (
             <div className="w-full h-60 bg-white flex flex-col items-center justify-center">
               <img className="w-32 h-32" src="/empty-cart.png" alt="" />
-              <p>No order found</p>
+              <p>Không tìm thấy đơn hàng nào</p>
             </div>
           ) : (
             <table className="table">
               <thead>
                 <tr>
-                  <th>Products</th>
-                  <th>Amount</th>
-                  <th>Ordered At</th>
-                  <th>Status</th>
-                  <th>Actions</th>
+                  <th>Sản phẩm</th>
+                  <th>Số lượng</th>
+                  <th>Đặt vào</th>
+                  <th>Trạng thái</th>
+                  <th>Hành động</th>
                 </tr>
               </thead>
 
@@ -101,7 +101,7 @@ export default function Orders() {
                           to={`/order/${item._id}`}
                           className="text-primary"
                         >
-                          View
+                          Xem
                         </Link>
                       </td>
                     </tr>

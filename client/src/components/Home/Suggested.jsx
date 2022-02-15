@@ -7,7 +7,7 @@ export default function Suggested() {
 
   return (
     <div className="mx-[4vw]">
-      <h1 className="text-2xl my-3">Suggested for you</h1>
+      <h1 className="text-2xl my-3">Gợi ý cho bạn</h1>
       <div
         className="grid gap-4 grid-cols-md md:grid-cols-lg"
         style={{

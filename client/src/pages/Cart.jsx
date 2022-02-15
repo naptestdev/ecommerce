@@ -1,7 +1,8 @@
+import { addresses, resizeImage } from "../shared/constant";
+
 import { Link } from "react-router-dom";
 import Spin from "react-cssfx-loading/lib/Spin";
 import { requestPaymentSession } from "../services/payment";
-import { resizeImage } from "../shared/constant";
 import { useStore } from "../store";
 
 export default function Cart() {
@@ -36,12 +37,12 @@ export default function Cart() {
               src="/empty-cart.png"
               alt=""
             />
-            <h1 className="text-2xl my-4">Your cart is empty</h1>
+            <h1 className="text-2xl my-4">Giỏ hàng của bạn trống</h1>
             <Link
               className="py-2 px-3 bg-primary hover:bg-secondary text-white transition"
               to="/"
             >
-              Continue buying
+              Tiếp tục mua sắm
             </Link>
           </div>
         </div>
@@ -53,9 +54,9 @@ export default function Cart() {
                 <table className="cart-table">
                   <thead>
                     <tr>
-                      <th>Product Detail</th>
-                      <th>Quantity</th>
-                      <th className="px-6">Price</th>
+                      <th>Sản phẩm</th>
+                      <th>Số lượng</th>
+                      <th className="px-6">Giá</th>
                     </tr>
                   </thead>
 
@@ -76,12 +77,12 @@ export default function Cart() {
                             <div>
                               <Link
                                 to={`/product/${item.product._id}`}
-                                className="text-lg lg:text-2xl max-w-[150px] lg:max-w-none overflow-hidden whitespace-nowrap text-ellipsis inline-block"
+                                className="text-lg lg:text-2xl max-w-[150px] lg:max-w-[250px] overflow-hidden whitespace-nowrap text-ellipsis inline-block"
                               >
                                 {item.product.name}
                               </Link>
                               <p className="text-lg text-gray-600">
-                                {item.product.price}₫
+                                {item.product.price.toLocaleString()}₫
                               </p>
                             </div>
                           </div>
@@ -120,7 +121,9 @@ export default function Cart() {
                             </button>
                           </div>
                         </td>
-                        <td className="text-2xl px-6">{item.product.price}₫</td>
+                        <td className="text-2xl px-6">
+                          {item.product.price.toLocaleString()}₫
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -129,12 +132,14 @@ export default function Cart() {
             </div>
             <div className="w-full lg:w-80 bg-white flex-shrink-0 p-7 flex flex-col items-stretch gap-4 text-lg">
               <div className="flex justify-between">
-                <p>Final price</p>
+                <p>Tổng tiền</p>
                 <p className="text-2xl text-primary">
-                  {cart.reduce((result, item) => {
-                    result += item.product.price;
-                    return result;
-                  }, 0)}
+                  {cart
+                    .reduce((result, item) => {
+                      result += item.product.price;
+                      return result;
+                    }, 0)
+                    .toLocaleString()}
                   ₫
                 </p>
               </div>
@@ -143,10 +148,10 @@ export default function Cart() {
 
               <div className="flex flex-col items-stretch">
                 <div className="flex justify-between">
-                  <p>Address</p>
+                  <p>Địa chỉ</p>
 
                   <Link className="text-primary" to="/profile">
-                    {currentUser?.address ? "Edit" : "Add now"}
+                    {currentUser?.address ? "Sửa" : "Thêm"}
                   </Link>
                 </div>
 
@@ -155,12 +160,7 @@ export default function Cart() {
                     {Object.entries(currentUser?.address).map(
                       ([key, value]) => (
                         <div key={key} className="flex justify-between">
-                          <p>
-                            {key
-                              .replace(/([A-Z])/g, (match) => ` ${match}`)
-                              .replace(/^./, (match) => match.toUpperCase())
-                              .trim()}
-                          </p>
+                          <p>{addresses[key]}</p>
                           <p>{value}</p>
                         </div>
                       )
@@ -178,7 +178,7 @@ export default function Cart() {
                   }}
                   className="py-2 px-5 bg-black hover:opacity-80 transition duration-300 text-white text-base disabled:!bg-gray-500 disabled:!opacity-100 disabled:!cursor-default"
                 >
-                  Checkout using VNPay
+                  Thanh toán bằng VNPay
                 </button>
               </div>
             </div>

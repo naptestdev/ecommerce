@@ -18,13 +18,13 @@ export default function Info({ setAlertText, setIsAlertOpened }) {
 
       updateUsername(inputValue.trim())
         .then(() => {
-          setAlertText("Username updated successfully!");
+          setAlertText("Đã đổi tên đăng nhập");
           setIsAlertOpened(true);
         })
         .catch((err) => {
           console.log(err);
 
-          setAlertText("Failed to update username");
+          setAlertText("Đã có lỗi xảy ra");
           setIsAlertOpened(true);
         })
         .finally(() => {
@@ -39,7 +39,7 @@ export default function Info({ setAlertText, setIsAlertOpened }) {
 
   return (
     <form onSubmit={handleFormSubmit}>
-      <h2 className="text-2xl mb-2">Info</h2>
+      <h2 className="text-2xl mb-2">Thông tin</h2>
       <div className="flex items-center">
         <div className="w-[150px] text-gray-500 flex-shrink-0">Email</div>
         <div className="flex-grow">
@@ -47,7 +47,9 @@ export default function Info({ setAlertText, setIsAlertOpened }) {
         </div>
       </div>
       <div className="flex items-center">
-        <div className="w-[150px] text-gray-500 flex-shrink-0">Username</div>
+        <div className="w-[150px] text-gray-500 flex-shrink-0">
+          Tên đăng nhập
+        </div>
         <div className="flex-grow">
           <input
             className="outline-none border px-3 py-1 focus:border-gray-500 transition w-full mt-2"
@@ -65,7 +67,7 @@ export default function Info({ setAlertText, setIsAlertOpened }) {
           {loading ? (
             <Spin color="#ffffff" height="25px" width="25px" />
           ) : (
-            <>Update Info</>
+            <>Cập nhật thông tin</>
           )}
         </button>
       </div>

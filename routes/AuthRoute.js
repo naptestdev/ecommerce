@@ -45,7 +45,7 @@ router.post("/sign-up", async (req, res) => {
     if (existingUser)
       return res.status(400).send({
         errorSection: "email",
-        message: "This email has already been in use",
+        message: "Email đã được sử dụng",
       });
 
     const salt = await bcrypt.genSalt(10);
@@ -79,9 +79,9 @@ router.post("/sign-up", async (req, res) => {
     const mailOptions = {
       from: `E-Commerce Service <${process.env.EMAIL}>`,
       to: email,
-      subject: "Verify your email for E-Commerce",
+      subject: "Xác nhận email của bạn cho eCommerce",
       html: emailVerificationTemplate(username, verifyUrl),
-      text: `Hello ${username}, Click this link to verify your email: ${verifyUrl}`,
+      text: `Xin chào ${username}, Hãy vào liên kết này để xác nhận email của bạn: ${verifyUrl}`,
     };
 
     transporter.sendMail(mailOptions, async (error, info) => {
@@ -92,7 +92,7 @@ router.post("/sign-up", async (req, res) => {
 
         res.status(500).send({
           errorSection: "email",
-          message: "We can't send verification email. Please try again later",
+          message: "Có lỗi trong việc gửi email xác nhận",
         });
       } else {
         res.send({
@@ -108,7 +108,7 @@ router.post("/sign-up", async (req, res) => {
     if (!res.headersSent)
       res.status(500).send({
         errorSection: "email",
-        message: "Something went wrong",
+        message: "Đã có lỗi xảy ra",
       });
   }
 });
@@ -120,7 +120,7 @@ router.post("/sign-in", async (req, res) => {
     if (!existingUser)
       return res.status(404).send({
         errorSection: "email",
-        message: "The email provided isn't connected to any account",
+        message: "Không tìm thấy email",
       });
 
     let passwordCompare = await bcrypt.compare(
@@ -131,13 +131,13 @@ router.post("/sign-in", async (req, res) => {
     if (!passwordCompare)
       return res.status(400).send({
         errorSection: "password",
-        message: "Password is incorrect",
+        message: "Mật khẩu không đúng",
       });
 
     if (!existingUser.emailVerified)
       return res.status(400).send({
         errorSection: "email",
-        message: "Your email hasn't been verified",
+        message: "Email chưa được xác nhận",
       });
 
     const user = {

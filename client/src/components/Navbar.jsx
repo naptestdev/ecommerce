@@ -60,7 +60,7 @@ export default function Navbar() {
               onChange={(e) => setSearchInputValue(e.target.value)}
               className="outline-none w-full h-full pl-4 pr-9 text-black focus:shadow-md transition"
               type="text"
-              placeholder="Search for products..."
+              placeholder="Tìm kiếm sản phẩm, danh mục,..."
             />
             <button
               type="submit"
@@ -81,7 +81,7 @@ export default function Navbar() {
                     setIsOpened(true);
                   }}
                 >
-                  Sign In
+                  Đăng nhập
                 </span>
                 <span
                   className="cursor-pointer"
@@ -90,7 +90,7 @@ export default function Navbar() {
                     setIsOpened(true);
                   }}
                 >
-                  Sign Up
+                  Đăng ký
                 </span>
               </>
             ) : typeof currentUser === "undefined" ? (
@@ -127,7 +127,7 @@ export default function Navbar() {
                         className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
                       >
                         <i className="fas fa-user"></i>
-                        <span className="whitespace-nowrap">Profile</span>
+                        <span className="whitespace-nowrap">Tài khoản</span>
                       </Link>
 
                       <Link
@@ -135,7 +135,7 @@ export default function Navbar() {
                         className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
                       >
                         <i className="fas fa-clipboard-list"></i>
-                        <span className="whitespace-nowrap">Orders</span>
+                        <span className="whitespace-nowrap">Đơn hàng</span>
                       </Link>
 
                       <div
@@ -143,7 +143,7 @@ export default function Navbar() {
                         className="px-3 py-1 flex items-center gap-2 hover:bg-gray-100 transition cursor-pointer"
                       >
                         <i className="fas fa-sign-out-alt"></i>
-                        <span className="whitespace-nowrap">Sign Out</span>
+                        <span className="whitespace-nowrap">Đăng xuất</span>
                       </div>
                     </div>
                   </div>
@@ -197,7 +197,7 @@ export default function Navbar() {
             onChange={(e) => setSearchInputValue(e.target.value)}
             className="outline-none w-full h-full pl-4 pr-9 text-black border focus:border-gray-500 transition"
             type="text"
-            placeholder="Search for products..."
+            placeholder="Tìm kiếm sản phẩm, danh mục,..."
           />
           <button
             type="submit"
@@ -219,7 +219,7 @@ export default function Navbar() {
                   }}
                 >
                   <i className="fas fa-sign-in-alt text-xl"></i>
-                  <span> Sign In</span>
+                  <span> Đăng nhập</span>
                 </button>
               </div>
               <div>
@@ -231,7 +231,7 @@ export default function Navbar() {
                   }}
                 >
                   <i className="fas fa-user-plus text-xl"></i>
-                  <span> Sign Up</span>
+                  <span> Đăng ký</span>
                 </button>
               </div>
             </>
@@ -251,27 +251,27 @@ export default function Navbar() {
               <div>
                 <Link to="/profile">
                   <i className="fas fa-user text-2xl"></i>
-                  <span className="whitespace-nowrap"> Profile</span>
+                  <span className="whitespace-nowrap"> Tài khoản</span>
                 </Link>
               </div>
 
               <div>
                 <Link to="/orders">
                   <i className="fas fa-clipboard-list text-2xl"></i>
-                  <span className="whitespace-nowrap"> Orders</span>
+                  <span className="whitespace-nowrap"> Đơn hàng</span>
                 </Link>
               </div>
 
               <div>
                 <button onClick={handleSignOut}>
                   <i className="fas fa-sign-out-alt text-xl"></i>
-                  <span className="whitespace-nowrap"> Sign Out</span>
+                  <span className="whitespace-nowrap"> Đăng xuất</span>
                 </button>
               </div>
               <div>
                 <Link to="/cart">
                   <i className="fas fa-shopping-cart text-xl"></i>
-                  <span> Cart{!isCartLoading && ` (${cart.length})`}</span>
+                  <span> Giỏ hàng{!isCartLoading && ` (${cart.length})`}</span>
                 </Link>
               </div>
             </>

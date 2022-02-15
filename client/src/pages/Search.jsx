@@ -74,14 +74,14 @@ export default function Search() {
       ) : (
         <div className="px-[4vw] min-h-screen">
           <div className="flex justify-between my-4 flex-wrap">
-            <h1 className="text-3xl">Search result{q ? ` for ${q}` : ""}</h1>
+            <h1 className="text-3xl">Kết quả tìm kiếm{q ? ` cho ${q}` : ""}</h1>
 
             <button
               onClick={() => setIsFilterOpened((prev) => !prev)}
               className="border border-gray-300 hover:border-gray-400 px-3 transition"
             >
               <i className="fas fa-list"></i>
-              <span> Filter</span>
+              <span> Bộ lọc</span>
             </button>
           </div>
 
@@ -91,13 +91,13 @@ export default function Search() {
               className="flex flex-wrap gap-5 my-5"
             >
               <div>
-                <h1 className="font-semibold">Category</h1>
+                <h1 className="font-semibold">Danh mục</h1>
                 <select
                   value={categoryValue}
                   onChange={(e) => setCategoryValue(e.target.value)}
                   className="outline-none p-2 border h-10"
                 >
-                  <option value="">All</option>
+                  <option value="">Tất cả</option>
                   {categories.map((category) => (
                     <option key={category._id} value={category._id}>
                       {category.name}
@@ -107,9 +107,8 @@ export default function Search() {
               </div>
 
               <div>
-                <h1 className="font-semibold">Min Price</h1>
+                <h1 className="font-semibold">Giá thấp nhất</h1>
                 <input
-                  placeholder="Minimum Price"
                   value={minPriceValue}
                   onChange={(e) => setMinPriceValue(Number(e.target.value))}
                   className="outline-none p-2 border h-10"
@@ -118,9 +117,8 @@ export default function Search() {
               </div>
 
               <div>
-                <h1 className="font-semibold">Max Price</h1>
+                <h1 className="font-semibold">Giá cao nhất</h1>
                 <input
-                  placeholder="Maximum Price"
                   value={maxPriceValue}
                   onChange={(e) => setMaxPriceValue(Number(e.target.value))}
                   className="outline-none p-2 border h-10"
@@ -129,7 +127,7 @@ export default function Search() {
               </div>
 
               <div>
-                <h1 className="font-semibold">Minimum Ratings</h1>
+                <h1 className="font-semibold">Đánh giá thấp nhất</h1>
                 <StarChoosing
                   value={minRatingsValue}
                   onChange={setMinRatingsValue}
@@ -142,14 +140,14 @@ export default function Search() {
                   type="submit"
                   className="bg-primary text-white px-3 py-1 hover:brightness-110 transition"
                 >
-                  Apply
+                  Tìm
                 </button>
               </div>
             </form>
           )}
 
           {data.length === 0 ? (
-            <p>No result found</p>
+            <p>Không tìm được kết quả nào</p>
           ) : (
             <div
               className="grid gap-4"
