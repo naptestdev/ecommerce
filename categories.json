@@ -1,57 +1,127 @@
 [
   {
-    "_id": "home-pet-appliances",
-    "name": "Home, Pet & Appliances",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/yn48qtoulwdxeqmylxy7.png"
+    "_id": 11035567,
+    "name": "Thời Trang Nam",
+    "image": "https://cf.shopee.com/file/687f3967b7c2fe6a134a2c11894eea4b"
   },
   {
-    "_id": "women-s-fashion",
-    "name": "Women's Fashion",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097187/category/aduqqyqztmlkywphmulp.png"
+    "_id": 11035639,
+    "name": "Thời Trang Nữ",
+    "image": "https://cf.shopee.com/file/75ea42f9eca124e9cb3cde744c060e4d"
   },
   {
-    "_id": "men-s-fashion",
-    "name": "Men's Fashion",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/git2ld2iussd5iaxecag.png"
+    "_id": 11036030,
+    "name": "Điện Thoại & Phụ Kiện",
+    "image": "https://cf.shopee.com/file/31234a27876fb89cd522d7e3db1ba5ca"
   },
   {
-    "_id": "phones-telecommunications",
-    "name": "Phones & Telecommunications",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/nq8ve8zd1swxtnwr5e3c.png"
+    "_id": 11036194,
+    "name": "Mẹ & Bé",
+    "image": "https://cf.shopee.com/file/099edde1ab31df35bc255912bab54a5e"
   },
   {
-    "_id": "computer-office-security",
-    "name": "Computer, Office & Security",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/ehdeedjjtuydifxibyqy.png"
+    "_id": 11036132,
+    "name": "Thiết Bị Điện Tử",
+    "image": "https://cf.shopee.com/file/978b9e4cb61c611aaaf58664fae133c5"
   },
   {
-    "_id": "consumer-electronics",
-    "name": "Consumer Electronics",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/g9j73x85ncfil1gcc7aw.png"
+    "_id": 11036670,
+    "name": "Nhà Cửa & Đời Sống",
+    "image": "https://cf.shopee.com/file/24b194a695ea59d384768b7b471d563f"
   },
   {
-    "_id": "jewelry-watches",
-    "name": "Jewelry & Watches",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097187/category/zvev93arhsycp4llgbqp.png"
+    "_id": 11035954,
+    "name": "Máy Tính & Laptop",
+    "image": "https://cf.shopee.com/file/c3f3edfaa9f6dafc4825b77d8449999d"
   },
   {
-    "_id": "bags-shoes",
-    "name": "Bags & Shoes",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/huadywsgtkvo18wcwsgl.png"
+    "_id": 11036279,
+    "name": "Sắc Đẹp",
+    "image": "https://cf.shopee.com/file/ef1f336ecc6f97b790d5aae9916dcb72"
   },
   {
-    "_id": "toys-kids-babies",
-    "name": "Toys, Kids & Babies",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097187/category/s3rhvlayqasf3t8ptxjz.png"
+    "_id": 11036101,
+    "name": "Máy Ảnh & Máy Quay Phim",
+    "image": "https://cf.shopee.com/file/ec14dd4fc238e676e43be2a911414d4d"
   },
   {
-    "_id": "beauty-health-hari",
-    "name": "Beauty, Health & Hair",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/fgnh7f8dbqol4zj8zz2f.png"
+    "_id": 11036345,
+    "name": "Sức Khỏe",
+    "image": "https://cf.shopee.com/file/49119e891a44fa135f5f6f5fd4cfc747"
   },
   {
-    "_id": "home-improvement-tools",
-    "name": "Home Improvement & Tools",
-    "image": "https://res.cloudinary.com/shopproj/image/upload/v1638097186/category/gkvqca58y2fxmz0msblt.png"
+    "_id": 11035788,
+    "name": "Đồng Hồ",
+    "image": "https://cf.shopee.com/file/86c294aae72ca1db5f541790f7796260"
+  },
+  {
+    "_id": 11035825,
+    "name": "Giày Dép Nữ",
+    "image": "https://cf.shopee.com/file/48630b7c76a7b62bc070c9e227097847"
+  },
+  {
+    "_id": 11035801,
+    "name": "Giày Dép Nam",
+    "image": "https://cf.shopee.com/file/74ca517e1fa74dc4d974e5d03c3139de"
+  },
+  {
+    "_id": 11035761,
+    "name": "Túi Ví Nữ",
+    "image": "https://cf.shopee.com/file/fa6ada2555e8e51f369718bbc92ccc52"
+  },
+  {
+    "_id": 11036971,
+    "name": "Thiết Bị Điện Gia Dụng",
+    "image": "https://cf.shopee.com/file/7abfbfee3c4844652b4a8245e473d857"
+  },
+  {
+    "_id": 11035853,
+    "name": "Phụ Kiện & Trang Sức Nữ",
+    "image": "https://cf.shopee.com/file/8e71245b9659ea72c1b4e737be5cf42e"
+  },
+  {
+    "_id": 11035478,
+    "name": "Thể Thao & Du Lịch",
+    "image": "https://cf.shopee.com/file/6cb7e633f8b63757463b676bd19a50e4"
+  },
+  {
+    "_id": 11036525,
+    "name": "Bách Hóa Online",
+    "image": "https://cf.shopee.com/file/c432168ee788f903f1ea024487f2c889"
+  },
+  {
+    "_id": 11036793,
+    "name": "Ô Tô & Xe Máy & Xe Đạp",
+    "image": "https://cf.shopee.com/file/3fb459e3449905545701b418e8220334"
+  },
+  {
+    "_id": 11036863,
+    "name": "Nhà Sách Online",
+    "image": "https://cf.shopee.com/file/36013311815c55d303b0e6c62d6a8139"
+  },
+  {
+    "_id": 11035741,
+    "name": "Balo & Túi Ví Nam",
+    "image": "https://cf.shopee.com/file/18fd9d878ad946db2f1bf4e33760c86f"
+  },
+  {
+    "_id": 11036382,
+    "name": "Thời Trang Trẻ Em",
+    "image": "https://cf.shopee.com/file/4540f87aa3cbe99db739f9e8dd2cdaf0"
+  },
+  {
+    "_id": 11036932,
+    "name": "Đồ Chơi",
+    "image": "https://cf.shopee.com/file/ce8f8abc726cafff671d0e5311caa684"
+  },
+  {
+    "_id": 11036624,
+    "name": "Giặt Giũ & Chăm Sóc Nhà Cửa",
+    "image": "https://cf.shopee.com/file/cd8e0d2e6c14c4904058ae20821d0763"
+  },
+  {
+    "_id": 11036478,
+    "name": "Chăm Sóc Thú Cưng",
+    "image": "https://cf.shopee.com/file/cdf21b1bf4bfff257efe29054ecea1ec"
   }
 ]
