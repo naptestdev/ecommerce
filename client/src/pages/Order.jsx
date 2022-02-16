@@ -1,10 +1,10 @@
 import { Link, useParams } from "react-router-dom";
+import { addresses, resizeImage } from "../shared/constant";
 import { getOrderById, updateOrderStatus } from "../services/orders";
 
 import Alert from "../components/Alert";
 import Layout from "../components/Layout";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { resizeImage } from "../shared/constant";
 import { statuses } from "../shared/constant";
 import useSWR from "swr";
 import { useState } from "react";
@@ -74,10 +74,7 @@ export default function Order() {
                     </div>
 
                     <p className="text-xl">
-                      $
-                      {Math.round(
-                        (item.product.price - item.product.discount) * 10
-                      ) / 10}
+                      {item.product.price.toLocaleString()}₫
                     </p>
                   </div>
                 ))}
@@ -95,7 +92,7 @@ export default function Order() {
 
                 {Object.entries(data.address).map(([key, value]) => (
                   <div key={key} className="flex justify-between">
-                    <p>{statuses[key]}</p>
+                    <p>{addresses[key]}</p>
 
                     <p>{value}</p>
                   </div>

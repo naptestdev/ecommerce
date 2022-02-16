@@ -1,29 +1,35 @@
 const express = require("express");
 const router = express.Router();
 const { verifyJWT } = require("../controllers/verifyJWT");
-const AdminModel = require("../models/AdminModel");
 const jwt = require("jsonwebtoken");
+
+// Only for demo
+const USERS = [
+  {
+    username: "admin",
+    password: "admin",
+  },
+];
 
 router.post("/sign-in", async (req, res) => {
   try {
-    const existingUser = await AdminModel.findOne({
-      username: req.body.username,
-    });
+    const existingUser = USERS.find(
+      (user) => user.username === req.body.username
+    );
 
     if (!existingUser)
       return res.status(404).send({
         errorSection: "username",
-        message: "The username provided isn't connected to any account",
+        message: "Tên đăng nhập không tìm thấy",
       });
 
     if (req.body.password !== existingUser.password)
       return res.status(400).send({
         errorSection: "password",
-        message: "Password is incorrect",
+        message: "Sai mật khẩu",
       });
 
     const user = {
-      _id: existingUser._id,
       username: existingUser.username,
     };
 
@@ -40,17 +46,11 @@ router.post("/sign-in", async (req, res) => {
 
 router.post("/verify-token", verifyJWT, async (req, res) => {
   try {
-    const existingUser = await AdminModel.findOne({
-      username: req.user.username,
-    });
-
-    if (existingUser?._id?.toString() !== req.user?._id)
-      return res.status(403).send({
-        message: "Invalid user info",
-      });
+    const existingUser = USERS.find(
+      (user) => user.username === req.user.username
+    );
 
     const user = {
-      _id: existingUser._id,
       username: existingUser.username,
     };
 

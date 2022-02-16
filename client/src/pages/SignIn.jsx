@@ -66,16 +66,18 @@ export default function SignIn() {
         onSubmit={handleSubmit(handleFormSubmit)}
         className="flex flex-col justify-start items-stretch gap-1 px-5 py-10 w-full max-w-[350px] h-max bg-white"
       >
-        <h1 className="text-center text-2xl mb-4">E-Commerce Admin Login</h1>
+        <h1 className="text-center text-2xl mb-4">
+          Đăng nhập vào trang quản trị
+        </h1>
         <div>
           <input
             className="input-outline w-full"
             type="text"
-            placeholder="Username"
+            placeholder="Tên đăng nhập"
             {...register("username", {
               required: {
                 value: true,
-                message: "Username is required",
+                message: "Hãy nhập tên đăng nhập của bạn",
               },
             })}
           />
@@ -87,11 +89,11 @@ export default function SignIn() {
           <input
             className="input-outline w-full"
             type="password"
-            placeholder="Password"
+            placeholder="Mật khẩu"
             {...register("password", {
               required: {
                 value: true,
-                message: "Your password is required",
+                message: "Hãy nhập mật khẩu của bạn",
               },
             })}
           />
@@ -103,13 +105,9 @@ export default function SignIn() {
           {loading ? (
             <Spin color="#FFFFFF" height="30px" width="30px" />
           ) : (
-            "Sign In"
+            "Đăng nhập"
           )}
         </button>
-
-        <p className="text-gray-500">
-          Not an admin? Contact the project owner.
-        </p>
       </form>
     </div>
   );

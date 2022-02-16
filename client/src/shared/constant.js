@@ -20,6 +20,14 @@ export const statuses = [
   },
 ];
 
+export const addresses = {
+  fullName: "Tên đầy đủ",
+  phoneNumber: "Số điện thoại",
+  city: "Thành phố",
+  district: "Quận",
+  exactAddress: "Địa chỉ chính xác",
+};
+
 export const resizeImage = (url, width = 0, height = 0) =>
   `https://images.weserv.nl/?url=${encodeURIComponent(url)}&w=${
     width || ""
