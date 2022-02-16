@@ -83,7 +83,9 @@ export default function Order() {
               <div className="flex justify-end my-8">
                 <h1>
                   <span className="text-2xl">Tổng số tiền: </span>
-                  <span className="text-3xl text-primary">${data.amount}</span>
+                  <span className="text-3xl text-primary">
+                    {data.amount.toLocaleString()}₫
+                  </span>
                 </h1>
               </div>
 

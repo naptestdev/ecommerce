@@ -69,7 +69,7 @@ export default function Orders() {
                           ))}
                         </td>
 
-                        <td>${order.amount}</td>
+                        <td>{order.amount.toLocaleString()}₫</td>
 
                         <td>{new Date(order.createdAt).toLocaleString()}</td>
 
