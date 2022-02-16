@@ -1,4 +1,5 @@
 import Alert from "../Alert";
+import ForgotPassword from "./ForgotPassword";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import { useState } from "react";
@@ -20,7 +21,9 @@ export default function AuthModal({ isOpened, setIsOpened, view, setView }) {
               <p className="text-xl">
                 {view === "signIn"
                   ? "Đăng nhập vào tài khoản của bạn để bắt đầu mua hàng"
-                  : "Hãy đăng ký tài khoản của bạn"}
+                  : view === "signUp"
+                  ? "Hãy đăng ký tài khoản của bạn"
+                  : "Chúng tôi sẽ gửi email để giúp bạn khôi phục mật khẩu"}
               </p>
             </div>
             <img
@@ -32,8 +35,14 @@ export default function AuthModal({ isOpened, setIsOpened, view, setView }) {
           <div className="w-screen max-w-xs md:w-[370px] md:max-w-none h-full bg-white">
             {view === "signIn" ? (
               <SignIn setView={setView} setIsOpened={setIsOpened} />
-            ) : (
+            ) : view === "signUp" ? (
               <SignUp
+                setView={setView}
+                setAlertText={setAlertText}
+                setIsAlertOpened={setIsAlertOpened}
+              />
+            ) : (
+              <ForgotPassword
                 setView={setView}
                 setAlertText={setAlertText}
                 setIsAlertOpened={setIsAlertOpened}

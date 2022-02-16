@@ -264,4 +264,125 @@ router.post("/change-password", verifyJWT, async (req, res) => {
   }
 });
 
+router.post("/forgot-password", async (req, res) => {
+  try {
+    const { email } = req.body;
+    if (!email) res.status(400).send({ message: "Email chưa được cung cấp" });
+
+    const existingUser = await AuthModel.findOne({ email });
+
+    if (!existingUser)
+      return res.status(400).send({
+        message: "Email không tồn tại",
+      });
+
+    const secret = existingUser.password + process.env.JWT_SECRET_TOKEN;
+    const payload = {
+      id: existingUser._id,
+      email,
+    };
+
+    const token = jwt.sign(payload, secret, { expiresIn: "15m" });
+
+    const forgotPassURL = `${req.protocol}://${req.get(
+      "host"
+    )}/api/auth/reset-password?email=${email}&token=${token}`;
+
+    res.sendStatus(200);
+
+    const accessToken = await oauth2Client.getAccessToken();
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: process.env.EMAIL,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN,
+        accessToken: accessToken,
+      },
+    });
+
+    const mailOptions = {
+      from: `E-Commerce Service <${process.env.EMAIL}>`,
+      to: email,
+      subject: "Khôi phục mật khẩu của bạn cho E-Commerce",
+      html: `Xin chào ${existingUser.username}. Hãy vào liên kết này để khôi phục mật khẩu của bạn: <a href="${forgotPassURL}" target="_blank">Khôi phục</a> (Liên kết có hiệu lực trong 15 phút)`,
+      text: `Xin chào ${existingUser.username}. Hãy vào liên kết này để khôi phục mật khẩu của bạn: ${forgotPassURL} (Liên kết có hiệu lực trong 15 phút)`,
+    };
+
+    transporter.sendMail(mailOptions, async (error) => {
+      if (error) {
+        console.log(error);
+      }
+    });
+  } catch (error) {
+    console.log(error);
+    if (!res.headersSent) res.sendStatus(500);
+  }
+});
+
+router.get("/reset-password", async (req, res) => {
+  try {
+    const { email, token } = req.query;
+    if (!email || !token) return res.sendStatus(400);
+
+    const existingUser = await AuthModel.findOne({ email });
+
+    if (!existingUser) return res.status(400).send("Email không tồn tại");
+
+    const secret = existingUser.password + process.env.JWT_SECRET_TOKEN;
+
+    try {
+      jwt.verify(token, secret);
+    } catch (error) {
+      res.status(400).send("Token không hợp lệ");
+    }
+
+    res.sendFile(path.resolve(__dirname, "..", "views", "ResetPassword.html"));
+  } catch (error) {
+    console.log(error);
+    if (!res.headersSent) res.sendStatus(500);
+  }
+});
+
+router.post("/reset-password", async (req, res) => {
+  try {
+    const { email, token } = req.query;
+    const { password } = req.body;
+
+    if (!email || !token || !password) return res.sendStatus(400);
+
+    const existingUser = await AuthModel.findOne({ email });
+
+    if (!existingUser) return res.status(400).send("Email không tồn tại");
+
+    const secret = existingUser.password + process.env.JWT_SECRET_TOKEN;
+
+    try {
+      jwt.verify(token, secret);
+    } catch (error) {
+      res.status(400).send("Token không hợp lệ");
+    }
+
+    const salt = await bcrypt.genSalt(10);
+    const hashed = await bcrypt.hash(password, salt);
+
+    await AuthModel.findOneAndUpdate(
+      {
+        email,
+      },
+      {
+        password: hashed,
+      }
+    );
+
+    res.send("Mật khẩu đã được đổi");
+  } catch (error) {
+    console.log(error);
+    if (!res.headersSent) res.sendStatus(500);
+  }
+});
+
 module.exports = router;

@@ -14,7 +14,9 @@ const ReviewsRoute = require("./routes/ReviewsRoute");
 
 if (process.env.NODE_ENV !== "production")
   app.use(cors({ origin: true, credentials: true }));
+
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.enable("trust proxy");
 

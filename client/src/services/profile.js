@@ -8,3 +8,6 @@ export const updateAddress = async (body) =>
 
 export const changePassword = async (oldPassword, newPassword) =>
   (await axios.post("auth/change-password", { oldPassword, newPassword })).data;
+
+export const forgotPassword = async (email) =>
+  (await axios.post("auth/forgot-password", { email })).data;

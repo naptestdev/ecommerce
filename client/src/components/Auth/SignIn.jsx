@@ -104,6 +104,12 @@ export default function SignIn({ setView, setIsOpened }) {
       <span className="underline-anchor mt-3" onClick={() => setView("signUp")}>
         Chưa có tài khoản? Đăng ký
       </span>
+      <span
+        className="underline-anchor"
+        onClick={() => setView("forgotPassword")}
+      >
+        Bạn quên mật khẩu?
+      </span>
     </form>
   );
 }
