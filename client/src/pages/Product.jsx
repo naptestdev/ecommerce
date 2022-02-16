@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 import Alert from "../components/Alert";
 import NextArrow from "../components/Slider/NextArrow";
@@ -27,8 +27,6 @@ export default function Product() {
   const [addCartLoading, setAddCartLoading] = useState(false);
   const [alertText, setAlertText] = useState("");
   const [isAlertOpened, setIsAlertOpened] = useState(false);
-
-  const navigate = useNavigate();
 
   const currentUser = useStore((state) => state.currentUser);
 
@@ -154,25 +152,26 @@ export default function Product() {
               <button
                 disabled={addCartLoading}
                 onClick={() => {
-                  if (!currentUser)
-                    return navigate(
-                      `/sign-in?redirect=${encodeURIComponent(
-                        `/product/${id}`
-                      )}`
-                    );
-                  setAddCartLoading(true);
-                  addCartItem(product._id, quantity)
-                    .then(() => {
-                      setAlertText(`Đã thêm ${quantity} sản phẩm vào giỏ hàng`);
-                      setIsAlertOpened(true);
-                    })
-                    .catch((err) => {
-                      console.log(err);
+                  if (!currentUser) {
+                    setAlertText("Hãy đăng nhập để mua hàng");
+                    setIsAlertOpened(true);
+                  } else {
+                    setAddCartLoading(true);
+                    addCartItem(product._id, quantity)
+                      .then(() => {
+                        setAlertText(
+                          `Đã thêm ${quantity} sản phẩm vào giỏ hàng`
+                        );
+                        setIsAlertOpened(true);
+                      })
+                      .catch((err) => {
+                        console.log(err);
 
-                      setAlertText("Có lỗi khi thêm vào giỏ hàng");
-                      setIsAlertOpened(true);
-                    })
-                    .finally(() => setAddCartLoading(false));
+                        setAlertText("Có lỗi khi thêm vào giỏ hàng");
+                        setIsAlertOpened(true);
+                      })
+                      .finally(() => setAddCartLoading(false));
+                  }
                 }}
                 className="px-4 py-3 bg-[#e2edff] text-primary flex items-center gap-2 hover:bg-[#d5e5ff] transition disabled:brightness-90 disabled:!cursor-default"
               >
@@ -185,24 +184,23 @@ export default function Product() {
               </button>
               <button
                 onClick={() => {
-                  if (!currentUser)
-                    return navigate(
-                      `/sign-in?redirect=${encodeURIComponent(
-                        `/product/${id}`
-                      )}`
-                    );
-                  setAddCartLoading(true);
-                  addCartItem(product._id, quantity)
-                    .then(() => {
-                      navigate("/cart");
-                    })
-                    .catch((err) => {
-                      console.log(err);
+                  if (!currentUser) {
+                    setAlertText("Hãy đăng nhập để mua hàng");
+                    setIsAlertOpened(true);
+                  } else {
+                    setAddCartLoading(true);
+                    addCartItem(product._id, quantity)
+                      .then(() => {
+                        navigate("/cart");
+                      })
+                      .catch((err) => {
+                        console.log(err);
 
-                      setAlertText("Có lỗi khi thêm vào giỏ hàng");
-                      setIsAlertOpened(true);
-                    })
-                    .finally(() => setAddCartLoading(false));
+                        setAlertText("Có lỗi khi thêm vào giỏ hàng");
+                        setIsAlertOpened(true);
+                      })
+                      .finally(() => setAddCartLoading(false));
+                  }
                 }}
                 disabled={addCartLoading}
                 className="px-4 py-3 bg-primary text-white flex items-center gap-2 hover:bg-secondary transition disabled:brightness-90 disabled:!cursor-default"
