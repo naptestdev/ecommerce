@@ -7,6 +7,7 @@ import Cart from "./pages/Cart";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import NotFound from "./pages/NotFound";
 import Order from "./pages/Order";
 import Orders from "./pages/Orders";
 import PrivateRoute from "./components/PrivateRoute";
@@ -81,6 +82,7 @@ export default function App() {
             </PrivateRoute>
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
