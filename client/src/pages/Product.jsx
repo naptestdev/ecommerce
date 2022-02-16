@@ -30,6 +30,8 @@ export default function Product() {
 
   const navigate = useNavigate();
 
+  const currentUser = useStore((state) => state.currentUser);
+
   if (!product || error)
     return (
       <div className="min-h-screen flex justify-center items-center bg-bg">
@@ -152,6 +154,12 @@ export default function Product() {
               <button
                 disabled={addCartLoading}
                 onClick={() => {
+                  if (!currentUser)
+                    return navigate(
+                      `/sign-in?redirect=${encodeURIComponent(
+                        `/product/${id}`
+                      )}`
+                    );
                   setAddCartLoading(true);
                   addCartItem(product._id, quantity)
                     .then(() => {
@@ -177,6 +185,12 @@ export default function Product() {
               </button>
               <button
                 onClick={() => {
+                  if (!currentUser)
+                    return navigate(
+                      `/sign-in?redirect=${encodeURIComponent(
+                        `/product/${id}`
+                      )}`
+                    );
                   setAddCartLoading(true);
                   addCartItem(product._id, quantity)
                     .then(() => {
