@@ -1,6 +1,6 @@
 import ExportDropdown from "../ExportDropdown";
 import { avatarAPI } from "../../shared/constant";
-import { deleteUser } from "../../services/api/users";
+import { deleteUser } from "../../services/users";
 
 export default function UsersTable({ data, refetch }) {
   const handleDeleteUser = (id) => {
@@ -12,7 +12,7 @@ export default function UsersTable({ data, refetch }) {
   return (
     <div className="mx-[4vw]">
       <div className="flex justify-between my-5">
-        <h1 className="text-2xl">All Users</h1>
+        <h1 className="text-2xl">Tất cả người dùng</h1>
 
         <ExportDropdown type="users" />
       </div>
@@ -21,12 +21,12 @@ export default function UsersTable({ data, refetch }) {
         <table className="table overflow-x-auto">
           <thead>
             <tr>
-              <th>User ID</th>
-              <th>Username</th>
+              <th>ID người dùng</th>
+              <th>Tên đăng nhập</th>
               <th>Email</th>
-              <th>Email verified</th>
-              <th>Creation Date</th>
-              <th>Actions</th>
+              <th>Email đã xác nhận</th>
+              <th>Tạo vào lúc</th>
+              <th>Hành động</th>
             </tr>
           </thead>
 
@@ -43,14 +43,14 @@ export default function UsersTable({ data, refetch }) {
                   <span>{user.username}</span>
                 </td>
                 <td>{user.email}</td>
-                <td>{user.emailVerified ? "Yes" : "No"}</td>
+                <td>{user.emailVerified ? "Có" : "Không"}</td>
                 <td>{new Date(user.createdAt).toLocaleString()}</td>
                 <td>
                   <button
                     onClick={() => handleDeleteUser(user._id)}
                     className="text-red-500"
                   >
-                    Delete
+                    Xoá
                   </button>
                 </td>
               </tr>

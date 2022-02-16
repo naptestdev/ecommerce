@@ -1,4 +1,4 @@
-import axios from "../axios";
+import axios from "../shared/axios";
 
 export const getTotalSales = async () =>
   (await axios.get("home/total-sales")).data;

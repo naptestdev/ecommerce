@@ -1,10 +1,10 @@
 import { Link, useParams } from "react-router-dom";
-import { getOrderById, updateOrderStatus } from "../services/api/orders";
+import { getOrderById, updateOrderStatus } from "../services/orders";
 
 import Alert from "../components/Alert";
 import Layout from "../components/Layout";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { resizeImage } from "../services/image";
+import { resizeImage } from "../shared/constant";
 import { statuses } from "../shared/constant";
 import useSWR from "swr";
 import { useState } from "react";
@@ -29,7 +29,7 @@ export default function Order() {
         {error ? (
           <div className="flex-grow flex flex-col justify-center items-center gap-3">
             <img className="w-36 h-36 object-cover" src="/error.png" alt="" />
-            <p className="text-2xl">Something went wrong</p>
+            <p className="text-2xl">Có lỗi xảy ra</p>
           </div>
         ) : !data ? (
           <div className="flex-grow flex justify-center items-center">
@@ -39,7 +39,7 @@ export default function Order() {
           <div className="flex justify-center">
             <div className="w-full max-w-[800px] bg-white p-6 my-6">
               <div className="flex flex-col md:flex-row justify-between my-6">
-                <h1 className="text-xl">Order: {id}</h1>
+                <h1 className="text-xl">Mã đơn hàng: {id}</h1>
 
                 <select
                   value={data.status}
@@ -85,22 +85,17 @@ export default function Order() {
 
               <div className="flex justify-end my-8">
                 <h1>
-                  <span className="text-2xl">Total amount: </span>
+                  <span className="text-2xl">Tổng số tiền: </span>
                   <span className="text-3xl text-primary">${data.amount}</span>
                 </h1>
               </div>
 
               <div>
-                <h1 className="text-2xl">User's address</h1>
+                <h1 className="text-2xl">Địa chỉ người dùng</h1>
 
                 {Object.entries(data.address).map(([key, value]) => (
                   <div key={key} className="flex justify-between">
-                    <p>
-                      {key
-                        .replace(/([A-Z])/g, (match) => ` ${match}`)
-                        .replace(/^./, (match) => match.toUpperCase())
-                        .trim()}
-                    </p>
+                    <p>{statuses[key]}</p>
 
                     <p>{value}</p>
                   </div>

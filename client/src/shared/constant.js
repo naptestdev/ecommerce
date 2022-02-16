@@ -3,19 +3,24 @@ export const avatarAPI = (username) =>
 
 export const statuses = [
   {
-    name: "Pending",
+    name: "Đang chờ",
     color: "#1D90FF",
   },
   {
-    name: "Delivering",
+    name: "Vận chuyển",
     color: "#5E35B1",
   },
   {
-    name: "Completed",
+    name: "Hoàn thành",
     color: "#198754",
   },
   {
-    name: "Canceled",
+    name: "Đã huỷ",
     color: "#ff0000",
   },
 ];
+
+export const resizeImage = (url, width = 0, height = 0) =>
+  `https://images.weserv.nl/?url=${encodeURIComponent(url)}&w=${
+    width || ""
+  }&h=${height || ""}&fit=outside`;

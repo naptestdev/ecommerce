@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Skeleton from "../Skeleton";
 import { avatarAPI } from "../../shared/constant";
-import { getRecentUsers } from "../../services/api/home";
+import { getRecentUsers } from "../../services/home";
 import useSWR from "swr";
 
 export default function RecentUsers() {
@@ -9,7 +9,7 @@ export default function RecentUsers() {
 
   return (
     <div className="bg-white shadow p-4 md:h-[350px]">
-      <h1 className="text-2xl mb-3">New Users</h1>
+      <h1 className="text-2xl mb-3">Người dùng mới</h1>
 
       {data ? (
         <div className="flex flex-col items-stretch gap-3">
@@ -31,7 +31,7 @@ export default function RecentUsers() {
                 to="/users"
                 className="flex-shrink-0 flex items-center gap-1 text-primary"
               >
-                <span>View</span>
+                <span>Xem</span>
                 <i className="fas fa-arrow-right"></i>
               </Link>
             </div>

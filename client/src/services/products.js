@@ -1,4 +1,4 @@
-import axios from "../axios";
+import axios from "../shared/axios";
 
 export const getCategories = async () =>
   (await axios.get("products/categories")).data;

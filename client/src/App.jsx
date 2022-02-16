@@ -12,7 +12,7 @@ import Products from "./pages/Products";
 import ProductsList from "./components/Products/ProductsList";
 import SignIn from "./pages/SignIn";
 import Users from "./pages/Users";
-import axios from "./services/axios";
+import axios from "./shared/axios";
 import { useEffect } from "react";
 import { useStore } from "./store";
 

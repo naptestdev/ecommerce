@@ -1,10 +1,10 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import ExportDropdown from "../components/ExportDropdown";
 import Layout from "../components/Layout";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { getOrders } from "../services/api/orders";
-import { resizeImage } from "../services/image";
+import { getOrders } from "../services/orders";
+import { resizeImage } from "../shared/constant";
 import { statuses } from "../shared/constant";
 import useSWR from "swr";
 
@@ -14,6 +14,8 @@ export default function Orders() {
 
   const page = Number(queryParams.get("page")) || 1;
 
+  const navigate = useNavigate();
+
   const { data, error } = useSWR(`orders-page-${page}`, () => getOrders(page));
 
   return (
@@ -21,12 +23,12 @@ export default function Orders() {
       {error ? (
         <div className="flex-grow flex flex-col justify-center items-center gap-3">
           <img className="w-36 h-36 object-cover" src="/error.png" alt="" />
-          <p className="text-2xl">Something went wrong</p>
+          <p className="text-2xl">Có lỗi xảy ra</p>
         </div>
       ) : (
         <div className="mx-[4vw]">
           <div className="flex justify-between my-5">
-            <h1 className="text-2xl">Orders List</h1>
+            <h1 className="text-2xl">Danh sách đơn hàng</h1>
 
             <ExportDropdown type="orders" />
           </div>
@@ -41,11 +43,11 @@ export default function Orders() {
                 <table className="table">
                   <thead>
                     <tr>
-                      <th>Products</th>
-                      <th>Amount</th>
-                      <th>Ordered At</th>
-                      <th>Status</th>
-                      <th>Actions</th>
+                      <th>Sản phẩm</th>
+                      <th>Số tiền</th>
+                      <th>Đặt vào</th>
+                      <th>Trạng thái</th>
+                      <th>Hành động</th>
                     </tr>
                   </thead>
 
@@ -88,7 +90,7 @@ export default function Orders() {
                             to={`/orders/${order._id}`}
                             className="text-primary"
                           >
-                            View
+                            Xem
                           </Link>
                         </td>
                       </tr>
@@ -98,10 +100,10 @@ export default function Orders() {
               </div>
 
               <div className="flex justify-end my-5 gap-3 items-center pr-6">
-                <p>Pages</p>
+                <p>Trang số</p>
 
                 {data.page > 1 ? (
-                  <Link to={`/products?page=${data.page - 1}`}>
+                  <Link to={`/orders?page=${data.page - 1}`}>
                     <i className="fas fa-chevron-left"></i>
                   </Link>
                 ) : (
@@ -111,11 +113,29 @@ export default function Orders() {
                 )}
 
                 <p>
-                  {data.page} / {data.totalPage}
+                  <input
+                    onKeyPress={(e) => {
+                      if (e.key === "Enter") {
+                        const page = Number(e.target.value);
+                        if (
+                          !isNaN(page) &&
+                          page >= 1 &&
+                          page <= data.totalPage
+                        ) {
+                          navigate(`/orders?page=${page}`);
+                        }
+                      }
+                    }}
+                    style={{ width: String(data.totalPage).length * 10 }}
+                    className="outline-none bg-transparent inline"
+                    defaultValue={data.page}
+                    placeholder={data.page}
+                  />{" "}
+                  / {data.totalPage}
                 </p>
 
                 {data.page < data.totalPage ? (
-                  <Link to={`/products?page=${data.page + 1}`}>
+                  <Link to={`/orders?page=${data.page + 1}`}>
                     <i className="fas fa-chevron-right"></i>
                   </Link>
                 ) : (

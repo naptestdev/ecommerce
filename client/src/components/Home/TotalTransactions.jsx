@@ -1,5 +1,5 @@
 import Skeleton from "../Skeleton";
-import { getTotalTransactions } from "../../services/api/home";
+import { getTotalTransactions } from "../../services/home";
 import useSWR from "swr";
 
 export default function TotalTransactions() {
@@ -9,7 +9,7 @@ export default function TotalTransactions() {
 
   return (
     <div className="flex flex-col gap-3 p-5 bg-white shadow">
-      <p className="text-lg">Total Transactions</p>
+      <p className="text-lg">Tổng số giao dịch</p>
       {!data || error ? (
         <>
           <Skeleton className="w-[50%] h-8" />
@@ -18,13 +18,11 @@ export default function TotalTransactions() {
       ) : (
         <>
           <div className="flex items-center gap-2">
-            <p className="text-3xl font-semibold">
-              {data.count} order{data.count > 1 ? "s" : ""}
-            </p>
+            <p className="text-3xl font-semibold">{data.count} giao dịch</p>
 
             <i className="fas fa-arrow-up text-green-500"></i>
           </div>
-          <p className="text-gray-500">Compared to last month</p>
+          <p className="text-gray-500">Tăng so với tháng trước</p>
         </>
       )}
     </div>

@@ -1,5 +1,5 @@
 import ProductEditor from "../components/Products/ProductEditor";
-import { createProduct } from "../services/api/products";
+import { createProduct } from "../services/products";
 import { useNavigate } from "react-router-dom";
 
 export default function NewProduct({ categories }) {

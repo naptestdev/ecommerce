@@ -1,4 +1,4 @@
-import axios from "../axios";
+import axios from "../shared/axios";
 
 export const getAllUsers = async () => (await axios.get("users/all")).data;
 

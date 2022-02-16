@@ -69,8 +69,8 @@ router.post("/update/:id", verifyJWT, async (req, res) => {
     const updateObj = {
       name,
       description,
-      price,
-      discount,
+      price: price - discount,
+      originalPrice: price,
       stock,
       category,
       images,
@@ -93,8 +93,8 @@ router.post("/create", verifyJWT, async (req, res) => {
     const createObj = {
       name,
       description,
-      price,
-      discount,
+      price: price - discount,
+      originalPrice: price,
       stock,
       category,
       images,

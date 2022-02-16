@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import ProductsList from "../components/Products/ProductsList";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { getCategories } from "../services/api/products";
+import { getCategories } from "../services/products";
 import useSWR from "swr";
 
 export default function Products({ component: Component }) {

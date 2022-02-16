@@ -32,7 +32,7 @@ app.use("/api/orders", OrderRoute);
 app.use("/api/export", ExportRoute);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/dist", { cacheControl: true, maxAge: 99999 }));
+  app.use(express.static("client/dist", { cacheControl: false }));
 
   app.get("*", (req, res) => {
     res.setHeader("Cache-Control", "no-cache");

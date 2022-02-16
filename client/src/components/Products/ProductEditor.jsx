@@ -30,13 +30,13 @@ export default function ProductEditor({ categories, data = null, handler }) {
       className="mx-[4vw]"
     >
       <h1 className="text-2xl my-6">
-        {data ? `Edit Product: ${data._id}` : "New Product"}
+        {data ? `Chỉnh sửa sản phẩm: ${data._id}` : "Tạo sản phẩm mới"}
       </h1>
 
       <div className="flex gap-10 flex-col md:flex-row">
         <div className="flex-1 flex flex-col items-stretch">
           <div className="flex flex-col items-stretch">
-            <p>Name</p>
+            <p>Tên</p>
             <input
               className="input-outline"
               type="text"
@@ -44,7 +44,7 @@ export default function ProductEditor({ categories, data = null, handler }) {
               {...register("name", {
                 required: {
                   value: true,
-                  message: "Please provide a product name",
+                  message: "Hãy điền tên sản phẩm",
                 },
                 value: data?.name || "",
               })}
@@ -55,14 +55,14 @@ export default function ProductEditor({ categories, data = null, handler }) {
           </div>
 
           <div className="flex flex-col items-stretch">
-            <p>Description</p>
+            <p>Mô tả</p>
             <textarea
               className="input-outline resize-none h-24"
               placeholder={data?.description || ""}
               {...register("description", {
                 required: {
                   value: true,
-                  message: "Product description is required",
+                  message: "Hãy điền mô tả sản phẩm",
                 },
                 value: data?.description || "",
               })}
@@ -73,18 +73,19 @@ export default function ProductEditor({ categories, data = null, handler }) {
           </div>
 
           <div className="flex flex-col items-stretch">
-            <p>Price</p>
+            <p>Giá tiền</p>
             <input
               type="number"
               className="input-outline resize-none"
               placeholder={data?.price || ""}
-              step={0.1}
+              step={1000}
               {...register("price", {
                 required: {
                   value: true,
-                  message: "Enter the product price",
+                  message: "Hãy điền giá tiền sản phẩm",
                 },
-                validate: (value) => Number(value) > 0 || "Invalid price",
+                validate: (value) =>
+                  Number(value) > 0 || "Giá tiền không hợp lệ",
                 value: data?.price || "",
               })}
             />
@@ -94,21 +95,21 @@ export default function ProductEditor({ categories, data = null, handler }) {
           </div>
 
           <div className="flex flex-col items-stretch">
-            <p>Discount</p>
+            <p>Giảm giá</p>
             <input
               type="number"
               className="input-outline resize-none"
               placeholder={data?.discount || ""}
-              step={0.1}
+              step={1000}
               {...register("discount", {
                 required: {
                   value: true,
-                  message: "Enter the discount value",
+                  message: "Hãy điền số tiền giảm giá của sản phẩm",
                 },
                 validate: (value) =>
                   (Number(value) > 0 &&
                     Number(value) < Number(watch("price"))) ||
-                  "Invalid discount",
+                  "Số tiền giảm giá không hợp lệ",
                 value: data?.discount || "",
               })}
             />
@@ -118,7 +119,7 @@ export default function ProductEditor({ categories, data = null, handler }) {
           </div>
 
           <div className="flex flex-col items-stretch">
-            <p>Stock</p>
+            <p>Số hàng tồn kho</p>
             <input
               type="number"
               className="input-outline resize-none"
@@ -126,9 +127,10 @@ export default function ProductEditor({ categories, data = null, handler }) {
               {...register("stock", {
                 required: {
                   value: true,
-                  message: "How many items left in stock?",
+                  message: "Hãy điền số sản phẩm còn tồn kho",
                 },
-                validate: (value) => Number(value) > 0 || "Invalid price",
+                validate: (value) =>
+                  Number(value) > 0 || "Số hàng tồn kho không hợp lệ",
                 value: data?.stock || "",
               })}
             />
@@ -138,7 +140,7 @@ export default function ProductEditor({ categories, data = null, handler }) {
           </div>
 
           <div className="flex flex-col items-stretch">
-            <p>Category</p>
+            <p>Danh mục</p>
 
             <select
               className="p-2 outline-none border border-gray-300"
@@ -171,7 +173,7 @@ export default function ProductEditor({ categories, data = null, handler }) {
           ) : (
             <i className="fas fa-save"></i>
           )}
-          <span>{data ? "Update product" : "Create product"}</span>
+          <span>{data ? "Cập nhật sản phẩm" : "Tạo sản phẩm mới"}</span>
         </button>
       </div>
     </form>

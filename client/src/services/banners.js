@@ -1,4 +1,4 @@
-import axios from "../axios";
+import axios from "../shared/axios";
 
 export const getBanners = async () => (await axios.get("banners")).data;
 

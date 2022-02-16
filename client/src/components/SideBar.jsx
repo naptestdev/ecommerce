@@ -4,27 +4,27 @@ import { useEffect } from "react";
 
 const items = [
   {
-    name: "Home",
+    name: "Trang chủ",
     icon: "fas fa-home",
     link: "/",
   },
   {
-    name: "Users",
+    name: "Người dùng",
     icon: "fas fa-users",
     link: "/users",
   },
   {
-    name: "Products",
+    name: "Sản phẩm",
     icon: "fas fa-archive",
     link: "/products",
   },
   {
-    name: "Orders",
+    name: "Đơn hàng",
     icon: "fas fa-shopping-cart",
     link: "/orders",
   },
   {
-    name: "Banners",
+    name: "Băng rôn",
     icon: "fas fa-image",
     link: "/banners",
   },
@@ -46,7 +46,7 @@ export default function SideBar({ isSidebarOpened, setIsSidebarOpened }) {
       >
         <Link to="/" className="flex items-center gap-2">
           <img className="w-8 h-8" src="/logo.png" alt="" />
-          <h1 className="text-[#1D90FF] text-2xl">Admin</h1>
+          <h1 className="text-[#1D90FF] text-2xl">Quản trị</h1>
         </Link>
 
         <div className="flex flex-col items-stretch mt-6 gap-4">

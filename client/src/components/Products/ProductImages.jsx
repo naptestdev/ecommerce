@@ -3,12 +3,12 @@ import { useRef, useState } from "react";
 
 import ImageView from "../ImageView";
 import { Spin } from "react-cssfx-loading";
-import { resizeImage } from "../../services/image";
-import { uploadImage } from "../../services/api/uploadImage";
+import { resizeImage } from "../../shared/constant";
+import { uploadImage } from "../../services/uploadImage";
 
 export default function ProductImages({ images, setImages }) {
   const [loading, setLoading] = useState(false);
-  const inputRef = useRef();
+  const inputRef = useRef(null);
 
   const [isImageViewOpened, setIsImageViewOpened] = useState(false);
   const [imageViewSrc, setImageViewSrc] = useState("");
@@ -60,7 +60,7 @@ export default function ProductImages({ images, setImages }) {
   return (
     <>
       <div className="flex justify-between items-center">
-        <h1 className="text-xl">Images</h1>
+        <h1 className="text-xl">Ảnh</h1>
 
         <button
           type="button"
@@ -73,7 +73,7 @@ export default function ProductImages({ images, setImages }) {
           ) : (
             <i className="fas fa-upload"></i>
           )}
-          <span> Upload</span>
+          <span> Tải lên</span>
         </button>
 
         <input
@@ -105,11 +105,11 @@ export default function ProductImages({ images, setImages }) {
                             setIsImageViewOpened(true);
                           }}
                           className="w-[70px] h-[70px] cursor-pointer"
-                          src={resizeImage(image, 70, 70, "fill")}
+                          src={resizeImage(image, 70, 70)}
                           alt=""
                         />
 
-                        <p>Image {index + 1}.png</p>
+                        <p>Ảnh số {index + 1}.png</p>
                       </div>
 
                       {images.length > 1 && (

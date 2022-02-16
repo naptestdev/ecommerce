@@ -1,8 +1,8 @@
 import Alert from "../components/Alert";
 import ProductEditor from "../components/Products/ProductEditor";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { getProductById } from "../services/api/products";
-import { updateProduct } from "../services/api/products";
+import { getProductById } from "../services/products";
+import { updateProduct } from "../services/products";
 import { useParams } from "react-router-dom";
 import useSWR from "swr";
 import { useState } from "react";
@@ -24,7 +24,7 @@ export default function EditProduct({ categories }) {
     return (
       <div className="flex-grow flex flex-col justify-center items-center gap-3">
         <img className="w-36 h-36 object-cover" src="/error.png" alt="" />
-        <p className="text-2xl">Something went wrong</p>
+        <p className="text-2xl">Có lỗi xảy ra</p>
       </div>
     );
 
@@ -39,7 +39,7 @@ export default function EditProduct({ categories }) {
     <>
       <ProductEditor handler={handler} categories={categories} data={data} />
       <Alert
-        text="Product edited successfully"
+        text="Đã cập nhật sản phẩm thành công"
         isOpened={isAlertOpened}
         setIsOpened={setIsAlertOpened}
       />

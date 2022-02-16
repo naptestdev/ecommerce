@@ -1,9 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
-import { deleteProductById, getProducts } from "../../services/api/products";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { deleteProductById, getProducts } from "../../services/products";
 
 import ExportDropdown from "../ExportDropdown";
 import Spin from "react-cssfx-loading/lib/Spin";
-import { resizeImage } from "../../services/image";
+import { resizeImage } from "../../shared/constant";
 import useSWR from "swr";
 
 export default function ProductsList({ categories }) {
@@ -11,6 +11,8 @@ export default function ProductsList({ categories }) {
   const queryParams = new URLSearchParams(location.search);
 
   const page = Number(queryParams.get("page")) || 1;
+
+  const navigate = useNavigate();
 
   const { data, error, mutate } = useSWR(`products-page-${page}`, () =>
     getProducts(page)
@@ -20,21 +22,21 @@ export default function ProductsList({ categories }) {
     return (
       <div className="flex-grow flex flex-col justify-center items-center gap-3">
         <img className="w-36 h-36 object-cover" src="/error.png" alt="" />
-        <p className="text-2xl">Something went wrong</p>
+        <p className="text-2xl">Có lỗi đã xảy ra</p>
       </div>
     );
 
   return (
     <div className="mx-[4vw]">
       <div className="flex justify-between my-5">
-        <h1 className="text-2xl">Products List</h1>
+        <h1 className="text-2xl">Danh sách sản phẩm</h1>
 
         <div className="flex items-center gap-3">
           <Link
             to="/products/new"
             className="bg-primary text-white py-1 px-3 rounded hover:brightness-[115%] transition duration-300"
           >
-            New Product
+            Tạo sản phẩm mới
           </Link>
 
           <ExportDropdown type="products" />
@@ -51,12 +53,12 @@ export default function ProductsList({ categories }) {
             <table className="table">
               <thead>
                 <tr>
-                  <th>Image</th>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th>Category</th>
-                  <th>Creation Date</th>
-                  <th>Actions</th>
+                  <th>Ảnh</th>
+                  <th>Tên</th>
+                  <th>Giá tiền</th>
+                  <th>Danh mục</th>
+                  <th>Thời gian tạo</th>
+                  <th>Hành động</th>
                 </tr>
               </thead>
 
@@ -66,19 +68,18 @@ export default function ProductsList({ categories }) {
                     <td>
                       <img
                         className="w-8 h-8 object-cover"
-                        src={resizeImage(product.images[0], 32, 32, "fill")}
+                        src={resizeImage(product.images[0], 32, 32)}
                         alt=""
                       />
                     </td>
                     <td>
                       <div className="flex items-center gap-2">
-                        <p>{product.name}</p>
+                        <p className="max-w-[200px] md:max-w-[400px] overflow-hidden whitespace-nowrap text-ellipsis">
+                          {product.name}
+                        </p>
                       </div>
                     </td>
-                    <td>
-                      $
-                      {Math.round((product.price - product.discount) * 10) / 10}
-                    </td>
+                    <td>{product.price.toLocaleString()}₫</td>
                     <td>
                       {
                         categories.find(
@@ -112,7 +113,7 @@ export default function ProductsList({ categories }) {
           </div>
 
           <div className="flex justify-end my-5 gap-3 items-center pr-6">
-            <p>Pages</p>
+            <p>Trang số</p>
 
             {data.page > 1 ? (
               <Link to={`/products?page=${data.page - 1}`}>
@@ -125,7 +126,21 @@ export default function ProductsList({ categories }) {
             )}
 
             <p>
-              {data.page} / {data.totalPage}
+              <input
+                onKeyPress={(e) => {
+                  if (e.key === "Enter") {
+                    const page = Number(e.target.value);
+                    if (!isNaN(page) && page >= 1 && page <= data.totalPage) {
+                      navigate(`/products?page=${page}`);
+                    }
+                  }
+                }}
+                style={{ width: String(data.totalPage).length * 10 }}
+                className="outline-none bg-transparent inline"
+                defaultValue={data.page}
+                placeholder={data.page}
+              />{" "}
+              / {data.totalPage}
             </p>
 
             {data.page < data.totalPage ? (

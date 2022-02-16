@@ -1,4 +1,4 @@
-import axios from "../axios";
+import axios from "../shared/axios";
 
 export const getOrders = async (page = 0) =>
   (await axios.get("orders", { params: { page } })).data;

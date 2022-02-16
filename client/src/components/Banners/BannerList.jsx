@@ -4,11 +4,11 @@ import { useRef, useState } from "react";
 import Alert from "../Alert";
 import ImageView from "../ImageView";
 import { Spin } from "react-cssfx-loading";
-import { resizeImage } from "../../services/image";
-import { updateBanners } from "../../services/api/banners";
-import { uploadImage } from "../../services/api/uploadImage";
+import { resizeImage } from "../../shared/constant";
+import { updateBanners } from "../../services/banners";
+import { uploadImage } from "../../services/uploadImage";
 
-export default function BannerDND({ data }) {
+export default function BannerList({ data }) {
   const [images, setImages] = useState(data);
 
   const [loading, setLoading] = useState(false);
@@ -82,8 +82,8 @@ export default function BannerDND({ data }) {
                 <Spin color="#2874F0" />
               </div>
             )}
-            <div className="flex justify-between mb-6">
-              <h1 className="text-3xl">Website banners</h1>
+            <div className="flex justify-between flex-wrap">
+              <h1 className="text-3xl">Băng rôn quảng cáo</h1>
 
               <div className="flex gap-2">
                 <button
@@ -91,7 +91,7 @@ export default function BannerDND({ data }) {
                   className="bg-primary text-white py-2 px-3 hover:brightness-[115%] transition"
                 >
                   <i className="fas fa-save"></i>
-                  <span> Save</span>
+                  <span> Lưu</span>
                 </button>
 
                 <button
@@ -99,7 +99,7 @@ export default function BannerDND({ data }) {
                   className="bg-primary text-white py-2 px-3 hover:brightness-[115%] transition"
                 >
                   <i className="fas fa-upload"></i>
-                  <span> Upload</span>
+                  <span> Tải lên</span>
                 </button>
               </div>
 
@@ -112,6 +112,8 @@ export default function BannerDND({ data }) {
                 accept="image/*"
               />
             </div>
+
+            <p className="mb-3 text-gray-500">Kích cỡ tốt nhất (3000 x 560)</p>
 
             <div className="flex justify-center">
               <div className="w-full max-w-[500px]">
@@ -138,8 +140,8 @@ export default function BannerDND({ data }) {
                                       setImageViewSrc(banner);
                                       setIsImageViewOpened(true);
                                     }}
-                                    className="w-[100px] h-[50px] cursor-pointer"
-                                    src={resizeImage(banner, 100, 50, "fill")}
+                                    className="w-[100px] h-[50px] cursor-pointer object-cover"
+                                    src={resizeImage(banner, 100, 50)}
                                     alt=""
                                   />
 
@@ -168,7 +170,7 @@ export default function BannerDND({ data }) {
       </div>
 
       <Alert
-        text="Banners updated successfully!"
+        text="Đã cập nhật băng rôn quảng cáo!"
         isOpened={isAlertOpened}
         setIsOpened={setIsAlertOpened}
       />

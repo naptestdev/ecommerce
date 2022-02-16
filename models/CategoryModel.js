@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const CategorySchema = new mongoose.Schema({
-  _id: String,
+  _id: Number,
   name: String,
   image: String,
 });

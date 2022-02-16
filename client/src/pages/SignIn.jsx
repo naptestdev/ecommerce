@@ -1,7 +1,7 @@
 import { Navigate, useLocation } from "react-router-dom";
 
 import Spin from "react-cssfx-loading/lib/Spin";
-import axios from "../services/axios";
+import axios from "../shared/axios";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useStore } from "../store";

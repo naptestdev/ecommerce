@@ -3,18 +3,18 @@ const mongoose = require("mongoose");
 const ProductSchema = new mongoose.Schema(
   {
     category: {
-      type: String,
+      type: Number,
       ref: "categories",
     },
     images: Array,
     description: String,
     name: String,
     price: Number,
+    originalPrice: Number,
     stock: Number,
     sold: Number,
     ratings: Number,
     ratingsCount: Number,
-    discount: Number,
   },
   { timestamps: true }
 );

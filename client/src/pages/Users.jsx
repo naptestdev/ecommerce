@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Spin from "react-cssfx-loading/lib/Spin";
 import UsersTable from "../components/Users/UsersTable";
-import { getAllUsers } from "../services/api/users";
+import { getAllUsers } from "../services/users";
 import useSWR from "swr";
 
 export default function Users() {
