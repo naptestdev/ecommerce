@@ -17,7 +17,7 @@ router.get("/", verifyJWT, async (req, res) => {
 
     const totalPage = Math.ceil((await OrderModel.countDocuments()) / size);
 
-    if (page > totalPage)
+    if (page > totalPage && totalPage)
       return res.status(400).send({
         page: null,
         totalPage,
@@ -26,7 +26,7 @@ router.get("/", verifyJWT, async (req, res) => {
 
     res.send({
       page,
-      totalPage,
+      totalPage: totalPage,
       data,
     });
   } catch (error) {

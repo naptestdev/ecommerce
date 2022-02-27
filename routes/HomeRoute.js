@@ -17,7 +17,7 @@ router.get("/total-sales", verifyJWT, async (req, res) => {
       },
     ]);
 
-    res.send(sum[0]);
+    res.send(sum[0] || { total: 0 });
   } catch (error) {
     console.log(error);
     if (!res.headersSent) res.sendStatus(500);
