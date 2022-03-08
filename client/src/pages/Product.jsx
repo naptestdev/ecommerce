@@ -1,4 +1,4 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 import Alert from "../components/Alert";
 import NextArrow from "../components/Slider/NextArrow";
@@ -22,6 +22,8 @@ export default function Product() {
     mutate,
   } = useSWR(location.pathname, () => getProductDetail(id));
   const addCartItem = useStore((state) => state.addCartItem);
+
+  const navigate = useNavigate();
 
   const [quantity, setQuantity] = useState(1);
   const [addCartLoading, setAddCartLoading] = useState(false);
