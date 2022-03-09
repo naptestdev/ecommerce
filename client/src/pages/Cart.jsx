@@ -127,6 +127,16 @@ export default function Cart() {
                           ).toLocaleString()}
                           ₫
                         </td>
+                        <td>
+                          <button
+                            onClick={() => {
+                              removeCartItem(item.product._id);
+                              setIsCartLoading(true);
+                            }}
+                          >
+                            <i className="fas fa-times text-red-600"></i>
+                          </button>
+                        </td>
                       </tr>
                     ))}
                   </tbody>
