@@ -122,7 +122,10 @@ export default function Cart() {
                           </div>
                         </td>
                         <td className="text-2xl px-6">
-                          {item.product.price.toLocaleString()}₫
+                          {(
+                            item.product.price * item.quantity
+                          ).toLocaleString()}
+                          ₫
                         </td>
                       </tr>
                     ))}
@@ -136,7 +139,7 @@ export default function Cart() {
                 <p className="text-2xl text-primary">
                   {cart
                     .reduce((result, item) => {
-                      result += item.product.price;
+                      result += item.product.price * item.quantity;
                       return result;
                     }, 0)
                     .toLocaleString()}

@@ -135,10 +135,21 @@ export default function Product() {
                   className="h-8 w-10 outline-none text-center border border-gray-300"
                   type="text"
                   value={quantity}
-                  readOnly
+                  onChange={(e) => {
+                    const num = Number(e.target.value);
+                    if (isNaN(num)) return;
+
+                    if (num < 1) return setQuantity(1);
+
+                    if (num > product.stock) return setQuantity(product.stock);
+
+                    setQuantity(num);
+                  }}
                 />
                 <button
-                  onClick={() => setQuantity(quantity + 1)}
+                  onClick={() =>
+                    quantity + 1 <= product.stock && setQuantity(quantity + 1)
+                  }
                   className="outline-none border border-gray-300 hover:border-primary hover:text-primary transition px-3 h-8"
                 >
                   +
